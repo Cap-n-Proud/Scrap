@@ -1,0 +1,32 @@
+[1.143s] Invoking command in '/home/paolo/NAS/Software/ROS2/service_client_ws/src/drive': PYTHONPATH=/home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/drive build --build-base /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/build install --prefix /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive --record /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/install.log --single-version-externally-managed
+[1.529s] running egg_info
+[1.532s] writing ../../build/drive/drive.egg-info/PKG-INFO
+[1.556s] writing dependency_links to ../../build/drive/drive.egg-info/dependency_links.txt
+[1.577s] writing entry points to ../../build/drive/drive.egg-info/entry_points.txt
+[1.594s] writing requirements to ../../build/drive/drive.egg-info/requires.txt
+[1.612s] writing top-level names to ../../build/drive/drive.egg-info/top_level.txt
+[1.746s] reading manifest file '../../build/drive/drive.egg-info/SOURCES.txt'
+[1.769s] writing manifest file '../../build/drive/drive.egg-info/SOURCES.txt'
+[1.783s] running build
+[1.784s] running build_py
+[1.794s] copying drive/__init__.py -> /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/build/lib/drive
+[1.816s] copying drive/service_drive.py -> /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/build/lib/drive
+[1.842s] copying drive/client_drive.py -> /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/build/lib/drive
+[1.863s] running install
+[1.867s] running install_lib
+[1.882s] copying /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/build/lib/drive/__init__.py -> /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/python3.8/site-packages/drive
+[1.902s] copying /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/build/lib/drive/client_drive.py -> /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/python3.8/site-packages/drive
+[1.931s] copying /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/build/lib/drive/service_drive.py -> /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/python3.8/site-packages/drive
+[1.968s] byte-compiling /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/python3.8/site-packages/drive/__init__.py to __init__.cpython-38.pyc
+[2.003s] byte-compiling /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/python3.8/site-packages/drive/client_drive.py to client_drive.cpython-38.pyc
+[2.037s] byte-compiling /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/python3.8/site-packages/drive/service_drive.py to service_drive.cpython-38.pyc
+[2.066s] running install_data
+[2.078s] copying resource/drive -> /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/share/ament_index/resource_index/packages
+[2.097s] copying package.xml -> /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/share/drive
+[2.119s] running install_egg_info
+[2.129s] Copying ../../build/drive/drive.egg-info to /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/python3.8/site-packages/drive-0.0.0-py3.8.egg-info
+[2.360s] running install_scripts
+[2.416s] Installing client script to /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/drive
+[2.431s] Installing service script to /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/drive
+[2.451s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/install.log'
+[2.550s] Invoked command in '/home/paolo/NAS/Software/ROS2/service_client_ws/src/drive' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/drive build --build-base /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/build install --prefix /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive --record /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/install.log --single-version-externally-managed

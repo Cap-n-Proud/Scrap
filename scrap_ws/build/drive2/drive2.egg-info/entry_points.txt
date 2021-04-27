@@ -1,0 +1,4 @@
+[console_scripts]
+client = drive2.client_drive:main
+service = drive2.service_drive:main
+

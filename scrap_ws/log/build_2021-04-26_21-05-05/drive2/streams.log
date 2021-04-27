@@ -1,0 +1,15 @@
+[1.528s] Invoking command in '/home/paolo/NAS/Software/ROS2/service_client_ws/src/drive2': PYTHONPATH=/home/paolo/NAS/Software/ROS2/service_client_ws/install/drive2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/drive2 build --build-base /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive2/build install --prefix /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive2 --record /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive2/install.log --single-version-externally-managed
+[1.923s] running egg_info
+[1.924s] writing ../../build/drive2/drive2.egg-info/PKG-INFO
+[1.944s] writing dependency_links to ../../build/drive2/drive2.egg-info/dependency_links.txt
+[1.970s] writing entry points to ../../build/drive2/drive2.egg-info/entry_points.txt
+[1.988s] writing requirements to ../../build/drive2/drive2.egg-info/requires.txt
+[2.002s] writing top-level names to ../../build/drive2/drive2.egg-info/top_level.txt
+[2.162s] reading manifest file '../../build/drive2/drive2.egg-info/SOURCES.txt'
+[2.190s] writing manifest file '../../build/drive2/drive2.egg-info/SOURCES.txt'
+[2.205s] running build
+[2.205s] running build_py
+[2.221s] running install
+[2.225s] running install_lib
+[2.251s] running install_data
+[2.253s] error: can't copy 'resource/drive2': doesn't exist or not a regular file

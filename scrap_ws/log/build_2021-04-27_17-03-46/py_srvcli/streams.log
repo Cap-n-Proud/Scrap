@@ -1,0 +1,22 @@
+[2.096s] Invoking command in '/home/paolo/NAS/Software/ROS2/service_client_ws/src/py_srvcli': PYTHONPATH=/home/paolo/NAS/Software/ROS2/service_client_ws/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/paolo/NAS/Software/ROS2/service_client_ws/build/py_srvcli/build install --prefix /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_srvcli --record /home/paolo/NAS/Software/ROS2/service_client_ws/build/py_srvcli/install.log --single-version-externally-managed
+[2.778s] running egg_info
+[2.785s] writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO
+[2.808s] writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt
+[2.831s] writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt
+[2.847s] writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt
+[2.868s] writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt
+[3.006s] reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[3.025s] writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[3.037s] running build
+[3.038s] running build_py
+[3.060s] running install
+[3.076s] running install_lib
+[3.120s] running install_data
+[3.131s] running install_egg_info
+[3.152s] removing '/home/paolo/NAS/Software/ROS2/service_client_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info' (and everything under it)
+[3.205s] Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info
+[3.465s] running install_scripts
+[3.548s] Installing client script to /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_srvcli/lib/py_srvcli
+[3.567s] Installing service script to /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_srvcli/lib/py_srvcli
+[3.589s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/service_client_ws/build/py_srvcli/install.log'
+[4.142s] Invoked command in '/home/paolo/NAS/Software/ROS2/service_client_ws/src/py_srvcli' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/service_client_ws/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/paolo/NAS/Software/ROS2/service_client_ws/build/py_srvcli/build install --prefix /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_srvcli --record /home/paolo/NAS/Software/ROS2/service_client_ws/build/py_srvcli/install.log --single-version-externally-managed

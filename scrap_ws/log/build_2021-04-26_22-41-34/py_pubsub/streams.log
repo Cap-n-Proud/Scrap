@@ -1,0 +1,28 @@
+[2.030s] Invoking command in '/home/paolo/NAS/Software/ROS2/service_client_ws/src/py_pubsub': PYTHONPATH=/home/paolo/NAS/Software/ROS2/service_client_ws/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/paolo/NAS/Software/ROS2/service_client_ws/build/py_pubsub/build install --prefix /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_pubsub --record /home/paolo/NAS/Software/ROS2/service_client_ws/build/py_pubsub/install.log --single-version-externally-managed
+[2.486s] running egg_info
+[2.488s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[2.507s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[2.530s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[2.549s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[2.564s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[2.676s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[2.696s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[2.709s] running build
+[2.709s] running build_py
+[2.724s] copying py_pubsub/subscriber_member_function.py -> /home/paolo/NAS/Software/ROS2/service_client_ws/build/py_pubsub/build/lib/py_pubsub
+[2.749s] copying py_pubsub/publisher_member_function.py -> /home/paolo/NAS/Software/ROS2/service_client_ws/build/py_pubsub/build/lib/py_pubsub
+[2.773s] running install
+[2.779s] running install_lib
+[2.800s] copying /home/paolo/NAS/Software/ROS2/service_client_ws/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[2.830s] copying /home/paolo/NAS/Software/ROS2/service_client_ws/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[2.876s] byte-compiling /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-38.pyc
+[2.920s] byte-compiling /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-38.pyc
+[2.953s] running install_data
+[2.966s] running install_egg_info
+[2.974s] removing '/home/paolo/NAS/Software/ROS2/service_client_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)
+[3.018s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info
+[3.255s] running install_scripts
+[3.294s] Installing listener script to /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_pubsub/lib/py_pubsub
+[3.309s] Installing talker script to /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_pubsub/lib/py_pubsub
+[3.329s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/service_client_ws/build/py_pubsub/install.log'
+[3.617s] Invoked command in '/home/paolo/NAS/Software/ROS2/service_client_ws/src/py_pubsub' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/service_client_ws/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/paolo/NAS/Software/ROS2/service_client_ws/build/py_pubsub/build install --prefix /home/paolo/NAS/Software/ROS2/service_client_ws/install/py_pubsub --record /home/paolo/NAS/Software/ROS2/service_client_ws/build/py_pubsub/install.log --single-version-externally-managed

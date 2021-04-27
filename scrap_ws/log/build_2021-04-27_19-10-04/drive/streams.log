@@ -1,0 +1,22 @@
+[2.069s] Invoking command in '/home/paolo/NAS/Software/ROS2/service_client_ws/src/drive': PYTHONPATH=/home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/drive build --build-base /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/build install --prefix /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive --record /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/install.log --single-version-externally-managed
+[2.487s] running egg_info
+[2.488s] writing ../../build/drive/drive.egg-info/PKG-INFO
+[2.509s] writing dependency_links to ../../build/drive/drive.egg-info/dependency_links.txt
+[2.532s] writing entry points to ../../build/drive/drive.egg-info/entry_points.txt
+[2.549s] writing requirements to ../../build/drive/drive.egg-info/requires.txt
+[2.566s] writing top-level names to ../../build/drive/drive.egg-info/top_level.txt
+[2.748s] reading manifest file '../../build/drive/drive.egg-info/SOURCES.txt'
+[2.767s] writing manifest file '../../build/drive/drive.egg-info/SOURCES.txt'
+[2.779s] running build
+[2.779s] running build_py
+[2.796s] running install
+[2.797s] running install_lib
+[2.825s] running install_data
+[2.835s] running install_egg_info
+[2.838s] removing '/home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/python3.8/site-packages/drive-0.0.0-py3.8.egg-info' (and everything under it)
+[2.882s] Copying ../../build/drive/drive.egg-info to /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/python3.8/site-packages/drive-0.0.0-py3.8.egg-info
+[3.134s] running install_scripts
+[3.247s] Installing client script to /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/drive
+[3.262s] Installing service script to /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/drive
+[3.281s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/install.log'
+[3.631s] Invoked command in '/home/paolo/NAS/Software/ROS2/service_client_ws/src/drive' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/service_client_ws/install/drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/drive build --build-base /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/build install --prefix /home/paolo/NAS/Software/ROS2/service_client_ws/install/drive --record /home/paolo/NAS/Software/ROS2/service_client_ws/build/drive/install.log --single-version-externally-managed
