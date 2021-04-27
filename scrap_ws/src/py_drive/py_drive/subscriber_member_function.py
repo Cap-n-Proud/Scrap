@@ -85,8 +85,13 @@ class Robot(Node):
         # currentSpeedL = -map(dY - configuration.steerGain * dX, -100, 100, -configuration.maxSpeed, configuration.maxSpeed);
         # currentSpeedR = -map(dY + configuration.steerGain * dX, -100, 100,  -configuration.maxSpeed, configuration.maxSpeed);
         speedLimit = 0.3
-        speedL = max(-speedLimit, min(speedLimit, float(speed[1]) + float(speed[0])))
-        speedR = max(-speedLimit, min(speedLimit, float(speed[1]) - float(speed[1])))
+        steerGain = 0.5
+        speedL = max(
+            -speedLimit, min(speedLimit, float(speed[1]) + steerGain * float(speed[0]))
+        )
+        speedR = max(
+            -speedLimit, min(speedLimit, float(speed[1]) - steerGain * float(speed[0]))
+        )
         self.kit.motor1.throttle = speedL
         self.kit.motor2.throttle = -speedR
 
