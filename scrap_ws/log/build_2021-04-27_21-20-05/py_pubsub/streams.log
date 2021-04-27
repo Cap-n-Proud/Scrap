@@ -1,0 +1,11 @@
+[1.425s] Invoking command in '/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/src/py_drive': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_pubsub/build install --prefix /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_pubsub --record /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_pubsub/install.log --single-version-externally-managed
+[1.736s] running egg_info
+[1.740s] creating ../../build/py_pubsub/py_drive.egg-info
+[1.746s] writing ../../build/py_pubsub/py_drive.egg-info/PKG-INFO
+[1.772s] writing dependency_links to ../../build/py_pubsub/py_drive.egg-info/dependency_links.txt
+[1.789s] writing entry points to ../../build/py_pubsub/py_drive.egg-info/entry_points.txt
+[1.801s] writing requirements to ../../build/py_pubsub/py_drive.egg-info/requires.txt
+[1.812s] writing top-level names to ../../build/py_pubsub/py_drive.egg-info/top_level.txt
+[1.834s] writing manifest file '../../build/py_pubsub/py_drive.egg-info/SOURCES.txt'
+[1.960s] error: package directory 'py_drive' does not exist
+[1.981s] Invoked command in '/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/src/py_drive' returned '1': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_pubsub/build install --prefix /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_pubsub --record /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_pubsub/install.log --single-version-externally-managed

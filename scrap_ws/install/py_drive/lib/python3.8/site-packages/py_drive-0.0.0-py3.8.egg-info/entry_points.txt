@@ -1,0 +1,4 @@
+[console_scripts]
+listener = py_drive.subscriber_member_function:main
+talker = py_drive.publisher_member_function:main
+
