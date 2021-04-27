@@ -1,0 +1,22 @@
+[1.254s] Invoking command in '/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/src/py_srvcli': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/build install --prefix /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_srvcli --record /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/install.log --single-version-externally-managed
+[1.604s] running egg_info
+[1.606s] writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO
+[1.628s] writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt
+[1.653s] writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt
+[1.671s] writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt
+[1.686s] writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt
+[1.811s] reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[1.833s] writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[1.844s] running build
+[1.844s] running build_py
+[1.851s] running install
+[1.857s] running install_lib
+[1.869s] running install_data
+[1.873s] running install_egg_info
+[1.882s] removing '/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info' (and everything under it)
+[1.920s] Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info
+[2.162s] running install_scripts
+[2.257s] Installing client script to /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/py_srvcli
+[2.273s] Installing service script to /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/py_srvcli
+[2.291s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/install.log'
+[2.335s] Invoked command in '/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/src/py_srvcli' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/build install --prefix /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_srvcli --record /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/install.log --single-version-externally-managed

@@ -1,0 +1,102 @@
+[0.000000] (-) TimerEvent: {}
+[0.000758] (py_drive) JobQueued: {'identifier': 'py_drive', 'dependencies': OrderedDict()}
+[0.001192] (py_srvcli) JobQueued: {'identifier': 'py_srvcli', 'dependencies': OrderedDict()}
+[0.001307] (py_drive) JobStarted: {'identifier': 'py_drive'}
+[0.093350] (-) TimerEvent: {}
+[0.194210] (-) TimerEvent: {}
+[0.274567] (py_srvcli) JobStarted: {'identifier': 'py_srvcli'}
+[0.295868] (-) TimerEvent: {}
+[0.398146] (-) TimerEvent: {}
+[0.499254] (-) TimerEvent: {}
+[0.600130] (-) TimerEvent: {}
+[0.700766] (-) TimerEvent: {}
+[0.801388] (-) TimerEvent: {}
+[0.902028] (-) TimerEvent: {}
+[1.002646] (-) TimerEvent: {}
+[1.103314] (-) TimerEvent: {}
+[1.203955] (-) TimerEvent: {}
+[1.305264] (-) TimerEvent: {}
+[1.406792] (-) TimerEvent: {}
+[1.507665] (-) TimerEvent: {}
+[1.608305] (-) TimerEvent: {}
+[1.708932] (-) TimerEvent: {}
+[1.809509] (-) TimerEvent: {}
+[1.910107] (-) TimerEvent: {}
+[2.010671] (-) TimerEvent: {}
+[2.111250] (-) TimerEvent: {}
+[2.211877] (-) TimerEvent: {}
+[2.314667] (-) TimerEvent: {}
+[2.417318] (-) TimerEvent: {}
+[2.421806] (py_drive) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_drive', 'build', '--build-base', '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build', 'install', '--prefix', '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive', '--record', '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Scrap/scrap_ws/src/py_drive', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 60740 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_pubsub:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive:/home/robot/Software/ROS2/Scrap/scrap_ws/install/drive:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 60740 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_pubsub/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/drive/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[2.477693] (py_srvcli) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_srvcli', 'build', '--build-base', '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/build', 'install', '--prefix', '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli', '--record', '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Scrap/scrap_ws/src/py_srvcli', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 60740 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_pubsub:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive:/home/robot/Software/ROS2/Scrap/scrap_ws/install/drive:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 60740 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_pubsub/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/drive/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[2.517437] (-) TimerEvent: {}
+[2.618912] (-) TimerEvent: {}
+[2.719557] (-) TimerEvent: {}
+[2.820237] (-) TimerEvent: {}
+[2.920862] (-) TimerEvent: {}
+[3.021444] (-) TimerEvent: {}
+[3.122089] (-) TimerEvent: {}
+[3.222664] (-) TimerEvent: {}
+[3.296646] (py_drive) StdoutLine: {'line': b'running egg_info\n'}
+[3.301049] (py_drive) StdoutLine: {'line': b'writing ../../build/py_drive/py_drive.egg-info/PKG-INFO\n'}
+[3.314250] (py_drive) StdoutLine: {'line': b'writing dependency_links to ../../build/py_drive/py_drive.egg-info/dependency_links.txt\n'}
+[3.322798] (-) TimerEvent: {}
+[3.323497] (py_drive) StdoutLine: {'line': b'writing entry points to ../../build/py_drive/py_drive.egg-info/entry_points.txt\n'}
+[3.333412] (py_drive) StdoutLine: {'line': b'writing requirements to ../../build/py_drive/py_drive.egg-info/requires.txt\n'}
+[3.343080] (py_drive) StdoutLine: {'line': b'writing top-level names to ../../build/py_drive/py_drive.egg-info/top_level.txt\n'}
+[3.350311] (py_srvcli) StdoutLine: {'line': b'running egg_info\n'}
+[3.355363] (py_srvcli) StdoutLine: {'line': b'writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO\n'}
+[3.365811] (py_srvcli) StdoutLine: {'line': b'writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt\n'}
+[3.376748] (py_srvcli) StdoutLine: {'line': b'writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt\n'}
+[3.386196] (py_srvcli) StdoutLine: {'line': b'writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt\n'}
+[3.396094] (py_srvcli) StdoutLine: {'line': b'writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt\n'}
+[3.422949] (-) TimerEvent: {}
+[3.523532] (-) TimerEvent: {}
+[3.530281] (py_drive) StdoutLine: {'line': b"reading manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'\n"}
+[3.539029] (py_drive) StdoutLine: {'line': b"writing manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'\n"}
+[3.547899] (py_drive) StdoutLine: {'line': b'running build\n'}
+[3.548330] (py_drive) StdoutLine: {'line': b'running build_py\n'}
+[3.562299] (py_drive) StdoutLine: {'line': b'copying py_drive/subscriber_member_function.py -> /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build/lib/py_drive\n'}
+[3.579274] (py_srvcli) StdoutLine: {'line': b"reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[3.586130] (py_drive) StdoutLine: {'line': b'running install\n'}
+[3.589532] (py_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[3.590031] (py_drive) StdoutLine: {'line': b'running install_lib\n'}
+[3.600887] (py_srvcli) StdoutLine: {'line': b'running build\n'}
+[3.601949] (py_srvcli) StdoutLine: {'line': b'running build_py\n'}
+[3.611446] (py_drive) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build/lib/py_drive/subscriber_member_function.py -> /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive\n'}
+[3.622338] (py_srvcli) StdoutLine: {'line': b'running install\n'}
+[3.623635] (-) TimerEvent: {}
+[3.625046] (py_srvcli) StdoutLine: {'line': b'running install_lib\n'}
+[3.644615] (py_drive) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive/subscriber_member_function.py to subscriber_member_function.cpython-38.pyc\n'}
+[3.655488] (py_srvcli) StdoutLine: {'line': b'running install_data\n'}
+[3.669751] (py_srvcli) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.674088] (py_drive) StdoutLine: {'line': b'running install_data\n'}
+[3.677506] (py_srvcli) StdoutLine: {'line': b"removing '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[3.685656] (py_drive) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.693286] (py_drive) StdoutLine: {'line': b"removing '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[3.709979] (py_srvcli) StdoutLine: {'line': b'Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info\n'}
+[3.724484] (-) TimerEvent: {}
+[3.726249] (py_drive) StdoutLine: {'line': b'Copying ../../build/py_drive/py_drive.egg-info to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive-0.0.0-py3.8.egg-info\n'}
+[3.824658] (-) TimerEvent: {}
+[3.861472] (py_srvcli) StdoutLine: {'line': b'running install_scripts\n'}
+[3.882368] (py_drive) StdoutLine: {'line': b'running install_scripts\n'}
+[3.924882] (-) TimerEvent: {}
+[3.946543] (py_srvcli) StdoutLine: {'line': b'Installing client script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/py_srvcli\n'}
+[3.956789] (py_drive) StdoutLine: {'line': b'Installing listener script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/py_drive\n'}
+[3.964528] (py_srvcli) StdoutLine: {'line': b'Installing service script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/py_srvcli\n'}
+[3.970877] (py_drive) StdoutLine: {'line': b'Installing talker script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/py_drive\n'}
+[3.986830] (py_srvcli) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/install.log'\n"}
+[3.987372] (py_drive) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/install.log'\n"}
+[4.025061] (-) TimerEvent: {}
+[4.099866] (py_srvcli) CommandEnded: {'returncode': 0}
+[4.125204] (-) TimerEvent: {}
+[4.228905] (-) TimerEvent: {}
+[4.330883] (-) TimerEvent: {}
+[4.366688] (py_srvcli) JobEnded: {'identifier': 'py_srvcli', 'rc': 0}
+[4.420939] (py_drive) CommandEnded: {'returncode': 0}
+[4.431256] (-) TimerEvent: {}
+[4.534984] (-) TimerEvent: {}
+[4.638158] (-) TimerEvent: {}
+[4.710379] (py_drive) JobEnded: {'identifier': 'py_drive', 'rc': 0}
+[4.750475] (-) TimerEvent: {}
+[4.752126] (-) EventReactorShutdown: {}

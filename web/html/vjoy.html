@@ -1,0 +1,164 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/javascript charset=UTF-8" />
+  <meta charset="utf-8">
+  <meta name="viewport">
+  <!-- <script type="text/javascript" src="/js/socket.io.js"></script> -->
+  <script type="text/javascript" src="js/virtualjoystick.js"></script>
+  <script src="https://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+  <script src="https://static.robotwebtools.org/roslibjs/current/roslib.js"></script>
+
+
+  <style>
+    body {
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      background-color: #BBB;
+    }
+
+    #info {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      padding: 5px;
+      http: //127.0.0.1:3000/js/virtualjoystick.js
+        text-align: center;
+    }
+
+    #info a {
+      color: #66F;
+      text-decoration: none;
+    }
+
+    #info a:hover {
+      text-decoration: underline;
+    }
+
+    #container {
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      padding: 5px;
+      margin: 5px;
+      border-width: 2px;
+      border-style: dashed;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container" ontouchend="mouseUp()" ontouchstart="mouseDown()" onmouseup="mouseUp()" onmousedown="mouseDown()"></div>
+  <div id="info">
+
+    <span id="result"></span>
+
+    <div id="statusIndicator">
+      <p id="connecting">
+        Connecting to rosbridge...
+      </p>
+      <p id="connected" style="color:green; display:none">
+        Connected
+      </p>
+      <p id="error" style="color:#FF0000; display:none">
+        Error in the backend!
+      </p>
+      <p id="closed" style="display:none">
+        Connection closed.
+      </p>
+    </div>
+
+  </div>
+  <span id="publisher"></span>
+
+  <script>
+    var prevX, prevY;
+    var joystick = new VirtualJoystick({
+      container: document.getElementById('container'),
+      mouseSupport: true,
+    });
+    console.log("touchscreen is", VirtualJoystick.touchScreenAvailable() ? "available" : "not available");
+    // Connecting to ROS
+    // -----------------
+    var ros = new ROSLIB.Ros();
+
+    // If there is an error on the backend, an 'error' emit will be emitted.
+    ros.on('error', function(error) {
+      document.getElementById('connecting').style.display = 'none';
+      document.getElementById('connected').style.display = 'none';
+      document.getElementById('closed').style.display = 'none';
+      document.getElementById('error').style.display = 'inline';
+      // console.log(error);
+    });
+
+    // Find out exactly when we made a connection.
+    ros.on('connection', function() {
+      // console.log('Connection made!');
+      document.getElementById('connecting').style.display = 'none';
+      document.getElementById('error').style.display = 'none';
+      document.getElementById('closed').style.display = 'none';
+      document.getElementById('connected').style.display = 'inline';
+    });
+
+    ros.on('close', function() {
+      // console.log('Connection closed.');
+      document.getElementById('connecting').style.display = 'none';
+      document.getElementById('connected').style.display = 'none';
+      document.getElementById('closed').style.display = 'inline';
+    });
+
+    // Create a connection to the rosbridge WebSocket server.
+    ros.connect('ws://192.168.1.164:9090');
+
+    // Publish a Topic
+    var m = new ROSLIB.Topic({
+      ros: ros,
+      name: '/move',
+      messageType: 'std_msgs/String'
+    });
+
+    setInterval(() => {
+      if (joystick.deltaX() != 0 || joystick.deltaY() != 0) {
+
+        // socket.emit('move', 100 * joystick.deltaX() / 250, +100 * joystick.deltaY() / 250);
+        var message = String((1 * joystick.deltaX() / 150).toFixed(2)) + "," + String((-1 * joystick.deltaY() / 150).toFixed(2))
+        console.log(message)
+        m.publish({
+          data: message
+        });
+        document.getElementById("publisher").innerText = message;
+
+      }
+      var outputEl = document.getElementById('result');
+      outputEl.innerHTML = '<b>Move:</b> ' +
+        ' dx:' + (1 * joystick.deltaX() / 150).toFixed(2) +
+        ' dy:' + (-1 * joystick.deltaY() / 150).toFixed(2) +
+        (joystick.right() ? ' right' : '') +
+        (joystick.up() ? ' up' : '') +
+        (joystick.left() ? ' left' : '') +
+        (joystick.down() ? ' down' : '')
+    }, 1 / 30 * 1000);
+
+
+
+    function mouseDown() {
+      document.getElementById("container").style.color = "red";
+
+    }
+
+    function mouseUp() {
+      document.getElementById("container").style.color = "black";
+      var message = String(0) + "," + String(0)
+      console.log(message)
+      m.publish({
+        data: message
+      });
+      document.getElementById("publisher").innerText = message;
+    }
+  </script>
+</body>
+
+</html>

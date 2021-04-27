@@ -18,10 +18,17 @@ from rclpy.node import Node
 from std_msgs.msg import String
 from std_msgs.msg import Int32MultiArray, Int16
 
+import time
+from adafruit_motorkit import MotorKit
 
-class MinimalSubscriber(Node):
+# https://github.com/adafruit/Adafruit_CircuitPython_MotorKit.git
+
+
+class Robot(Node):
     def __init__(self):
-        super().__init__("minimal_subscriber")
+        super().__init__("robot")
+        self.kit = MotorKit()
+
         self.subscription = self.create_subscription(
             String, "topic", self.listener_callback, 10
         )
@@ -41,6 +48,20 @@ class MinimalSubscriber(Node):
 
         self.move = self.create_subscription(String, "move", self.move, 10)
 
+    def _left_speed(self, speed):
+        """Set the speed of the left motor, taking into account its trim offset."""
+        assert -1 <= speed <= 1, "Speed must be a value between -1 to 1 inclusive!"
+        speed += self._left_trim
+        speed = max(-1, min(1, speed))  # Constrain speed to 0-255 after trimming.
+        kit.motor1.throttle = speed
+
+    def _right_speed(self, speed):
+        """Set the speed of the right motor, taking into account its trim offset."""
+        assert -1 <= speed <= 1, "Speed must be a value between -1 to 1 inclusive!"
+        speed += self._right_trim
+        speed = max(-1, min(1, speed))  # Constrain speed to 0-255 after trimming.
+        kit.motor2.throttle = speed
+
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
 
@@ -57,21 +78,30 @@ class MinimalSubscriber(Node):
         self.get_logger().info("I heard: " + str(msg.data))
 
     def move(self, msg):
-        m = msg.data.split(",")
-        self.get_logger().info("Move: " + str(m[0]) + "," + str(m[1]))
+        speed = msg.data.split(",")
+        self.get_logger().info("Move: " + str(speed[0]) + "," + str(speed[1]))
+        # self._left_speed(float(speed[0]))
+        # self._right_speed(float(speed[1]))
+        # currentSpeedL = -map(dY - configuration.steerGain * dX, -100, 100, -configuration.maxSpeed, configuration.maxSpeed);
+        # currentSpeedR = -map(dY + configuration.steerGain * dX, -100, 100,  -configuration.maxSpeed, configuration.maxSpeed);
+        speedLimit = 0.3
+        speedL = max(-speedLimit, min(speedLimit, float(speed[1]) + float(speed[0])))
+        speedR = max(-speedLimit, min(speedLimit, float(speed[1]) - float(speed[1])))
+        self.kit.motor1.throttle = speedL
+        self.kit.motor2.throttle = -speedR
 
 
 def main(args=None):
     rclpy.init(args=args)
 
-    minimal_subscriber = MinimalSubscriber()
-
-    rclpy.spin(minimal_subscriber)
+    robot = Robot()
+    print("Ready")
+    rclpy.spin(robot)
 
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
-    minimal_subscriber.destroy_node()
+    robot.destroy_node()
     rclpy.shutdown()
 
 

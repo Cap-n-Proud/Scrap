@@ -1,0 +1,22 @@
+[2.904s] Invoking command in '/home/robot/Software/ROS2/Scrap/scrap_ws/src/py_srvcli': PYTHONPATH=/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/build install --prefix /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli --record /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/install.log --single-version-externally-managed
+[3.753s] running egg_info
+[3.760s] writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO
+[3.796s] writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt
+[3.814s] writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt
+[3.830s] writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt
+[3.845s] writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt
+[4.088s] reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[4.108s] writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[4.120s] running build
+[4.120s] running build_py
+[4.157s] running install
+[4.163s] running install_lib
+[4.206s] running install_data
+[4.228s] running install_egg_info
+[4.240s] removing '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info' (and everything under it)
+[4.275s] Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info
+[4.449s] running install_scripts
+[4.553s] Installing client script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/py_srvcli
+[4.573s] Installing service script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/py_srvcli
+[4.876s] writing list of installed files to '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/install.log'
+[5.010s] Invoked command in '/home/robot/Software/ROS2/Scrap/scrap_ws/src/py_srvcli' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/build install --prefix /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli --record /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/install.log --single-version-externally-managed

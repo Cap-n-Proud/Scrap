@@ -1,0 +1,5 @@
+  File "/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive/subscriber_member_function.py", line 30
+    nonlocal kit
+    ^
+SyntaxError: no binding for nonlocal 'kit' found
+
