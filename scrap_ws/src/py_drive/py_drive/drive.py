@@ -26,74 +26,69 @@ from adafruit_motorkit import MotorKit
 
 
 class Robot(Node):
-    def __init__(self):
+    def __init__(self, steer_gain=0.5, speed_limit=0.3, left_trim=0, right_trim=0):
         super().__init__("robot")
         self.kit = MotorKit()
 
+        self.steer_gain = steer_gain
+        self.speed_limit = speed_limit
+        self.left_trim = left_trim
+        self.right_trim = right_trim
+
         self.joy_topic = self.create_subscription(Joy, "joy", self.joy_topic, 10)
+        self.joy_web = self.create_subscription(String, "joy_web", self.joy_web, 10)
 
-        self.subscription = self.create_subscription(
-            String, "topic", self.listener_callback, 10
-        )
-        self.subscription  # prevent unused variable warning
+    def set_steer_gain(self, steer_gain):
+        self.steer_gain = steer_gain
 
-        self.stop_motors = self.create_subscription(
-            String, "stop_motors", self.stop_motors, 10
-        )
-        self.example_topic = self.create_subscription(
-            String, "example_topic", self.example_topic, 10
-        )
+    def set_speed_limit(self, speed_limit):
+        self.speed_limit = speed_limit
 
-        self.test = self.create_subscription(Int32MultiArray, "test", self.test, 10)
+    def set_left_trim(self, left_trim):
+        self.left_trim = left_trim
 
-        self.move = self.create_subscription(String, "move", self.move, 10)
+    def set_right_trim(self, right_trim):
+        self.right_trim = right_trim
 
-    def _left_speed(self, speed):
+    def left_speed(self, speed):
         """Set the speed of the left motor, taking into account its trim offset."""
         assert -1 <= speed <= 1, "Speed must be a value between -1 to 1 inclusive!"
-        speed += self._left_trim
-        speed = max(-1, min(1, speed))  # Constrain speed to 0-255 after trimming.
+        speed += self.left_trim
+        speed = max(-1, min(1, speed))
         kit.motor1.throttle = speed
 
-    def _right_speed(self, speed):
+    def right_speed(self, speed):
         """Set the speed of the right motor, taking into account its trim offset."""
         assert -1 <= speed <= 1, "Speed must be a value between -1 to 1 inclusive!"
-        speed += self._right_trim
-        speed = max(-1, min(1, speed))  # Constrain speed to 0-255 after trimming.
+        speed += self.right_trim
+        speed = max(-1, min(1, speed))
         kit.motor2.throttle = speed
 
-    def listener_callback(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
-
-    def test(self, msg):
-        self.get_logger().info('test: "%s"' % msg.data)
-
-    def example_topic(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
-
-    def joy_topic(self, msg):
-        self.get_logger().info('joy: "%s"' % msg.axes)
-
-    def stop_motors(self, msg):
-        self.get_logger().info("I heard: " + str(msg.data))
-
-    def move(self, msg):
-        speed = msg.data.split(",")
-        self.get_logger().info("Move: " + str(speed[0]) + "," + str(speed[1]))
-        # self._left_speed(float(speed[0]))
+    def move(self, x, y):
+        # speed = msg.data.split(",")
+        # self.get_logger().info("Move: " + str(speed[0]) + "," + str(speed[1]))
+        # # self._left_speed(float(speed[0]))
         # self._right_speed(float(speed[1]))
         # currentSpeedL = -map(dY - configuration.steerGain * dX, -100, 100, -configuration.maxSpeed, configuration.maxSpeed);
         # currentSpeedR = -map(dY + configuration.steerGain * dX, -100, 100,  -configuration.maxSpeed, configuration.maxSpeed);
         speedLimit = 0.3
         steerGain = 0.5
         speedL = max(
-            -speedLimit, min(speedLimit, float(speed[1]) + steerGain * float(speed[0]))
+            -self.speedLimit, min(self.speedLimit, float(y) + self.steerGain * float(x))
         )
         speedR = max(
-            -speedLimit, min(speedLimit, float(speed[1]) - steerGain * float(speed[0]))
+            -self.speedLimit, min(self.speedLimit, float(y) - self.steerGain * float(x))
         )
-        self.kit.motor1.throttle = speedL
-        self.kit.motor2.throttle = -speedR
+        self.get_logger().info('Left speed se to: "%s"' % speedL)
+        self.get_logger().info('Right speed se to: "%s"' % speedR)
+
+    def joy_topic(self, msg):
+        self.get_logger().info("joy X: " + str(msg.axes[0]) + " Y: " + str(msg.axes[1]))
+        self.move(msg.axes[0], msg.axes[1])
+
+    def joy_web(self, msg):
+        speed = msg.data.split(",")
+        self.move(speed[0], speed[1])
 
 
 def main(args=None):
