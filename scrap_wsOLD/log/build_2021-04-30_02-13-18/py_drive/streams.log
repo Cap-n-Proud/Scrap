@@ -1,0 +1,45 @@
+[2.584s] Invoking command in '/home/robot/Software/ROS2/Scrap/scrap_ws/src/py_drive': PYTHONPATH=/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_drive build --build-base /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build install --prefix /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive --record /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/install.log --single-version-externally-managed
+[4.096s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.096s]   warnings.warn(
+[4.097s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[4.098s]   warnings.warn(
+[4.453s] running egg_info
+[4.459s] creating ../../build/py_drive/py_drive.egg-info
+[4.466s] writing ../../build/py_drive/py_drive.egg-info/PKG-INFO
+[4.500s] writing dependency_links to ../../build/py_drive/py_drive.egg-info/dependency_links.txt
+[4.519s] writing entry points to ../../build/py_drive/py_drive.egg-info/entry_points.txt
+[4.540s] writing requirements to ../../build/py_drive/py_drive.egg-info/requires.txt
+[4.552s] writing top-level names to ../../build/py_drive/py_drive.egg-info/top_level.txt
+[4.583s] writing manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'
+[4.965s] reading manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'
+[4.982s] writing manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'
+[4.996s] running build
+[4.997s] running build_py
+[5.003s] creating /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build
+[5.005s] creating /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build/lib
+[5.009s] creating /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build/lib/py_drive
+[5.018s] copying py_drive/__init__.py -> /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build/lib/py_drive
+[5.034s] copying py_drive/drive.py -> /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build/lib/py_drive
+[5.058s] copying py_drive/publisher_member_function.py -> /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build/lib/py_drive
+[5.086s] running install
+[5.089s] running install_lib
+[5.111s] creating /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive
+[5.119s] copying /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build/lib/py_drive/drive.py -> /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive
+[5.140s] copying /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build/lib/py_drive/publisher_member_function.py -> /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive
+[5.167s] copying /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build/lib/py_drive/__init__.py -> /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive
+[5.192s] byte-compiling /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive/drive.py to drive.cpython-38.pyc
+[5.226s] byte-compiling /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive/publisher_member_function.py to publisher_member_function.cpython-38.pyc
+[5.253s] byte-compiling /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive/__init__.py to __init__.cpython-38.pyc
+[5.274s] running install_data
+[5.281s] creating /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/share/ament_index
+[5.283s] creating /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/share/ament_index/resource_index
+[5.287s] creating /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/share/ament_index/resource_index/packages
+[5.296s] copying resource/py_drive -> /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/share/ament_index/resource_index/packages
+[5.308s] copying package.xml -> /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/share/py_drive
+[5.324s] running install_egg_info
+[5.336s] Copying ../../build/py_drive/py_drive.egg-info to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive-0.0.1-py3.8.egg-info
+[5.482s] running install_scripts
+[5.610s] Installing listener script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/py_drive
+[5.627s] Installing talker script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/py_drive
+[5.644s] writing list of installed files to '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/install.log'
+[5.868s] Invoked command in '/home/robot/Software/ROS2/Scrap/scrap_ws/src/py_drive' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_drive build --build-base /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build install --prefix /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive --record /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/install.log --single-version-externally-managed

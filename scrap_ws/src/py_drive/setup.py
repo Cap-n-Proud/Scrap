@@ -20,7 +20,7 @@ setup(
     entry_points={
         "console_scripts": [
             "talker = py_drive.publisher_member_function:main",
-            "listener = py_drive.subscriber_member_function:main",
+            "listener = py_drive.drive:main",
         ]
     },
 )
