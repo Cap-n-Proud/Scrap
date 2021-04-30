@@ -9,8 +9,8 @@ setup.py
 ../../build/py_drive/py_drive.egg-info/top_level.txt
 ../../build/py_drive/py_drive.egg-info/zip-safe
 py_drive/__init__.py
+py_drive/drive.py
 py_drive/publisher_member_function.py
-py_drive/subscriber_member_function.py
 resource/py_drive
 test/test_copyright.py
 test/test_flake8.py

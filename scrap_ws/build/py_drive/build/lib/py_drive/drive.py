@@ -17,10 +17,10 @@ from rclpy.node import Node
 
 from std_msgs.msg import String
 from std_msgs.msg import Int32MultiArray, Int16
+from sensor_msgs.msg import Joy
 
 import time
 from adafruit_motorkit import MotorKit
-
 
 # https://github.com/adafruit/Adafruit_CircuitPython_MotorKit.git
 
@@ -29,6 +29,8 @@ class Robot(Node):
     def __init__(self):
         super().__init__("robot")
         self.kit = MotorKit()
+
+        self.joy_topic = self.create_subscription(Joy, "joy", self.joy_topic, 10)
 
         self.subscription = self.create_subscription(
             String, "topic", self.listener_callback, 10
@@ -42,9 +44,6 @@ class Robot(Node):
             String, "example_topic", self.example_topic, 10
         )
 
-        self.joy_topic = self.create_subscription(
-            String, "joy_topic", self.joy_topic, 10
-        )
         self.test = self.create_subscription(Int32MultiArray, "test", self.test, 10)
 
         self.move = self.create_subscription(String, "move", self.move, 10)
@@ -73,7 +72,7 @@ class Robot(Node):
         self.get_logger().info('I heard: "%s"' % msg.data)
 
     def joy_topic(self, msg):
-        self.get_logger().info('joy: "%s"' % msg.data)
+        self.get_logger().info('joy: "%s"' % msg.axes)
 
     def stop_motors(self, msg):
         self.get_logger().info("I heard: " + str(msg.data))
@@ -86,7 +85,7 @@ class Robot(Node):
         # currentSpeedL = -map(dY - configuration.steerGain * dX, -100, 100, -configuration.maxSpeed, configuration.maxSpeed);
         # currentSpeedR = -map(dY + configuration.steerGain * dX, -100, 100,  -configuration.maxSpeed, configuration.maxSpeed);
         speedLimit = 0.3
-        steerGain = 0.3
+        steerGain = 0.5
         speedL = max(
             -speedLimit, min(speedLimit, float(speed[1]) + steerGain * float(speed[0]))
         )
@@ -95,32 +94,6 @@ class Robot(Node):
         )
         self.kit.motor1.throttle = speedL
         self.kit.motor2.throttle = -speedR
-
-    def get_ip_address(interface):
-        state = get_network_interface_state(interface)
-        if state == "down" or state == None:
-            return None
-
-        cmd = (
-            "ifconfig %s | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
-            % interface
-        )
-        return subprocess.check_output(cmd, shell=True).decode("ascii")[:-1]
-
-    def get_network_interface_state(interface):
-        if not os.path.exists("/sys/class/net/%s/operstate" % interface):
-            # print("%s file does NOT exist" % interface)
-            return None
-
-        try:
-            status = subprocess.check_output(
-                "cat /sys/class/net/%s/operstate" % interface, shell=True
-            ).decode("ascii")[:-1]
-        except Exception as err:
-            print("Exception: {0}".format(err))
-            return None
-        else:
-            return status
 
 
 def main(args=None):
