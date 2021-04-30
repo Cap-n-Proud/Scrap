@@ -1,0 +1,28 @@
+[3.333s] Invoking command in '/home/robot/Software/ROS2/Scrap/scrap_ws/src/test_joy': PYTHONPATH=/home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_joy build --build-base /home/robot/Software/ROS2/Scrap/scrap_ws/build/test_joy/build install --prefix /home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy --record /home/robot/Software/ROS2/Scrap/scrap_ws/build/test_joy/install.log --single-version-externally-managed
+[4.196s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.196s]   warnings.warn(
+[4.197s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[4.197s]   warnings.warn(
+[4.352s] running egg_info
+[4.356s] writing ../../build/test_joy/test_joy.egg-info/PKG-INFO
+[4.369s] writing dependency_links to ../../build/test_joy/test_joy.egg-info/dependency_links.txt
+[4.383s] writing entry points to ../../build/test_joy/test_joy.egg-info/entry_points.txt
+[4.393s] writing requirements to ../../build/test_joy/test_joy.egg-info/requires.txt
+[4.404s] writing top-level names to ../../build/test_joy/test_joy.egg-info/top_level.txt
+[4.605s] reading manifest file '../../build/test_joy/test_joy.egg-info/SOURCES.txt'
+[4.616s] writing manifest file '../../build/test_joy/test_joy.egg-info/SOURCES.txt'
+[4.625s] running build
+[4.625s] running build_py
+[4.637s] copying test_joy/test_joy.py -> /home/robot/Software/ROS2/Scrap/scrap_ws/build/test_joy/build/lib/test_joy
+[4.663s] running install
+[4.667s] running install_lib
+[4.680s] copying /home/robot/Software/ROS2/Scrap/scrap_ws/build/test_joy/build/lib/test_joy/test_joy.py -> /home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy
+[4.714s] byte-compiling /home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy/test_joy.py to test_joy.cpython-38.pyc
+[4.738s] running install_data
+[4.752s] running install_egg_info
+[4.758s] removing '/home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy-0.0.0-py3.8.egg-info' (and everything under it)
+[4.792s] Copying ../../build/test_joy/test_joy.egg-info to /home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy-0.0.0-py3.8.egg-info
+[4.932s] running install_scripts
+[5.017s] Installing listener script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/test_joy
+[5.034s] writing list of installed files to '/home/robot/Software/ROS2/Scrap/scrap_ws/build/test_joy/install.log'
+[5.251s] Invoked command in '/home/robot/Software/ROS2/Scrap/scrap_ws/src/test_joy' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_joy build --build-base /home/robot/Software/ROS2/Scrap/scrap_ws/build/test_joy/build install --prefix /home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy --record /home/robot/Software/ROS2/Scrap/scrap_ws/build/test_joy/install.log --single-version-externally-managed

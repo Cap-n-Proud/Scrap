@@ -1,0 +1,152 @@
+[0.000000] (-) TimerEvent: {}
+[0.000635] (py_drive) JobQueued: {'identifier': 'py_drive', 'dependencies': OrderedDict()}
+[0.000824] (py_srvcli) JobQueued: {'identifier': 'py_srvcli', 'dependencies': OrderedDict()}
+[0.000974] (test_joy) JobQueued: {'identifier': 'test_joy', 'dependencies': OrderedDict()}
+[0.001112] (py_drive) JobStarted: {'identifier': 'py_drive'}
+[0.096212] (-) TimerEvent: {}
+[0.187265] (py_srvcli) JobStarted: {'identifier': 'py_srvcli'}
+[0.196391] (-) TimerEvent: {}
+[0.297376] (-) TimerEvent: {}
+[0.305880] (test_joy) JobStarted: {'identifier': 'test_joy'}
+[0.397437] (-) TimerEvent: {}
+[0.498195] (-) TimerEvent: {}
+[0.599088] (-) TimerEvent: {}
+[0.699935] (-) TimerEvent: {}
+[0.800548] (-) TimerEvent: {}
+[0.901297] (-) TimerEvent: {}
+[1.001911] (-) TimerEvent: {}
+[1.102727] (-) TimerEvent: {}
+[1.203530] (-) TimerEvent: {}
+[1.304232] (-) TimerEvent: {}
+[1.404877] (-) TimerEvent: {}
+[1.505915] (-) TimerEvent: {}
+[1.610807] (-) TimerEvent: {}
+[1.711645] (-) TimerEvent: {}
+[1.812253] (-) TimerEvent: {}
+[1.912905] (-) TimerEvent: {}
+[2.013556] (-) TimerEvent: {}
+[2.114218] (-) TimerEvent: {}
+[2.214844] (-) TimerEvent: {}
+[2.315547] (-) TimerEvent: {}
+[2.416139] (-) TimerEvent: {}
+[2.516845] (-) TimerEvent: {}
+[2.617676] (-) TimerEvent: {}
+[2.718602] (-) TimerEvent: {}
+[2.819283] (-) TimerEvent: {}
+[2.919889] (-) TimerEvent: {}
+[3.020649] (-) TimerEvent: {}
+[3.121255] (-) TimerEvent: {}
+[3.221951] (-) TimerEvent: {}
+[3.322627] (-) TimerEvent: {}
+[3.423273] (-) TimerEvent: {}
+[3.523889] (-) TimerEvent: {}
+[3.624537] (-) TimerEvent: {}
+[3.699947] (py_drive) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_drive', 'build', '--build-base', '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/build', 'install', '--prefix', '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive', '--record', '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Scrap/scrap_ws/src/py_drive', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 34192 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot/Software/ROS2/Scrap', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 34192 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[3.728992] (-) TimerEvent: {}
+[3.749873] (py_srvcli) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_srvcli', 'build', '--build-base', '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/build', 'install', '--prefix', '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli', '--record', '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Scrap/scrap_ws/src/py_srvcli', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 34192 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot/Software/ROS2/Scrap', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 34192 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[3.802658] (test_joy) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/test_joy', 'build', '--build-base', '/home/robot/Software/ROS2/Scrap/scrap_ws/build/test_joy/build', 'install', '--prefix', '/home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy', '--record', '/home/robot/Software/ROS2/Scrap/scrap_ws/build/test_joy/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Scrap/scrap_ws/src/test_joy', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 34192 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot/Software/ROS2/Scrap', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Scrap/scrap_ws/build/test_joy', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 34192 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages:/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[3.830116] (-) TimerEvent: {}
+[3.931012] (-) TimerEvent: {}
+[4.031675] (-) TimerEvent: {}
+[4.134519] (-) TimerEvent: {}
+[4.235208] (-) TimerEvent: {}
+[4.335971] (-) TimerEvent: {}
+[4.436595] (-) TimerEvent: {}
+[4.537218] (-) TimerEvent: {}
+[4.607725] (py_drive) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[4.608368] (py_drive) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.608777] (py_drive) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[4.609160] (py_drive) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.637435] (-) TimerEvent: {}
+[4.691171] (py_srvcli) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[4.691766] (py_srvcli) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.692340] (py_srvcli) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[4.692735] (py_srvcli) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.713261] (test_joy) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[4.713854] (test_joy) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.714474] (test_joy) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[4.714901] (test_joy) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.737600] (-) TimerEvent: {}
+[4.756923] (py_drive) StdoutLine: {'line': b'running egg_info\n'}
+[4.761376] (py_drive) StdoutLine: {'line': b'writing ../../build/py_drive/py_drive.egg-info/PKG-INFO\n'}
+[4.772876] (py_drive) StdoutLine: {'line': b'writing dependency_links to ../../build/py_drive/py_drive.egg-info/dependency_links.txt\n'}
+[4.782381] (py_drive) StdoutLine: {'line': b'writing entry points to ../../build/py_drive/py_drive.egg-info/entry_points.txt\n'}
+[4.790998] (py_drive) StdoutLine: {'line': b'writing requirements to ../../build/py_drive/py_drive.egg-info/requires.txt\n'}
+[4.802522] (py_drive) StdoutLine: {'line': b'writing top-level names to ../../build/py_drive/py_drive.egg-info/top_level.txt\n'}
+[4.837830] (-) TimerEvent: {}
+[4.838669] (py_srvcli) StdoutLine: {'line': b'running egg_info\n'}
+[4.842912] (py_srvcli) StdoutLine: {'line': b'writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO\n'}
+[4.856592] (py_srvcli) StdoutLine: {'line': b'writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt\n'}
+[4.868195] (py_srvcli) StdoutLine: {'line': b'writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt\n'}
+[4.871753] (test_joy) StdoutLine: {'line': b'running egg_info\n'}
+[4.875907] (test_joy) StdoutLine: {'line': b'writing ../../build/test_joy/test_joy.egg-info/PKG-INFO\n'}
+[4.877406] (py_srvcli) StdoutLine: {'line': b'writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt\n'}
+[4.886527] (test_joy) StdoutLine: {'line': b'writing dependency_links to ../../build/test_joy/test_joy.egg-info/dependency_links.txt\n'}
+[4.887220] (py_srvcli) StdoutLine: {'line': b'writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt\n'}
+[4.900644] (test_joy) StdoutLine: {'line': b'writing entry points to ../../build/test_joy/test_joy.egg-info/entry_points.txt\n'}
+[4.910985] (test_joy) StdoutLine: {'line': b'writing requirements to ../../build/test_joy/test_joy.egg-info/requires.txt\n'}
+[4.922391] (test_joy) StdoutLine: {'line': b'writing top-level names to ../../build/test_joy/test_joy.egg-info/top_level.txt\n'}
+[4.937998] (-) TimerEvent: {}
+[5.008526] (py_drive) StdoutLine: {'line': b"reading manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'\n"}
+[5.018653] (py_drive) StdoutLine: {'line': b"writing manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'\n"}
+[5.027585] (py_drive) StdoutLine: {'line': b'running build\n'}
+[5.028132] (py_drive) StdoutLine: {'line': b'running build_py\n'}
+[5.038123] (-) TimerEvent: {}
+[5.050587] (py_drive) StdoutLine: {'line': b'running install\n'}
+[5.056130] (py_drive) StdoutLine: {'line': b'running install_lib\n'}
+[5.083185] (py_drive) StdoutLine: {'line': b'running install_data\n'}
+[5.087193] (py_srvcli) StdoutLine: {'line': b"reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[5.095065] (py_drive) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.096184] (py_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[5.101253] (py_drive) StdoutLine: {'line': b"removing '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.104774] (py_srvcli) StdoutLine: {'line': b'running build\n'}
+[5.105259] (py_srvcli) StdoutLine: {'line': b'running build_py\n'}
+[5.120783] (test_joy) StdoutLine: {'line': b"reading manifest file '../../build/test_joy/test_joy.egg-info/SOURCES.txt'\n"}
+[5.126543] (py_srvcli) StdoutLine: {'line': b'running install\n'}
+[5.129783] (py_srvcli) StdoutLine: {'line': b'running install_lib\n'}
+[5.134204] (test_joy) StdoutLine: {'line': b"writing manifest file '../../build/test_joy/test_joy.egg-info/SOURCES.txt'\n"}
+[5.138277] (-) TimerEvent: {}
+[5.139449] (py_drive) StdoutLine: {'line': b'Copying ../../build/py_drive/py_drive.egg-info to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py_drive-0.0.0-py3.8.egg-info\n'}
+[5.142782] (test_joy) StdoutLine: {'line': b'running build\n'}
+[5.143250] (test_joy) StdoutLine: {'line': b'running build_py\n'}
+[5.158999] (test_joy) StdoutLine: {'line': b'copying test_joy/test_joy.py -> /home/robot/Software/ROS2/Scrap/scrap_ws/build/test_joy/build/lib/test_joy\n'}
+[5.166370] (py_srvcli) StdoutLine: {'line': b'running install_data\n'}
+[5.179536] (py_srvcli) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.185582] (py_srvcli) StdoutLine: {'line': b"removing '/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.187983] (test_joy) StdoutLine: {'line': b'running install\n'}
+[5.195164] (test_joy) StdoutLine: {'line': b'running install_lib\n'}
+[5.207843] (test_joy) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Scrap/scrap_ws/build/test_joy/build/lib/test_joy/test_joy.py -> /home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy\n'}
+[5.222312] (py_srvcli) StdoutLine: {'line': b'Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info\n'}
+[5.237428] (test_joy) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy/test_joy.py to test_joy.cpython-38.pyc\n'}
+[5.238386] (-) TimerEvent: {}
+[5.260865] (test_joy) StdoutLine: {'line': b'running install_data\n'}
+[5.273641] (test_joy) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.281310] (test_joy) StdoutLine: {'line': b"removing '/home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.285050] (py_drive) StdoutLine: {'line': b'running install_scripts\n'}
+[5.312683] (test_joy) StdoutLine: {'line': b'Copying ../../build/test_joy/test_joy.egg-info to /home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy-0.0.0-py3.8.egg-info\n'}
+[5.338591] (-) TimerEvent: {}
+[5.366437] (py_srvcli) StdoutLine: {'line': b'running install_scripts\n'}
+[5.370909] (py_drive) StdoutLine: {'line': b'Installing listener script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/py_drive\n'}
+[5.387009] (py_drive) StdoutLine: {'line': b'Installing talker script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/py_drive\n'}
+[5.409259] (py_drive) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_drive/install.log'\n"}
+[5.438741] (-) TimerEvent: {}
+[5.442111] (py_srvcli) StdoutLine: {'line': b'Installing client script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/py_srvcli\n'}
+[5.462831] (py_srvcli) StdoutLine: {'line': b'Installing service script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/py_srvcli\n'}
+[5.469369] (test_joy) StdoutLine: {'line': b'running install_scripts\n'}
+[5.486125] (py_srvcli) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/install.log'\n"}
+[5.525135] (py_drive) CommandEnded: {'returncode': 0}
+[5.538920] (-) TimerEvent: {}
+[5.556135] (test_joy) StdoutLine: {'line': b'Installing listener script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/test_joy\n'}
+[5.570916] (test_joy) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Scrap/scrap_ws/build/test_joy/install.log'\n"}
+[5.639108] (-) TimerEvent: {}
+[5.739757] (-) TimerEvent: {}
+[5.763184] (py_drive) JobEnded: {'identifier': 'py_drive', 'rc': 0}
+[5.809615] (py_srvcli) CommandEnded: {'returncode': 0}
+[5.843021] (-) TimerEvent: {}
+[5.943610] (-) TimerEvent: {}
+[5.977640] (py_srvcli) JobEnded: {'identifier': 'py_srvcli', 'rc': 0}
+[6.019464] (test_joy) CommandEnded: {'returncode': 0}
+[6.044079] (-) TimerEvent: {}
+[6.149395] (-) TimerEvent: {}
+[6.176130] (test_joy) JobEnded: {'identifier': 'test_joy', 'rc': 0}
+[6.217516] (-) EventReactorShutdown: {}
