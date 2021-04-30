@@ -1,0 +1,35 @@
+[2.249s] Invoking command in '/home/robot/Software/ROS2/Scrap/scrap_ws/src/build/web_video_server': /usr/bin/cmake /home/robot/Software/ROS2/Scrap/scrap_ws/src/web_video_server -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/robot/Software/ROS2/Scrap/scrap_ws/src/install/web_video_server
+[3.657s] -- The C compiler identification is GNU 9.3.0
+[4.621s] -- The CXX compiler identification is GNU 9.3.0
+[4.719s] -- Check for working C compiler: /usr/bin/cc
+[5.572s] -- Check for working C compiler: /usr/bin/cc -- works
+[5.612s] -- Detecting C compiler ABI info
+[6.457s] -- Detecting C compiler ABI info - done
+[6.556s] -- Detecting C compile features
+[6.558s] -- Detecting C compile features - done
+[6.621s] -- Check for working CXX compiler: /usr/bin/c++
+[7.506s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[7.523s] -- Detecting CXX compiler ABI info
+[8.496s] -- Detecting CXX compiler ABI info - done
+[8.611s] -- Detecting CXX compile features
+[8.613s] -- Detecting CXX compile features - done
+[8.756s] CMake Error at CMakeLists.txt:7 (find_package):
+[8.757s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[8.758s]   asked CMake to find a package configuration file provided by "catkin", but
+[8.758s]   CMake did not find one.
+[8.758s] 
+[8.758s]   Could not find a package configuration file provided by "catkin" with any
+[8.759s]   of the following names:
+[8.759s] 
+[8.759s]     catkinConfig.cmake
+[8.760s]     catkin-config.cmake
+[8.760s] 
+[8.760s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[8.760s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[8.761s]   provides a separate development package or SDK, be sure it has been
+[8.761s]   installed.
+[8.761s] 
+[8.762s] 
+[8.766s] -- Configuring incomplete, errors occurred!
+[8.767s] See also "/home/robot/Software/ROS2/Scrap/scrap_ws/src/build/web_video_server/CMakeFiles/CMakeOutput.log".
+[8.814s] Invoked command in '/home/robot/Software/ROS2/Scrap/scrap_ws/src/build/web_video_server' returned '1': /usr/bin/cmake /home/robot/Software/ROS2/Scrap/scrap_ws/src/web_video_server -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/robot/Software/ROS2/Scrap/scrap_ws/src/install/web_video_server
