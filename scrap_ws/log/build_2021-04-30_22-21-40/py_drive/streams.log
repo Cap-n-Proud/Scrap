@@ -1,0 +1,19 @@
+[1.727s] Invoking command in '/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_drive': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_drive --editable --build-directory /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_drive/build --no-deps install_data --install-dir /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_drive
+[2.233s] running develop
+[2.541s] running egg_info
+[2.543s] writing py_drive.egg-info/PKG-INFO
+[2.564s] writing dependency_links to py_drive.egg-info/dependency_links.txt
+[2.580s] writing entry points to py_drive.egg-info/entry_points.txt
+[2.596s] writing requirements to py_drive.egg-info/requires.txt
+[2.609s] writing top-level names to py_drive.egg-info/top_level.txt
+[2.713s] reading manifest file 'py_drive.egg-info/SOURCES.txt'
+[2.734s] writing manifest file 'py_drive.egg-info/SOURCES.txt'
+[2.804s] running build_ext
+[2.806s] Creating /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/site.py
+[2.855s] Creating /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages/py-drive.egg-link (link to .)
+[2.889s] Installing listener script to /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/py_drive
+[2.908s] Installing talker script to /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/py_drive
+[2.932s] 
+[2.932s] Installed /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_drive
+[2.939s] running install_data
+[2.985s] Invoked command in '/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_drive' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_drive --editable --build-directory /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/py_drive/build --no-deps install_data --install-dir /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/py_drive

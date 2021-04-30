@@ -11,7 +11,11 @@ setup.py
 py_drive/__init__.py
 py_drive/drive.py
 py_drive/publisher_member_function.py
+py_drive.egg-info/PKG-INFO
+py_drive.egg-info/SOURCES.txt
+py_drive.egg-info/dependency_links.txt
+py_drive.egg-info/entry_points.txt
+py_drive.egg-info/requires.txt
+py_drive.egg-info/top_level.txt
+py_drive.egg-info/zip-safe
 resource/py_drive
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

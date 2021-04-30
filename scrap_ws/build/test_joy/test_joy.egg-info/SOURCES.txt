@@ -9,8 +9,12 @@ setup.py
 ../../build/test_joy/test_joy.egg-info/top_level.txt
 ../../build/test_joy/test_joy.egg-info/zip-safe
 resource/test_joy
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
 test_joy/__init__.py
 test_joy/test_joy.py
+test_joy.egg-info/PKG-INFO
+test_joy.egg-info/SOURCES.txt
+test_joy.egg-info/dependency_links.txt
+test_joy.egg-info/entry_points.txt
+test_joy.egg-info/requires.txt
+test_joy.egg-info/top_level.txt
+test_joy.egg-info/zip-safe
