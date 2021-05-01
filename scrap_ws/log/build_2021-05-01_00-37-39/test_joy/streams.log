@@ -1,0 +1,37 @@
+[1.829s] Invoking command in '/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/src/test_joy': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_joy build --build-base /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/test_joy/build install --prefix /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy --record /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/test_joy/install.log --single-version-externally-managed
+[2.308s] running egg_info
+[2.312s] creating ../../build/test_joy/test_joy.egg-info
+[2.320s] writing ../../build/test_joy/test_joy.egg-info/PKG-INFO
+[2.352s] writing dependency_links to ../../build/test_joy/test_joy.egg-info/dependency_links.txt
+[2.380s] writing entry points to ../../build/test_joy/test_joy.egg-info/entry_points.txt
+[2.392s] writing requirements to ../../build/test_joy/test_joy.egg-info/requires.txt
+[2.401s] writing top-level names to ../../build/test_joy/test_joy.egg-info/top_level.txt
+[2.436s] writing manifest file '../../build/test_joy/test_joy.egg-info/SOURCES.txt'
+[2.566s] reading manifest file '../../build/test_joy/test_joy.egg-info/SOURCES.txt'
+[2.583s] writing manifest file '../../build/test_joy/test_joy.egg-info/SOURCES.txt'
+[2.595s] running build
+[2.597s] running build_py
+[2.607s] creating /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/test_joy/build
+[2.611s] creating /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/test_joy/build/lib
+[2.615s] creating /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/test_joy/build/lib/test_joy
+[2.627s] copying test_joy/test_joy.py -> /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/test_joy/build/lib/test_joy
+[2.661s] copying test_joy/__init__.py -> /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/test_joy/build/lib/test_joy
+[2.675s] running install
+[2.679s] running install_lib
+[2.708s] creating /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy
+[2.728s] copying /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/test_joy/build/lib/test_joy/test_joy.py -> /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy
+[2.760s] copying /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/test_joy/build/lib/test_joy/__init__.py -> /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy
+[2.791s] byte-compiling /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy/test_joy.py to test_joy.cpython-38.pyc
+[2.842s] byte-compiling /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy/__init__.py to __init__.cpython-38.pyc
+[2.877s] running install_data
+[2.886s] creating /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/share/ament_index
+[2.893s] creating /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/share/ament_index/resource_index
+[2.905s] creating /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/share/ament_index/resource_index/packages
+[2.918s] copying resource/test_joy -> /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/share/ament_index/resource_index/packages
+[2.940s] copying package.xml -> /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/share/test_joy
+[2.973s] running install_egg_info
+[3.008s] Copying ../../build/test_joy/test_joy.egg-info to /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages/test_joy-0.0.0-py3.8.egg-info
+[3.270s] running install_scripts
+[3.317s] Installing listener script to /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/test_joy
+[3.336s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/test_joy/install.log'
+[3.384s] Invoked command in '/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/src/test_joy' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_joy build --build-base /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/test_joy/build install --prefix /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/install/test_joy --record /home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/build/test_joy/install.log --single-version-externally-managed

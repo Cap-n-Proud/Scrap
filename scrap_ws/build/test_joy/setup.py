@@ -1,1 +1,1 @@
-/home/paolo/NAS/Software/ROS2/Scrap/scrap_ws/src/test_joy/setup.py
+/home/robot/Software/ROS2/Scrap/scrap_ws/src/test_joy/setup.py

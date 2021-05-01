@@ -1,0 +1,13 @@
+
+[Unit]
+Description=JetBot stats display service
+
+[Service]
+Type=simple
+User=robot
+ExecStart=/bin/sh -c "python3 -m jetbot.apps.stats"
+WorkingDirectory=/home/robot
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

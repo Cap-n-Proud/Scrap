@@ -51,6 +51,8 @@
 </head>
 
 <body>
+
+
   <div id="container" ontouchend="mouseUp()" ontouchstart="mouseDown()" onmouseup="mouseUp()" onmousedown="mouseDown()"></div>
   <div id="info">
 
@@ -73,7 +75,11 @@
 
   </div>
   <span id="publisher"></span>
-
+  <button type="button" onclick="fwd()">FWD</button>
+  <button type="button" onclick="bck()">dwn</button>
+  <button type="button" onclick="lft()">lft</button>
+  <button type="button" onclick="rgt()">rgt</button>
+  <button type="button" onclick="stp()">STP</button>
   <script>
     var prevX, prevY;
     var joystick = new VirtualJoystick({
@@ -143,6 +149,53 @@
     }, 1 / 30 * 1000);
 
 
+    function fwd() {
+      var message = String("1", "0")
+      console.log(message)
+      m.publish({
+        data: message
+      });
+    }
+
+    function fwd() {
+      var message = String("1,0")
+      console.log(message)
+      m.publish({
+        data: message
+      });
+    }
+
+    function bck() {
+      var message = String("-1,0")
+      console.log(message)
+      m.publish({
+        data: message
+      });
+    }
+
+    function lft() {
+      var message = String("0,1")
+      console.log(message)
+      m.publish({
+        data: message
+      });
+    }
+
+    function rgt() {
+      var message = String("0,-1")
+      console.log(message)
+      m.publish({
+        data: message
+      });
+    }
+
+    function stp() {
+      var message = String("0,0")
+      console.log(message)
+      m.publish({
+        data: message
+      });
+    }
 
     function mouseDown() {
       document.getElementById("container").style.color = "red";
@@ -151,7 +204,7 @@
 
     function mouseUp() {
       document.getElementById("container").style.color = "black";
-      var message = String(0) + "," + String(0)
+      var message = String("0,0")
       console.log(message)
       m.publish({
         data: message

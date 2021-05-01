@@ -14,6 +14,7 @@
 
 import rclpy
 from rclpy.node import Node
+import board
 
 from std_msgs.msg import String
 from std_msgs.msg import Int32MultiArray, Int16
@@ -21,6 +22,9 @@ from sensor_msgs.msg import Joy
 
 import time
 import argparse
+
+# import traitlets
+# from traitlets.config.configurable import SingletonConfigurable
 
 
 # https://github.com/adafruit/Adafruit_CircuitPython_MotorKit.git
@@ -31,9 +35,9 @@ class Robot(Node):
         self,
         simulation=False,
         debug=False,
-        steer_gain=0.5,
+        steer_gain=0.4,
         speed_limit=0.3,
-        left_trim=0,
+        left_trim=-0,
         right_trim=0,
     ):
         super().__init__("robot")
@@ -47,9 +51,12 @@ class Robot(Node):
         self.joy_topic = self.create_subscription(Joy, "joy", self.joy_topic, 10)
         self.joy_web = self.create_subscription(String, "joy_web", self.joy_web, 10)
         if not self.simulation:
+            import board
             from adafruit_motorkit import MotorKit
 
-            self.kit = MotorKit()
+            self.kit = MotorKit(i2c=board.I2C())
+            self.kit.motor1.throttle = 0
+            self.kit.motor2.throttle = 0
 
     def set_steer_gain(self, steer_gain):
         self.steer_gain = steer_gain
@@ -63,39 +70,44 @@ class Robot(Node):
     def set_right_trim(self, right_trim):
         self.right_trim = right_trim
 
-    def move(self, x, y):
-        speedL = (
-            max(
-                -self.speed_limit,
-                min(self.speed_limit, float(y) + self.steer_gain * float(x)),
-            )
-            + self.left_trim
-        )
-        speedR = (
-            max(
-                -self.speed_limit,
-                min(self.speed_limit, float(y) - self.steer_gain * float(x)),
-            )
-            + self.right_trim
-        )
-        if self.simulation:
-            self.get_logger().info('Left speed se to: "%s"' % speedL)
-            self.get_logger().info('Right speed se to: "%s"' % speedR)
-        else:
-            kit.motor1.throttle = max(-1, min(1, speedL))
-            kit.motor2.throttle = max(-1, min(1, speedR))
+    def move(self, speed, steer):
+        speed_l = float(speed) + self.steer_gain * float(steer) - self.left_trim
+        speed_r = float(speed) - self.steer_gain * float(steer) - self.right_trim
+        if abs(speed_l) > self.speed_limit:
+            speed_l = (speed_l / abs(speed_l)) * self.speed_limit
+        if abs(speed_r) > self.speed_limit:
+            speed_r = (speed_r / abs(speed_r)) * self.speed_limit
+        self.kit.motor1.throttle = speed_l
+        self.kit.motor2.throttle = -speed_r
+        # print(speed, steer, speed_l, speed_r)
 
     def joy_topic(self, msg):
         if self.debug:
             self.get_logger().info(
                 "joy X: " + str(msg.axes[0]) + " Y: " + str(msg.axes[1])
             )
-        if msg.axes[0] != 0 or msg.axes[1] != 0:
-            self.move(msg.axes[0], msg.axes[1])
+        if abs(msg.axes[0]) >= 0.1 or abs(msg.axes[1]) >= 0.1:
+            self.move(msg.axes[1], msg.axes[0])
+        else:
+            if self.debug:
+                self.get_logger().info("Motors stopped")
+
+            self.move(0, 0)
+
+        if msg.axes[7] != 0:
+            self.move(msg.axes[7] * self.speed_limit - self.left_trim)
+            self.move(-msg.axes[7] * self.speed_limit - self.left_trim)
+        if msg.axes[6] != 0:
+            self.move(msg.axes[6] * self.speed_limit - self.left_trim)
+            self.move(-msg.axes[6] * self.speed_limit - self.left_trim)
+        if msg.buttons[2] == 1:
+            self.kit.motor1.throttle = 0
+            self.kit.motor2.throttle = 0
 
     def joy_web(self, msg):
         speed = msg.data.split(",")
         self.move(speed[0], speed[1])
+        # print(msg.data)
 
 
 def main(args=None):

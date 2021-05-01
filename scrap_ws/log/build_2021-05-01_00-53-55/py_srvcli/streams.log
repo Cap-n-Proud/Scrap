@@ -1,0 +1,29 @@
+[3.436s] Invoking command in '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli': PYTHONPATH=/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli --editable --build-directory /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/build --no-deps install_data --install-dir /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli
+[4.241s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.241s]   warnings.warn(
+[4.242s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[4.242s]   warnings.warn(
+[4.471s] running develop
+[5.001s] running egg_info
+[5.004s] creating py_srvcli.egg-info
+[5.008s] writing py_srvcli.egg-info/PKG-INFO
+[5.033s] writing dependency_links to py_srvcli.egg-info/dependency_links.txt
+[5.046s] writing entry points to py_srvcli.egg-info/entry_points.txt
+[5.058s] writing requirements to py_srvcli.egg-info/requires.txt
+[5.068s] writing top-level names to py_srvcli.egg-info/top_level.txt
+[5.088s] writing manifest file 'py_srvcli.egg-info/SOURCES.txt'
+[5.267s] reading manifest file 'py_srvcli.egg-info/SOURCES.txt'
+[5.278s] writing manifest file 'py_srvcli.egg-info/SOURCES.txt'
+[5.460s] running build_ext
+[5.461s] Creating /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages/py-srvcli.egg-link (link to .)
+[5.485s] Installing client script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/py_srvcli
+[5.499s] Installing service script to /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/py_srvcli
+[5.515s] 
+[5.516s] Installed /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli
+[5.519s] running install_data
+[5.522s] creating /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/share/ament_index
+[5.524s] creating /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/share/ament_index/resource_index
+[5.528s] creating /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/share/ament_index/resource_index/packages
+[5.536s] copying resource/py_srvcli -> /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/share/ament_index/resource_index/packages
+[5.548s] copying package.xml -> /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/share/py_srvcli
+[6.448s] Invoked command in '/home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli --editable --build-directory /home/robot/Software/ROS2/Scrap/scrap_ws/build/py_srvcli/build --no-deps install_data --install-dir /home/robot/Software/ROS2/Scrap/scrap_ws/install/py_srvcli
