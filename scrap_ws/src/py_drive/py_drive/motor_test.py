@@ -7,9 +7,9 @@ import board
 from adafruit_motorkit import MotorKit
 
 kit = MotorKit(i2c=board.I2C())
-
+time.sleep(1)
 kit.motor1.throttle = 0.3
-kit.motor2.throttle = -0.3
+kit.motor2.throttle = -0.29
 time.sleep(3.5)
 kit.motor1.throttle = 0
 kit.motor2.throttle = 0

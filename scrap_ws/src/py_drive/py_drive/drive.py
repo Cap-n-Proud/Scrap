@@ -38,7 +38,7 @@ class Robot(Node):
         steer_gain=0.4,
         speed_limit=0.3,
         left_trim=-0,
-        right_trim=0,
+        right_trim=0.1,
     ):
         super().__init__("robot")
 
@@ -71,15 +71,16 @@ class Robot(Node):
         self.right_trim = right_trim
 
     def move(self, speed, steer):
-        speed_l = float(speed) + self.steer_gain * float(steer) - self.left_trim
-        speed_r = float(speed) - self.steer_gain * float(steer) - self.right_trim
-        if abs(speed_l) > self.speed_limit:
-            speed_l = (speed_l / abs(speed_l)) * self.speed_limit
-        if abs(speed_r) > self.speed_limit:
-            speed_r = (speed_r / abs(speed_r)) * self.speed_limit
-        self.kit.motor1.throttle = speed_l
-        self.kit.motor2.throttle = -speed_r
-        # print(speed, steer, speed_l, speed_r)
+        if abs(float(speed)) > 0 or abs(float(steer)) > 0:
+            speed_l = float(speed) + self.steer_gain * float(steer) - self.left_trim
+            speed_r = float(speed) - self.steer_gain * float(steer) - self.right_trim
+            if abs(speed_l) > self.speed_limit:
+                speed_l = (speed_l / abs(speed_l)) * self.speed_limit
+            if abs(speed_r) > self.speed_limit:
+                speed_r = (speed_r / abs(speed_r)) * self.speed_limit
+            self.kit.motor1.throttle = speed_l
+            self.kit.motor2.throttle = -speed_r
+            # print(speed, steer, speed_l, speed_r)
 
     def joy_topic(self, msg):
         if self.debug:
