@@ -14,8 +14,7 @@
 
 import rclpy
 from rclpy.node import Node
-
-# import board
+import board
 
 from std_msgs.msg import String
 from std_msgs.msg import Int32MultiArray, Int16
@@ -51,9 +50,32 @@ class Robot(Node, SingletonConfigurable):
         self.joy_topic = self.create_subscription(Joy, "joy", self.joy_topic, 10)
         self.joy_web = self.create_subscription(String, "joy_web", self.joy_web, 10)
         if not self.simulation:
-            from .motors import M
+            from Adafruit_MotorHAT import Adafruit_MotorHAT
+            from .motor import Motor
 
-            self.motors = M()
+            self.left_motor = traitlets.Instance(Motor)
+            self.right_motor = traitlets.Instance(Motor)
+            self.i2c_bus = traitlets.Integer(default_value=1).tag(config=True)
+            self.left_motor_channel = traitlets.Integer(default_value=1).tag(
+                config=True
+            )
+            self.left_motor_alpha = traitlets.Float(default_value=1.0).tag(config=True)
+            self.right_motor_channel = traitlets.Integer(default_value=2).tag(
+                config=True
+            )
+            self.right_motor_alpha = traitlets.Float(default_value=1.0).tag(config=True)
+
+            self.motor_driver = Adafruit_MotorHAT(i2c_bus=self.i2c_bus)
+            self.left_motor = Motor(
+                self.motor_driver,
+                channel=self.left_motor_channel,
+                alpha=self.left_motor_alpha,
+            )
+            self.right_motor = Motor(
+                self.motor_driver,
+                channel=self.right_motor_channel,
+                alpha=self.right_motor_alpha,
+            )
 
     def set_steer_gain(self, steer_gain):
         self.steer_gain = steer_gain
@@ -68,16 +90,17 @@ class Robot(Node, SingletonConfigurable):
         self.right_trim = right_trim
 
     def move(self, speed, steer):
-        speed_l = float(speed) + self.steer_gain * float(steer) - self.left_trim
-        speed_r = float(speed) - self.steer_gain * float(steer) - self.right_trim
-        if abs(speed_l) > self.speed_limit:
-            speed_l = (speed_l / abs(speed_l)) * self.speed_limit
-        if abs(speed_r) > self.speed_limit:
-            speed_r = (speed_r / abs(speed_r)) * self.speed_limit
-        if not self.simulation:
-            self.motors.set_motors(speed_l, speed_r)
-        else:
-            print(speed, steer, speed_l, speed_r)
+        if abs(float(speed)) > 0 or abs(float(steer)) > 0:
+            speed_l = float(speed) + self.steer_gain * float(steer) - self.left_trim
+            speed_r = float(speed) - self.steer_gain * float(steer) - self.right_trim
+            if abs(speed_l) > self.speed_limit:
+                speed_l = (speed_l / abs(speed_l)) * self.speed_limit
+            if abs(speed_r) > self.speed_limit:
+                speed_r = (speed_r / abs(speed_r)) * self.speed_limit
+            self.left_motor.value = speed_l
+            self.right_motor.value = speed_r
+
+            # print(speed, steer, speed_l, speed_r)
 
     def joy_topic(self, msg):
         if self.debug:
@@ -104,7 +127,7 @@ class Robot(Node, SingletonConfigurable):
 
     def joy_web(self, msg):
         speed = msg.data.split(",")
-        self.move(speed[1], speed[0])
+        self.move(speed[0], speed[1])
         # print(msg.data)
 
 

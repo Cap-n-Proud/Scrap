@@ -130,7 +130,7 @@
       if (joystick.deltaX() != 0 || joystick.deltaY() != 0) {
 
         // socket.emit('move', 100 * joystick.deltaX() / 250, +100 * joystick.deltaY() / 250);
-        var message = String((1 * joystick.deltaY() / 150).toFixed(2)) + "," + String((1 * joystick.deltaX() / 150).toFixed(2))
+        var message = String((1 * joystick.deltaX() / 150).toFixed(2)) + "," + String((-1 * joystick.deltaY() / 150).toFixed(2))
         // console.log(message)
         m.publish({
           data: message
@@ -150,43 +150,44 @@
 
 
     function fwd() {
-      var message = String("1", "0")
-      console.log(message)
-      m.publish({
-        data: message
-      });
-    }
-
-    function fwd() {
-      var message = String("1,0")
-      console.log(message)
-      m.publish({
-        data: message
-      });
-    }
-
-    function bck() {
-      var message = String("-1,0")
-      console.log(message)
-      m.publish({
-        data: message
-      });
-    }
-
-    function lft() {
-      var message = String("0,-1")
-      console.log(message)
-      m.publish({
-        data: message
-      });
-    }
-
-    function rgt() {
       var message = String("0,1")
       console.log(message)
       m.publish({
         data: message
       });
+      document.getElementById("publisher").innerText = message;
+
+    }
+
+
+    function bck() {
+      var message = String("0,-1")
+      console.log(message)
+      m.publish({
+        data: message
+      });
+      document.getElementById("publisher").innerText = message;
+
+    }
+
+    function lft() {
+      var message = String("-1,0")
+      console.log(message)
+      m.publish({
+        data: message
+      });
+      document.getElementById("publisher").innerText = message;
+
+    }
+
+    function rgt() {
+      var message = String("1,0")
+      console.log(message)
+      m.publish({
+        data: message
+      });
+      document.getElementById("publisher").innerText = message;
+
     }
 
     function stp() {
@@ -195,6 +196,8 @@
       m.publish({
         data: message
       });
+      document.getElementById("publisher").innerText = message;
+
     }
 
     function mouseDown() {

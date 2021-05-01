@@ -1,3 +1,0 @@
-[console_scripts]
-listener = test_joy.test_joy:main
-
