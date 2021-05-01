@@ -84,23 +84,16 @@ class Robot(Node, SingletonConfigurable):
             self.get_logger().info(
                 "joy X: " + str(msg.axes[0]) + " Y: " + str(msg.axes[1])
             )
-        if abs(msg.axes[0]) >= 0.1 or abs(msg.axes[1]) >= 0.1:
-            self.move(msg.axes[1], msg.axes[0])
-        else:
-            if self.debug:
-                self.get_logger().info("Motors stopped")
-
-            self.move(0, 0)
+        self.move(msg.axes[1], -msg.axes[0])
 
         if msg.axes[7] != 0:
-            self.move(msg.axes[7] * self.speed_limit - self.left_trim)
-            self.move(-msg.axes[7] * self.speed_limit - self.left_trim)
+            self.move(msg.axes[7] * self.speed_limit - self.left_trim, 0)
+
         if msg.axes[6] != 0:
-            self.move(msg.axes[6] * self.speed_limit - self.left_trim)
-            self.move(-msg.axes[6] * self.speed_limit - self.left_trim)
+            self.move(0, msg.axes[6] * self.speed_limit - self.left_trim)
+
         if msg.buttons[2] == 1:
-            self.kit.motor1.throttle = 0
-            self.kit.motor2.throttle = 0
+            self.move(0, 0)
 
     def joy_web(self, msg):
         speed = msg.data.split(",")
