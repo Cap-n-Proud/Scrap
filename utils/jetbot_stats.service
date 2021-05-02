@@ -1,13 +1,14 @@
-
-[Unit]
-Description=JetBot stats display service
+Unit]
+Description = Python script to display information
+After = network.target # Assuming you want to start after network interfaces are made available
 
 [Service]
-Type=simple
-User=robot
-ExecStart=/bin/sh -c "python3 -m jetbot.apps.stats"
-WorkingDirectory=/home/robot
-Restart=always
+Type = simple
+ExecStart = /usr/bin/python3 /home/robot/Scrap/scrap_ws/src/py_drive/py_drive/libs/stat.py
+User = root # User to run the script as
+Restart = on-failure # Restart when there are errors
+RestartSec = 5
+TimeoutStartSec = infinity
 
 [Install]
-WantedBy=multi-user.target
+WantedBy = multi-user.target # Make it accessible to other users
