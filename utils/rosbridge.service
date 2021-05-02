@@ -1,10 +1,10 @@
 Unit]
-Description = Python script to display information
+Description = Python script to start rosbridge service
 After = network.target # Assuming you want to start after network interfaces are made available
 
 [Service]
 Type = simple
-ExecStart = /usr/bin/python3 /home/robot/Scrap/scrap_ws/src/py_drive/py_drive/libs/stats.py
+ExecStart = /usr/bin/node /home/robot/Scrap/scrap_ws/src/ros2-web-bridge/bin/rosbridge.js
 User = root # User to run the script as
 Restart = on-failure # Restart when there are errors
 RestartSec = 5
