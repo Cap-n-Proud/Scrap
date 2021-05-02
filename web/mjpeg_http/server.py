@@ -42,6 +42,7 @@ class CameraHandler(BaseHTTPRequestHandler):
             self.send_header("Content-type", "text/html")
             self.end_headers()
             with open(self.document_root + "/index.html", "r") as f:
+
                 self.wfile.write(f.read().encode())
         logger.info("thread is stopping ... [{path}]".format(path=self.path))
 

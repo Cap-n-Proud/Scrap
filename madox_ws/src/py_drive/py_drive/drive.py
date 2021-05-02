@@ -90,7 +90,7 @@ class Robot(Node, SingletonConfigurable):
             self.move(msg.axes[7] * self.speed_limit - self.left_trim, 0)
 
         if msg.axes[6] != 0:
-            self.move(0, msg.axes[6] * self.speed_limit - self.left_trim)
+            self.move(0, -(msg.axes[6] * self.speed_limit - self.left_trim))
 
         if msg.buttons[2] == 1:
             self.move(0, 0)
