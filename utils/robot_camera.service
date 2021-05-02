@@ -1,0 +1,14 @@
+Unit]
+Description = Python script to start robot CAMER WEB STREAMING
+After = network.target # Assuming you want to start after network interfaces are made available
+
+[Service]
+Type = simple
+ExecStart = /usr/bin/python3 /home/robot/Scrap/web/index.js/home/robot/Scrap/web/mjpeg_http/mjpeg_http/server.py --bind 192.168.1.164
+User = root # User to run the script as
+Restart = on-failure # Restart when there are errors
+RestartSec = 5
+TimeoutStartSec = infinity
+
+[Install]
+WantedBy = multi-user.target # Make it accessible to other users
