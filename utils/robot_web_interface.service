@@ -1,5 +1,5 @@
 Unit]
-Description = Python script to start rosbridge service
+Description = Python script to start robot web interface
 After = network.target # Assuming you want to start after network interfaces are made available
 
 [Service]
