@@ -1,14 +1,14 @@
-Unit]
+[Unit]
 Description = Python script to start robot camera web streaming on port 8080
-After = network.target # Assuming you want to start after network interfaces are made available
+After = network.target
 
 [Service]
 Type = simple
 ExecStart = /usr/bin/python3  /home/robot/Madox/web/mjpeg_http/server.py --bind 192.168.1.164
-User = root # User to run the script as
-Restart = on-failure # Restart when there are errors
+User = robot 
+Restart = on-failure
 RestartSec = 5
 TimeoutStartSec = infinity
 
 [Install]
-WantedBy = multi-user.target # Make it accessible to other users
+WantedBy = multi-user.target

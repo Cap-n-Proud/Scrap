@@ -63,7 +63,7 @@ class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--bind", type=str, default="127.0.0.1")
+    parser.add_argument("--bind", type=str, default="192.168.1.164")
     parser.add_argument("--port", type=int, default=8080)
     parser.add_argument("--width", type=int, default=320)
     parser.add_argument("--height", type=int, default=240)
