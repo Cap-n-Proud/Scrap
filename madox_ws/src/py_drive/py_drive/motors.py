@@ -2,7 +2,7 @@ import time
 import traitlets
 from traitlets.config.configurable import SingletonConfigurable
 from Adafruit_MotorHAT import Adafruit_MotorHAT
-from .motor import Motor
+from .motor_class import Motor
 
 
 class M(SingletonConfigurable):

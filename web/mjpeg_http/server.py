@@ -1,4 +1,6 @@
 import argparse
+import cv2
+import time
 
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from socketserver import ThreadingMixIn
@@ -17,15 +19,19 @@ class CameraHandler(BaseHTTPRequestHandler):
         self.camera = server.get_camera()
         super(CameraHandler, self).__init__(request, client_address, server)
 
+
     def do_GET(self):
         if self.path == URL_PATH_MJPG:
             self.send_response(200)
+
             self.send_header(
                 "Content-type", "multipart/x-mixed-replace; boundary=--jpgboundary"
             )
             self.end_headers()
+            diff_fps=1
             while self.camera.is_opened():
-                jpg = self.camera.read_in_jpeg(SLEEP_IN_SEC)
+                start_fps=time.time()
+                jpg = self.camera.read_in_jpeg(SLEEP_IN_SEC,1/diff_fps)
                 if jpg is None:
                     continue
                 self.wfile.write("--jpgboundary".encode())
@@ -33,6 +39,9 @@ class CameraHandler(BaseHTTPRequestHandler):
                 self.send_header("Content-length", str(jpg.nbytes))
                 self.end_headers()
                 self.wfile.write(jpg)
+                endtime_fps=time.time()
+                diff_fps=endtime_fps-start_fps
+
         elif self.path == URL_PATH_FAVICON:
             self.send_response(404)
             self.end_headers()
@@ -65,8 +74,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--bind", type=str, default="192.168.1.164")
     parser.add_argument("--port", type=int, default=8080)
-    parser.add_argument("--width", type=int, default=320)
-    parser.add_argument("--height", type=int, default=240)
+    parser.add_argument("--width", type=int, default=640)
+    parser.add_argument("--height", type=int, default=480)
     parser.add_argument("--directory", type=str, default="html")
     parser.add_argument("--device-index", type=int, default=0)
     args = parser.parse_args()

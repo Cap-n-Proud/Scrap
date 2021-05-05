@@ -50,9 +50,31 @@ class Camera(metaclass=Singleton):
         self.cap = cv2.VideoCapture(
             "nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)320, height=(int)200,format=(string)NV12, framerate=(fraction)15/1 ! nvvidconv ! video/x-raw, format=(string)BGRx ! videoconvert !  appsink"
         )
-
         # self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
         # self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
+
+    def drawCrosshair(ret, frame):
+        w = 320
+        h= 200
+        size = 10
+
+        cv2.line(img=frame, pt1= (int(w/2 - size), int(h/2)), pt2= (int(w/2 - 2*size), int(h/2)), color =(255,255,0),thickness = 1, lineType = 8, shift = 0)
+        cv2.line(img=frame, pt1= (int(w/2 + size), int(h/2)), pt2= (int(w/2 + 2*size), int(h/2)), color =(255,255,0),thickness = 1, lineType = 8, shift = 0)
+        cv2.line(img=frame, pt1= (int(w/2), int(h/2)-size), pt2= (int(w/2), int(h/2)-2*size), color =(255,255,0),thickness = 1, lineType = 8, shift = 0)
+        cv2.line(img=frame, pt1= (int(w/2), int(h/2)+size), pt2= (int(w/2), int(h/2)+2*size), color =(255,255,0),thickness = 1, lineType = 8, shift = 0)
+
+    def drawOverlay(ret, frame,f):
+        thickness= 8
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        font_size = 0.3
+        GREEN = (255,255,0)
+        font_color = GREEN
+        font_thickness = 1
+        w = 320
+        h= 200
+        cv2.putText(frame, str(int(f)), (w-20,h-20), font, font_size, font_color, font_thickness, cv2.LINE_AA)
+
+
 
     def read(self, sleep_in_sec):
         self._read_lock.acquire()
@@ -61,11 +83,14 @@ class Camera(metaclass=Singleton):
         self._read_lock.release()
         return result
 
-    def read_in_jpeg(self, sleep_in_sec):
+    def read_in_jpeg(self,sleep_in_sec,f):
         ret, frame = self.read(sleep_in_sec)
+        self.drawCrosshair(frame)
+        self.drawOverlay(frame,f)
         if not ret:
             return None
         ret, jpg = cv2.imencode(".jpg", frame)
+
         if not ret:
             return None
         return jpg
