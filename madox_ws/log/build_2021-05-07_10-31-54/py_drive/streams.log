@@ -1,0 +1,29 @@
+[1.321s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/build/py_drive': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build --no-deps install_data --install-dir /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive
+[2.089s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.089s]   warnings.warn(
+[2.090s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[2.090s]   warnings.warn(
+[2.295s] running develop
+[2.819s] running egg_info
+[2.822s] creating py_drive.egg-info
+[2.829s] writing py_drive.egg-info/PKG-INFO
+[2.861s] writing dependency_links to py_drive.egg-info/dependency_links.txt
+[2.878s] writing entry points to py_drive.egg-info/entry_points.txt
+[2.894s] writing requirements to py_drive.egg-info/requires.txt
+[2.908s] writing top-level names to py_drive.egg-info/top_level.txt
+[2.930s] writing manifest file 'py_drive.egg-info/SOURCES.txt'
+[3.126s] reading manifest file 'py_drive.egg-info/SOURCES.txt'
+[3.140s] writing manifest file 'py_drive.egg-info/SOURCES.txt'
+[3.317s] running build_ext
+[3.318s] Creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py-drive.egg-link (link to .)
+[3.347s] Installing listener script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/py_drive
+[3.366s] Installing talker script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/py_drive
+[3.386s] 
+[3.387s] Installed /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive
+[3.392s] running install_data
+[3.395s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/share/ament_index
+[3.396s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/share/ament_index/resource_index
+[3.401s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/share/ament_index/resource_index/packages
+[3.411s] copying resource/py_drive -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/share/ament_index/resource_index/packages
+[3.425s] copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/share/py_drive
+[3.568s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/build/py_drive' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build --no-deps install_data --install-dir /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive

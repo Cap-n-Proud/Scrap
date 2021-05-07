@@ -3,9 +3,7 @@ setup.cfg
 setup.py
 py_drive/__init__.py
 py_drive/drive.py
-py_drive/drive2.py
-py_drive/motor.py
-py_drive/motor_test2.py
+py_drive/motor_class.py
 py_drive/motors.py
 py_drive/publisher_member_function.py
 py_drive.egg-info/PKG-INFO
