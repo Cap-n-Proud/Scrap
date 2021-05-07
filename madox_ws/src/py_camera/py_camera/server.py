@@ -33,8 +33,9 @@ class CameraHandler(BaseHTTPRequestHandler):
 
     def joy_topic(self, msg):
         print(msg.axes[7])
+        logger.info(msg.axes)
 
-    def do_GET(self):   
+    def do_GET(self):
         if self.path == URL_PATH_MJPG:
             self.send_response(200)
 
