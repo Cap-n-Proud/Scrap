@@ -1,0 +1,3 @@
+[console_scripts]
+camera = py_camera.server:main
+

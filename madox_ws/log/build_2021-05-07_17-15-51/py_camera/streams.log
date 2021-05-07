@@ -1,0 +1,28 @@
+[2.443s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_camera': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_camera build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/py_camera/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_camera --record /home/robot/Software/ROS2/Madox/madox_ws/build/py_camera/install.log --single-version-externally-managed
+[3.257s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[3.257s]   warnings.warn(
+[3.258s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[3.258s]   warnings.warn(
+[3.394s] running egg_info
+[3.398s] writing ../../build/py_camera/py_camera.egg-info/PKG-INFO
+[3.412s] writing dependency_links to ../../build/py_camera/py_camera.egg-info/dependency_links.txt
+[3.421s] writing entry points to ../../build/py_camera/py_camera.egg-info/entry_points.txt
+[3.431s] writing requirements to ../../build/py_camera/py_camera.egg-info/requires.txt
+[3.442s] writing top-level names to ../../build/py_camera/py_camera.egg-info/top_level.txt
+[3.640s] reading manifest file '../../build/py_camera/py_camera.egg-info/SOURCES.txt'
+[3.650s] writing manifest file '../../build/py_camera/py_camera.egg-info/SOURCES.txt'
+[3.658s] running build
+[3.659s] running build_py
+[3.669s] copying py_camera/camera.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/py_camera/build/lib/py_camera
+[3.702s] running install
+[3.705s] running install_lib
+[3.717s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/py_camera/build/lib/py_camera/camera.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages/py_camera
+[3.746s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages/py_camera/camera.py to camera.cpython-38.pyc
+[3.769s] running install_data
+[3.773s] running install_egg_info
+[3.780s] removing '/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages/py_camera-0.0.0-py3.8.egg-info' (and everything under it)
+[3.812s] Copying ../../build/py_camera/py_camera.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages/py_camera-0.0.0-py3.8.egg-info
+[3.950s] running install_scripts
+[4.031s] Installing camera script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/py_camera
+[4.047s] writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/py_camera/install.log'
+[4.166s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_camera' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_camera build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/py_camera/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_camera --record /home/robot/Software/ROS2/Madox/madox_ws/build/py_camera/install.log --single-version-externally-managed
