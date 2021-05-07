@@ -1,0 +1,32 @@
+[3.593s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node --uninstall --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build
+[4.485s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.485s]   warnings.warn(
+[4.486s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[4.486s]   warnings.warn(
+[4.729s] running develop
+[5.479s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node --uninstall --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build
+[5.497s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_test_node': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_test_node build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node --record /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/install.log --single-version-externally-managed
+[6.398s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[6.399s]   warnings.warn(
+[6.399s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[6.399s]   warnings.warn(
+[6.541s] running egg_info
+[6.545s] writing ../../build/py_test_node/py_test_node.egg-info/PKG-INFO
+[6.558s] writing dependency_links to ../../build/py_test_node/py_test_node.egg-info/dependency_links.txt
+[6.567s] writing entry points to ../../build/py_test_node/py_test_node.egg-info/entry_points.txt
+[6.577s] writing requirements to ../../build/py_test_node/py_test_node.egg-info/requires.txt
+[6.586s] writing top-level names to ../../build/py_test_node/py_test_node.egg-info/top_level.txt
+[6.784s] reading manifest file '../../build/py_test_node/py_test_node.egg-info/SOURCES.txt'
+[6.791s] writing manifest file '../../build/py_test_node/py_test_node.egg-info/SOURCES.txt'
+[6.801s] running build
+[6.802s] running build_py
+[6.821s] running install
+[6.825s] running install_lib
+[6.850s] running install_data
+[6.863s] running install_egg_info
+[6.869s] removing '/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node-0.0.0-py3.8.egg-info' (and everything under it)
+[6.900s] Copying ../../build/py_test_node/py_test_node.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node-0.0.0-py3.8.egg-info
+[7.060s] running install_scripts
+[7.144s] Installing node script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/py_test_node
+[7.163s] writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/install.log'
+[7.543s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_test_node' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_test_node build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node --record /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/install.log --single-version-externally-managed

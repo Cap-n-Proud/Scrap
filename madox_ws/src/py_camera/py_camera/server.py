@@ -22,6 +22,8 @@ URL_PATH_MJPG = "/camera.mjpg"
 URL_PATH_FAVICON = "/favicon.ico"
 SLEEP_IN_SEC = 0.050
 
+x = 0
+
 
 class CameraHandler(BaseHTTPRequestHandler):
     def __init__(self, request, client_address, server):
@@ -48,6 +50,7 @@ class CameraHandler(BaseHTTPRequestHandler):
                 start_fps = time.time()
                 frame = self.camera.get_frame(SLEEP_IN_SEC)
                 self.camera.drawCrosshair(frame)
+                self.camera.draw_joy(frame, 0, 0)
                 ret, jpg = cv2.imencode(".jpg", frame)
                 # jpg = self.camera.read_in_jpeg(SLEEP_IN_SEC, 1 / diff_fps)
                 if jpg is None:
@@ -74,7 +77,15 @@ class CameraHandler(BaseHTTPRequestHandler):
         logger.info("thread is stopping ... [{path}]".format(path=self.path))
 
 
-class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
+class ThreadedHTTPServer(Node, ThreadingMixIn, HTTPServer):
+    def __init__(self, ThreadingMixIn, HTTPServer):
+        super().__init__("server")
+
+        self.joy_topic = self.create_subscription(Joy, "joy", self.joy_topic, 10)
+
+    def joy_topic(self, msg):
+        print(msg)
+
     def set_camera(self, camera):
         self.camera = camera
 
@@ -89,7 +100,7 @@ class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
 
 
 def main(args=None):
-    rclpy.init(args=args)
+    rclpy.init()
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--bind", type=str, default="192.168.1.164")
@@ -106,18 +117,18 @@ def main(args=None):
         server.set_camera(camera)
         server.set_document_root(args.directory)
         logger.info("server started")
-
+        rclpy.spin(server)
         server.serve_forever()
+
     except KeyboardInterrupt:
         logger.info("server is stopping ...")
         camera.release()
         server.shutdown()
-    rclpy.spin(camera)
 
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
-    robot.destroy_node()
+    server.destroy_node()
     rclpy.shutdown()
 
 

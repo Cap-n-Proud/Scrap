@@ -1,0 +1,33 @@
+[3.901s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/build/py_drive': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive --uninstall --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build
+[4.789s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.789s]   warnings.warn(
+[4.790s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[4.790s]   warnings.warn(
+[5.030s] running develop
+[5.788s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/build/py_drive' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive --uninstall --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build
+[5.799s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_drive': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_drive build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive --record /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/install.log --single-version-externally-managed
+[6.702s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[6.702s]   warnings.warn(
+[6.703s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[6.703s]   warnings.warn(
+[6.847s] running egg_info
+[6.851s] writing ../../build/py_drive/py_drive.egg-info/PKG-INFO
+[6.863s] writing dependency_links to ../../build/py_drive/py_drive.egg-info/dependency_links.txt
+[6.873s] writing entry points to ../../build/py_drive/py_drive.egg-info/entry_points.txt
+[6.882s] writing requirements to ../../build/py_drive/py_drive.egg-info/requires.txt
+[6.896s] writing top-level names to ../../build/py_drive/py_drive.egg-info/top_level.txt
+[7.094s] reading manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'
+[7.107s] writing manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'
+[7.117s] running build
+[7.118s] running build_py
+[7.139s] running install
+[7.142s] running install_lib
+[7.177s] running install_data
+[7.193s] running install_egg_info
+[7.200s] removing '/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive-0.0.0-py3.8.egg-info' (and everything under it)
+[7.231s] Copying ../../build/py_drive/py_drive.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive-0.0.0-py3.8.egg-info
+[7.386s] running install_scripts
+[7.488s] Installing listener script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/py_drive
+[7.506s] Installing talker script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/py_drive
+[7.526s] writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/install.log'
+[7.957s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_drive' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_drive build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive --record /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/install.log --single-version-externally-managed

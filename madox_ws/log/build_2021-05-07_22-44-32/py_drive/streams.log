@@ -1,0 +1,51 @@
+[3.547s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_drive': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_drive build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive --record /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/install.log --single-version-externally-managed
+[4.415s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.415s]   warnings.warn(
+[4.416s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[4.416s]   warnings.warn(
+[4.570s] running egg_info
+[4.575s] creating ../../build/py_drive/py_drive.egg-info
+[4.581s] writing ../../build/py_drive/py_drive.egg-info/PKG-INFO
+[4.603s] writing dependency_links to ../../build/py_drive/py_drive.egg-info/dependency_links.txt
+[4.619s] writing entry points to ../../build/py_drive/py_drive.egg-info/entry_points.txt
+[4.632s] writing requirements to ../../build/py_drive/py_drive.egg-info/requires.txt
+[4.645s] writing top-level names to ../../build/py_drive/py_drive.egg-info/top_level.txt
+[4.663s] writing manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'
+[4.865s] reading manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'
+[4.877s] writing manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'
+[4.889s] running build
+[4.889s] running build_py
+[4.892s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build
+[4.894s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build/lib
+[4.902s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build/lib/py_drive
+[4.915s] copying py_drive/drive.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build/lib/py_drive
+[4.933s] copying py_drive/motor_class.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build/lib/py_drive
+[4.952s] copying py_drive/publisher_member_function.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build/lib/py_drive
+[4.974s] copying py_drive/motors.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build/lib/py_drive
+[4.995s] copying py_drive/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build/lib/py_drive
+[5.005s] running install
+[5.009s] running install_lib
+[5.025s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive
+[5.032s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build/lib/py_drive/motor_class.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive
+[5.055s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build/lib/py_drive/motors.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive
+[5.075s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build/lib/py_drive/publisher_member_function.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive
+[5.093s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build/lib/py_drive/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive
+[5.113s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build/lib/py_drive/drive.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive
+[5.138s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive/motor_class.py to motor_class.cpython-38.pyc
+[5.169s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive/motors.py to motors.cpython-38.pyc
+[5.195s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive/publisher_member_function.py to publisher_member_function.cpython-38.pyc
+[5.220s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive/__init__.py to __init__.cpython-38.pyc
+[5.243s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive/drive.py to drive.cpython-38.pyc
+[5.265s] running install_data
+[5.269s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/share/ament_index
+[5.270s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/share/ament_index/resource_index
+[5.275s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/share/ament_index/resource_index/packages
+[5.285s] copying resource/py_drive -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/share/ament_index/resource_index/packages
+[5.298s] copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/share/py_drive
+[5.316s] running install_egg_info
+[5.334s] Copying ../../build/py_drive/py_drive.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive-0.0.0-py3.8.egg-info
+[5.494s] running install_scripts
+[5.586s] Installing listener script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/py_drive
+[5.603s] Installing talker script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/py_drive
+[5.618s] writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/install.log'
+[6.128s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_drive' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_drive build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive --record /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/install.log --single-version-externally-managed

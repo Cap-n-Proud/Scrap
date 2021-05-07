@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating py_test_node.egg-info
+writing py_test_node.egg-info/PKG-INFO
+writing dependency_links to py_test_node.egg-info/dependency_links.txt
+writing entry points to py_test_node.egg-info/entry_points.txt
+writing requirements to py_test_node.egg-info/requires.txt
+writing top-level names to py_test_node.egg-info/top_level.txt
+writing manifest file 'py_test_node.egg-info/SOURCES.txt'
+reading manifest file 'py_test_node.egg-info/SOURCES.txt'
+writing manifest file 'py_test_node.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py-test-node.egg-link (link to .)
+Installing node script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/py_test_node
+
+Installed /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node
+running install_data
+creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/share/ament_index
+creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/share/ament_index/resource_index
+creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/share/ament_index/resource_index/packages
+copying resource/py_test_node -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/share/ament_index/resource_index/packages
+copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/share/py_test_node

@@ -1,0 +1,30 @@
+running develop
+Removing /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py-test-node.egg-link (link to .)
+running egg_info
+writing ../../build/py_test_node/py_test_node.egg-info/PKG-INFO
+writing dependency_links to ../../build/py_test_node/py_test_node.egg-info/dependency_links.txt
+writing entry points to ../../build/py_test_node/py_test_node.egg-info/entry_points.txt
+writing requirements to ../../build/py_test_node/py_test_node.egg-info/requires.txt
+writing top-level names to ../../build/py_test_node/py_test_node.egg-info/top_level.txt
+reading manifest file '../../build/py_test_node/py_test_node.egg-info/SOURCES.txt'
+writing manifest file '../../build/py_test_node/py_test_node.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build
+creating /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build/lib
+creating /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build/lib/py_test_node
+copying py_test_node/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build/lib/py_test_node
+copying py_test_node/test_node.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build/lib/py_test_node
+running install
+running install_lib
+creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node
+copying /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build/lib/py_test_node/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node
+copying /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build/lib/py_test_node/test_node.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node
+byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node/test_node.py to test_node.cpython-38.pyc
+running install_data
+running install_egg_info
+Copying ../../build/py_test_node/py_test_node.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node-0.0.0-py3.8.egg-info
+running install_scripts
+Installing node script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/py_test_node
+writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/install.log'
