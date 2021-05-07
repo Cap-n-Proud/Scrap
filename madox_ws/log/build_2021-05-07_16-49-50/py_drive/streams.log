@@ -1,0 +1,19 @@
+[1.092s] Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/py_drive': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_drive --editable --build-directory /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/py_drive/build --no-deps install_data --install-dir /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_drive
+[1.463s] running develop
+[1.702s] running egg_info
+[1.705s] writing py_drive.egg-info/PKG-INFO
+[1.725s] writing dependency_links to py_drive.egg-info/dependency_links.txt
+[1.744s] writing entry points to py_drive.egg-info/entry_points.txt
+[1.761s] writing requirements to py_drive.egg-info/requires.txt
+[1.778s] writing top-level names to py_drive.egg-info/top_level.txt
+[1.865s] reading manifest file 'py_drive.egg-info/SOURCES.txt'
+[1.888s] writing manifest file 'py_drive.egg-info/SOURCES.txt'
+[1.948s] running build_ext
+[1.951s] Creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/site.py
+[2.010s] Creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py-drive.egg-link (link to .)
+[2.050s] Installing listener script to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_drive/lib/py_drive
+[2.067s] Installing talker script to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_drive/lib/py_drive
+[2.091s] 
+[2.092s] Installed /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/py_drive
+[2.099s] running install_data
+[2.155s] Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/py_drive' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_drive --editable --build-directory /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/py_drive/build --no-deps install_data --install-dir /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_drive

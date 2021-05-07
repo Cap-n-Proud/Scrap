@@ -1,0 +1,25 @@
+[1.126s] Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/py_camera': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera --editable --build-directory /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/py_camera/build --no-deps install_data --install-dir /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera
+[1.542s] running develop
+[1.797s] running egg_info
+[1.799s] creating py_camera.egg-info
+[1.803s] writing py_camera.egg-info/PKG-INFO
+[1.831s] writing dependency_links to py_camera.egg-info/dependency_links.txt
+[1.845s] writing entry points to py_camera.egg-info/entry_points.txt
+[1.856s] writing requirements to py_camera.egg-info/requires.txt
+[1.868s] writing top-level names to py_camera.egg-info/top_level.txt
+[1.889s] writing manifest file 'py_camera.egg-info/SOURCES.txt'
+[2.002s] reading manifest file 'py_camera.egg-info/SOURCES.txt'
+[2.010s] writing manifest file 'py_camera.egg-info/SOURCES.txt'
+[2.082s] running build_ext
+[2.084s] Creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages/site.py
+[2.145s] Creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages/py-camera.egg-link (link to .)
+[2.173s] Installing camera script to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera/lib/py_camera
+[2.199s] 
+[2.199s] Installed /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/py_camera
+[2.203s] running install_data
+[2.208s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera/share/ament_index
+[2.211s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera/share/ament_index/resource_index
+[2.215s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera/share/ament_index/resource_index/packages
+[2.227s] copying resource/py_camera -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera/share/ament_index/resource_index/packages
+[2.248s] copying package.xml -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera/share/py_camera
+[2.643s] Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/py_camera' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera --editable --build-directory /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/py_camera/build --no-deps install_data --install-dir /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_camera

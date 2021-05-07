@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+py_camera/__init__.py
+py_camera/camera.py
+py_camera/log.py
+py_camera/server.py
+py_camera.egg-info/PKG-INFO
+py_camera.egg-info/SOURCES.txt
+py_camera.egg-info/dependency_links.txt
+py_camera.egg-info/entry_points.txt
+py_camera.egg-info/requires.txt
+py_camera.egg-info/top_level.txt
+py_camera.egg-info/zip-safe
+resource/py_camera
