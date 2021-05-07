@@ -24,9 +24,6 @@ URL_PATH_MJPG = "/camera.mjpg"
 URL_PATH_FAVICON = "/favicon.ico"
 SLEEP_IN_SEC = 0.050
 
-x = 0
-y = 0
-
 
 class CameraHandler(BaseHTTPRequestHandler):
     def __init__(self, request, client_address, server):
@@ -47,8 +44,7 @@ class CameraHandler(BaseHTTPRequestHandler):
                 start_fps = time.time()
                 frame = self.camera.get_frame(SLEEP_IN_SEC)
                 self.camera.drawCrosshair(frame)
-                self.camera.draw_joy(frame, x, y)
-
+                self.camera.draw_joy(frame, 0, 0)
                 ret, jpg = cv2.imencode(".jpg", frame)
                 # jpg = self.camera.read_in_jpeg(SLEEP_IN_SEC, 1 / diff_fps)
                 if jpg is None:
@@ -75,19 +71,15 @@ class CameraHandler(BaseHTTPRequestHandler):
         logger.info("thread is stopping ... [{path}]".format(path=self.path))
 
 
-class Robot_Info(Node):
-    def __init__(self):
-        super().__init__("robot_info")
+class ThreadedHTTPServer(Node, ThreadingMixIn, HTTPServer):
+    def __init__(self, ThreadingMixIn, HTTPServer):
+        super().__init__("server")
 
         self.joy_topic = self.create_subscription(Joy, "joy", self.joy_topic, 10)
 
     def joy_topic(self, msg):
-        global x, y
-        x = round(msg.axes[0], 2)
-        y = round(msg.axes[1], 2)
+        print(msg)
 
-
-class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
     def set_camera(self, camera):
         self.camera = camera
 
@@ -119,18 +111,13 @@ def main(args=None):
         server.set_camera(camera)
         server.set_document_root(args.directory)
         logger.info("server started")
+        server.serve_forever()
 
-        thread2 = threading.Thread(target=server.serve_forever)
-        thread2.start()
-
-        # server.serve_forever()
-        r_info = Robot_Info()
         # Setup and start the thread to read serial port
         thread_lock = Lock()
         # thread = threading.Thread(target=rclpy.spin, args=(server))
-        thread = threading.Thread(target=rclpy.spin(r_info))
+        thread = threading.Thread(target=rclpy.spin(server))
         thread.start()
-        # logger.info("AAAAAAAAAAAAAAAAAAAAAAAAAA")
 
     except KeyboardInterrupt:
         logger.info("server is stopping ...")
@@ -140,7 +127,7 @@ def main(args=None):
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
-    r_info.destroy_node()
+    server.destroy_node()
     rclpy.shutdown()
 
 

@@ -12,6 +12,7 @@ py_camera/__init__.py
 py_camera/camera.py
 py_camera/log.py
 py_camera/server.py
+py_camera/server2.py
 resource/py_camera
 test/test_copyright.py
 test/test_flake8.py

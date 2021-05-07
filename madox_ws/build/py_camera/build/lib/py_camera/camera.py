@@ -107,7 +107,17 @@ class Camera(metaclass=Singleton):
         cv2.putText(
             frame,
             str(x),
-            (w - 40, h - 20),
+            (5, h - 5),
+            font,
+            font_size,
+            font_color,
+            font_thickness,
+            cv2.LINE_AA,
+        )
+        cv2.putText(
+            frame,
+            str(y),
+            (45, h - 5),
             font,
             font_size,
             font_color,
