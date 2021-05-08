@@ -26,6 +26,7 @@ SLEEP_IN_SEC = 0.050
 
 x = 0
 y = 0
+display_config = 0
 
 
 class CameraHandler(BaseHTTPRequestHandler):
@@ -46,8 +47,13 @@ class CameraHandler(BaseHTTPRequestHandler):
             while self.camera.is_opened():
                 start_fps = time.time()
                 frame = self.camera.get_frame(SLEEP_IN_SEC)
-                self.camera.drawCrosshair(frame)
-                self.camera.draw_joy(frame, x, y)
+                if display_config == 0:
+                    self.camera.drawCrosshair(frame)
+                    self.camera.draw_joy(frame, x, y)
+                elif display_config == 1:
+                    self.camera.drawCrosshair(frame)
+                elif display_config == 2:
+                    continue
 
                 ret, jpg = cv2.imencode(".jpg", frame)
                 # jpg = self.camera.read_in_jpeg(SLEEP_IN_SEC, 1 / diff_fps)
@@ -82,9 +88,16 @@ class Robot_Info(Node):
         self.joy_topic = self.create_subscription(Joy, "joy", self.joy_topic, 10)
 
     def joy_topic(self, msg):
-        global x, y
+        # need to debounce the button: https://kaspars.net/blog/micropython-button-debounce
+
+        global x, y, display_config
         x = round(msg.axes[0], 2)
         y = round(msg.axes[1], 2)
+        if switch == 1:
+            if display_config >= 3:
+                display_config = 0
+            else:
+                display_config += 1
 
 
 class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):

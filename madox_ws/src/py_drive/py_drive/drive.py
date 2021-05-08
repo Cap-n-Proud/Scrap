@@ -77,7 +77,8 @@ class Robot(Node, SingletonConfigurable):
         if not self.simulation:
             self.motors.set_motors(speed_l, speed_r)
         else:
-            print(speed, steer, speed_l, speed_r)
+            continue
+            # print(speed, steer, speed_l, speed_r)
 
     def joy_topic(self, msg):
         if self.debug:

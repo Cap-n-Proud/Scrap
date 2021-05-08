@@ -10,4 +10,5 @@ cd /home/robot/Software/ROS2/Madox/madox_ws
 source /opt/ros/foxy/setup.bash
 . install/local_setup.bash
 
-ros2 run py_drive listener
+ros2 run py_drive listener -s &
+ros2 run py_camera camera  &
