@@ -121,15 +121,12 @@ def main(args=None):
         required=False,
         action="store_true",
         default=False,
-        help="Debug mode: robot will print extra log info in teh console",
+        help="Debug mode: robot will print extra log info in the console",
     )
 
     args = parser.parse_args()
     robot = Robot(simulation=args.simulation, debug=args.debug)
     print("Robot ready")
-    if args.simulation:
-        print("Running simulation")
-
     if args.debug:
         print("Debug mode")
 
