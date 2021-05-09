@@ -1,0 +1,3 @@
+[console_scripts]
+sys_info = sys_variables.sys_variables:main
+

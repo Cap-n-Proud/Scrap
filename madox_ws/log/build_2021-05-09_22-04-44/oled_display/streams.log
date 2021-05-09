@@ -1,0 +1,25 @@
+[5.410s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/oled_display': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/oled_display build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/oled_display/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/oled_display --record /home/robot/Software/ROS2/Madox/madox_ws/build/oled_display/install.log --single-version-externally-managed
+[6.406s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[6.406s]   warnings.warn(
+[6.407s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[6.407s]   warnings.warn(
+[6.569s] running egg_info
+[6.578s] writing ../../build/oled_display/oled_display.egg-info/PKG-INFO
+[6.596s] writing dependency_links to ../../build/oled_display/oled_display.egg-info/dependency_links.txt
+[6.611s] writing entry points to ../../build/oled_display/oled_display.egg-info/entry_points.txt
+[6.621s] writing requirements to ../../build/oled_display/oled_display.egg-info/requires.txt
+[6.633s] writing top-level names to ../../build/oled_display/oled_display.egg-info/top_level.txt
+[6.863s] reading manifest file '../../build/oled_display/oled_display.egg-info/SOURCES.txt'
+[6.874s] writing manifest file '../../build/oled_display/oled_display.egg-info/SOURCES.txt'
+[6.885s] running build
+[6.886s] running build_py
+[6.912s] running install
+[6.915s] running install_lib
+[6.958s] running install_data
+[6.970s] running install_egg_info
+[6.979s] removing '/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages/oled_display-0.0.0-py3.8.egg-info' (and everything under it)
+[7.017s] Copying ../../build/oled_display/oled_display.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages/oled_display-0.0.0-py3.8.egg-info
+[7.168s] running install_scripts
+[7.254s] Installing display script to /home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/oled_display
+[7.273s] writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/oled_display/install.log'
+[7.391s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/oled_display' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/oled_display build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/oled_display/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/oled_display --record /home/robot/Software/ROS2/Madox/madox_ws/build/oled_display/install.log --single-version-externally-managed

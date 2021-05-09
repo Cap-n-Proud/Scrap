@@ -1,0 +1,9 @@
+package.xml
+setup.py
+../../build/motor_test/motor_test.egg-info/PKG-INFO
+../../build/motor_test/motor_test.egg-info/SOURCES.txt
+../../build/motor_test/motor_test.egg-info/dependency_links.txt
+../../build/motor_test/motor_test.egg-info/entry_points.txt
+../../build/motor_test/motor_test.egg-info/requires.txt
+../../build/motor_test/motor_test.egg-info/top_level.txt
+../../build/motor_test/motor_test.egg-info/zip-safe

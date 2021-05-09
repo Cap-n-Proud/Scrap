@@ -1,0 +1,47 @@
+[2.235s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/sys_variables': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sys_variables build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables --record /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/install.log --single-version-externally-managed
+[3.123s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[3.124s]   warnings.warn(
+[3.124s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[3.124s]   warnings.warn(
+[3.257s] running egg_info
+[3.262s] creating ../../build/sys_variables/sys_variables.egg-info
+[3.266s] writing ../../build/sys_variables/sys_variables.egg-info/PKG-INFO
+[3.292s] writing dependency_links to ../../build/sys_variables/sys_variables.egg-info/dependency_links.txt
+[3.307s] writing entry points to ../../build/sys_variables/sys_variables.egg-info/entry_points.txt
+[3.318s] writing requirements to ../../build/sys_variables/sys_variables.egg-info/requires.txt
+[3.327s] writing top-level names to ../../build/sys_variables/sys_variables.egg-info/top_level.txt
+[3.350s] writing manifest file '../../build/sys_variables/sys_variables.egg-info/SOURCES.txt'
+[3.540s] reading manifest file '../../build/sys_variables/sys_variables.egg-info/SOURCES.txt'
+[3.553s] writing manifest file '../../build/sys_variables/sys_variables.egg-info/SOURCES.txt'
+[3.563s] running build
+[3.563s] running build_py
+[3.569s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build
+[3.571s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib
+[3.576s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables
+[3.584s] copying sys_variables/sys_variables.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables
+[3.603s] copying sys_variables/ina219.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables
+[3.621s] copying sys_variables/ads1115.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables
+[3.644s] copying sys_variables/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables
+[3.654s] running install
+[3.659s] running install_lib
+[3.675s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables
+[3.681s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables/ina219.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables
+[3.700s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables/ads1115.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables
+[3.723s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables/sys_variables.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables
+[3.740s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables
+[3.760s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables/ina219.py to ina219.cpython-38.pyc
+[3.795s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables/ads1115.py to ads1115.cpython-38.pyc
+[3.817s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables/sys_variables.py to sys_variables.cpython-38.pyc
+[3.843s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables/__init__.py to __init__.cpython-38.pyc
+[3.861s] running install_data
+[3.865s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/share/ament_index
+[3.867s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/share/ament_index/resource_index
+[3.871s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/share/ament_index/resource_index/packages
+[3.880s] copying resource/sys_variables -> /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/share/ament_index/resource_index/packages
+[3.892s] copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/share/sys_variables
+[3.911s] running install_egg_info
+[3.922s] Copying ../../build/sys_variables/sys_variables.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables-0.0.0-py3.8.egg-info
+[4.076s] running install_scripts
+[4.151s] Installing sys_info script to /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/sys_variables
+[4.175s] writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/install.log'
+[4.287s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/sys_variables' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sys_variables build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables --record /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/install.log --single-version-externally-managed

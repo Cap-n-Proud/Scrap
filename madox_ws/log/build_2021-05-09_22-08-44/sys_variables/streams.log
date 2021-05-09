@@ -1,0 +1,28 @@
+[2.850s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/sys_variables': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sys_variables build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables --record /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/install.log --single-version-externally-managed
+[3.734s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[3.735s]   warnings.warn(
+[3.735s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[3.735s]   warnings.warn(
+[3.868s] running egg_info
+[3.872s] writing ../../build/sys_variables/sys_variables.egg-info/PKG-INFO
+[3.883s] writing dependency_links to ../../build/sys_variables/sys_variables.egg-info/dependency_links.txt
+[3.892s] writing entry points to ../../build/sys_variables/sys_variables.egg-info/entry_points.txt
+[3.902s] writing requirements to ../../build/sys_variables/sys_variables.egg-info/requires.txt
+[3.913s] writing top-level names to ../../build/sys_variables/sys_variables.egg-info/top_level.txt
+[4.103s] reading manifest file '../../build/sys_variables/sys_variables.egg-info/SOURCES.txt'
+[4.116s] writing manifest file '../../build/sys_variables/sys_variables.egg-info/SOURCES.txt'
+[4.124s] running build
+[4.125s] running build_py
+[4.135s] copying sys_variables/sys_variables.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables
+[4.169s] running install
+[4.173s] running install_lib
+[4.188s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables/sys_variables.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables
+[4.220s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables/sys_variables.py to sys_variables.cpython-38.pyc
+[4.246s] running install_data
+[4.258s] running install_egg_info
+[4.266s] removing '/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables-0.0.0-py3.8.egg-info' (and everything under it)
+[4.296s] Copying ../../build/sys_variables/sys_variables.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables-0.0.0-py3.8.egg-info
+[4.430s] running install_scripts
+[4.507s] Installing sys_info script to /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/sys_variables
+[4.524s] writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/install.log'
+[4.634s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/sys_variables' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sys_variables build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables --record /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/install.log --single-version-externally-managed

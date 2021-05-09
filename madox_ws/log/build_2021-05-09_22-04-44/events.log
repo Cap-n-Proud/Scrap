@@ -1,0 +1,286 @@
+[0.000000] (-) TimerEvent: {}
+[0.002277] (oled_display) JobQueued: {'identifier': 'oled_display', 'dependencies': OrderedDict()}
+[0.003391] (py_camera) JobQueued: {'identifier': 'py_camera', 'dependencies': OrderedDict()}
+[0.003554] (py_drive) JobQueued: {'identifier': 'py_drive', 'dependencies': OrderedDict()}
+[0.003699] (py_test_node) JobQueued: {'identifier': 'py_test_node', 'dependencies': OrderedDict()}
+[0.003844] (sys_variables) JobQueued: {'identifier': 'sys_variables', 'dependencies': OrderedDict()}
+[0.003953] (oled_display) JobStarted: {'identifier': 'oled_display'}
+[0.095007] (-) TimerEvent: {}
+[0.196072] (-) TimerEvent: {}
+[0.206015] (py_camera) JobStarted: {'identifier': 'py_camera'}
+[0.295933] (-) TimerEvent: {}
+[0.329764] (py_drive) JobStarted: {'identifier': 'py_drive'}
+[0.396130] (-) TimerEvent: {}
+[0.496978] (-) TimerEvent: {}
+[0.522021] (py_test_node) JobStarted: {'identifier': 'py_test_node'}
+[0.597176] (-) TimerEvent: {}
+[0.698242] (-) TimerEvent: {}
+[0.799368] (-) TimerEvent: {}
+[0.900045] (-) TimerEvent: {}
+[1.000660] (-) TimerEvent: {}
+[1.101336] (-) TimerEvent: {}
+[1.201959] (-) TimerEvent: {}
+[1.302630] (-) TimerEvent: {}
+[1.403265] (-) TimerEvent: {}
+[1.503880] (-) TimerEvent: {}
+[1.604501] (-) TimerEvent: {}
+[1.705233] (-) TimerEvent: {}
+[1.806486] (-) TimerEvent: {}
+[1.907505] (-) TimerEvent: {}
+[2.008348] (-) TimerEvent: {}
+[2.109039] (-) TimerEvent: {}
+[2.209692] (-) TimerEvent: {}
+[2.310582] (-) TimerEvent: {}
+[2.411257] (-) TimerEvent: {}
+[2.512040] (-) TimerEvent: {}
+[2.612804] (-) TimerEvent: {}
+[2.713466] (-) TimerEvent: {}
+[2.814237] (-) TimerEvent: {}
+[2.914867] (-) TimerEvent: {}
+[3.015845] (-) TimerEvent: {}
+[3.116760] (-) TimerEvent: {}
+[3.217458] (-) TimerEvent: {}
+[3.318135] (-) TimerEvent: {}
+[3.418817] (-) TimerEvent: {}
+[3.519463] (-) TimerEvent: {}
+[3.620129] (-) TimerEvent: {}
+[3.720801] (-) TimerEvent: {}
+[3.821467] (-) TimerEvent: {}
+[3.922138] (-) TimerEvent: {}
+[4.022875] (-) TimerEvent: {}
+[4.125294] (-) TimerEvent: {}
+[4.226563] (-) TimerEvent: {}
+[4.327264] (-) TimerEvent: {}
+[4.428015] (-) TimerEvent: {}
+[4.528643] (-) TimerEvent: {}
+[4.629408] (-) TimerEvent: {}
+[4.730045] (-) TimerEvent: {}
+[4.830746] (-) TimerEvent: {}
+[4.931418] (-) TimerEvent: {}
+[5.032112] (-) TimerEvent: {}
+[5.132754] (-) TimerEvent: {}
+[5.233495] (-) TimerEvent: {}
+[5.334563] (-) TimerEvent: {}
+[5.377765] (oled_display) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/oled_display', 'build', '--build-base', '/home/robot/Software/ROS2/Madox/madox_ws/build/oled_display/build', 'install', '--prefix', '/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display', '--record', '/home/robot/Software/ROS2/Madox/madox_ws/build/oled_display/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/src/oled_display', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 60570 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot/Software/ROS2/Madox/madox_ws/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Madox/madox_ws/build/oled_display', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 60570 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[5.423598] (py_camera) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_camera', 'build', '--build-base', '/home/robot/Software/ROS2/Madox/madox_ws/build/py_camera/build', 'install', '--prefix', '/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera', '--record', '/home/robot/Software/ROS2/Madox/madox_ws/build/py_camera/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/src/py_camera', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 60570 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot/Software/ROS2/Madox/madox_ws/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Madox/madox_ws/build/py_camera', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 60570 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[5.457684] (-) TimerEvent: {}
+[5.481793] (py_drive) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_drive', 'build', '--build-base', '/home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build', 'install', '--prefix', '/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive', '--record', '/home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/src/py_drive', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 60570 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot/Software/ROS2/Madox/madox_ws/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Madox/madox_ws/build/py_drive', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 60570 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[5.545006] (py_test_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_test_node', 'build', '--build-base', '/home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build', 'install', '--prefix', '/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node', '--record', '/home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/src/py_test_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 60570 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot/Software/ROS2/Madox/madox_ws/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 60570 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[5.575528] (-) TimerEvent: {}
+[5.676873] (-) TimerEvent: {}
+[5.777564] (-) TimerEvent: {}
+[5.878258] (-) TimerEvent: {}
+[5.978951] (-) TimerEvent: {}
+[6.079702] (-) TimerEvent: {}
+[6.182694] (-) TimerEvent: {}
+[6.283401] (-) TimerEvent: {}
+[6.384063] (-) TimerEvent: {}
+[6.409242] (oled_display) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[6.409891] (oled_display) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.410274] (oled_display) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[6.410652] (oled_display) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.469240] (py_camera) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[6.469854] (py_camera) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.470267] (py_camera) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[6.470635] (py_camera) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.484272] (-) TimerEvent: {}
+[6.553355] (py_drive) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[6.553966] (py_drive) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.554381] (py_drive) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[6.554769] (py_drive) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.572517] (oled_display) StdoutLine: {'line': b'running egg_info\n'}
+[6.581585] (oled_display) StdoutLine: {'line': b'writing ../../build/oled_display/oled_display.egg-info/PKG-INFO\n'}
+[6.584420] (-) TimerEvent: {}
+[6.600101] (oled_display) StdoutLine: {'line': b'writing dependency_links to ../../build/oled_display/oled_display.egg-info/dependency_links.txt\n'}
+[6.614740] (oled_display) StdoutLine: {'line': b'writing entry points to ../../build/oled_display/oled_display.egg-info/entry_points.txt\n'}
+[6.624200] (oled_display) StdoutLine: {'line': b'writing requirements to ../../build/oled_display/oled_display.egg-info/requires.txt\n'}
+[6.636440] (py_camera) StdoutLine: {'line': b'running egg_info\n'}
+[6.637082] (oled_display) StdoutLine: {'line': b'writing top-level names to ../../build/oled_display/oled_display.egg-info/top_level.txt\n'}
+[6.640629] (py_camera) StdoutLine: {'line': b'writing ../../build/py_camera/py_camera.egg-info/PKG-INFO\n'}
+[6.660468] (py_camera) StdoutLine: {'line': b'writing dependency_links to ../../build/py_camera/py_camera.egg-info/dependency_links.txt\n'}
+[6.679191] (py_camera) StdoutLine: {'line': b'writing entry points to ../../build/py_camera/py_camera.egg-info/entry_points.txt\n'}
+[6.684970] (py_camera) StdoutLine: {'line': b'writing requirements to ../../build/py_camera/py_camera.egg-info/requires.txt\n'}
+[6.685569] (-) TimerEvent: {}
+[6.697028] (py_test_node) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[6.697700] (py_test_node) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.698097] (py_test_node) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[6.698479] (py_test_node) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.699338] (py_camera) StdoutLine: {'line': b'writing top-level names to ../../build/py_camera/py_camera.egg-info/top_level.txt\n'}
+[6.713575] (py_drive) StdoutLine: {'line': b'running egg_info\n'}
+[6.716215] (py_drive) StdoutLine: {'line': b'writing ../../build/py_drive/py_drive.egg-info/PKG-INFO\n'}
+[6.729629] (py_drive) StdoutLine: {'line': b'writing dependency_links to ../../build/py_drive/py_drive.egg-info/dependency_links.txt\n'}
+[6.742757] (py_drive) StdoutLine: {'line': b'writing entry points to ../../build/py_drive/py_drive.egg-info/entry_points.txt\n'}
+[6.755377] (py_drive) StdoutLine: {'line': b'writing requirements to ../../build/py_drive/py_drive.egg-info/requires.txt\n'}
+[6.769882] (py_drive) StdoutLine: {'line': b'writing top-level names to ../../build/py_drive/py_drive.egg-info/top_level.txt\n'}
+[6.785740] (-) TimerEvent: {}
+[6.851081] (py_test_node) StdoutLine: {'line': b'running egg_info\n'}
+[6.859073] (py_test_node) StdoutLine: {'line': b'writing ../../build/py_test_node/py_test_node.egg-info/PKG-INFO\n'}
+[6.866356] (oled_display) StdoutLine: {'line': b"reading manifest file '../../build/oled_display/oled_display.egg-info/SOURCES.txt'\n"}
+[6.877262] (oled_display) StdoutLine: {'line': b"writing manifest file '../../build/oled_display/oled_display.egg-info/SOURCES.txt'\n"}
+[6.879390] (py_test_node) StdoutLine: {'line': b'writing dependency_links to ../../build/py_test_node/py_test_node.egg-info/dependency_links.txt\n'}
+[6.885934] (-) TimerEvent: {}
+[6.888906] (oled_display) StdoutLine: {'line': b'running build\n'}
+[6.889518] (oled_display) StdoutLine: {'line': b'running build_py\n'}
+[6.895412] (py_test_node) StdoutLine: {'line': b'writing entry points to ../../build/py_test_node/py_test_node.egg-info/entry_points.txt\n'}
+[6.912200] (py_test_node) StdoutLine: {'line': b'writing requirements to ../../build/py_test_node/py_test_node.egg-info/requires.txt\n'}
+[6.915793] (oled_display) StdoutLine: {'line': b'running install\n'}
+[6.918215] (oled_display) StdoutLine: {'line': b'running install_lib\n'}
+[6.927728] (py_camera) StdoutLine: {'line': b"reading manifest file '../../build/py_camera/py_camera.egg-info/SOURCES.txt'\n"}
+[6.928528] (py_test_node) StdoutLine: {'line': b'writing top-level names to ../../build/py_test_node/py_test_node.egg-info/top_level.txt\n'}
+[6.936040] (py_camera) StdoutLine: {'line': b"writing manifest file '../../build/py_camera/py_camera.egg-info/SOURCES.txt'\n"}
+[6.946750] (py_camera) StdoutLine: {'line': b'running build\n'}
+[6.947354] (py_camera) StdoutLine: {'line': b'running build_py\n'}
+[6.961282] (oled_display) StdoutLine: {'line': b'running install_data\n'}
+[6.969666] (py_camera) StdoutLine: {'line': b'running install\n'}
+[6.973001] (py_camera) StdoutLine: {'line': b'running install_lib\n'}
+[6.974003] (oled_display) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.982302] (oled_display) StdoutLine: {'line': b"removing '/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages/oled_display-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[6.986083] (-) TimerEvent: {}
+[7.012785] (py_drive) StdoutLine: {'line': b"reading manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'\n"}
+[7.017330] (py_camera) StdoutLine: {'line': b'running install_data\n'}
+[7.021108] (oled_display) StdoutLine: {'line': b'Copying ../../build/oled_display/oled_display.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages/oled_display-0.0.0-py3.8.egg-info\n'}
+[7.022830] (py_drive) StdoutLine: {'line': b"writing manifest file '../../build/py_drive/py_drive.egg-info/SOURCES.txt'\n"}
+[7.029712] (py_camera) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.033137] (py_drive) StdoutLine: {'line': b'running build\n'}
+[7.033705] (py_drive) StdoutLine: {'line': b'running build_py\n'}
+[7.040236] (py_camera) StdoutLine: {'line': b"removing '/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages/py_camera-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[7.065313] (py_drive) StdoutLine: {'line': b'running install\n'}
+[7.071060] (py_drive) StdoutLine: {'line': b'running install_lib\n'}
+[7.077904] (py_camera) StdoutLine: {'line': b'Copying ../../build/py_camera/py_camera.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages/py_camera-0.0.0-py3.8.egg-info\n'}
+[7.086220] (-) TimerEvent: {}
+[7.113285] (py_drive) StdoutLine: {'line': b'running install_data\n'}
+[7.128466] (py_drive) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.135084] (py_drive) StdoutLine: {'line': b"removing '/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[7.150298] (py_test_node) StdoutLine: {'line': b"reading manifest file '../../build/py_test_node/py_test_node.egg-info/SOURCES.txt'\n"}
+[7.167080] (py_test_node) StdoutLine: {'line': b"writing manifest file '../../build/py_test_node/py_test_node.egg-info/SOURCES.txt'\n"}
+[7.171092] (py_drive) StdoutLine: {'line': b'Copying ../../build/py_drive/py_drive.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages/py_drive-0.0.0-py3.8.egg-info\n'}
+[7.171753] (oled_display) StdoutLine: {'line': b'running install_scripts\n'}
+[7.175589] (py_test_node) StdoutLine: {'line': b'running build\n'}
+[7.176231] (py_test_node) StdoutLine: {'line': b'running build_py\n'}
+[7.186377] (-) TimerEvent: {}
+[7.201033] (py_test_node) StdoutLine: {'line': b'running install\n'}
+[7.209799] (py_test_node) StdoutLine: {'line': b'running install_lib\n'}
+[7.233916] (py_camera) StdoutLine: {'line': b'running install_scripts\n'}
+[7.239874] (py_test_node) StdoutLine: {'line': b'running install_data\n'}
+[7.256872] (py_test_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.257600] (oled_display) StdoutLine: {'line': b'Installing display script to /home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/oled_display\n'}
+[7.265576] (py_test_node) StdoutLine: {'line': b"removing '/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[7.276267] (oled_display) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/oled_display/install.log'\n"}
+[7.286522] (-) TimerEvent: {}
+[7.297172] (py_test_node) StdoutLine: {'line': b'Copying ../../build/py_test_node/py_test_node.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node-0.0.0-py3.8.egg-info\n'}
+[7.312236] (py_camera) StdoutLine: {'line': b'Installing camera script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/py_camera\n'}
+[7.321008] (py_drive) StdoutLine: {'line': b'running install_scripts\n'}
+[7.335903] (py_camera) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/py_camera/install.log'\n"}
+[7.386699] (-) TimerEvent: {}
+[7.394029] (oled_display) CommandEnded: {'returncode': 0}
+[7.414827] (py_drive) StdoutLine: {'line': b'Installing listener script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/py_drive\n'}
+[7.433514] (py_drive) StdoutLine: {'line': b'Installing talker script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/py_drive\n'}
+[7.449693] (py_drive) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/install.log'\n"}
+[7.461940] (py_test_node) StdoutLine: {'line': b'running install_scripts\n'}
+[7.486950] (-) TimerEvent: {}
+[7.544485] (py_test_node) StdoutLine: {'line': b'Installing node script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/py_test_node\n'}
+[7.567702] (py_test_node) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/install.log'\n"}
+[7.587067] (-) TimerEvent: {}
+[7.689936] (-) TimerEvent: {}
+[7.712516] (oled_display) JobEnded: {'identifier': 'oled_display', 'rc': 0}
+[7.754592] (sys_variables) JobStarted: {'identifier': 'sys_variables'}
+[7.790099] (-) TimerEvent: {}
+[7.891125] (-) TimerEvent: {}
+[7.941610] (py_camera) CommandEnded: {'returncode': 0}
+[7.991079] (-) TimerEvent: {}
+[8.092038] (-) TimerEvent: {}
+[8.192812] (-) TimerEvent: {}
+[8.199006] (py_camera) JobEnded: {'identifier': 'py_camera', 'rc': 0}
+[8.225967] (py_drive) CommandEnded: {'returncode': 0}
+[8.292955] (-) TimerEvent: {}
+[8.393621] (-) TimerEvent: {}
+[8.448554] (py_drive) JobEnded: {'identifier': 'py_drive', 'rc': 0}
+[8.474944] (py_test_node) CommandEnded: {'returncode': 0}
+[8.493792] (-) TimerEvent: {}
+[8.594454] (-) TimerEvent: {}
+[8.695195] (-) TimerEvent: {}
+[8.696743] (py_test_node) JobEnded: {'identifier': 'py_test_node', 'rc': 0}
+[8.795536] (-) TimerEvent: {}
+[8.896284] (-) TimerEvent: {}
+[8.996859] (-) TimerEvent: {}
+[9.097482] (-) TimerEvent: {}
+[9.198080] (-) TimerEvent: {}
+[9.298710] (-) TimerEvent: {}
+[9.399338] (-) TimerEvent: {}
+[9.499971] (-) TimerEvent: {}
+[9.600529] (-) TimerEvent: {}
+[9.701138] (-) TimerEvent: {}
+[9.801731] (-) TimerEvent: {}
+[9.902810] (-) TimerEvent: {}
+[9.957879] (sys_variables) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/sys_variables', 'build', '--build-base', '/home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build', 'install', '--prefix', '/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables', '--record', '/home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/src/sys_variables', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 60570 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot/Software/ROS2/Madox/madox_ws/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 60570 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[10.002947] (-) TimerEvent: {}
+[10.103622] (-) TimerEvent: {}
+[10.204172] (-) TimerEvent: {}
+[10.304781] (-) TimerEvent: {}
+[10.405391] (-) TimerEvent: {}
+[10.505942] (-) TimerEvent: {}
+[10.606630] (-) TimerEvent: {}
+[10.707262] (-) TimerEvent: {}
+[10.807809] (-) TimerEvent: {}
+[10.877442] (sys_variables) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[10.877995] (sys_variables) StderrLine: {'line': b'  warnings.warn(\n'}
+[10.878328] (sys_variables) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[10.878652] (sys_variables) StderrLine: {'line': b'  warnings.warn(\n'}
+[10.907957] (-) TimerEvent: {}
+[11.008572] (-) TimerEvent: {}
+[11.011193] (sys_variables) StdoutLine: {'line': b'running egg_info\n'}
+[11.016093] (sys_variables) StdoutLine: {'line': b'creating ../../build/sys_variables/sys_variables.egg-info\n'}
+[11.020278] (sys_variables) StdoutLine: {'line': b'writing ../../build/sys_variables/sys_variables.egg-info/PKG-INFO\n'}
+[11.046081] (sys_variables) StdoutLine: {'line': b'writing dependency_links to ../../build/sys_variables/sys_variables.egg-info/dependency_links.txt\n'}
+[11.061086] (sys_variables) StdoutLine: {'line': b'writing entry points to ../../build/sys_variables/sys_variables.egg-info/entry_points.txt\n'}
+[11.072370] (sys_variables) StdoutLine: {'line': b'writing requirements to ../../build/sys_variables/sys_variables.egg-info/requires.txt\n'}
+[11.081751] (sys_variables) StdoutLine: {'line': b'writing top-level names to ../../build/sys_variables/sys_variables.egg-info/top_level.txt\n'}
+[11.104190] (sys_variables) StdoutLine: {'line': b"writing manifest file '../../build/sys_variables/sys_variables.egg-info/SOURCES.txt'\n"}
+[11.108766] (-) TimerEvent: {}
+[11.209332] (-) TimerEvent: {}
+[11.294485] (sys_variables) StdoutLine: {'line': b"reading manifest file '../../build/sys_variables/sys_variables.egg-info/SOURCES.txt'\n"}
+[11.306891] (sys_variables) StdoutLine: {'line': b"writing manifest file '../../build/sys_variables/sys_variables.egg-info/SOURCES.txt'\n"}
+[11.309510] (-) TimerEvent: {}
+[11.317294] (sys_variables) StdoutLine: {'line': b'running build\n'}
+[11.317797] (sys_variables) StdoutLine: {'line': b'running build_py\n'}
+[11.323289] (sys_variables) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build\n'}
+[11.325271] (sys_variables) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib\n'}
+[11.330703] (sys_variables) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables\n'}
+[11.338263] (sys_variables) StdoutLine: {'line': b'copying sys_variables/sys_variables.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables\n'}
+[11.357699] (sys_variables) StdoutLine: {'line': b'copying sys_variables/ina219.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables\n'}
+[11.375381] (sys_variables) StdoutLine: {'line': b'copying sys_variables/ads1115.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables\n'}
+[11.398327] (sys_variables) StdoutLine: {'line': b'copying sys_variables/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables\n'}
+[11.408677] (sys_variables) StdoutLine: {'line': b'running install\n'}
+[11.409638] (-) TimerEvent: {}
+[11.412917] (sys_variables) StdoutLine: {'line': b'running install_lib\n'}
+[11.429641] (sys_variables) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables\n'}
+[11.435459] (sys_variables) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables/ina219.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables\n'}
+[11.454105] (sys_variables) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables/ads1115.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables\n'}
+[11.476940] (sys_variables) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables/sys_variables.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables\n'}
+[11.494337] (sys_variables) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/build/lib/sys_variables/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables\n'}
+[11.509903] (-) TimerEvent: {}
+[11.513849] (sys_variables) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables/ina219.py to ina219.cpython-38.pyc\n'}
+[11.549103] (sys_variables) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables/ads1115.py to ads1115.cpython-38.pyc\n'}
+[11.571681] (sys_variables) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables/sys_variables.py to sys_variables.cpython-38.pyc\n'}
+[11.596896] (sys_variables) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables/__init__.py to __init__.cpython-38.pyc\n'}
+[11.610102] (-) TimerEvent: {}
+[11.614902] (sys_variables) StdoutLine: {'line': b'running install_data\n'}
+[11.619496] (sys_variables) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/share/ament_index\n'}
+[11.621403] (sys_variables) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/share/ament_index/resource_index\n'}
+[11.625552] (sys_variables) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/share/ament_index/resource_index/packages\n'}
+[11.633944] (sys_variables) StdoutLine: {'line': b'copying resource/sys_variables -> /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/share/ament_index/resource_index/packages\n'}
+[11.646357] (sys_variables) StdoutLine: {'line': b'copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/share/sys_variables\n'}
+[11.664927] (sys_variables) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.676338] (sys_variables) StdoutLine: {'line': b'Copying ../../build/sys_variables/sys_variables.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages/sys_variables-0.0.0-py3.8.egg-info\n'}
+[11.710364] (-) TimerEvent: {}
+[11.811069] (-) TimerEvent: {}
+[11.830174] (sys_variables) StdoutLine: {'line': b'running install_scripts\n'}
+[11.905187] (sys_variables) StdoutLine: {'line': b'Installing sys_info script to /home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/sys_variables\n'}
+[11.911227] (-) TimerEvent: {}
+[11.929404] (sys_variables) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables/install.log'\n"}
+[12.011390] (-) TimerEvent: {}
+[12.039141] (sys_variables) CommandEnded: {'returncode': 0}
+[12.111574] (-) TimerEvent: {}
+[12.212459] (-) TimerEvent: {}
+[12.269626] (sys_variables) JobEnded: {'identifier': 'sys_variables', 'rc': 0}
+[12.309302] (-) EventReactorShutdown: {}

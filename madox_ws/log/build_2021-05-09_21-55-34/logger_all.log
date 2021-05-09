@@ -1,0 +1,246 @@
+[1.599s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.599s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f883d8b80>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f883d8b80>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f883e6130>)
+[1.656s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.659s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/robot/Software/ROS2/Madox/madox_ws'
+[1.662s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.669s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.669s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.671s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.671s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.672s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.672s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.726s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.727s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.729s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.731s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.731s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.736s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.736s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.737s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.739s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.740s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.740s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.744s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.745s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.745s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.748s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.748s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.755s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.755s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.772s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.773s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.776s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.778s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.779s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test) by extensions ['ignore', 'ignore_ament_install']
+[1.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test) by extension 'ignore'
+[1.783s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test) by extension 'ignore_ament_install'
+[1.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test) by extensions ['colcon_pkg']
+[1.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test) by extension 'colcon_pkg'
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test) by extensions ['colcon_meta']
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test) by extension 'colcon_meta'
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test) by extensions ['ros']
+[1.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test) by extension 'ros'
+[1.812s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_test' with type 'ros.ament_python' and name 'motor_test'
+[1.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/oled_display) by extensions ['ignore', 'ignore_ament_install']
+[1.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/oled_display) by extension 'ignore'
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/oled_display) by extension 'ignore_ament_install'
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/oled_display) by extensions ['colcon_pkg']
+[1.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/oled_display) by extension 'colcon_pkg'
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/oled_display) by extensions ['colcon_meta']
+[1.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/oled_display) by extension 'colcon_meta'
+[1.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/oled_display) by extensions ['ros']
+[1.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/oled_display) by extension 'ros'
+[1.848s] DEBUG:colcon.colcon_core.package_identification:Package 'src/oled_display' with type 'ros.ament_python' and name 'oled_display'
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_camera) by extensions ['ignore', 'ignore_ament_install']
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_camera) by extension 'ignore'
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_camera) by extension 'ignore_ament_install'
+[1.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_camera) by extensions ['colcon_pkg']
+[1.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_camera) by extension 'colcon_pkg'
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_camera) by extensions ['colcon_meta']
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_camera) by extension 'colcon_meta'
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_camera) by extensions ['ros']
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_camera) by extension 'ros'
+[1.881s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_camera' with type 'ros.ament_python' and name 'py_camera'
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_drive) by extensions ['ignore', 'ignore_ament_install']
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_drive) by extension 'ignore'
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_drive) by extension 'ignore_ament_install'
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_drive) by extensions ['colcon_pkg']
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_drive) by extension 'colcon_pkg'
+[1.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_drive) by extensions ['colcon_meta']
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_drive) by extension 'colcon_meta'
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_drive) by extensions ['ros']
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_drive) by extension 'ros'
+[1.921s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_drive' with type 'ros.ament_python' and name 'py_drive'
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test_node) by extensions ['ignore', 'ignore_ament_install']
+[1.925s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test_node) by extension 'ignore'
+[1.927s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test_node) by extension 'ignore_ament_install'
+[1.931s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test_node) by extensions ['colcon_pkg']
+[1.931s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test_node) by extension 'colcon_pkg'
+[1.934s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test_node) by extensions ['colcon_meta']
+[1.934s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test_node) by extension 'colcon_meta'
+[1.934s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test_node) by extensions ['ros']
+[1.934s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test_node) by extension 'ros'
+[1.957s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_test_node' with type 'ros.ament_python' and name 'py_test_node'
+[1.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/sys_variables) by extensions ['ignore', 'ignore_ament_install']
+[1.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/sys_variables) by extension 'ignore'
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/sys_variables) by extension 'ignore_ament_install'
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(src/sys_variables) by extensions ['colcon_pkg']
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(src/sys_variables) by extension 'colcon_pkg'
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/sys_variables) by extensions ['colcon_meta']
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/sys_variables) by extension 'colcon_meta'
+[1.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/sys_variables) by extensions ['ros']
+[1.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/sys_variables) by extension 'ros'
+[1.991s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sys_variables' with type 'ros.ament_python' and name 'sys_variables'
+[1.991s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.991s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.991s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.992s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.992s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.116s] Level 5:colcon.colcon_core.verb:set package 'motor_test' build argument 'cmake_args' from command line to 'None'
+[2.116s] Level 5:colcon.colcon_core.verb:set package 'motor_test' build argument 'cmake_target' from command line to 'None'
+[2.116s] Level 5:colcon.colcon_core.verb:set package 'motor_test' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.116s] Level 5:colcon.colcon_core.verb:set package 'motor_test' build argument 'cmake_clean_cache' from command line to 'False'
+[2.116s] Level 5:colcon.colcon_core.verb:set package 'motor_test' build argument 'cmake_clean_first' from command line to 'False'
+[2.117s] Level 5:colcon.colcon_core.verb:set package 'motor_test' build argument 'cmake_force_configure' from command line to 'False'
+[2.117s] Level 5:colcon.colcon_core.verb:set package 'motor_test' build argument 'ament_cmake_args' from command line to 'None'
+[2.117s] Level 5:colcon.colcon_core.verb:set package 'motor_test' build argument 'catkin_cmake_args' from command line to 'None'
+[2.117s] Level 5:colcon.colcon_core.verb:set package 'motor_test' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.117s] DEBUG:colcon.colcon_core.verb:Building package 'motor_test' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot/Software/ROS2/Madox/madox_ws/build/motor_test', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot/Software/ROS2/Madox/madox_ws/install/motor_test', 'merge_install': False, 'path': '/home/robot/Software/ROS2/Madox/madox_ws/src/motor_test', 'symlink_install': False, 'test_result_base': None}
+[2.131s] Level 5:colcon.colcon_core.verb:set package 'oled_display' build argument 'cmake_args' from command line to 'None'
+[2.132s] Level 5:colcon.colcon_core.verb:set package 'oled_display' build argument 'cmake_target' from command line to 'None'
+[2.132s] Level 5:colcon.colcon_core.verb:set package 'oled_display' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.132s] Level 5:colcon.colcon_core.verb:set package 'oled_display' build argument 'cmake_clean_cache' from command line to 'False'
+[2.132s] Level 5:colcon.colcon_core.verb:set package 'oled_display' build argument 'cmake_clean_first' from command line to 'False'
+[2.132s] Level 5:colcon.colcon_core.verb:set package 'oled_display' build argument 'cmake_force_configure' from command line to 'False'
+[2.132s] Level 5:colcon.colcon_core.verb:set package 'oled_display' build argument 'ament_cmake_args' from command line to 'None'
+[2.132s] Level 5:colcon.colcon_core.verb:set package 'oled_display' build argument 'catkin_cmake_args' from command line to 'None'
+[2.133s] Level 5:colcon.colcon_core.verb:set package 'oled_display' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.133s] DEBUG:colcon.colcon_core.verb:Building package 'oled_display' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot/Software/ROS2/Madox/madox_ws/build/oled_display', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display', 'merge_install': False, 'path': '/home/robot/Software/ROS2/Madox/madox_ws/src/oled_display', 'symlink_install': False, 'test_result_base': None}
+[2.147s] Level 5:colcon.colcon_core.verb:set package 'py_camera' build argument 'cmake_args' from command line to 'None'
+[2.147s] Level 5:colcon.colcon_core.verb:set package 'py_camera' build argument 'cmake_target' from command line to 'None'
+[2.147s] Level 5:colcon.colcon_core.verb:set package 'py_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.147s] Level 5:colcon.colcon_core.verb:set package 'py_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[2.147s] Level 5:colcon.colcon_core.verb:set package 'py_camera' build argument 'cmake_clean_first' from command line to 'False'
+[2.148s] Level 5:colcon.colcon_core.verb:set package 'py_camera' build argument 'cmake_force_configure' from command line to 'False'
+[2.148s] Level 5:colcon.colcon_core.verb:set package 'py_camera' build argument 'ament_cmake_args' from command line to 'None'
+[2.148s] Level 5:colcon.colcon_core.verb:set package 'py_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[2.148s] Level 5:colcon.colcon_core.verb:set package 'py_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.148s] DEBUG:colcon.colcon_core.verb:Building package 'py_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot/Software/ROS2/Madox/madox_ws/build/py_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera', 'merge_install': False, 'path': '/home/robot/Software/ROS2/Madox/madox_ws/src/py_camera', 'symlink_install': False, 'test_result_base': None}
+[2.163s] Level 5:colcon.colcon_core.verb:set package 'py_drive' build argument 'cmake_args' from command line to 'None'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'py_drive' build argument 'cmake_target' from command line to 'None'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'py_drive' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'py_drive' build argument 'cmake_clean_cache' from command line to 'False'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'py_drive' build argument 'cmake_clean_first' from command line to 'False'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'py_drive' build argument 'cmake_force_configure' from command line to 'False'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'py_drive' build argument 'ament_cmake_args' from command line to 'None'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'py_drive' build argument 'catkin_cmake_args' from command line to 'None'
+[2.164s] Level 5:colcon.colcon_core.verb:set package 'py_drive' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.165s] DEBUG:colcon.colcon_core.verb:Building package 'py_drive' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot/Software/ROS2/Madox/madox_ws/build/py_drive', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive', 'merge_install': False, 'path': '/home/robot/Software/ROS2/Madox/madox_ws/src/py_drive', 'symlink_install': False, 'test_result_base': None}
+[2.181s] Level 5:colcon.colcon_core.verb:set package 'py_test_node' build argument 'cmake_args' from command line to 'None'
+[2.181s] Level 5:colcon.colcon_core.verb:set package 'py_test_node' build argument 'cmake_target' from command line to 'None'
+[2.181s] Level 5:colcon.colcon_core.verb:set package 'py_test_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.181s] Level 5:colcon.colcon_core.verb:set package 'py_test_node' build argument 'cmake_clean_cache' from command line to 'False'
+[2.181s] Level 5:colcon.colcon_core.verb:set package 'py_test_node' build argument 'cmake_clean_first' from command line to 'False'
+[2.181s] Level 5:colcon.colcon_core.verb:set package 'py_test_node' build argument 'cmake_force_configure' from command line to 'False'
+[2.182s] Level 5:colcon.colcon_core.verb:set package 'py_test_node' build argument 'ament_cmake_args' from command line to 'None'
+[2.182s] Level 5:colcon.colcon_core.verb:set package 'py_test_node' build argument 'catkin_cmake_args' from command line to 'None'
+[2.182s] Level 5:colcon.colcon_core.verb:set package 'py_test_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.182s] DEBUG:colcon.colcon_core.verb:Building package 'py_test_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node', 'merge_install': False, 'path': '/home/robot/Software/ROS2/Madox/madox_ws/src/py_test_node', 'symlink_install': False, 'test_result_base': None}
+[2.196s] Level 5:colcon.colcon_core.verb:set package 'sys_variables' build argument 'cmake_args' from command line to 'None'
+[2.196s] Level 5:colcon.colcon_core.verb:set package 'sys_variables' build argument 'cmake_target' from command line to 'None'
+[2.197s] Level 5:colcon.colcon_core.verb:set package 'sys_variables' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.197s] Level 5:colcon.colcon_core.verb:set package 'sys_variables' build argument 'cmake_clean_cache' from command line to 'False'
+[2.197s] Level 5:colcon.colcon_core.verb:set package 'sys_variables' build argument 'cmake_clean_first' from command line to 'False'
+[2.197s] Level 5:colcon.colcon_core.verb:set package 'sys_variables' build argument 'cmake_force_configure' from command line to 'False'
+[2.197s] Level 5:colcon.colcon_core.verb:set package 'sys_variables' build argument 'ament_cmake_args' from command line to 'None'
+[2.197s] Level 5:colcon.colcon_core.verb:set package 'sys_variables' build argument 'catkin_cmake_args' from command line to 'None'
+[2.197s] Level 5:colcon.colcon_core.verb:set package 'sys_variables' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.198s] DEBUG:colcon.colcon_core.verb:Building package 'sys_variables' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot/Software/ROS2/Madox/madox_ws/build/sys_variables', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables', 'merge_install': False, 'path': '/home/robot/Software/ROS2/Madox/madox_ws/src/sys_variables', 'symlink_install': False, 'test_result_base': None}
+[2.199s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.207s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.208s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robot/Software/ROS2/Madox/madox_ws/src/motor_test' with build type 'ament_python'
+[2.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_test', 'ament_prefix_path')
+[2.232s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot/Software/ROS2/Madox/madox_ws/install/motor_test/share/motor_test/hook/ament_prefix_path.ps1'
+[2.262s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot/Software/ROS2/Madox/madox_ws/install/motor_test/share/motor_test/hook/ament_prefix_path.dsv'
+[2.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot/Software/ROS2/Madox/madox_ws/install/motor_test/share/motor_test/hook/ament_prefix_path.sh'
+[2.296s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.296s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.353s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[2.396s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robot/Software/ROS2/Madox/madox_ws/src/oled_display' with build type 'ament_python'
+[2.397s] Level 1:colcon.colcon_core.shell:create_environment_hook('oled_display', 'ament_prefix_path')
+[2.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/share/oled_display/hook/ament_prefix_path.ps1'
+[2.419s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/share/oled_display/hook/ament_prefix_path.dsv'
+[2.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/share/oled_display/hook/ament_prefix_path.sh'
+[2.454s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.455s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.485s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[2.525s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_camera' with build type 'ament_python'
+[2.526s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_camera', 'ament_prefix_path')
+[2.530s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/share/py_camera/hook/ament_prefix_path.ps1'
+[2.549s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/share/py_camera/hook/ament_prefix_path.dsv'
+[2.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/share/py_camera/hook/ament_prefix_path.sh'
+[2.585s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.585s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.616s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[2.674s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_drive' with build type 'ament_python'
+[2.674s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_drive', 'ament_prefix_path')
+[2.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/share/py_drive/hook/ament_prefix_path.ps1'
+[2.699s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/share/py_drive/hook/ament_prefix_path.dsv'
+[2.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/share/py_drive/hook/ament_prefix_path.sh'
+[2.739s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.740s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.781s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[3.908s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robot/Software/ROS2/Madox/madox_ws/src/motor_test'
+[3.912s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.912s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.941s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[5.387s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robot/Software/ROS2/Madox/madox_ws/src/oled_display'
+[5.391s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.391s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.421s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[6.539s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_camera'
+[6.543s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.543s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.576s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[7.685s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_drive'
+[7.691s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.691s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.727s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[7.836s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/motor_test': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/motor_test/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor_test build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/motor_test/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/motor_test --record /home/robot/Software/ROS2/Madox/madox_ws/build/motor_test/install.log --single-version-externally-managed
+[7.878s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/oled_display': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/oled_display build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/oled_display/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/oled_display --record /home/robot/Software/ROS2/Madox/madox_ws/build/oled_display/install.log --single-version-externally-managed
+[7.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_camera': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_camera build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/py_camera/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_camera --record /home/robot/Software/ROS2/Madox/madox_ws/build/py_camera/install.log --single-version-externally-managed
+[8.010s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/py_drive': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_drive build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/py_drive --record /home/robot/Software/ROS2/Madox/madox_ws/build/py_drive/install.log --single-version-externally-managed
+[9.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/motor_test' returned '1': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/motor_test/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor_test build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/motor_test/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/motor_test --record /home/robot/Software/ROS2/Madox/madox_ws/build/motor_test/install.log --single-version-externally-managed
+[10.111s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.112s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.113s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[10.113s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.192s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.192s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.192s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[35.218s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+[35.218s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[35.222s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robot/Software/ROS2/Madox/madox_ws/install/local_setup.ps1'
+[35.248s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robot/Software/ROS2/Madox/madox_ws/install/_local_setup_util_ps1.py'
+[35.271s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robot/Software/ROS2/Madox/madox_ws/install/setup.ps1'
+[35.324s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robot/Software/ROS2/Madox/madox_ws/install/local_setup.sh'
+[35.341s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robot/Software/ROS2/Madox/madox_ws/install/_local_setup_util_sh.py'
+[35.358s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robot/Software/ROS2/Madox/madox_ws/install/setup.sh'
+[35.406s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robot/Software/ROS2/Madox/madox_ws/install/local_setup.bash'
+[35.423s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robot/Software/ROS2/Madox/madox_ws/install/setup.bash'
+[35.468s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robot/Software/ROS2/Madox/madox_ws/install/local_setup.zsh'
+[35.491s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robot/Software/ROS2/Madox/madox_ws/install/setup.zsh'

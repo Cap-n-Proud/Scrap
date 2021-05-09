@@ -1,0 +1,24 @@
+[5.624s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/motor_test': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/motor_test/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor_test build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/motor_test/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/motor_test --record /home/robot/Software/ROS2/Madox/madox_ws/build/motor_test/install.log --single-version-externally-managed
+[6.790s] running egg_info
+[6.794s] creating ../../build/motor_test/motor_test.egg-info
+[6.799s] writing ../../build/motor_test/motor_test.egg-info/PKG-INFO
+[6.829s] writing dependency_links to ../../build/motor_test/motor_test.egg-info/dependency_links.txt
+[6.843s] writing entry points to ../../build/motor_test/motor_test.egg-info/entry_points.txt
+[6.855s] writing requirements to ../../build/motor_test/motor_test.egg-info/requires.txt
+[6.987s] writing top-level names to ../../build/motor_test/motor_test.egg-info/top_level.txt
+[7.020s] writing manifest file '../../build/motor_test/motor_test.egg-info/SOURCES.txt'
+[7.218s] package init file 'motor_test/__init__.py' not found (or not a regular file)
+[7.241s] reading manifest file '../../build/motor_test/motor_test.egg-info/SOURCES.txt'
+[7.252s] writing manifest file '../../build/motor_test/motor_test.egg-info/SOURCES.txt'
+[7.260s] running build
+[7.260s] running build_py
+[7.264s] running install
+[7.270s] running install_lib
+[7.280s] warning: install_lib: '/home/robot/Software/ROS2/Madox/madox_ws/build/motor_test/build/lib' does not exist -- no Python modules to install
+[7.280s] 
+[7.281s] running install_data
+[7.282s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/motor_test/share/ament_index
+[7.284s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/motor_test/share/ament_index/resource_index
+[7.294s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/motor_test/share/ament_index/resource_index/packages
+[7.299s] error: can't copy 'resource/motor_test': doesn't exist or not a regular file
+[7.389s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/motor_test' returned '1': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/motor_test/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motor_test build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/motor_test/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/motor_test --record /home/robot/Software/ROS2/Madox/madox_ws/build/motor_test/install.log --single-version-externally-managed

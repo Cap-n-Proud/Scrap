@@ -1,0 +1,4 @@
+package init file 'motor_test/__init__.py' not found (or not a regular file)
+warning: install_lib: '/home/robot/Software/ROS2/Madox/madox_ws/build/motor_test/build/lib' does not exist -- no Python modules to install
+
+error: can't copy 'resource/motor_test': doesn't exist or not a regular file
