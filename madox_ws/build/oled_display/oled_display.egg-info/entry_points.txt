@@ -1,0 +1,3 @@
+[console_scripts]
+display = oled_display.oled:main
+
