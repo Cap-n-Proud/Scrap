@@ -41,18 +41,6 @@ def gstreamer_pipeline(
     )
 
 
-def drawing_def():
-
-    thickness = 8
-    font = cv2.FONT_HERSHEY_SIMPLEX
-    font_size = 0.3
-    GREEN = (255, 255, 0)
-    font_color = GREEN
-    font_thickness = 1
-    w = 320
-    h = 200
-
-
 class Camera(metaclass=Singleton):
     def __init__(self, source, width, height):
         self._read_lock = Lock()
@@ -61,11 +49,11 @@ class Camera(metaclass=Singleton):
         #     gstreamer_pipeline(flip_method=0), cv2.CAP_GSTREAMER
         # )
         # cv2.FONT_HERSHEY_SIMPLEX = 0
-        self.text_overlay_settings = '{ "thickness":0, "font":0, "font_size":0.3, "font_color": [255, 255, 0], "font_thickness": 1,"w":320, "h":240, "row_height": 10, "column":15, "padding": 42}'
+        self.text_overlay_settings = '{ "thickness":0, "font":0, "font_size":0.3, "font_color": [255, 255, 0], "font_thickness": 1,"w":640, "h":480, "row_height": 10, "column":15, "padding": 42}'
         # parse x:
         self.text_settings = json.loads(self.text_overlay_settings)
         self.cap = cv2.VideoCapture(
-            "nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)320, height=(int)200,format=(string)NV12, framerate=(fraction)15/1 ! nvvidconv ! video/x-raw, format=(string)BGRx ! videoconvert !  appsink"
+            "nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)640, height=(int)480,format=(string)NV12, framerate=(fraction)15/1 ! nvvidconv ! video/x-raw, format=(string)BGRx ! videoconvert !  appsink"
         )
         # self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
         # self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
