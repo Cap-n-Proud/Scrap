@@ -27,12 +27,16 @@ SLEEP_IN_SEC = 0.050
 x = 0
 y = 0
 display_config = 0
+power_info = "N/A"
+CPU_info = "N/A"
+diff_fps = 1
 
 
 class CameraHandler(BaseHTTPRequestHandler):
     def __init__(self, request, client_address, server):
         self.document_root = server.get_document_root()
         self.camera = server.get_camera()
+
         super(CameraHandler, self).__init__(request, client_address, server)
 
     def do_GET(self):
@@ -43,13 +47,18 @@ class CameraHandler(BaseHTTPRequestHandler):
                 "Content-type", "multipart/x-mixed-replace; boundary=--jpgboundary"
             )
             self.end_headers()
-            diff_fps = 1
             while self.camera.is_opened():
+                global diff_fps
                 start_fps = time.time()
                 frame = self.camera.get_frame(SLEEP_IN_SEC)
                 if display_config == 0:
                     self.camera.drawCrosshair(frame)
                     self.camera.draw_joy(frame, x, y)
+                    self.camera.draw_power(frame, power_info)
+                    self.camera.draw_CPU(frame, CPU_info)
+                    self.camera.draw_FPS(frame, "FPS: " + str(int(1 / float(diff_fps))))
+                    # self.camera.draw_power2(frame, "AAA")
+
                 elif display_config == 1:
                     self.camera.drawCrosshair(frame)
                 elif display_config == 2:
@@ -86,6 +95,20 @@ class Robot_Info(Node):
         super().__init__("robot_info")
 
         self.joy_topic = self.create_subscription(Joy, "joy", self.joy_topic, 10)
+        self.CPU_topic = self.create_subscription(
+            String, "info_sys_CPU", self.CPU_topic, 10
+        )
+        self.power_topic = self.create_subscription(
+            String, "info_sys_power", self.power_topic, 10
+        )
+
+    def power_topic(self, msg):
+        global power_info
+        power_info = msg.data
+
+    def CPU_topic(self, msg):
+        global CPU_info
+        CPU_info = msg.data
 
     def joy_topic(self, msg):
         # need to debounce the button: https://kaspars.net/blog/micropython-button-debounce
@@ -93,7 +116,7 @@ class Robot_Info(Node):
         global x, y, display_config
         x = round(msg.axes[0], 2)
         y = round(msg.axes[1], 2)
-        if switch == 1:
+        if msg.buttons[9] == 1:
             if display_config >= 3:
                 display_config = 0
             else:
@@ -143,7 +166,6 @@ def main(args=None):
         # thread = threading.Thread(target=rclpy.spin, args=(server))
         thread = threading.Thread(target=rclpy.spin(r_info))
         thread.start()
-        # logger.info("AAAAAAAAAAAAAAAAAAAAAAAAAA")
 
     except KeyboardInterrupt:
         logger.info("server is stopping ...")

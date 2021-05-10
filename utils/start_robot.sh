@@ -13,4 +13,4 @@ source /opt/ros/foxy/setup.bash
 ros2 run py_drive listener -s &
 ros2 run py_camera camera &
 ros2 run oled_display oled &
-ros  run sys_variables  sys_info &
+ros2  run sys_variables  sys_info &

@@ -1,6 +1,7 @@
 import cv2
 import time
 from threading import Lock
+import json
 
 
 class Singleton(type):
@@ -40,6 +41,18 @@ def gstreamer_pipeline(
     )
 
 
+def drawing_def():
+
+    thickness = 8
+    font = cv2.FONT_HERSHEY_SIMPLEX
+    font_size = 0.3
+    GREEN = (255, 255, 0)
+    font_color = GREEN
+    font_thickness = 1
+    w = 320
+    h = 200
+
+
 class Camera(metaclass=Singleton):
     def __init__(self, source, width, height):
         self._read_lock = Lock()
@@ -47,21 +60,26 @@ class Camera(metaclass=Singleton):
         # self.cap = cv2.VideoCapture(
         #     gstreamer_pipeline(flip_method=0), cv2.CAP_GSTREAMER
         # )
+        # cv2.FONT_HERSHEY_SIMPLEX = 0
+        self.text_overlay_settings = '{ "thickness":0, "font":0, "font_size":0.3, "font_color": [255, 255, 0], "font_thickness": 1,"w":320, "h":240, "row_height": 10, "column":15, "padding": 42}'
+        # parse x:
+        self.text_settings = json.loads(self.text_overlay_settings)
         self.cap = cv2.VideoCapture(
             "nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)320, height=(int)200,format=(string)NV12, framerate=(fraction)15/1 ! nvvidconv ! video/x-raw, format=(string)BGRx ! videoconvert !  appsink"
         )
         # self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
         # self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
 
-    def drawCrosshair(ret, frame):
-        w = 320
-        h = 200
+    def drawCrosshair(self, frame):
+        w = self.text_settings["w"]
+        h = self.text_settings["h"]
         size = 10
+        v_shift = -20
 
         cv2.line(
             img=frame,
-            pt1=(int(w / 2 - size), int(h / 2)),
-            pt2=(int(w / 2 - 2 * size), int(h / 2)),
+            pt1=(int(w / 2 - size), int(h / 2 + v_shift)),
+            pt2=(int(w / 2 - 2 * size), int(h / 2 + v_shift)),
             color=(255, 255, 0),
             thickness=1,
             lineType=8,
@@ -69,8 +87,8 @@ class Camera(metaclass=Singleton):
         )
         cv2.line(
             img=frame,
-            pt1=(int(w / 2 + size), int(h / 2)),
-            pt2=(int(w / 2 + 2 * size), int(h / 2)),
+            pt1=(int(w / 2 + size), int(h / 2 + v_shift)),
+            pt2=(int(w / 2 + 2 * size), int(h / 2 + v_shift)),
             color=(255, 255, 0),
             thickness=1,
             lineType=8,
@@ -78,8 +96,8 @@ class Camera(metaclass=Singleton):
         )
         cv2.line(
             img=frame,
-            pt1=(int(w / 2), int(h / 2) - size),
-            pt2=(int(w / 2), int(h / 2) - 2 * size),
+            pt1=(int(w / 2), int(h / 2) - size + v_shift),
+            pt2=(int(w / 2), int(h / 2) - 2 * size + v_shift),
             color=(255, 255, 0),
             thickness=1,
             lineType=8,
@@ -87,27 +105,30 @@ class Camera(metaclass=Singleton):
         )
         cv2.line(
             img=frame,
-            pt1=(int(w / 2), int(h / 2) + size),
-            pt2=(int(w / 2), int(h / 2) + 2 * size),
+            pt1=(int(w / 2), int(h / 2) + size + v_shift),
+            pt2=(int(w / 2), int(h / 2) + 2 * size + v_shift),
             color=(255, 255, 0),
             thickness=1,
             lineType=8,
             shift=0,
         )
 
-    def draw_joy(ret, frame, x, y):
-        thickness = 8
-        font = cv2.FONT_HERSHEY_SIMPLEX
-        font_size = 0.3
-        GREEN = (255, 255, 0)
-        font_color = GREEN
-        font_thickness = 1
-        w = 320
-        h = 200
+    def draw_joy(self, frame, x, y):
+        thickness = self.text_settings["thickness"]
+        font = self.text_settings["font"]
+        font_size = self.text_settings["font_size"]
+        font_color = self.text_settings["font_color"]
+        font_thickness = int(self.text_settings["font_thickness"])
+        w = self.text_settings["w"]
+        h = self.text_settings["h"]
+        padding = self.text_settings["padding"]
+        row_height = self.text_settings["row_height"]
+        column = self.text_settings["column"]
+
         cv2.putText(
             frame,
             str(x),
-            (5, h - 5),
+            (int(w - padding - 18 * column), int(h - padding)),
             font,
             font_size,
             font_color,
@@ -117,7 +138,7 @@ class Camera(metaclass=Singleton):
         cv2.putText(
             frame,
             str(y),
-            (40, h - 5),
+            (int(w - padding - 16 * column), int(h - padding)),
             font,
             font_size,
             font_color,
@@ -126,18 +147,89 @@ class Camera(metaclass=Singleton):
         )
 
     def drawOverlay(ret, frame, f):
-        thickness = 8
-        font = cv2.FONT_HERSHEY_SIMPLEX
-        font_size = 0.3
-        GREEN = (255, 255, 0)
-        font_color = GREEN
-        font_thickness = 1
-        w = 320
-        h = 200
+        thickness = self.text_settings["thickness"]
+        font = self.text_settings["font"]
+        font_size = self.text_settings["font_size"]
+        font_color = self.text_settings["font_color"]
+        font_thickness = int(self.text_settings["font_thickness"])
+        w = self.text_settings["w"]
+        h = self.text_settings["h"]
+        padding = self.text_settings["padding"]
+        row_height = self.text_settings["row_height"]
+        column = self.text_settings["column"]
         cv2.putText(
             frame,
             str(int(f)),
             (w - 20, h - 20),
+            font,
+            font_size,
+            font_color,
+            font_thickness,
+            cv2.LINE_AA,
+        )
+
+    def draw_power(self, frame, pow):
+        thickness = self.text_settings["thickness"]
+        font = self.text_settings["font"]
+        font_size = self.text_settings["font_size"]
+        font_color = self.text_settings["font_color"]
+        font_thickness = int(self.text_settings["font_thickness"])
+        w = self.text_settings["w"]
+        h = self.text_settings["h"]
+        padding = self.text_settings["padding"]
+        row_height = self.text_settings["row_height"]
+        column = self.text_settings["column"]
+
+        cv2.putText(
+            frame,
+            str(pow),
+            (int(w - padding - 4 * column), int(h - padding)),
+            font,
+            font_size,
+            font_color,
+            font_thickness,
+            cv2.LINE_AA,
+        )
+
+    def draw_CPU(self, frame, CPU):
+        thickness = self.text_settings["thickness"]
+        font = self.text_settings["font"]
+        font_size = self.text_settings["font_size"]
+        font_color = self.text_settings["font_color"]
+        font_thickness = int(self.text_settings["font_thickness"])
+        w = self.text_settings["w"]
+        h = self.text_settings["h"]
+        padding = self.text_settings["padding"]
+        row_height = self.text_settings["row_height"]
+        column = self.text_settings["column"]
+
+        cv2.putText(
+            frame,
+            str(CPU),
+            (int(w - padding - 4 * column), int(h - padding - row_height)),
+            font,
+            font_size,
+            font_color,
+            font_thickness,
+            cv2.LINE_AA,
+        )
+
+    def draw_FPS(self, frame, FPS):
+        thickness = self.text_settings["thickness"]
+        font = self.text_settings["font"]
+        font_size = self.text_settings["font_size"]
+        font_color = self.text_settings["font_color"]
+        font_thickness = int(self.text_settings["font_thickness"])
+        w = self.text_settings["w"]
+        h = self.text_settings["h"]
+        padding = self.text_settings["padding"]
+        row_height = self.text_settings["row_height"]
+        column = self.text_settings["column"]
+
+        cv2.putText(
+            frame,
+            str(FPS),
+            (int(w - padding - 4 * column), int(h - padding - 2 * row_height)),
             font,
             font_size,
             font_color,

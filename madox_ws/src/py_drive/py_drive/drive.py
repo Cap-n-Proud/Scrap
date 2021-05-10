@@ -86,6 +86,7 @@ class Robot(Node, SingletonConfigurable):
             )
         self.move(msg.axes[1], -msg.axes[0])
 
+        # These are the buttons to do fine adjustments to the position of the robot
         if msg.axes[7] != 0:
             self.move(msg.axes[7] * self.speed_limit - self.left_trim, 0)
 
