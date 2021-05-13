@@ -1,0 +1,47 @@
+[4.834s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_camera': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_camera build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera --record /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/install.log --single-version-externally-managed
+[5.736s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[5.736s]   warnings.warn(
+[5.736s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[5.737s]   warnings.warn(
+[5.893s] running egg_info
+[5.897s] creating ../../build/jetbot_camera/jetbot_camera.egg-info
+[5.901s] writing ../../build/jetbot_camera/jetbot_camera.egg-info/PKG-INFO
+[5.926s] writing dependency_links to ../../build/jetbot_camera/jetbot_camera.egg-info/dependency_links.txt
+[5.939s] writing entry points to ../../build/jetbot_camera/jetbot_camera.egg-info/entry_points.txt
+[5.952s] writing requirements to ../../build/jetbot_camera/jetbot_camera.egg-info/requires.txt
+[5.962s] writing top-level names to ../../build/jetbot_camera/jetbot_camera.egg-info/top_level.txt
+[5.980s] writing manifest file '../../build/jetbot_camera/jetbot_camera.egg-info/SOURCES.txt'
+[6.181s] reading manifest file '../../build/jetbot_camera/jetbot_camera.egg-info/SOURCES.txt'
+[6.194s] writing manifest file '../../build/jetbot_camera/jetbot_camera.egg-info/SOURCES.txt'
+[6.202s] running build
+[6.202s] running build_py
+[6.206s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build
+[6.208s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib
+[6.212s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera
+[6.222s] copying jetbot_camera/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera
+[6.232s] copying jetbot_camera/log.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera
+[6.250s] copying jetbot_camera/server.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera
+[6.272s] copying jetbot_camera/camera.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera
+[6.287s] running install
+[6.290s] running install_lib
+[6.303s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera
+[6.309s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/server.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera
+[6.327s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/log.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera
+[6.345s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera
+[6.360s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/camera.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera
+[6.386s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/server.py to server.cpython-38.pyc
+[6.417s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/log.py to log.cpython-38.pyc
+[6.444s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/__init__.py to __init__.cpython-38.pyc
+[6.464s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/camera.py to camera.cpython-38.pyc
+[6.491s] running install_data
+[6.495s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/ament_index
+[6.497s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/ament_index/resource_index
+[6.504s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/ament_index/resource_index/packages
+[6.511s] copying resource/jetbot_camera -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/ament_index/resource_index/packages
+[6.526s] copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/jetbot_camera
+[6.539s] running install_egg_info
+[6.548s] Copying ../../build/jetbot_camera/jetbot_camera.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera-1.0.0-py3.8.egg-info
+[6.700s] running install_scripts
+[6.781s] Installing ros2_jetbot_camera script to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/jetbot_camera
+[6.799s] writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/install.log'
+[7.224s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_camera' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_camera build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera --record /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/install.log --single-version-externally-managed

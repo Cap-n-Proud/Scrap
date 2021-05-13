@@ -1,0 +1,53 @@
+[1.277s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_oled_display': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_oled_display build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display --record /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/install.log --single-version-externally-managed
+[2.043s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.043s]   warnings.warn(
+[2.044s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[2.044s]   warnings.warn(
+[2.169s] running egg_info
+[2.174s] creating ../../build/jetbot_oled_display/jetbot_oled_display.egg-info
+[2.178s] writing ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/PKG-INFO
+[2.204s] writing dependency_links to ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/dependency_links.txt
+[2.218s] writing entry points to ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/entry_points.txt
+[2.232s] writing requirements to ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/requires.txt
+[2.241s] writing top-level names to ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/top_level.txt
+[2.264s] writing manifest file '../../build/jetbot_oled_display/jetbot_oled_display.egg-info/SOURCES.txt'
+[2.448s] reading manifest file '../../build/jetbot_oled_display/jetbot_oled_display.egg-info/SOURCES.txt'
+[2.459s] writing manifest file '../../build/jetbot_oled_display/jetbot_oled_display.egg-info/SOURCES.txt'
+[2.468s] running build
+[2.468s] running build_py
+[2.472s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build
+[2.474s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib
+[2.478s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display
+[2.487s] copying jetbot_oled_display/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display
+[2.495s] copying jetbot_oled_display/ina219.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display
+[2.509s] copying jetbot_oled_display/utils.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display
+[2.529s] copying jetbot_oled_display/timer.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display
+[2.543s] copying jetbot_oled_display/oled.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display
+[2.557s] copying jetbot_oled_display/ads1115.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display
+[2.575s] running install
+[2.580s] running install_lib
+[2.595s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display
+[2.601s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display/ads1115.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display
+[2.630s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display/ina219.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display
+[2.655s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display/utils.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display
+[2.683s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display
+[2.704s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display/oled.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display
+[2.728s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display/timer.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display
+[2.764s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display/ads1115.py to ads1115.cpython-38.pyc
+[2.811s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display/ina219.py to ina219.cpython-38.pyc
+[2.843s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display/utils.py to utils.cpython-38.pyc
+[2.873s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display/__init__.py to __init__.cpython-38.pyc
+[2.902s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display/oled.py to oled.cpython-38.pyc
+[2.941s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display/timer.py to timer.cpython-38.pyc
+[2.977s] running install_data
+[2.985s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/ament_index
+[2.987s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/ament_index/resource_index
+[2.993s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/ament_index/resource_index/packages
+[3.005s] copying resource/jetbot_oled_display -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/ament_index/resource_index/packages
+[3.017s] copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/jetbot_oled_display
+[3.033s] running install_egg_info
+[3.053s] Copying ../../build/jetbot_oled_display/jetbot_oled_display.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display-1.0.0-py3.8.egg-info
+[3.246s] running install_scripts
+[3.333s] Installing ros2_jetbot_oled_display script to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/jetbot_oled_display
+[3.358s] writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/install.log'
+[3.471s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_oled_display' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_oled_display build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display --record /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/install.log --single-version-externally-managed

@@ -1,0 +1,3 @@
+[console_scripts]
+node = py_test_node.test_node:main
+

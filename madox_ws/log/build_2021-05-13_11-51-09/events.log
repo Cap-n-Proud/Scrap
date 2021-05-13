@@ -1,0 +1,72 @@
+[0.000000] (-) TimerEvent: {}
+[0.000748] (-) JobUnselected: {'identifier': 'camera_pan_tilt'}
+[0.000883] (-) JobUnselected: {'identifier': 'jetbot_camera'}
+[0.000976] (-) JobUnselected: {'identifier': 'jetbot_drive'}
+[0.001078] (-) JobUnselected: {'identifier': 'jetbot_oled_display'}
+[0.001166] (-) JobUnselected: {'identifier': 'py_test_node'}
+[0.001264] (jetbot_sys_info) JobQueued: {'identifier': 'jetbot_sys_info', 'dependencies': OrderedDict()}
+[0.001486] (jetbot_sys_info) JobStarted: {'identifier': 'jetbot_sys_info'}
+[0.095681] (-) TimerEvent: {}
+[0.201479] (-) TimerEvent: {}
+[0.302839] (-) TimerEvent: {}
+[0.403636] (-) TimerEvent: {}
+[0.504279] (-) TimerEvent: {}
+[0.604894] (-) TimerEvent: {}
+[0.705445] (-) TimerEvent: {}
+[0.806059] (-) TimerEvent: {}
+[0.906660] (-) TimerEvent: {}
+[1.007278] (-) TimerEvent: {}
+[1.107890] (-) TimerEvent: {}
+[1.208588] (-) TimerEvent: {}
+[1.310626] (-) TimerEvent: {}
+[1.345962] (jetbot_sys_info) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/jetbot_sys_info', 'build', '--build-base', '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build', 'install', '--prefix', '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info', '--record', '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_sys_info', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 44956 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 44956 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[1.410810] (-) TimerEvent: {}
+[1.511524] (-) TimerEvent: {}
+[1.612140] (-) TimerEvent: {}
+[1.712980] (-) TimerEvent: {}
+[1.814152] (-) TimerEvent: {}
+[1.914761] (-) TimerEvent: {}
+[2.015355] (-) TimerEvent: {}
+[2.115999] (-) TimerEvent: {}
+[2.190882] (jetbot_sys_info) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[2.191445] (jetbot_sys_info) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.191783] (jetbot_sys_info) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[2.192106] (jetbot_sys_info) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.216190] (-) TimerEvent: {}
+[2.316772] (-) TimerEvent: {}
+[2.317762] (jetbot_sys_info) StdoutLine: {'line': b'running egg_info\n'}
+[2.321616] (jetbot_sys_info) StdoutLine: {'line': b'writing ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/PKG-INFO\n'}
+[2.334084] (jetbot_sys_info) StdoutLine: {'line': b'writing dependency_links to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/dependency_links.txt\n'}
+[2.343353] (jetbot_sys_info) StdoutLine: {'line': b'writing entry points to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/entry_points.txt\n'}
+[2.352282] (jetbot_sys_info) StdoutLine: {'line': b'writing requirements to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/requires.txt\n'}
+[2.361787] (jetbot_sys_info) StdoutLine: {'line': b'writing top-level names to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/top_level.txt\n'}
+[2.416908] (-) TimerEvent: {}
+[2.517552] (-) TimerEvent: {}
+[2.550578] (jetbot_sys_info) StdoutLine: {'line': b"reading manifest file '../../build/jetbot_sys_info/jetbot_sys_info.egg-info/SOURCES.txt'\n"}
+[2.567472] (jetbot_sys_info) StdoutLine: {'line': b"writing manifest file '../../build/jetbot_sys_info/jetbot_sys_info.egg-info/SOURCES.txt'\n"}
+[2.576777] (jetbot_sys_info) StdoutLine: {'line': b'running build\n'}
+[2.577374] (jetbot_sys_info) StdoutLine: {'line': b'running build_py\n'}
+[2.592340] (jetbot_sys_info) StdoutLine: {'line': b'copying jetbot_sys_info/sys_info.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info\n'}
+[2.614063] (jetbot_sys_info) StdoutLine: {'line': b'running install\n'}
+[2.617763] (-) TimerEvent: {}
+[2.618427] (jetbot_sys_info) StdoutLine: {'line': b'running install_lib\n'}
+[2.642521] (jetbot_sys_info) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info/sys_info.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info\n'}
+[2.675365] (jetbot_sys_info) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info/sys_info.py to sys_info.cpython-38.pyc\n'}
+[2.704009] (jetbot_sys_info) StdoutLine: {'line': b'running install_data\n'}
+[2.718092] (jetbot_sys_info) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.719111] (-) TimerEvent: {}
+[2.728141] (jetbot_sys_info) StdoutLine: {'line': b"removing '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[2.762048] (jetbot_sys_info) StdoutLine: {'line': b'Copying ../../build/jetbot_sys_info/jetbot_sys_info.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info-0.0.0-py3.8.egg-info\n'}
+[2.819539] (-) TimerEvent: {}
+[2.916169] (jetbot_sys_info) StdoutLine: {'line': b'running install_scripts\n'}
+[2.919569] (-) TimerEvent: {}
+[3.007088] (jetbot_sys_info) StdoutLine: {'line': b'Installing ros2_sys_info script to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/jetbot_sys_info\n'}
+[3.019657] (-) TimerEvent: {}
+[3.024111] (jetbot_sys_info) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/install.log'\n"}
+[3.119911] (-) TimerEvent: {}
+[3.144120] (jetbot_sys_info) CommandEnded: {'returncode': 0}
+[3.220119] (-) TimerEvent: {}
+[3.326460] (-) TimerEvent: {}
+[3.427232] (-) TimerEvent: {}
+[3.449165] (jetbot_sys_info) JobEnded: {'identifier': 'jetbot_sys_info', 'rc': 0}
+[3.496092] (-) EventReactorShutdown: {}

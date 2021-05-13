@@ -1,0 +1,28 @@
+[1.469s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_sys_info': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_sys_info build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info --record /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/install.log --single-version-externally-managed
+[2.317s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.318s]   warnings.warn(
+[2.318s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[2.319s]   warnings.warn(
+[2.442s] running egg_info
+[2.446s] writing ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/PKG-INFO
+[2.457s] writing dependency_links to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/dependency_links.txt
+[2.466s] writing entry points to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/entry_points.txt
+[2.477s] writing requirements to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/requires.txt
+[2.488s] writing top-level names to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/top_level.txt
+[2.678s] reading manifest file '../../build/jetbot_sys_info/jetbot_sys_info.egg-info/SOURCES.txt'
+[2.693s] writing manifest file '../../build/jetbot_sys_info/jetbot_sys_info.egg-info/SOURCES.txt'
+[2.704s] running build
+[2.704s] running build_py
+[2.718s] copying jetbot_sys_info/jetbot_sys_info.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info
+[2.748s] running install
+[2.752s] running install_lib
+[2.768s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info/jetbot_sys_info.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info
+[2.803s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info/jetbot_sys_info.py to jetbot_sys_info.cpython-38.pyc
+[2.837s] running install_data
+[2.851s] running install_egg_info
+[2.861s] removing '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info-0.0.0-py3.8.egg-info' (and everything under it)
+[2.892s] Copying ../../build/jetbot_sys_info/jetbot_sys_info.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info-0.0.0-py3.8.egg-info
+[3.044s] running install_scripts
+[3.124s] Installing ros2_jetbot_sys_info script to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/jetbot_sys_info
+[3.138s] writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/install.log'
+[3.254s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_sys_info' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_sys_info build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info --record /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/install.log --single-version-externally-managed

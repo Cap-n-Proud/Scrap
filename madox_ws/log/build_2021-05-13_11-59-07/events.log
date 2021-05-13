@@ -1,0 +1,430 @@
+[0.000000] (-) TimerEvent: {}
+[0.000547] (camera_pan_tilt) JobQueued: {'identifier': 'camera_pan_tilt', 'dependencies': OrderedDict()}
+[0.000690] (jetbot_camera) JobQueued: {'identifier': 'jetbot_camera', 'dependencies': OrderedDict()}
+[0.000794] (jetbot_drive) JobQueued: {'identifier': 'jetbot_drive', 'dependencies': OrderedDict()}
+[0.000892] (jetbot_oled_display) JobQueued: {'identifier': 'jetbot_oled_display', 'dependencies': OrderedDict()}
+[0.000986] (jetbot_sys_info) JobQueued: {'identifier': 'jetbot_sys_info', 'dependencies': OrderedDict()}
+[0.001087] (py_test_node) JobQueued: {'identifier': 'py_test_node', 'dependencies': OrderedDict()}
+[0.001179] (camera_pan_tilt) JobStarted: {'identifier': 'camera_pan_tilt'}
+[0.092963] (-) TimerEvent: {}
+[0.178064] (jetbot_camera) JobStarted: {'identifier': 'jetbot_camera'}
+[0.193494] (-) TimerEvent: {}
+[0.295179] (-) TimerEvent: {}
+[0.353848] (jetbot_drive) JobStarted: {'identifier': 'jetbot_drive'}
+[0.395290] (-) TimerEvent: {}
+[0.496296] (-) TimerEvent: {}
+[0.539836] (jetbot_oled_display) JobStarted: {'identifier': 'jetbot_oled_display'}
+[0.597624] (-) TimerEvent: {}
+[0.704620] (-) TimerEvent: {}
+[0.805591] (-) TimerEvent: {}
+[0.906578] (-) TimerEvent: {}
+[1.007261] (-) TimerEvent: {}
+[1.107925] (-) TimerEvent: {}
+[1.208598] (-) TimerEvent: {}
+[1.309272] (-) TimerEvent: {}
+[1.409910] (-) TimerEvent: {}
+[1.510603] (-) TimerEvent: {}
+[1.611328] (-) TimerEvent: {}
+[1.712314] (-) TimerEvent: {}
+[1.813949] (-) TimerEvent: {}
+[1.914903] (-) TimerEvent: {}
+[2.015586] (-) TimerEvent: {}
+[2.116261] (-) TimerEvent: {}
+[2.216934] (-) TimerEvent: {}
+[2.317600] (-) TimerEvent: {}
+[2.418325] (-) TimerEvent: {}
+[2.519023] (-) TimerEvent: {}
+[2.619714] (-) TimerEvent: {}
+[2.720998] (-) TimerEvent: {}
+[2.822621] (-) TimerEvent: {}
+[2.923579] (-) TimerEvent: {}
+[3.024209] (-) TimerEvent: {}
+[3.124886] (-) TimerEvent: {}
+[3.225551] (-) TimerEvent: {}
+[3.326249] (-) TimerEvent: {}
+[3.426861] (-) TimerEvent: {}
+[3.527540] (-) TimerEvent: {}
+[3.628219] (-) TimerEvent: {}
+[3.728941] (-) TimerEvent: {}
+[3.829779] (-) TimerEvent: {}
+[3.931131] (-) TimerEvent: {}
+[4.032009] (-) TimerEvent: {}
+[4.132734] (-) TimerEvent: {}
+[4.233401] (-) TimerEvent: {}
+[4.334092] (-) TimerEvent: {}
+[4.434723] (-) TimerEvent: {}
+[4.535452] (-) TimerEvent: {}
+[4.636149] (-) TimerEvent: {}
+[4.736839] (-) TimerEvent: {}
+[4.838078] (-) TimerEvent: {}
+[4.936468] (camera_pan_tilt) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/camera_pan_tilt', 'build', '--build-base', '/home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build', 'install', '--prefix', '/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt', '--record', '/home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/src/camera_pan_tilt', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 44956 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 44956 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[4.972610] (-) TimerEvent: {}
+[4.989963] (jetbot_camera) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/jetbot_camera', 'build', '--build-base', '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build', 'install', '--prefix', '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera', '--record', '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_camera', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 44956 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 44956 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[5.056561] (jetbot_drive) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/jetbot_drive', 'build', '--build-base', '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build', 'install', '--prefix', '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive', '--record', '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_drive', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 44956 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 44956 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[5.088998] (-) TimerEvent: {}
+[5.132645] (jetbot_oled_display) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/jetbot_oled_display', 'build', '--build-base', '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build', 'install', '--prefix', '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display', '--record', '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_oled_display', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 44956 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 44956 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[5.189243] (-) TimerEvent: {}
+[5.290070] (-) TimerEvent: {}
+[5.390736] (-) TimerEvent: {}
+[5.491413] (-) TimerEvent: {}
+[5.592078] (-) TimerEvent: {}
+[5.692744] (-) TimerEvent: {}
+[5.793401] (-) TimerEvent: {}
+[5.870915] (camera_pan_tilt) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[5.871539] (camera_pan_tilt) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.871914] (camera_pan_tilt) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[5.872287] (camera_pan_tilt) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.893562] (-) TimerEvent: {}
+[5.918111] (jetbot_camera) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[5.918755] (jetbot_camera) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.919160] (jetbot_camera) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[5.919586] (jetbot_camera) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.993726] (-) TimerEvent: {}
+[6.018272] (jetbot_drive) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[6.018911] (jetbot_drive) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.019325] (jetbot_drive) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[6.019735] (jetbot_drive) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.032738] (camera_pan_tilt) StdoutLine: {'line': b'running egg_info\n'}
+[6.037567] (camera_pan_tilt) StdoutLine: {'line': b'creating ../../build/camera_pan_tilt/camera_pan_tilt.egg-info\n'}
+[6.041864] (camera_pan_tilt) StdoutLine: {'line': b'writing ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/PKG-INFO\n'}
+[6.068717] (camera_pan_tilt) StdoutLine: {'line': b'writing dependency_links to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/dependency_links.txt\n'}
+[6.075692] (jetbot_camera) StdoutLine: {'line': b'running egg_info\n'}
+[6.079220] (jetbot_camera) StdoutLine: {'line': b'creating ../../build/jetbot_camera/jetbot_camera.egg-info\n'}
+[6.083155] (camera_pan_tilt) StdoutLine: {'line': b'writing entry points to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/entry_points.txt\n'}
+[6.083682] (jetbot_camera) StdoutLine: {'line': b'writing ../../build/jetbot_camera/jetbot_camera.egg-info/PKG-INFO\n'}
+[6.093867] (-) TimerEvent: {}
+[6.095081] (camera_pan_tilt) StdoutLine: {'line': b'writing requirements to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/requires.txt\n'}
+[6.104404] (camera_pan_tilt) StdoutLine: {'line': b'writing top-level names to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/top_level.txt\n'}
+[6.108687] (jetbot_camera) StdoutLine: {'line': b'writing dependency_links to ../../build/jetbot_camera/jetbot_camera.egg-info/dependency_links.txt\n'}
+[6.115932] (jetbot_oled_display) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[6.116488] (jetbot_oled_display) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.116873] (jetbot_oled_display) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[6.117246] (jetbot_oled_display) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.122042] (jetbot_camera) StdoutLine: {'line': b'writing entry points to ../../build/jetbot_camera/jetbot_camera.egg-info/entry_points.txt\n'}
+[6.122747] (camera_pan_tilt) StdoutLine: {'line': b"writing manifest file '../../build/camera_pan_tilt/camera_pan_tilt.egg-info/SOURCES.txt'\n"}
+[6.134895] (jetbot_camera) StdoutLine: {'line': b'writing requirements to ../../build/jetbot_camera/jetbot_camera.egg-info/requires.txt\n'}
+[6.144182] (jetbot_camera) StdoutLine: {'line': b'writing top-level names to ../../build/jetbot_camera/jetbot_camera.egg-info/top_level.txt\n'}
+[6.162550] (jetbot_camera) StdoutLine: {'line': b"writing manifest file '../../build/jetbot_camera/jetbot_camera.egg-info/SOURCES.txt'\n"}
+[6.172299] (jetbot_drive) StdoutLine: {'line': b'running egg_info\n'}
+[6.176947] (jetbot_drive) StdoutLine: {'line': b'creating ../../build/jetbot_drive/jetbot_drive.egg-info\n'}
+[6.181549] (jetbot_drive) StdoutLine: {'line': b'writing ../../build/jetbot_drive/jetbot_drive.egg-info/PKG-INFO\n'}
+[6.194064] (-) TimerEvent: {}
+[6.206074] (jetbot_drive) StdoutLine: {'line': b'writing dependency_links to ../../build/jetbot_drive/jetbot_drive.egg-info/dependency_links.txt\n'}
+[6.220068] (jetbot_drive) StdoutLine: {'line': b'writing entry points to ../../build/jetbot_drive/jetbot_drive.egg-info/entry_points.txt\n'}
+[6.232511] (jetbot_drive) StdoutLine: {'line': b'writing requirements to ../../build/jetbot_drive/jetbot_drive.egg-info/requires.txt\n'}
+[6.242869] (jetbot_drive) StdoutLine: {'line': b'writing top-level names to ../../build/jetbot_drive/jetbot_drive.egg-info/top_level.txt\n'}
+[6.262367] (jetbot_drive) StdoutLine: {'line': b"writing manifest file '../../build/jetbot_drive/jetbot_drive.egg-info/SOURCES.txt'\n"}
+[6.263841] (jetbot_oled_display) StdoutLine: {'line': b'running egg_info\n'}
+[6.268210] (jetbot_oled_display) StdoutLine: {'line': b'creating ../../build/jetbot_oled_display/jetbot_oled_display.egg-info\n'}
+[6.272282] (jetbot_oled_display) StdoutLine: {'line': b'writing ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/PKG-INFO\n'}
+[6.294215] (-) TimerEvent: {}
+[6.297187] (jetbot_oled_display) StdoutLine: {'line': b'writing dependency_links to ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/dependency_links.txt\n'}
+[6.311666] (jetbot_oled_display) StdoutLine: {'line': b'writing entry points to ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/entry_points.txt\n'}
+[6.316618] (camera_pan_tilt) StdoutLine: {'line': b"reading manifest file '../../build/camera_pan_tilt/camera_pan_tilt.egg-info/SOURCES.txt'\n"}
+[6.322761] (jetbot_oled_display) StdoutLine: {'line': b'writing requirements to ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/requires.txt\n'}
+[6.328210] (camera_pan_tilt) StdoutLine: {'line': b"writing manifest file '../../build/camera_pan_tilt/camera_pan_tilt.egg-info/SOURCES.txt'\n"}
+[6.331811] (jetbot_oled_display) StdoutLine: {'line': b'writing top-level names to ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/top_level.txt\n'}
+[6.336384] (camera_pan_tilt) StdoutLine: {'line': b'running build\n'}
+[6.336885] (camera_pan_tilt) StdoutLine: {'line': b'running build_py\n'}
+[6.340694] (camera_pan_tilt) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build\n'}
+[6.342590] (camera_pan_tilt) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build/lib\n'}
+[6.347293] (camera_pan_tilt) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build/lib/camera_pan_tilt\n'}
+[6.349254] (jetbot_oled_display) StdoutLine: {'line': b"writing manifest file '../../build/jetbot_oled_display/jetbot_oled_display.egg-info/SOURCES.txt'\n"}
+[6.355314] (camera_pan_tilt) StdoutLine: {'line': b'copying camera_pan_tilt/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build/lib/camera_pan_tilt\n'}
+[6.363296] (jetbot_camera) StdoutLine: {'line': b"reading manifest file '../../build/jetbot_camera/jetbot_camera.egg-info/SOURCES.txt'\n"}
+[6.368190] (camera_pan_tilt) StdoutLine: {'line': b'running install\n'}
+[6.371206] (camera_pan_tilt) StdoutLine: {'line': b'running install_lib\n'}
+[6.376168] (jetbot_camera) StdoutLine: {'line': b"writing manifest file '../../build/jetbot_camera/jetbot_camera.egg-info/SOURCES.txt'\n"}
+[6.384267] (jetbot_camera) StdoutLine: {'line': b'running build\n'}
+[6.384794] (jetbot_camera) StdoutLine: {'line': b'running build_py\n'}
+[6.386329] (camera_pan_tilt) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt\n'}
+[6.388805] (jetbot_camera) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build\n'}
+[6.390935] (jetbot_camera) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib\n'}
+[6.392828] (camera_pan_tilt) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build/lib/camera_pan_tilt/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt\n'}
+[6.394310] (-) TimerEvent: {}
+[6.395192] (jetbot_camera) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera\n'}
+[6.404294] (jetbot_camera) StdoutLine: {'line': b'copying jetbot_camera/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera\n'}
+[6.413949] (camera_pan_tilt) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt/__init__.py to __init__.cpython-38.pyc\n'}
+[6.414762] (jetbot_camera) StdoutLine: {'line': b'copying jetbot_camera/log.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera\n'}
+[6.432623] (jetbot_camera) StdoutLine: {'line': b'copying jetbot_camera/server.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera\n'}
+[6.436645] (camera_pan_tilt) StdoutLine: {'line': b'running install_data\n'}
+[6.440513] (camera_pan_tilt) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/ament_index\n'}
+[6.443485] (camera_pan_tilt) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/ament_index/resource_index\n'}
+[6.447604] (camera_pan_tilt) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/ament_index/resource_index/packages\n'}
+[6.454395] (jetbot_camera) StdoutLine: {'line': b'copying jetbot_camera/camera.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera\n'}
+[6.455866] (jetbot_drive) StdoutLine: {'line': b"reading manifest file '../../build/jetbot_drive/jetbot_drive.egg-info/SOURCES.txt'\n"}
+[6.456394] (camera_pan_tilt) StdoutLine: {'line': b'copying resource/camera_pan_tilt -> /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/ament_index/resource_index/packages\n'}
+[6.468334] (jetbot_drive) StdoutLine: {'line': b"writing manifest file '../../build/jetbot_drive/jetbot_drive.egg-info/SOURCES.txt'\n"}
+[6.469505] (jetbot_camera) StdoutLine: {'line': b'running install\n'}
+[6.472516] (jetbot_camera) StdoutLine: {'line': b'running install_lib\n'}
+[6.474741] (camera_pan_tilt) StdoutLine: {'line': b'copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt\n'}
+[6.478030] (jetbot_drive) StdoutLine: {'line': b'running build\n'}
+[6.478559] (jetbot_drive) StdoutLine: {'line': b'running build_py\n'}
+[6.483863] (jetbot_drive) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build\n'}
+[6.485683] (jetbot_camera) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera\n'}
+[6.486235] (jetbot_drive) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib\n'}
+[6.487614] (camera_pan_tilt) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.489608] (jetbot_drive) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive\n'}
+[6.491761] (jetbot_camera) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/server.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera\n'}
+[6.494457] (-) TimerEvent: {}
+[6.497384] (camera_pan_tilt) StdoutLine: {'line': b'Copying ../../build/camera_pan_tilt/camera_pan_tilt.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt-0.0.0-py3.8.egg-info\n'}
+[6.498045] (jetbot_drive) StdoutLine: {'line': b'copying jetbot_drive/motor_class.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive\n'}
+[6.509314] (jetbot_camera) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/log.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera\n'}
+[6.511486] (jetbot_drive) StdoutLine: {'line': b'copying jetbot_drive/publisher_member_function.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive\n'}
+[6.528049] (jetbot_camera) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera\n'}
+[6.528614] (jetbot_drive) StdoutLine: {'line': b'copying jetbot_drive/motors.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive\n'}
+[6.533413] (jetbot_oled_display) StdoutLine: {'line': b"reading manifest file '../../build/jetbot_oled_display/jetbot_oled_display.egg-info/SOURCES.txt'\n"}
+[6.541607] (jetbot_drive) StdoutLine: {'line': b'copying jetbot_drive/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive\n'}
+[6.542347] (jetbot_camera) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/camera.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera\n'}
+[6.544853] (jetbot_oled_display) StdoutLine: {'line': b"writing manifest file '../../build/jetbot_oled_display/jetbot_oled_display.egg-info/SOURCES.txt'\n"}
+[6.551426] (jetbot_drive) StdoutLine: {'line': b'copying jetbot_drive/jetbot_drive.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive\n'}
+[6.553311] (jetbot_oled_display) StdoutLine: {'line': b'running build\n'}
+[6.553680] (jetbot_oled_display) StdoutLine: {'line': b'running build_py\n'}
+[6.557311] (jetbot_oled_display) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build\n'}
+[6.561328] (jetbot_oled_display) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib\n'}
+[6.567790] (jetbot_oled_display) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display\n'}
+[6.568941] (jetbot_camera) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/server.py to server.cpython-38.pyc\n'}
+[6.571908] (jetbot_drive) StdoutLine: {'line': b'running install\n'}
+[6.577271] (jetbot_oled_display) StdoutLine: {'line': b'copying jetbot_oled_display/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display\n'}
+[6.577868] (jetbot_drive) StdoutLine: {'line': b'running install_lib\n'}
+[6.588578] (jetbot_oled_display) StdoutLine: {'line': b'copying jetbot_oled_display/ina219.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display\n'}
+[6.590957] (jetbot_drive) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive\n'}
+[6.594597] (-) TimerEvent: {}
+[6.596191] (jetbot_drive) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive/publisher_member_function.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive\n'}
+[6.599563] (jetbot_camera) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/log.py to log.cpython-38.pyc\n'}
+[6.604407] (jetbot_oled_display) StdoutLine: {'line': b'copying jetbot_oled_display/utils.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display\n'}
+[6.616541] (jetbot_drive) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive\n'}
+[6.625805] (jetbot_oled_display) StdoutLine: {'line': b'copying jetbot_oled_display/timer.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display\n'}
+[6.626430] (jetbot_camera) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/__init__.py to __init__.cpython-38.pyc\n'}
+[6.632391] (jetbot_drive) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive/motors.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive\n'}
+[6.640715] (jetbot_oled_display) StdoutLine: {'line': b'copying jetbot_oled_display/oled.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display\n'}
+[6.646727] (jetbot_camera) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/camera.py to camera.cpython-38.pyc\n'}
+[6.652789] (camera_pan_tilt) StdoutLine: {'line': b'running install_scripts\n'}
+[6.655243] (jetbot_oled_display) StdoutLine: {'line': b'copying jetbot_oled_display/ads1115.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display\n'}
+[6.656122] (jetbot_drive) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive/motor_class.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive\n'}
+[6.670945] (jetbot_oled_display) StdoutLine: {'line': b'running install\n'}
+[6.673990] (jetbot_camera) StdoutLine: {'line': b'running install_data\n'}
+[6.674690] (jetbot_drive) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive/jetbot_drive.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive\n'}
+[6.677994] (jetbot_camera) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/ament_index\n'}
+[6.679755] (jetbot_camera) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/ament_index/resource_index\n'}
+[6.682462] (jetbot_oled_display) StdoutLine: {'line': b'running install_lib\n'}
+[6.686861] (jetbot_camera) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/ament_index/resource_index/packages\n'}
+[6.693924] (jetbot_camera) StdoutLine: {'line': b'copying resource/jetbot_camera -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/ament_index/resource_index/packages\n'}
+[6.694690] (-) TimerEvent: {}
+[6.696412] (jetbot_oled_display) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display\n'}
+[6.702642] (jetbot_drive) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive/publisher_member_function.py to publisher_member_function.cpython-38.pyc\n'}
+[6.703127] (jetbot_oled_display) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display/timer.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display\n'}
+[6.708755] (jetbot_camera) StdoutLine: {'line': b'copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/jetbot_camera\n'}
+[6.720293] (jetbot_oled_display) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display/oled.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display\n'}
+[6.721449] (jetbot_camera) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.730372] (jetbot_drive) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive/__init__.py to __init__.cpython-38.pyc\n'}
+[6.731086] (jetbot_camera) StdoutLine: {'line': b'Copying ../../build/jetbot_camera/jetbot_camera.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera-1.0.0-py3.8.egg-info\n'}
+[6.738853] (jetbot_oled_display) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display/utils.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display\n'}
+[6.743303] (camera_pan_tilt) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/install.log'\n"}
+[6.750046] (jetbot_drive) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive/motors.py to motors.cpython-38.pyc\n'}
+[6.758404] (jetbot_oled_display) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display\n'}
+[6.770643] (jetbot_drive) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive/motor_class.py to motor_class.cpython-38.pyc\n'}
+[6.771207] (jetbot_oled_display) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display/ina219.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display\n'}
+[6.790683] (jetbot_oled_display) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build/lib/jetbot_oled_display/ads1115.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display\n'}
+[6.791993] (jetbot_drive) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive/jetbot_drive.py to jetbot_drive.cpython-38.pyc\n'}
+[6.794860] (-) TimerEvent: {}
+[6.814283] (jetbot_drive) StdoutLine: {'line': b'running install_data\n'}
+[6.818511] (jetbot_drive) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/ament_index\n'}
+[6.822770] (jetbot_oled_display) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display/timer.py to timer.cpython-38.pyc\n'}
+[6.823315] (jetbot_drive) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/ament_index/resource_index\n'}
+[6.826798] (jetbot_drive) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/ament_index/resource_index/packages\n'}
+[6.835690] (jetbot_drive) StdoutLine: {'line': b'copying resource/jetbot_drive -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/ament_index/resource_index/packages\n'}
+[6.845254] (jetbot_oled_display) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display/oled.py to oled.cpython-38.pyc\n'}
+[6.849315] (jetbot_drive) StdoutLine: {'line': b'copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/jetbot_drive\n'}
+[6.863312] (jetbot_drive) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.868441] (camera_pan_tilt) CommandEnded: {'returncode': 0}
+[6.870289] (jetbot_oled_display) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display/utils.py to utils.cpython-38.pyc\n'}
+[6.876277] (jetbot_drive) StdoutLine: {'line': b'Copying ../../build/jetbot_drive/jetbot_drive.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive-0.0.0-py3.8.egg-info\n'}
+[6.882244] (jetbot_camera) StdoutLine: {'line': b'running install_scripts\n'}
+[6.892719] (jetbot_oled_display) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display/__init__.py to __init__.cpython-38.pyc\n'}
+[6.894973] (-) TimerEvent: {}
+[6.916099] (jetbot_oled_display) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display/ina219.py to ina219.cpython-38.pyc\n'}
+[6.943013] (jetbot_oled_display) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display/ads1115.py to ads1115.cpython-38.pyc\n'}
+[6.963791] (jetbot_camera) StdoutLine: {'line': b'Installing ros2_jetbot_camera script to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/jetbot_camera\n'}
+[6.965544] (jetbot_oled_display) StdoutLine: {'line': b'running install_data\n'}
+[6.969687] (jetbot_oled_display) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/ament_index\n'}
+[6.971590] (jetbot_oled_display) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/ament_index/resource_index\n'}
+[6.977296] (jetbot_oled_display) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/ament_index/resource_index/packages\n'}
+[6.982108] (jetbot_camera) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/install.log'\n"}
+[6.983530] (jetbot_oled_display) StdoutLine: {'line': b'copying resource/jetbot_oled_display -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/ament_index/resource_index/packages\n'}
+[6.993456] (jetbot_oled_display) StdoutLine: {'line': b'copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/jetbot_oled_display\n'}
+[6.995114] (-) TimerEvent: {}
+[7.007549] (jetbot_oled_display) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.032267] (jetbot_oled_display) StdoutLine: {'line': b'Copying ../../build/jetbot_oled_display/jetbot_oled_display.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display-1.0.0-py3.8.egg-info\n'}
+[7.035868] (jetbot_drive) StdoutLine: {'line': b'running install_scripts\n'}
+[7.096684] (-) TimerEvent: {}
+[7.117861] (jetbot_drive) StdoutLine: {'line': b'Installing ros2_jetbot_drive script to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/jetbot_drive\n'}
+[7.119688] (camera_pan_tilt) JobEnded: {'identifier': 'camera_pan_tilt', 'rc': 0}
+[7.170298] (jetbot_sys_info) JobStarted: {'identifier': 'jetbot_sys_info'}
+[7.170609] (jetbot_drive) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/install.log'\n"}
+[7.182730] (jetbot_oled_display) StdoutLine: {'line': b'running install_scripts\n'}
+[7.202140] (-) TimerEvent: {}
+[7.262087] (jetbot_oled_display) StdoutLine: {'line': b'Installing ros2_jetbot_oled_display script to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/jetbot_oled_display\n'}
+[7.285621] (jetbot_oled_display) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/install.log'\n"}
+[7.302347] (-) TimerEvent: {}
+[7.405314] (jetbot_camera) CommandEnded: {'returncode': 0}
+[7.407702] (-) TimerEvent: {}
+[7.508539] (-) TimerEvent: {}
+[7.609233] (-) TimerEvent: {}
+[7.654739] (jetbot_camera) JobEnded: {'identifier': 'jetbot_camera', 'rc': 0}
+[7.686167] (py_test_node) JobStarted: {'identifier': 'py_test_node'}
+[7.709559] (-) TimerEvent: {}
+[7.815953] (-) TimerEvent: {}
+[7.836611] (jetbot_drive) CommandEnded: {'returncode': 0}
+[7.916053] (-) TimerEvent: {}
+[8.017137] (-) TimerEvent: {}
+[8.076272] (jetbot_drive) JobEnded: {'identifier': 'jetbot_drive', 'rc': 0}
+[8.103651] (jetbot_oled_display) CommandEnded: {'returncode': 0}
+[8.117372] (-) TimerEvent: {}
+[8.218325] (-) TimerEvent: {}
+[8.319470] (-) TimerEvent: {}
+[8.341475] (jetbot_oled_display) JobEnded: {'identifier': 'jetbot_oled_display', 'rc': 0}
+[8.419837] (-) TimerEvent: {}
+[8.520629] (-) TimerEvent: {}
+[8.621425] (-) TimerEvent: {}
+[8.722085] (-) TimerEvent: {}
+[8.822711] (-) TimerEvent: {}
+[8.923333] (-) TimerEvent: {}
+[9.024008] (-) TimerEvent: {}
+[9.124721] (-) TimerEvent: {}
+[9.225308] (-) TimerEvent: {}
+[9.325994] (-) TimerEvent: {}
+[9.426624] (-) TimerEvent: {}
+[9.527378] (-) TimerEvent: {}
+[9.628434] (-) TimerEvent: {}
+[9.729282] (-) TimerEvent: {}
+[9.829928] (-) TimerEvent: {}
+[9.930607] (-) TimerEvent: {}
+[10.031180] (-) TimerEvent: {}
+[10.131812] (-) TimerEvent: {}
+[10.232432] (-) TimerEvent: {}
+[10.333053] (-) TimerEvent: {}
+[10.434270] (-) TimerEvent: {}
+[10.535433] (-) TimerEvent: {}
+[10.636041] (-) TimerEvent: {}
+[10.737044] (-) TimerEvent: {}
+[10.838789] (-) TimerEvent: {}
+[10.865788] (jetbot_sys_info) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/jetbot_sys_info', 'build', '--build-base', '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build', 'install', '--prefix', '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info', '--record', '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_sys_info', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 44956 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 44956 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[10.940375] (py_test_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_test_node', 'build', '--build-base', '/home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build', 'install', '--prefix', '/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node', '--record', '/home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/src/py_test_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 44956 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 44956 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/sys_variables/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/oled_display/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[10.978803] (-) TimerEvent: {}
+[11.079450] (-) TimerEvent: {}
+[11.180127] (-) TimerEvent: {}
+[11.280803] (-) TimerEvent: {}
+[11.381403] (-) TimerEvent: {}
+[11.482073] (-) TimerEvent: {}
+[11.582660] (-) TimerEvent: {}
+[11.683244] (-) TimerEvent: {}
+[11.783831] (-) TimerEvent: {}
+[11.822920] (jetbot_sys_info) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[11.823512] (jetbot_sys_info) StderrLine: {'line': b'  warnings.warn(\n'}
+[11.823861] (jetbot_sys_info) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[11.824211] (jetbot_sys_info) StderrLine: {'line': b'  warnings.warn(\n'}
+[11.884038] (-) TimerEvent: {}
+[11.890223] (py_test_node) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[11.890893] (py_test_node) StderrLine: {'line': b'  warnings.warn(\n'}
+[11.891252] (py_test_node) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[11.891596] (py_test_node) StderrLine: {'line': b'  warnings.warn(\n'}
+[11.959068] (jetbot_sys_info) StdoutLine: {'line': b'running egg_info\n'}
+[11.962586] (jetbot_sys_info) StdoutLine: {'line': b'creating ../../build/jetbot_sys_info/jetbot_sys_info.egg-info\n'}
+[11.968880] (jetbot_sys_info) StdoutLine: {'line': b'writing ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/PKG-INFO\n'}
+[11.984170] (-) TimerEvent: {}
+[11.996274] (jetbot_sys_info) StdoutLine: {'line': b'writing dependency_links to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/dependency_links.txt\n'}
+[12.016053] (jetbot_sys_info) StdoutLine: {'line': b'writing entry points to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/entry_points.txt\n'}
+[12.027803] (py_test_node) StdoutLine: {'line': b'running egg_info\n'}
+[12.034259] (jetbot_sys_info) StdoutLine: {'line': b'writing requirements to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/requires.txt\n'}
+[12.035889] (py_test_node) StdoutLine: {'line': b'creating ../../build/py_test_node/py_test_node.egg-info\n'}
+[12.040050] (py_test_node) StdoutLine: {'line': b'writing ../../build/py_test_node/py_test_node.egg-info/PKG-INFO\n'}
+[12.044560] (jetbot_sys_info) StdoutLine: {'line': b'writing top-level names to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/top_level.txt\n'}
+[12.069844] (py_test_node) StdoutLine: {'line': b'writing dependency_links to ../../build/py_test_node/py_test_node.egg-info/dependency_links.txt\n'}
+[12.071804] (jetbot_sys_info) StdoutLine: {'line': b"writing manifest file '../../build/jetbot_sys_info/jetbot_sys_info.egg-info/SOURCES.txt'\n"}
+[12.084458] (-) TimerEvent: {}
+[12.085059] (py_test_node) StdoutLine: {'line': b'writing entry points to ../../build/py_test_node/py_test_node.egg-info/entry_points.txt\n'}
+[12.099806] (py_test_node) StdoutLine: {'line': b'writing requirements to ../../build/py_test_node/py_test_node.egg-info/requires.txt\n'}
+[12.109707] (py_test_node) StdoutLine: {'line': b'writing top-level names to ../../build/py_test_node/py_test_node.egg-info/top_level.txt\n'}
+[12.131816] (py_test_node) StdoutLine: {'line': b"writing manifest file '../../build/py_test_node/py_test_node.egg-info/SOURCES.txt'\n"}
+[12.184636] (-) TimerEvent: {}
+[12.267737] (jetbot_sys_info) StdoutLine: {'line': b"reading manifest file '../../build/jetbot_sys_info/jetbot_sys_info.egg-info/SOURCES.txt'\n"}
+[12.283523] (jetbot_sys_info) StdoutLine: {'line': b"writing manifest file '../../build/jetbot_sys_info/jetbot_sys_info.egg-info/SOURCES.txt'\n"}
+[12.284734] (-) TimerEvent: {}
+[12.295574] (jetbot_sys_info) StdoutLine: {'line': b'running build\n'}
+[12.296223] (jetbot_sys_info) StdoutLine: {'line': b'running build_py\n'}
+[12.303223] (jetbot_sys_info) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build\n'}
+[12.307421] (jetbot_sys_info) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib\n'}
+[12.313411] (jetbot_sys_info) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info\n'}
+[12.327446] (jetbot_sys_info) StdoutLine: {'line': b'copying jetbot_sys_info/ads1115.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info\n'}
+[12.328083] (py_test_node) StdoutLine: {'line': b"reading manifest file '../../build/py_test_node/py_test_node.egg-info/SOURCES.txt'\n"}
+[12.345246] (py_test_node) StdoutLine: {'line': b"writing manifest file '../../build/py_test_node/py_test_node.egg-info/SOURCES.txt'\n"}
+[12.346458] (jetbot_sys_info) StdoutLine: {'line': b'copying jetbot_sys_info/jetbot_sys_info.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info\n'}
+[12.357461] (py_test_node) StdoutLine: {'line': b'running build\n'}
+[12.357935] (py_test_node) StdoutLine: {'line': b'running build_py\n'}
+[12.366223] (jetbot_sys_info) StdoutLine: {'line': b'copying jetbot_sys_info/ina219.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info\n'}
+[12.366866] (py_test_node) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build\n'}
+[12.369262] (py_test_node) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build/lib\n'}
+[12.374885] (py_test_node) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build/lib/py_test_node\n'}
+[12.384945] (-) TimerEvent: {}
+[12.386757] (py_test_node) StdoutLine: {'line': b'copying py_test_node/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build/lib/py_test_node\n'}
+[12.387240] (jetbot_sys_info) StdoutLine: {'line': b'copying jetbot_sys_info/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info\n'}
+[12.401406] (py_test_node) StdoutLine: {'line': b'copying py_test_node/test_node.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build/lib/py_test_node\n'}
+[12.402184] (jetbot_sys_info) StdoutLine: {'line': b'running install\n'}
+[12.406738] (jetbot_sys_info) StdoutLine: {'line': b'running install_lib\n'}
+[12.417458] (py_test_node) StdoutLine: {'line': b'running install\n'}
+[12.423475] (jetbot_sys_info) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info\n'}
+[12.424613] (py_test_node) StdoutLine: {'line': b'running install_lib\n'}
+[12.429955] (jetbot_sys_info) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info\n'}
+[12.446290] (py_test_node) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node\n'}
+[12.450799] (jetbot_sys_info) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info/jetbot_sys_info.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info\n'}
+[12.458059] (py_test_node) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build/lib/py_test_node/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node\n'}
+[12.471162] (py_test_node) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/build/lib/py_test_node/test_node.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node\n'}
+[12.477428] (jetbot_sys_info) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info/ads1115.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info\n'}
+[12.485293] (-) TimerEvent: {}
+[12.510685] (jetbot_sys_info) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info/ina219.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info\n'}
+[12.521581] (py_test_node) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node/__init__.py to __init__.cpython-38.pyc\n'}
+[12.547894] (jetbot_sys_info) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info/__init__.py to __init__.cpython-38.pyc\n'}
+[12.562788] (py_test_node) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node/test_node.py to test_node.cpython-38.pyc\n'}
+[12.585939] (-) TimerEvent: {}
+[12.588955] (jetbot_sys_info) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info/jetbot_sys_info.py to jetbot_sys_info.cpython-38.pyc\n'}
+[12.590818] (py_test_node) StdoutLine: {'line': b'running install_data\n'}
+[12.598329] (py_test_node) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/share/ament_index\n'}
+[12.603055] (py_test_node) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/share/ament_index/resource_index\n'}
+[12.606759] (py_test_node) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/share/ament_index/resource_index/packages\n'}
+[12.617228] (jetbot_sys_info) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info/ads1115.py to ads1115.cpython-38.pyc\n'}
+[12.623299] (py_test_node) StdoutLine: {'line': b'copying resource/py_test_node -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/share/ament_index/resource_index/packages\n'}
+[12.637298] (py_test_node) StdoutLine: {'line': b'copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/share/py_test_node\n'}
+[12.651485] (jetbot_sys_info) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info/ina219.py to ina219.cpython-38.pyc\n'}
+[12.659406] (py_test_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.677699] (py_test_node) StdoutLine: {'line': b'Copying ../../build/py_test_node/py_test_node.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages/py_test_node-0.0.0-py3.8.egg-info\n'}
+[12.684012] (jetbot_sys_info) StdoutLine: {'line': b'running install_data\n'}
+[12.685966] (-) TimerEvent: {}
+[12.689967] (jetbot_sys_info) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/ament_index\n'}
+[12.696622] (jetbot_sys_info) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/ament_index/resource_index\n'}
+[12.700960] (jetbot_sys_info) StdoutLine: {'line': b'creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/ament_index/resource_index/packages\n'}
+[12.710665] (jetbot_sys_info) StdoutLine: {'line': b'copying resource/jetbot_sys_info -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/ament_index/resource_index/packages\n'}
+[12.727265] (jetbot_sys_info) StdoutLine: {'line': b'copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/jetbot_sys_info\n'}
+[12.747626] (jetbot_sys_info) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.764725] (jetbot_sys_info) StdoutLine: {'line': b'Copying ../../build/jetbot_sys_info/jetbot_sys_info.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info-0.0.0-py3.8.egg-info\n'}
+[12.786473] (-) TimerEvent: {}
+[12.874394] (py_test_node) StdoutLine: {'line': b'running install_scripts\n'}
+[12.886647] (-) TimerEvent: {}
+[12.939556] (jetbot_sys_info) StdoutLine: {'line': b'running install_scripts\n'}
+[12.960848] (py_test_node) StdoutLine: {'line': b'Installing node script to /home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/py_test_node\n'}
+[12.978210] (py_test_node) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/py_test_node/install.log'\n"}
+[12.986777] (-) TimerEvent: {}
+[13.016842] (jetbot_sys_info) StdoutLine: {'line': b'Installing ros2_jetbot_sys_info script to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/jetbot_sys_info\n'}
+[13.035589] (jetbot_sys_info) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/install.log'\n"}
+[13.091682] (py_test_node) CommandEnded: {'returncode': 0}
+[13.093083] (-) TimerEvent: {}
+[13.194210] (-) TimerEvent: {}
+[13.295528] (-) TimerEvent: {}
+[13.337098] (py_test_node) JobEnded: {'identifier': 'py_test_node', 'rc': 0}
+[13.396977] (-) TimerEvent: {}
+[13.398606] (jetbot_sys_info) CommandEnded: {'returncode': 0}
+[13.497228] (-) TimerEvent: {}
+[13.598850] (-) TimerEvent: {}
+[13.675562] (jetbot_sys_info) JobEnded: {'identifier': 'jetbot_sys_info', 'rc': 0}
+[13.727970] (-) TimerEvent: {}
+[13.729380] (-) EventReactorShutdown: {}

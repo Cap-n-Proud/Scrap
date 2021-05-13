@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/camera_pan_tilt/camera_pan_tilt.egg-info
+writing ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/PKG-INFO
+writing dependency_links to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/dependency_links.txt
+writing entry points to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/entry_points.txt
+writing requirements to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/requires.txt
+writing top-level names to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/top_level.txt
+writing manifest file '../../build/camera_pan_tilt/camera_pan_tilt.egg-info/SOURCES.txt'
+reading manifest file '../../build/camera_pan_tilt/camera_pan_tilt.egg-info/SOURCES.txt'
+writing manifest file '../../build/camera_pan_tilt/camera_pan_tilt.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build
+creating /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build/lib
+creating /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build/lib/camera_pan_tilt
+copying camera_pan_tilt/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build/lib/camera_pan_tilt
+running install
+running install_lib
+creating /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt
+copying /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build/lib/camera_pan_tilt/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt
+byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/ament_index
+creating /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/ament_index/resource_index
+creating /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/ament_index/resource_index/packages
+copying resource/camera_pan_tilt -> /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/ament_index/resource_index/packages
+copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt
+running install_egg_info
+Copying ../../build/camera_pan_tilt/camera_pan_tilt.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/install.log'

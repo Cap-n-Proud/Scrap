@@ -1,0 +1,37 @@
+[4.970s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/camera_pan_tilt': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera_pan_tilt build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt --record /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/install.log --single-version-externally-managed
+[5.870s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[5.870s]   warnings.warn(
+[5.871s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[5.871s]   warnings.warn(
+[6.032s] running egg_info
+[6.036s] creating ../../build/camera_pan_tilt/camera_pan_tilt.egg-info
+[6.041s] writing ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/PKG-INFO
+[6.068s] writing dependency_links to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/dependency_links.txt
+[6.082s] writing entry points to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/entry_points.txt
+[6.094s] writing requirements to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/requires.txt
+[6.103s] writing top-level names to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/top_level.txt
+[6.121s] writing manifest file '../../build/camera_pan_tilt/camera_pan_tilt.egg-info/SOURCES.txt'
+[6.315s] reading manifest file '../../build/camera_pan_tilt/camera_pan_tilt.egg-info/SOURCES.txt'
+[6.327s] writing manifest file '../../build/camera_pan_tilt/camera_pan_tilt.egg-info/SOURCES.txt'
+[6.335s] running build
+[6.336s] running build_py
+[6.339s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build
+[6.341s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build/lib
+[6.346s] creating /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build/lib/camera_pan_tilt
+[6.354s] copying camera_pan_tilt/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build/lib/camera_pan_tilt
+[6.367s] running install
+[6.370s] running install_lib
+[6.385s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt
+[6.392s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build/lib/camera_pan_tilt/__init__.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt
+[6.413s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt/__init__.py to __init__.cpython-38.pyc
+[6.435s] running install_data
+[6.439s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/ament_index
+[6.442s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/ament_index/resource_index
+[6.446s] creating /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/ament_index/resource_index/packages
+[6.455s] copying resource/camera_pan_tilt -> /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/ament_index/resource_index/packages
+[6.474s] copying package.xml -> /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt
+[6.486s] running install_egg_info
+[6.496s] Copying ../../build/camera_pan_tilt/camera_pan_tilt.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt-0.0.0-py3.8.egg-info
+[6.652s] running install_scripts
+[6.742s] writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/install.log'
+[6.868s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/camera_pan_tilt' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera_pan_tilt build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt --record /home/robot/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/install.log --single-version-externally-managed

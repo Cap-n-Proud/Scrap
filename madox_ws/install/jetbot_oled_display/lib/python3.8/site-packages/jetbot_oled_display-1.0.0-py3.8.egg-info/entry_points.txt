@@ -1,0 +1,3 @@
+[console_scripts]
+ros2_jetbot_oled_display = jetbot_oled_display.oled:main
+
