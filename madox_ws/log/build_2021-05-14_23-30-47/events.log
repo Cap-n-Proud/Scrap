@@ -1,0 +1,77 @@
+[0.000000] (-) TimerEvent: {}
+[0.000490] (-) JobUnselected: {'identifier': 'camera_pan_tilt'}
+[0.000698] (-) JobUnselected: {'identifier': 'jetbot_drive'}
+[0.000960] (-) JobUnselected: {'identifier': 'jetbot_oled_display'}
+[0.001173] (-) JobUnselected: {'identifier': 'jetbot_sys_info'}
+[0.001400] (-) JobUnselected: {'identifier': 'py_test_node'}
+[0.001618] (jetbot_camera) JobQueued: {'identifier': 'jetbot_camera', 'dependencies': OrderedDict()}
+[0.002092] (jetbot_camera) JobStarted: {'identifier': 'jetbot_camera'}
+[0.094440] (-) TimerEvent: {}
+[0.198279] (-) TimerEvent: {}
+[0.300449] (-) TimerEvent: {}
+[0.401257] (-) TimerEvent: {}
+[0.501907] (-) TimerEvent: {}
+[0.602542] (-) TimerEvent: {}
+[0.703136] (-) TimerEvent: {}
+[0.803675] (-) TimerEvent: {}
+[0.904267] (-) TimerEvent: {}
+[1.004864] (-) TimerEvent: {}
+[1.105469] (-) TimerEvent: {}
+[1.206026] (-) TimerEvent: {}
+[1.306698] (-) TimerEvent: {}
+[1.407539] (-) TimerEvent: {}
+[1.491852] (jetbot_camera) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/jetbot_camera', 'build', '--build-base', '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build', 'install', '--prefix', '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera', '--record', '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/install.log', '--single-version-externally-managed'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_camera', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot', 'SSH_CLIENT': '192.168.1.140 44846 22', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robot', 'OLDPWD': '/home/robot/Software/ROS2/Madox', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_CH.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_CH.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_CH.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'PWD': '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 44846 192.168.1.164 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/py_test_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1'}, 'shell': False}
+[1.522733] (-) TimerEvent: {}
+[1.623393] (-) TimerEvent: {}
+[1.723992] (-) TimerEvent: {}
+[1.824538] (-) TimerEvent: {}
+[1.925151] (-) TimerEvent: {}
+[2.025771] (-) TimerEvent: {}
+[2.126313] (-) TimerEvent: {}
+[2.226883] (-) TimerEvent: {}
+[2.327494] (-) TimerEvent: {}
+[2.405226] (jetbot_camera) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[2.405885] (jetbot_camera) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.406222] (jetbot_camera) StderrLine: {'line': b"/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[2.406546] (jetbot_camera) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.427698] (-) TimerEvent: {}
+[2.528334] (-) TimerEvent: {}
+[2.531401] (jetbot_camera) StdoutLine: {'line': b'running egg_info\n'}
+[2.535560] (jetbot_camera) StdoutLine: {'line': b'writing ../../build/jetbot_camera/jetbot_camera.egg-info/PKG-INFO\n'}
+[2.546712] (jetbot_camera) StdoutLine: {'line': b'writing dependency_links to ../../build/jetbot_camera/jetbot_camera.egg-info/dependency_links.txt\n'}
+[2.556176] (jetbot_camera) StdoutLine: {'line': b'writing entry points to ../../build/jetbot_camera/jetbot_camera.egg-info/entry_points.txt\n'}
+[2.565793] (jetbot_camera) StdoutLine: {'line': b'writing requirements to ../../build/jetbot_camera/jetbot_camera.egg-info/requires.txt\n'}
+[2.575671] (jetbot_camera) StdoutLine: {'line': b'writing top-level names to ../../build/jetbot_camera/jetbot_camera.egg-info/top_level.txt\n'}
+[2.628531] (-) TimerEvent: {}
+[2.729134] (-) TimerEvent: {}
+[2.768614] (jetbot_camera) StdoutLine: {'line': b"reading manifest file '../../build/jetbot_camera/jetbot_camera.egg-info/SOURCES.txt'\n"}
+[2.780860] (jetbot_camera) StdoutLine: {'line': b"writing manifest file '../../build/jetbot_camera/jetbot_camera.egg-info/SOURCES.txt'\n"}
+[2.794224] (jetbot_camera) StdoutLine: {'line': b'running build\n'}
+[2.795014] (jetbot_camera) StdoutLine: {'line': b'running build_py\n'}
+[2.810023] (jetbot_camera) StdoutLine: {'line': b'copying jetbot_camera/server.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera\n'}
+[2.829736] (-) TimerEvent: {}
+[2.835101] (jetbot_camera) StdoutLine: {'line': b'running install\n'}
+[2.839004] (jetbot_camera) StdoutLine: {'line': b'running install_lib\n'}
+[2.848623] (jetbot_camera) StdoutLine: {'line': b'copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/server.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera\n'}
+[2.878426] (jetbot_camera) StdoutLine: {'line': b'byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/server.py to server.cpython-38.pyc\n'}
+[2.918064] (jetbot_camera) StdoutLine: {'line': b'running install_data\n'}
+[2.929886] (-) TimerEvent: {}
+[2.936411] (jetbot_camera) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.947793] (jetbot_camera) StdoutLine: {'line': b"removing '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera-1.0.0-py3.8.egg-info' (and everything under it)\n"}
+[2.989223] (jetbot_camera) StdoutLine: {'line': b'Copying ../../build/jetbot_camera/jetbot_camera.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera-1.0.0-py3.8.egg-info\n'}
+[3.030620] (-) TimerEvent: {}
+[3.133559] (-) TimerEvent: {}
+[3.238316] (-) TimerEvent: {}
+[3.341002] (-) TimerEvent: {}
+[3.407501] (jetbot_camera) StdoutLine: {'line': b'running install_scripts\n'}
+[3.441203] (-) TimerEvent: {}
+[3.499503] (jetbot_camera) StdoutLine: {'line': b'Installing ros2_jetbot_camera script to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/jetbot_camera\n'}
+[3.521789] (jetbot_camera) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_camera/install.log'\n"}
+[3.541475] (-) TimerEvent: {}
+[3.635666] (jetbot_camera) CommandEnded: {'returncode': 0}
+[3.642867] (-) TimerEvent: {}
+[3.745092] (-) TimerEvent: {}
+[3.847708] (-) TimerEvent: {}
+[3.944456] (jetbot_camera) JobEnded: {'identifier': 'jetbot_camera', 'rc': 0}
+[3.992463] (-) TimerEvent: {}
+[3.994096] (-) EventReactorShutdown: {}

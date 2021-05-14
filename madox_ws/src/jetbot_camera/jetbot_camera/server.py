@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 import threading
 from threading import Lock
+import uuid
 
 # import board
 
@@ -30,6 +31,8 @@ display_config = 0
 power_info = "N/A"
 CPU_info = "N/A"
 diff_fps = 1
+flash_message = ""
+take_snapshot = False
 
 
 class CameraHandler(BaseHTTPRequestHandler):
@@ -38,6 +41,47 @@ class CameraHandler(BaseHTTPRequestHandler):
         self.camera = server.get_camera()
 
         super(CameraHandler, self).__init__(request, client_address, server)
+
+    def flash_message(self, text, frame, pos_x=int(200), pos_y=int(20), duration=3):
+        # self.camera.print_text(frame, pos_x, pos_y, text)
+        # parse x:
+        thickness = 0
+        font = 0
+        font_size = 0.3
+        font_color = [255, 255, 0]
+        font_thickness = 1
+
+        cv2.putText(
+            frame,
+            str(text),
+            (int(pos_x), int(pos_y)),
+            font,
+            font_size,
+            font_color,
+            font_thickness,
+            cv2.LINE_AA,
+        )
+        self.clear_text(duration)
+
+    def c_text():
+        global flash_message
+        flash_message = ""
+
+    def clear_text(self, duration=3):
+        self.scheduler.add_job(
+            self.c_text,
+            "interval",
+            seconds=int(duration),
+            id="clear_text",
+            replace_existing=True,
+        )
+
+    def save_snapshot(self, im):
+        # save snapshot when button is pressed down
+        file_path = "snapshots/" + str(uuid.uuid1()) + ".jpg"
+        # write snapshot to file (we use image value instead of camera because it's already in JPEG format)
+        with open(file_path, "wb") as f:
+            f.write(im)
 
     def do_GET(self):
         if self.path == URL_PATH_MJPG:
@@ -48,9 +92,11 @@ class CameraHandler(BaseHTTPRequestHandler):
             )
             self.end_headers()
             while self.camera.is_opened():
-                global diff_fps
+                global diff_fps, flash_message, take_snapshot
                 start_fps = time.time()
                 frame = self.camera.get_frame(SLEEP_IN_SEC)
+                # Does not work
+
                 if display_config == 0:
                     self.camera.drawCrosshair(frame)
                     self.camera.draw_joy(frame, x, y)
@@ -65,6 +111,10 @@ class CameraHandler(BaseHTTPRequestHandler):
                     continue
 
                 ret, jpg = cv2.imencode(".jpg", frame)
+                if take_snapshot:
+                    self.save_snapshot(jpg)
+                    take_snapshot = False
+
                 # jpg = self.camera.read_in_jpeg(SLEEP_IN_SEC, 1 / diff_fps)
                 if jpg is None:
                     continue
@@ -121,6 +171,10 @@ class Robot_Info(Node):
                 display_config = 0
             else:
                 display_config += 1
+        if msg.buttons[5] == 1:
+            global flash_message, take_snapshot
+            # flash_message = "test"
+            take_snapshot = True
 
 
 class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
@@ -158,10 +212,11 @@ def main(args=None):
 
         thread2 = threading.Thread(target=server.serve_forever)
         thread2.start()
+        r_info = Robot_Info()
 
         # server.serve_forever()
-        r_info = Robot_Info()
-        # Setup and start the thread to read serial port
+        # Setup and start the thread to read serial port    r_info = Robot_Info()
+
         thread_lock = Lock()
         # thread = threading.Thread(target=rclpy.spin, args=(server))
         thread = threading.Thread(target=rclpy.spin(r_info))

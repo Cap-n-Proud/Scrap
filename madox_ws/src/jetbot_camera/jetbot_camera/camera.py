@@ -49,6 +49,10 @@ class Camera(metaclass=Singleton):
         #     gstreamer_pipeline(flip_method=0), cv2.CAP_GSTREAMER
         # )
         # cv2.FONT_HERSHEY_SIMPLEX = 0
+        from apscheduler.schedulers.background import BackgroundScheduler
+
+        self.scheduler = BackgroundScheduler()
+        self.scheduler.start()
         self.text_overlay_settings = '{ "thickness":0, "font":0, "font_size":0.3, "font_color": [255, 255, 0], "font_thickness": 1,"w":640, "h":480, "row_height": 10, "column":15, "padding": 30}'
         # parse x:
         self.text_settings = json.loads(self.text_overlay_settings)
@@ -57,6 +61,29 @@ class Camera(metaclass=Singleton):
         )
         # self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
         # self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
+
+    def print_text(self, frame, pos_x, pos_y, text):
+        w = self.text_settings["w"]
+        h = self.text_settings["h"]
+        thickness = self.text_settings["thickness"]
+        font = self.text_settings["font"]
+        font_size = self.text_settings["font_size"] * w / 320
+        font_color = self.text_settings["font_color"]
+        font_thickness = int(self.text_settings["font_thickness"])
+        padding = self.text_settings["padding"]
+        row_height = self.text_settings["row_height"] * w / 320
+        column = self.text_settings["column"] * w / 320
+
+        cv2.putText(
+            frame,
+            str(text),
+            (int(pos_x), int(pos_y)),
+            font,
+            font_size,
+            font_color,
+            font_thickness,
+            cv2.LINE_AA,
+        )
 
     def drawCrosshair(self, frame):
         w = self.text_settings["w"]
