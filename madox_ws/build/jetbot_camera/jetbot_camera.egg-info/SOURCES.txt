@@ -10,8 +10,11 @@ setup.py
 ../../build/jetbot_camera/jetbot_camera.egg-info/zip-safe
 jetbot_camera/__init__.py
 jetbot_camera/camera.py
+jetbot_camera/camera0.py
+jetbot_camera/debounce.py
 jetbot_camera/log.py
 jetbot_camera/server.py
+jetbot_camera/server_OLD.py
 resource/jetbot_camera
 test/test_copyright.py
 test/test_flake8.py

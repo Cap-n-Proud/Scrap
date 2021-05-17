@@ -21,6 +21,8 @@ from socketserver import ThreadingMixIn
 from .camera import Camera
 from .log import logger
 
+from .debounce import ButtonHandler
+
 URL_PATH_MJPG = "/camera.mjpg"
 URL_PATH_FAVICON = "/favicon.ico"
 SLEEP_IN_SEC = 0.050
@@ -39,12 +41,12 @@ class CameraHandler(BaseHTTPRequestHandler):
     def __init__(self, request, client_address, server):
         self.document_root = server.get_document_root()
         self.camera = server.get_camera()
-
         super(CameraHandler, self).__init__(request, client_address, server)
 
     def flash_message(self, text, frame, pos_x=int(200), pos_y=int(20), duration=3):
         # self.camera.print_text(frame, pos_x, pos_y, text)
-        # parse x:
+        # parse x:self.camera = camera
+
         thickness = 0
         font = 0
         font_size = 0.3
@@ -75,6 +77,12 @@ class CameraHandler(BaseHTTPRequestHandler):
             id="clear_text",
             replace_existing=True,
         )
+
+    def change_view(self):
+        if self.display_config >= 3:
+            self.display_config = 0
+        else:
+            self.display_config += 1
 
     def save_snapshot(self, im):
         # save snapshot when button is pressed down
@@ -111,8 +119,8 @@ class CameraHandler(BaseHTTPRequestHandler):
                     continue
 
                 ret, jpg = cv2.imencode(".jpg", frame)
+                print(take_snapshot)
                 if take_snapshot:
-                    print("Saved!!!!")
                     self.save_snapshot(jpg)
                     take_snapshot = False
 
@@ -141,17 +149,53 @@ class CameraHandler(BaseHTTPRequestHandler):
         logger.info("thread is stopping ... [{path}]".format(path=self.path))
 
 
+class dbounce:
+    def __init__(self, pin, func, edge="both", bouncetime=200):
+        self.edge = edge
+        self.func = func
+        self.pin = pin
+        self.bouncetime = float(bouncetime) / 1000
+
+        self.lastpinval = self.pin
+        self.lock = threading.Lock()
+        print(self.func)
+
+    def check(self, button, *args):
+        pinval = button
+
+        if (
+            pinval == 0 and self.lastpinval == 1
+        ):  # and (self.edge in ["falling", "both"]):
+            self.func(*args)
+            # print("release")
+
+        if (
+            pinval == 1 and self.lastpinval == 0
+        ):  # and (self.edge in ["rising", "both"]):
+            # self.func(*args)
+            a = 1
+            # print("pressed")
+
+        # print(pinval, self.lastpinval)
+        self.lastpinval = pinval
+
+
 class Robot_Info(Node):
     def __init__(self):
         super().__init__("robot_info")
-
         self.joy_topic = self.create_subscription(Joy, "joy", self.joy_topic, 10)
+        # self.move_topic = self.create_subscription(String, "in", self.joy_topic, 10)
         self.CPU_topic = self.create_subscription(
             String, "info_sys_CPU", self.CPU_topic, 10
         )
         self.power_topic = self.create_subscription(
             String, "info_sys_power", self.power_topic, 10
         )
+        self.init_buttons = True
+
+    def power_topic(self, msg):
+        global power_info
+        power_info = msg.data
 
     def power_topic(self, msg):
         global power_info
@@ -161,21 +205,29 @@ class Robot_Info(Node):
         global CPU_info
         CPU_info = msg.data
 
-    def joy_topic(self, msg):
-        # need to debounce the button: https://kaspars.net/blog/micropython-button-debounce
+    def take_snapshot(self, argum="N/A"):
+        global take_snapshot
+        take_snapshot = True
+        # print("SNAP!!!!" + str(argum))
 
+    def joy_topic(self, msg):
         global x, y, display_config
-        x = round(msg.axes[0], 2)
-        y = round(msg.axes[1], 2)
+        x = round(msg.axes[0], 1)
+        y = round(msg.axes[1], 1)
         if msg.buttons[9] == 1:
-            if display_config >= 3:
-                display_config = 0
+            # self.camera.change_view()
+            if self.display_config >= 3:
+                self.display_config = 0
             else:
-                display_config += 1
-        if msg.buttons[5] == 1:
-            global flash_message, take_snapshot
-            # flash_message = "test"
-            take_snapshot = True
+                self.display_config += 1
+        if self.init_buttons == True:
+            self.cb = dbounce(msg.buttons[5], self.take_snapshot, ["kmkmkm"])
+            self.init_buttons = False
+        if self.init_buttons == False:
+            try:
+                self.cb.check(msg.buttons[5])
+            except Exception:
+                print("ERROR: " + str(Exception))
 
 
 class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):

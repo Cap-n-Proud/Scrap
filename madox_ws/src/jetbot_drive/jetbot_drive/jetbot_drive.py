@@ -33,7 +33,7 @@ class Robot(Node, SingletonConfigurable):
         self,
         simulation=False,
         debug=False,
-        steer_gain=0.4,
+        steer_gain=0.8,
         speed_limit=0.3,
         left_trim=-0,
         right_trim=0,
