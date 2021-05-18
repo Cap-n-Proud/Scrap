@@ -119,7 +119,6 @@ class CameraHandler(BaseHTTPRequestHandler):
                     continue
 
                 ret, jpg = cv2.imencode(".jpg", frame)
-                print(take_snapshot)
                 if take_snapshot:
                     self.save_snapshot(jpg)
                     take_snapshot = False

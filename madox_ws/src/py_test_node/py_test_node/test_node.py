@@ -20,6 +20,7 @@ from rclpy.node import Node
 from std_msgs.msg import String
 from std_msgs.msg import Int32MultiArray, Int16
 from sensor_msgs.msg import Joy
+from sensor_msgs.msg import imu
 
 import time
 import argparse
