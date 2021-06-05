@@ -1,3 +1,0 @@
-[console_scripts]
-ros2_jetbot_drive = jetbot_drive.jetbot_drive:main
-
