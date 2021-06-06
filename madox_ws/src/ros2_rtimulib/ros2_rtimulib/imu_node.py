@@ -168,12 +168,6 @@ class IMUNode(Node):
                 a = data["accel"]
                 g = data["gyro"]
 
-                print(
-                    "Pressure: {0}, height above sea level: {1}".format(
-                        data["pressure"],
-                        get_altitude(data["pressure"], sea_level_hPa=1019.30),
-                    )
-                )
                 ori = Quaternion(x=qfp[1], y=qfp[2], z=qfp[3], w=qfp[0])
                 av = Vector3(x=g[0], y=g[1], z=g[2])
                 la = Vector3(x=a[1] * G_TO_MPSS, y=a[1] * G_TO_MPSS, z=a[2] * G_TO_MPSS)

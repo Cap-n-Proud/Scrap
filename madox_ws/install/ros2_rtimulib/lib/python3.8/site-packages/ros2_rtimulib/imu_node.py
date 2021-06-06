@@ -148,32 +148,26 @@ class IMUNode(Node):
                 # TODO : publish this info too for GPS fusion
                 # TODO: the get_altitude should get local pressure in hPa
                 # example: inhg of 30.1 to hpa was 1019.30
-                if data["pressureValid"]:
-                    self.get_logger().info(
-                        "Pressure: {0}, height above sea level: {1}".format(
-                            data["pressure"],
-                            get_altitude(data["pressure"], sea_level_hPa=1019.30),
-                        )
-                    )
-
-                if data["temperatureValid"]:
-                    self.get_logger().info(
-                        "Temperature C: {0} Temperature F: {1}".format(
-                            data["temperature"], (data["temperature"] * (9 / 5)) + 32
-                        )
-                    )
+                # if data["pressureValid"]:
+                #     self.get_logger().info(
+                #         "Pressure: {0}, height above sea level: {1}".format(
+                #             data["pressure"],
+                #             get_altitude(data["pressure"], sea_level_hPa=1019.30),
+                #         )
+                #     )
+                #
+                # if data["temperatureValid"]:
+                #     self.get_logger().info(
+                #         "Temperature C: {0} Temperature F: {1}".format(
+                #             data["temperature"], (data["temperature"] * (9 / 5)) + 32
+                #         )
+                #     )
 
                 # build msg and publish
                 qfp = data["fusionQPose"]
                 a = data["accel"]
                 g = data["gyro"]
 
-                print(
-                    "Pressure: {0}, height above sea level: {1}".format(
-                        data["pressure"],
-                        get_altitude(data["pressure"], sea_level_hPa=1019.30),
-                    )
-                )
                 ori = Quaternion(x=qfp[1], y=qfp[2], z=qfp[3], w=qfp[0])
                 av = Vector3(x=g[0], y=g[1], z=g[2])
                 la = Vector3(x=a[1] * G_TO_MPSS, y=a[1] * G_TO_MPSS, z=a[2] * G_TO_MPSS)
