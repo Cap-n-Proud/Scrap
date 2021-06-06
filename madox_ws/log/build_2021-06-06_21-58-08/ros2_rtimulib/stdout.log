@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/PKG-INFO
+writing dependency_links to ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/dependency_links.txt
+writing entry points to ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/entry_points.txt
+writing requirements to ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/requires.txt
+writing top-level names to ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/top_level.txt
+adding license file 'LICENSE' (matched pattern 'LICEN[CS]E*')
+reading manifest file '../../build/ros2_rtimulib/ros2_rtimulib.egg-info/SOURCES.txt'
+writing manifest file '../../build/ros2_rtimulib/ros2_rtimulib.egg-info/SOURCES.txt'
+running build
+running build_py
+copying ros2_rtimulib/imu_node.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib/ros2_rtimulib
+running install
+running install_lib
+copying /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib/ros2_rtimulib/imu_node.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib
+byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib/imu_node.py to imu_node.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib-0.1.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/ros2_rtimulib/ros2_rtimulib.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib-0.1.0-py3.8.egg-info
+running install_scripts
+Installing imu_node script to /home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/ros2_rtimulib
+writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/install.log'

@@ -7,11 +7,12 @@ import rclpy
 from rclpy.node import Node
 from ament_index_python.packages import get_package_share_directory
 
-from sensor_msgs.msg import Imu
+from sensor_msgs.msg import Imu, FluidPressure, Temperature
 from geometry_msgs.msg import Quaternion, Vector3
 
 from ros2_rtimulib.imu_utils import get_altitude, G_TO_MPSS
 from ros2_rtimulib import better_get_parameter_or
+import time
 
 
 class IMUNode(Node):
@@ -78,31 +79,35 @@ class IMUNode(Node):
 
         # create pubs
         self.imu_pub = self.create_publisher(Imu, "/imu", qos_profile=10)
+        self.temperature_pub = self.create_publisher(
+            Temperature, "/temp", qos_profile=10
+        )
+        self.pressure_pub = self.create_publisher(
+            FluidPressure, "/press", qos_profile=10
+        )
 
         # create a rate with fixed hz rate to pub at
-        # hz_rate = (poll_interval*1.0/10.0)
-        # self.get_logger().info('hz rate is: {0}'.format(hz_rate))
-        # imu_rate = self.create_rate(hz_rate)
+        hz_rate = poll_interval * 1.0 / 100.0
+        self.get_logger().info("hz rate is: {0}".format(hz_rate))
+        imu_rate = self.create_rate(hz_rate)
 
-        timer_rate = 1  # poll_interval * 1.0 / 1000.0
+        timer_rate = poll_interval * 1.0 / 1000.0
         self.get_logger().info("timer_rate: {0}".format(timer_rate))
-        self.pub_tmr = self.create_timer(timer_rate, self.tmr_cb)
+        # self.pub_tmr = self.create_timer(timer_rate, self.handle_imu)
 
         # if using rate, which doesn't seem to work?
-        # while self.context.ok():
-        #
-        #    self.handle_imu()
-        #
-        #    imu_rate.sleep()
+        while self.context.ok():
+            self.handle_imu()
+            # time.sleep(hz_rate)
+            #    imu_rate.sleep()
 
     def tmr_cb(self):
         self.handle_imu()
 
     def handle_imu(self):
-        print("IMU POOLED")
-        if self.imu.IMURead() or 1 == 1:
-            # x, y, z = imu.getFusionData()
-            # print("%f %f %f" % (x,y,z))
+        if self.imu.IMURead():
+            # x, y, z = self.imu.getFusionData()
+            # print("%f %f %f" % (math.degrees(x), math.degrees(y), math.degrees(z)))
             data = self.imu.getIMUData()
             """
             data keys:
@@ -143,28 +148,33 @@ class IMUNode(Node):
                 # TODO : publish this info too for GPS fusion
                 # TODO: the get_altitude should get local pressure in hPa
                 # example: inhg of 30.1 to hpa was 1019.30
-                if data["pressureValid"]:
-                    self.get_logger().info(
-                        "Pressure: {0}, height above sea level: {1}".format(
-                            data["pressure"],
-                            get_altitude(data["pressure"], sea_level_hPa=1019.30),
-                        )
-                    )
-
-                if data["temperatureValid"]:
-                    self.get_logger().info(
-                        "Temperature C: {0} Temperature F: {1}".format(
-                            data["temperature"], (data["temperature"] * (9 / 5)) + 32
-                        )
-                    )
+                # if data["pressureValid"]:
+                #     self.get_logger().info(
+                #         "Pressure: {0}, height above sea level: {1}".format(
+                #             data["pressure"],
+                #             get_altitude(data["pressure"], sea_level_hPa=1019.30),
+                #         )
+                #     )
+                #
+                # if data["temperatureValid"]:
+                #     self.get_logger().info(
+                #         "Temperature C: {0} Temperature F: {1}".format(
+                #             data["temperature"], (data["temperature"] * (9 / 5)) + 32
+                #         )
+                #     )
 
                 # build msg and publish
                 qfp = data["fusionQPose"]
                 a = data["accel"]
                 g = data["gyro"]
 
+                print(
+                    "Pressure: {0}, height above sea level: {1}".format(
+                        data["pressure"],
+                        get_altitude(data["pressure"], sea_level_hPa=1019.30),
+                    )
+                )
                 ori = Quaternion(x=qfp[1], y=qfp[2], z=qfp[3], w=qfp[0])
-                ori = Quaternion(x=0.1, y=0.1, z=0.2, w=0.8)
                 av = Vector3(x=g[0], y=g[1], z=g[2])
                 la = Vector3(x=a[1] * G_TO_MPSS, y=a[1] * G_TO_MPSS, z=a[2] * G_TO_MPSS)
 
@@ -173,8 +183,19 @@ class IMUNode(Node):
                 )
                 imu_msg.header.stamp = self.get_clock().now().to_msg()
                 imu_msg.header.frame_id = self.frame_id
-                print(data["fusionQPose"])
                 self.imu_pub.publish(imu_msg)
+
+                # temparature_msg.temperature = data["temperature"]
+                # temparature_msg.variance = 0
+                temperature_msg = Temperature(
+                    temperature=data["temperature"], variance=0.0
+                )
+                temperature_msg.header.stamp = self.get_clock().now().to_msg()
+                temperature_msg.header.frame_id = "imu_temp_sensor"
+                self.temperature_pub.publish(temperature_msg)
+
+                # pressure_msg.header.stamp = self.get_clock().now().to_msg()
+                # pressure_msg.header.frame_id = "imu_pressure_sensor"
 
 
 def main():
