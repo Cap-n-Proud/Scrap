@@ -47,6 +47,11 @@ class ImuSensorNode(Node):
         self.angular_velocity_covariance = [0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02]
         self.linear_acceleration_covariance = [0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04]
 
+        self.init_IMU()
+        self.imu_publisher = self.create_publisher(Imu, "imu_topic", 10)
+        self.imu_timer = self.create_timer(self.frequency, self.publish_IMU)
+
+    def init_IMU(self):
         SETTINGS_FILE = "RTIMULib"
         if not os.path.exists(SETTINGS_FILE + ".ini"):
             print("Settings file does not exist, will be created")
@@ -76,18 +81,6 @@ class ImuSensorNode(Node):
 
         poll_interval = self.imu.IMUGetPollInterval()
         print("Recommended Poll Interval: %dmS\n" % poll_interval)
-        self.imu_publisher = self.create_publisher(Imu, "imu_topic", 10)
-        self.imu_timer = self.create_timer(self.frequency, self.publish_IMU)
-        imu_data = self.imu.getIMUData()
-        fusionPose = imu_data["fusionPose"]
-        print(
-            "r: %f p: %f y: %f"
-            % (
-                math.degrees(fusionPose[0]),
-                math.degrees(fusionPose[1]),
-                math.degrees(fusionPose[2]),
-            )
-        )
 
     def publish_IMU(self):
         # frame_id https://answers.ros.org/question/9957/what-frame_id-to-put-in-a-sensor_msgsimu-message/

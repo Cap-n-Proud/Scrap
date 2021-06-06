@@ -39,7 +39,7 @@ import math
 
 
 class ImuSensorNode(Node):
-    def __init__(self, debug=False, frequency=1 / 5):
+    def __init__(self, debug=False, frequency=0.5):
         super().__init__("imu_sensor")
         self.debug = debug
         self.frequency = frequency
@@ -47,11 +47,6 @@ class ImuSensorNode(Node):
         self.angular_velocity_covariance = [0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02]
         self.linear_acceleration_covariance = [0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04]
 
-        self.init_IMU()
-        self.imu_publisher = self.create_publisher(Imu, "imu_topic", 10)
-        self.imu_timer = self.create_timer(self.frequency, self.publish_IMU)
-
-    def init_IMU(self):
         SETTINGS_FILE = "RTIMULib"
         if not os.path.exists(SETTINGS_FILE + ".ini"):
             print("Settings file does not exist, will be created")
@@ -81,16 +76,39 @@ class ImuSensorNode(Node):
 
         poll_interval = self.imu.IMUGetPollInterval()
         print("Recommended Poll Interval: %dmS\n" % poll_interval)
+        self.imu_publisher = self.create_publisher(Imu, "imu_topic", 10)
+        self.imu_timer = self.create_timer(self.frequency, self.publish_IMU)
+        imu_data = self.imu.getIMUData()
+        fusionPose = imu_data["fusionPose"]
+        print(
+            "r: %f p: %f y: %f"
+            % (
+                math.degrees(fusionPose[0]),
+                math.degrees(fusionPose[1]),
+                math.degrees(fusionPose[2]),
+            )
+        )
 
     def publish_IMU(self):
         # frame_id https://answers.ros.org/question/9957/what-frame_id-to-put-in-a-sensor_msgsimu-message/
         imu_msg = Imu()
         imu_data = self.imu.getIMUData()
         # imu_msg.header.stamp = 0
-        print("publish " + str(self.debug))
         # https://wiki.ros.org/openrover-ros2
         if self.debug:
-            print(imu_data)
+            # print(imu_data)
+            print("IMU Name: " + self.imu.IMUName())
+
+            fusionPose = imu_data["fusionPose"]
+            print(
+                "r: %f p: %f y: %f"
+                % (
+                    math.degrees(fusionPose[0]),
+                    math.degrees(fusionPose[1]),
+                    math.degrees(fusionPose[2]),
+                )
+            )
+
         header = Header()
         header.stamp.sec = 1
         header.stamp.nanosec = 1
@@ -146,6 +164,8 @@ def main(args=None):
     args = parser.parse_args()
     if args.debug:
         print("Debug mode")
+    if args.frequency:
+        print("Freq: " + str(args.frequency))
 
     node = ImuSensorNode(debug=args.debug, frequency=args.frequency)
     rclpy.spin(node)

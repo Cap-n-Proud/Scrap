@@ -1,0 +1,28 @@
+[1.306s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/imu': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/imu/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imu build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/imu/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/imu --record /home/robot/Software/ROS2/Madox/madox_ws/build/imu/install.log --single-version-externally-managed
+[2.086s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.087s]   warnings.warn(
+[2.087s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[2.087s]   warnings.warn(
+[2.216s] running egg_info
+[2.220s] writing ../../build/imu/imu.egg-info/PKG-INFO
+[2.238s] writing dependency_links to ../../build/imu/imu.egg-info/dependency_links.txt
+[2.251s] writing entry points to ../../build/imu/imu.egg-info/entry_points.txt
+[2.265s] writing requirements to ../../build/imu/imu.egg-info/requires.txt
+[2.282s] writing top-level names to ../../build/imu/imu.egg-info/top_level.txt
+[2.505s] reading manifest file '../../build/imu/imu.egg-info/SOURCES.txt'
+[2.515s] writing manifest file '../../build/imu/imu.egg-info/SOURCES.txt'
+[2.526s] running build
+[2.526s] running build_py
+[2.536s] copying imu/imu.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/imu/build/lib/imu
+[2.564s] running install
+[2.568s] running install_lib
+[2.581s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/imu/build/lib/imu/imu.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/imu/lib/python3.8/site-packages/imu
+[2.619s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/imu/lib/python3.8/site-packages/imu/imu.py to imu.cpython-38.pyc
+[2.662s] running install_data
+[2.681s] running install_egg_info
+[2.692s] removing '/home/robot/Software/ROS2/Madox/madox_ws/install/imu/lib/python3.8/site-packages/imu-0.0.1-py3.8.egg-info' (and everything under it)
+[2.738s] Copying ../../build/imu/imu.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/imu/lib/python3.8/site-packages/imu-0.0.1-py3.8.egg-info
+[2.932s] running install_scripts
+[3.010s] Installing ros2_imu script to /home/robot/Software/ROS2/Madox/madox_ws/install/imu/lib/imu
+[3.035s] writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/imu/install.log'
+[3.142s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/imu' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/imu/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imu build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/imu/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/imu --record /home/robot/Software/ROS2/Madox/madox_ws/build/imu/install.log --single-version-externally-managed
