@@ -1,0 +1,46 @@
+running egg_info
+creating ../../build/ros2_rtimulib/ros2_rtimulib.egg-info
+writing ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/PKG-INFO
+writing dependency_links to ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/dependency_links.txt
+writing entry points to ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/entry_points.txt
+writing requirements to ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/requires.txt
+writing top-level names to ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/top_level.txt
+writing manifest file '../../build/ros2_rtimulib/ros2_rtimulib.egg-info/SOURCES.txt'
+reading manifest file '../../build/ros2_rtimulib/ros2_rtimulib.egg-info/SOURCES.txt'
+writing manifest file '../../build/ros2_rtimulib/ros2_rtimulib.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build
+creating /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib
+creating /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib/ros2_rtimulib
+copying ros2_rtimulib/imu_Lib.py -> /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib/ros2_rtimulib
+copying ros2_rtimulib/imu_utils.py -> /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib/ros2_rtimulib
+copying ros2_rtimulib/__init__.py -> /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib/ros2_rtimulib
+copying ros2_rtimulib/imu_node.py -> /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib/ros2_rtimulib
+running install
+running install_lib
+creating /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib
+copying /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib/ros2_rtimulib/imu_utils.py -> /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib
+copying /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib/ros2_rtimulib/imu_node.py -> /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib
+copying /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib/ros2_rtimulib/__init__.py -> /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib
+copying /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib/ros2_rtimulib/imu_Lib.py -> /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib
+byte-compiling /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib/imu_utils.py to imu_utils.cpython-38.pyc
+byte-compiling /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib/imu_node.py to imu_node.cpython-38.pyc
+byte-compiling /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib/imu_Lib.py to imu_Lib.cpython-38.pyc
+running install_data
+creating /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ament_index
+creating /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ament_index/resource_index
+creating /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ament_index/resource_index/packages
+copying resource/ros2_rtimulib -> /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib
+creating /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/launch
+copying launch/rtimulib.launch.py -> /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/launch
+creating /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/config
+copying config/imu.yaml -> /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/config
+copying config/RTIMULib.ini -> /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib
+running install_egg_info
+Copying ../../build/ros2_rtimulib/ros2_rtimulib.egg-info to /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib-0.1.0-py3.8.egg-info
+running install_scripts
+Installing imu_node script to /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/ros2_rtimulib
+writing list of installed files to '/home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/install.log'

@@ -1,0 +1,24 @@
+[1.186s] Invoking command in '/home/ubuntu/Software/ROS2/Madox/madox_ws/src/ros2_rtimulib': PYTHONPATH=/home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ros2_rtimulib build --build-base /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build install --prefix /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib --record /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/install.log --single-version-externally-managed
+[2.054s] running egg_info
+[2.058s] writing ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/PKG-INFO
+[2.075s] writing dependency_links to ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/dependency_links.txt
+[2.089s] writing entry points to ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/entry_points.txt
+[2.100s] writing requirements to ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/requires.txt
+[2.111s] writing top-level names to ../../build/ros2_rtimulib/ros2_rtimulib.egg-info/top_level.txt
+[2.306s] reading manifest file '../../build/ros2_rtimulib/ros2_rtimulib.egg-info/SOURCES.txt'
+[2.334s] writing manifest file '../../build/ros2_rtimulib/ros2_rtimulib.egg-info/SOURCES.txt'
+[2.343s] running build
+[2.343s] running build_py
+[2.355s] copying ros2_rtimulib/imu_node.py -> /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib/ros2_rtimulib
+[2.382s] running install
+[2.386s] running install_lib
+[2.408s] copying /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build/lib/ros2_rtimulib/imu_node.py -> /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib
+[2.448s] byte-compiling /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib/imu_node.py to imu_node.cpython-38.pyc
+[2.489s] running install_data
+[2.512s] running install_egg_info
+[2.522s] removing '/home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib-0.1.0-py3.8.egg-info' (and everything under it)
+[2.556s] Copying ../../build/ros2_rtimulib/ros2_rtimulib.egg-info to /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2_rtimulib-0.1.0-py3.8.egg-info
+[2.753s] running install_scripts
+[2.833s] Installing imu_node script to /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/ros2_rtimulib
+[2.860s] writing list of installed files to '/home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/install.log'
+[2.967s] Invoked command in '/home/ubuntu/Software/ROS2/Madox/madox_ws/src/ros2_rtimulib' returned '0': PYTHONPATH=/home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ros2_rtimulib build --build-base /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build install --prefix /home/ubuntu/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib --record /home/ubuntu/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/install.log --single-version-externally-managed

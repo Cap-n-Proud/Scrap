@@ -188,8 +188,13 @@ class IMUNode(Node):
                 temperature_msg.header.frame_id = "imu_temp_sensor"
                 self.temperature_pub.publish(temperature_msg)
 
-                # pressure_msg.header.stamp = self.get_clock().now().to_msg()
-                # pressure_msg.header.frame_id = "imu_pressure_sensor"
+                pressure_msg = FluidPressure(
+                    fluid_pressure=data["pressure"], variance=0.0
+                )
+
+                pressure_msg.header.stamp = self.get_clock().now().to_msg()
+                pressure_msg.header.frame_id = "imu_pressure_sensor"
+                self.pressure_pub.publish(pressure_msg)
 
 
 def main():

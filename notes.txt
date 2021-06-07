@@ -6,6 +6,10 @@ info_sys_mem
 info_sys_CPU
 info_sys_power
 
+node_imu/imu
+node_imu/temp
+node_imu/press
+
 
 entry_points={
     "console_scripts": [
