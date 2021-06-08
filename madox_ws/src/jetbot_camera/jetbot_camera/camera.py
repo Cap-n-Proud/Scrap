@@ -65,6 +65,7 @@ class Camera(metaclass=Singleton):
             )
             self.cap = cv2.VideoCapture(capture_device)
         else:
+            self.source = int(self.source)
             self.cap = cv2.VideoCapture(self.source)
             self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, self.width)
             self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, self.height)

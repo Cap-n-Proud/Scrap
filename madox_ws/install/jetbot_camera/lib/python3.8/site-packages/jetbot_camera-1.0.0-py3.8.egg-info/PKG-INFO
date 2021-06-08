@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: jetbot-camera
+Version: 1.0.0
+Summary: Manages the camera including overlay information and streaming to web browser via gstreamer.
+Home-page: UNKNOWN
+Maintainer: Cap-n-Proud
+Maintainer-email: robot@todo.todo
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN

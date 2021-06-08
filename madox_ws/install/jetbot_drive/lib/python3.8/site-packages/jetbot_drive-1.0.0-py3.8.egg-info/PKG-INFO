@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: jetbot-drive
+Version: 1.0.0
+Summary: Main package for the robot. Receives joy inputs and manage motors
+Home-page: UNKNOWN
+Maintainer: Cap-n-Proud
+Maintainer-email: robot@todo.todo
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,43 @@
+[2.750s] Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_sys_info': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_sys_info build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/install.log --single-version-externally-managed
+[3.217s] running egg_info
+[3.220s] creating ../../build/jetbot_sys_info/jetbot_sys_info.egg-info
+[3.224s] writing ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/PKG-INFO
+[3.250s] writing dependency_links to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/dependency_links.txt
+[3.264s] writing entry points to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/entry_points.txt
+[3.277s] writing requirements to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/requires.txt
+[3.285s] writing top-level names to ../../build/jetbot_sys_info/jetbot_sys_info.egg-info/top_level.txt
+[3.300s] writing manifest file '../../build/jetbot_sys_info/jetbot_sys_info.egg-info/SOURCES.txt'
+[3.396s] reading manifest file '../../build/jetbot_sys_info/jetbot_sys_info.egg-info/SOURCES.txt'
+[3.406s] writing manifest file '../../build/jetbot_sys_info/jetbot_sys_info.egg-info/SOURCES.txt'
+[3.416s] running build
+[3.416s] running build_py
+[3.425s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build
+[3.427s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib
+[3.432s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info
+[3.444s] copying jetbot_sys_info/ads1115.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info
+[3.471s] copying jetbot_sys_info/jetbot_sys_info.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info
+[3.494s] copying jetbot_sys_info/ina219.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info
+[3.526s] copying jetbot_sys_info/__init__.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info
+[3.541s] running install
+[3.542s] running install_lib
+[3.559s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info
+[3.568s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info/__init__.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info
+[3.586s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info/ina219.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info
+[3.617s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info/ads1115.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info
+[3.692s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build/lib/jetbot_sys_info/jetbot_sys_info.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info
+[3.694s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info/__init__.py to __init__.cpython-38.pyc
+[3.727s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info/ina219.py to ina219.cpython-38.pyc
+[3.769s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info/ads1115.py to ads1115.cpython-38.pyc
+[3.802s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info/jetbot_sys_info.py to jetbot_sys_info.cpython-38.pyc
+[3.836s] running install_data
+[3.842s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/ament_index
+[3.844s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/ament_index/resource_index
+[3.849s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/ament_index/resource_index/packages
+[3.861s] copying resource/jetbot_sys_info -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/ament_index/resource_index/packages
+[3.881s] copying package.xml -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/jetbot_sys_info
+[3.904s] running install_egg_info
+[3.918s] Copying ../../build/jetbot_sys_info/jetbot_sys_info.egg-info to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages/jetbot_sys_info-1.0.0-py3.8.egg-info
+[4.642s] running install_scripts
+[4.681s] Installing ros2_jetbot_sys_info script to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/jetbot_sys_info
+[4.703s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/install.log'
+[4.986s] Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_sys_info' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_sys_info build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/install.log --single-version-externally-managed

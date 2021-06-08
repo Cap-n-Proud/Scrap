@@ -1,0 +1,21 @@
+[1.863s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/build/camera': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/camera --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/camera/build --no-deps install_data --install-dir /home/robot/Software/ROS2/Madox/madox_ws/install/camera
+[2.871s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.871s]   warnings.warn(
+[2.872s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[2.872s]   warnings.warn(
+[3.075s] running develop
+[3.951s] running egg_info
+[3.957s] writing camera.egg-info/PKG-INFO
+[3.973s] writing dependency_links to camera.egg-info/dependency_links.txt
+[3.985s] writing entry points to camera.egg-info/entry_points.txt
+[3.999s] writing requirements to camera.egg-info/requires.txt
+[4.016s] writing top-level names to camera.egg-info/top_level.txt
+[4.217s] reading manifest file 'camera.egg-info/SOURCES.txt'
+[4.228s] writing manifest file 'camera.egg-info/SOURCES.txt'
+[4.400s] running build_ext
+[4.401s] Creating /home/robot/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages/camera.egg-link (link to .)
+[4.433s] Installing ros2_camera script to /home/robot/Software/ROS2/Madox/madox_ws/install/camera/lib/camera
+[4.461s] 
+[4.461s] Installed /home/robot/Software/ROS2/Madox/madox_ws/build/camera
+[4.465s] running install_data
+[4.621s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/build/camera' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/camera --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/camera/build --no-deps install_data --install-dir /home/robot/Software/ROS2/Madox/madox_ws/install/camera

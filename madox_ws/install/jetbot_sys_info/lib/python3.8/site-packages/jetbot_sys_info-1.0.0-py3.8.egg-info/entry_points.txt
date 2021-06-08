@@ -1,0 +1,3 @@
+[console_scripts]
+ros2_jetbot_sys_info = jetbot_sys_info.jetbot_sys_info:main
+

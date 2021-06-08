@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: jetbot-oled-display
+Version: 1.0.0
+Summary: Manages the jetbot oled display as a ROS2 node
+Home-page: UNKNOWN
+Maintainer: Cap-n-Proud
+Maintainer-email: robot@todo.todo
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,52 @@
+[1.899s] Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_camera': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_camera build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/install.log --single-version-externally-managed
+[2.378s] running egg_info
+[2.383s] creating ../../build/jetbot_camera/jetbot_camera.egg-info
+[2.387s] writing ../../build/jetbot_camera/jetbot_camera.egg-info/PKG-INFO
+[2.419s] writing dependency_links to ../../build/jetbot_camera/jetbot_camera.egg-info/dependency_links.txt
+[2.431s] writing entry points to ../../build/jetbot_camera/jetbot_camera.egg-info/entry_points.txt
+[2.442s] writing requirements to ../../build/jetbot_camera/jetbot_camera.egg-info/requires.txt
+[2.451s] writing top-level names to ../../build/jetbot_camera/jetbot_camera.egg-info/top_level.txt
+[2.471s] writing manifest file '../../build/jetbot_camera/jetbot_camera.egg-info/SOURCES.txt'
+[2.662s] reading manifest file '../../build/jetbot_camera/jetbot_camera.egg-info/SOURCES.txt'
+[2.682s] writing manifest file '../../build/jetbot_camera/jetbot_camera.egg-info/SOURCES.txt'
+[2.690s] running build
+[2.691s] running build_py
+[2.698s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build
+[2.700s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib
+[2.706s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera
+[2.714s] copying jetbot_camera/camera0.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera
+[2.738s] copying jetbot_camera/__init__.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera
+[2.756s] copying jetbot_camera/log.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera
+[2.783s] copying jetbot_camera/server.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera
+[2.809s] copying jetbot_camera/debounce.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera
+[2.841s] copying jetbot_camera/server_OLD.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera
+[2.868s] copying jetbot_camera/camera.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera
+[2.891s] running install
+[2.895s] running install_lib
+[2.913s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera
+[2.921s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/log.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera
+[2.949s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/camera0.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera
+[2.982s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/__init__.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera
+[2.998s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/server_OLD.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera
+[3.024s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/server.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera
+[3.054s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/debounce.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera
+[3.080s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build/lib/jetbot_camera/camera.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera
+[3.119s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/log.py to log.cpython-38.pyc
+[3.158s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/camera0.py to camera0.cpython-38.pyc
+[3.200s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/__init__.py to __init__.cpython-38.pyc
+[3.232s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/server_OLD.py to server_OLD.cpython-38.pyc
+[3.270s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/server.py to server.cpython-38.pyc
+[3.308s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/debounce.py to debounce.cpython-38.pyc
+[3.342s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera/camera.py to camera.cpython-38.pyc
+[3.436s] running install_data
+[3.438s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/ament_index
+[3.438s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/ament_index/resource_index
+[3.440s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/ament_index/resource_index/packages
+[3.441s] copying resource/jetbot_camera -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/ament_index/resource_index/packages
+[3.441s] copying package.xml -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/share/jetbot_camera
+[3.462s] running install_egg_info
+[3.481s] Copying ../../build/jetbot_camera/jetbot_camera.egg-info to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages/jetbot_camera-1.0.0-py3.8.egg-info
+[3.704s] running install_scripts
+[3.749s] Installing ros2_jetbot_camera script to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/jetbot_camera
+[3.768s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/install.log'
+[4.327s] Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_camera' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_camera build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_camera/install.log --single-version-externally-managed

@@ -252,7 +252,7 @@ def main(args=None):
     parser.add_argument("--width", type=int, default=640)
     parser.add_argument("--height", type=int, default=480)
     parser.add_argument("--directory", type=str, default="html")
-    parser.add_argument("--device-index", type=int, default="jetson")
+    parser.add_argument("--device", type=str, default="jetson")
     args = parser.parse_args()
 
     camera = Camera(args.device_index, args.width, args.height)

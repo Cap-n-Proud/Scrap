@@ -1,0 +1,3 @@
+[console_scripts]
+ros2_camera = camera.server:main
+

@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: jetbot-sys-info
+Version: 1.0.0
+Summary: Extracts and publishes several information from teh jetbot hardware. Publishes teh following topics: info_sys_disk, info_sys_mem, info_sys_CPU, info_sys_power.
+Home-page: UNKNOWN
+Maintainer: robot
+Maintainer-email: robot@todo.todo
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
