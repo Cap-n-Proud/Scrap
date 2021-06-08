@@ -115,7 +115,7 @@ class Camera(metaclass=Singleton):
         row_height = self.text_settings["row_height"] * w / 320
         column = self.text_settings["column"] * w / 320
 
-        font_space = 40
+        font_space = 35
         cv2.putText(
             frame,
             str(imu[0]),
@@ -161,7 +161,7 @@ class Camera(metaclass=Singleton):
         cv2.putText(
             frame,
             str(alt),
-            (int(left_col), int(padding + row_height)),
+            (int(left_col), int(padding + 2 * row_height)),
             font,
             font_size,
             font_color,
