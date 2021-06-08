@@ -44,23 +44,36 @@ def gstreamer_pipeline(
 class Camera(metaclass=Singleton):
     def __init__(self, source, width, height):
         self._read_lock = Lock()
-        # self.cap = cv2.VideoCapture(source)
-        # self.cap = cv2.VideoCapture(
-        #     gstreamer_pipeline(flip_method=0), cv2.CAP_GSTREAMER
-        # )
         # cv2.FONT_HERSHEY_SIMPLEX = 0
         from apscheduler.schedulers.background import BackgroundScheduler
 
+        self.source = source
+        self.width = width
+        self.height = height
         self.scheduler = BackgroundScheduler()
         self.scheduler.start()
         self.text_overlay_settings = '{ "thickness":0, "font":0, "font_size":0.3, "font_color": [255, 255, 0], "font_thickness": 1,"w":640, "h":480, "row_height": 10, "column":15, "padding": 30}'
         # parse x:
         self.text_settings = json.loads(self.text_overlay_settings)
-        self.cap = cv2.VideoCapture(
-            "nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)640, height=(int)480,format=(string)NV12, framerate=(fraction)15/1 ! nvvidconv ! video/x-raw, format=(string)BGRx ! videoconvert !  appsink"
-        )
-        # self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
-        # self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
+        if self.source == "jetson":
+            capture_device = (
+                "nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)"
+                + self.width
+                + ", height=(int)"
+                + self.height
+                + ",format=(string)NV12, framerate=(fraction)15/1 ! nvvidconv ! video/x-raw, format=(string)BGRx ! videoconvert !  appsink"
+            )
+            self.cap = cv2.VideoCapture(capture_device)
+        else:
+            self.cap = cv2.VideoCapture(self.source)
+            self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, self.width)
+            self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, self.height)
+
+        # self.cap = cv2.VideoCapture(
+        #     gstreamer_pipeline(flip_method=0), cv2.CAP_GSTREAMER
+        # )
+        # Comment this and uncomment the code above to change the capture device (e.g.: use otehr cameras)
+        #
 
     def print_text(self, frame, pos_x, pos_y, text):
         w = self.text_settings["w"]

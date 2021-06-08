@@ -179,8 +179,6 @@ class IMUNode(Node):
                 imu_msg.header.frame_id = self.frame_id
                 self.imu_pub.publish(imu_msg)
 
-                # temparature_msg.temperature = data["temperature"]
-                # temparature_msg.variance = 0
                 temperature_msg = Temperature(
                     temperature=data["temperature"], variance=0.0
                 )
