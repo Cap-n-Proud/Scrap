@@ -4,6 +4,8 @@ import threading
 from threading import Lock
 import uuid
 
+import camera.overlay_lib as overlay_lib
+
 # import board
 
 from std_msgs.msg import String
@@ -44,6 +46,8 @@ class CameraHandler(BaseHTTPRequestHandler):
     def __init__(self, request, client_address, server):
         self.document_root = server.get_document_root()
         self.camera = server.get_camera()
+        # https://www.tutorialkart.com/opencv/python/opencv-python-get-image-size/
+        self.frame_shape = self.camera.get_frame(SLEEP_IN_SEC).shape
         super(CameraHandler, self).__init__(request, client_address, server)
 
     def flash_message(self, text, frame, pos_x=int(200), pos_y=int(20), duration=3):
@@ -109,19 +113,40 @@ class CameraHandler(BaseHTTPRequestHandler):
                 # Does not work
 
                 if display_config == 0:
-                    self.camera.drawCrosshair(frame)
-                    self.camera.draw_joy(frame, x, y)
-                    self.camera.draw_power(frame, power_info)
-                    self.camera.draw_CPU(frame, CPU_info)
-                    self.camera.draw_FPS(frame, "FPS: " + str(int(1 / float(diff_fps))))
-                    temp = 26.3
-                    alt = 453
-                    self.camera.draw_IMU(frame, euler, temp, alt)
+
+                    overlay_lib.drawCrosshair(
+                        frame, self.frame_shape[1], self.frame_shape[0]
+                    )
+                    overlay_lib.draw_joy(
+                        frame, x, y, self.frame_shape[1], self.frame_shape[0]
+                    )
+                    overlay_lib.draw_power(
+                        frame, power_info, self.frame_shape[1], self.frame_shape[0]
+                    )
+                    overlay_lib.draw_CPU(
+                        frame, CPU_info, self.frame_shape[1], self.frame_shape[0]
+                    )
+                    overlay_lib.draw_FPS(
+                        frame,
+                        "FPS: " + str(int(1 / float(diff_fps))),
+                        self.frame_shape[1],
+                        self.frame_shape[0],
+                    )
+                    overlay_lib.draw_IMU(
+                        frame,
+                        euler,
+                        temp,
+                        alt,
+                        self.frame_shape[1],
+                        self.frame_shape[0],
+                    )
 
                     # self.camera.draw_power2(frame, "AAA")
 
                 elif display_config == 1:
-                    self.camera.drawCrosshair(frame)
+                    overlay_lib.drawCrosshair(
+                        frame, self.frame_shape[1], self.frame_shape[0]
+                    )
                 elif display_config == 2:
                     continue
 
@@ -200,6 +225,9 @@ class Robot_Info(Node):
         self.temp_topic = self.create_subscription(
             Temperature, "/temp", self.temp_topic, 10
         )
+        self.press_topic = self.create_subscription(
+            FluidPressure, "/press", self.press_topic, 10
+        )
         self.init_buttons = True
 
     def imu_topic(self, msg):
@@ -219,7 +247,7 @@ class Robot_Info(Node):
 
     def press_topic(self, msg):
         global alt
-        alt = get_altitude(msg.fluid_pressure)
+        alt = int(get_altitude(msg.fluid_pressure))
 
     def power_topic(self, msg):
         global power_info
