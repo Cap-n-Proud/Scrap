@@ -52,7 +52,7 @@ class Camera(metaclass=Singleton):
         self.height = height
         self.scheduler = BackgroundScheduler()
         self.scheduler.start()
-        self.text_overlay_settings = '{ "thickness":0, "font":0, "font_size":0.2, "font_color": [255, 255, 0], "right_col":0.9, "left_col":0.1, "font_thickness": 1,"row_height": 10, "column":15, "padding": 30}'
+        self.text_overlay_settings = '{ "thickness":0, "font":0, "font_size":0.2, "font_space":25, "font_color": [255, 255, 0], "right_col":0.9, "left_col":0.1, "font_thickness": 1,"row_height": 10, "column":15, "padding": 30}'
         # parse x:
         self.text_settings = json.loads(self.text_overlay_settings)
         if self.source == "jetson":
@@ -114,8 +114,8 @@ class Camera(metaclass=Singleton):
         padding = self.text_settings["padding"]
         row_height = self.text_settings["row_height"] * w / 320
         column = self.text_settings["column"] * w / 320
+        font_space = self.text_settings["font_space"]
 
-        font_space = 35
         cv2.putText(
             frame,
             str(imu[0]),
@@ -129,7 +129,7 @@ class Camera(metaclass=Singleton):
         cv2.putText(
             frame,
             str(imu[1]),
-            (int(left_col + font_space), int(padding)),
+            (int(left_col + 3 * font_space), int(padding)),
             font,
             font_size,
             font_color,
@@ -139,7 +139,7 @@ class Camera(metaclass=Singleton):
         cv2.putText(
             frame,
             str(imu[2]),
-            (int(left_col + 2 * font_space), int(padding)),
+            (int(left_col + 6 * font_space), int(padding)),
             font,
             font_size,
             font_color,
@@ -161,7 +161,7 @@ class Camera(metaclass=Singleton):
         cv2.putText(
             frame,
             str(alt),
-            (int(left_col), int(padding + 2 * row_height)),
+            (int(left_col + 3 * font_space), int(padding + row_height)),
             font,
             font_size,
             font_color,
@@ -225,6 +225,7 @@ class Camera(metaclass=Singleton):
         padding = self.text_settings["padding"]
         row_height = self.text_settings["row_height"] * w / 320
         column = self.text_settings["column"] * w / 320
+        font_space = self.text_settings["font_space"]
 
         cv2.putText(
             frame,
@@ -239,7 +240,7 @@ class Camera(metaclass=Singleton):
         cv2.putText(
             frame,
             str(y),
-            (int(left_col + 1 * column), int(h - padding)),
+            (int(left_col + 2 * font_space), int(h - padding)),
             font,
             font_size,
             font_color,

@@ -52,7 +52,7 @@ class Camera(metaclass=Singleton):
         self.height = height
         self.scheduler = BackgroundScheduler()
         self.scheduler.start()
-        self.text_overlay_settings = '{ "thickness":0, "font":0, "font_size":0.3, "font_color": [255, 255, 0], "font_thickness": 1,"w":640, "h":480, "row_height": 10, "column":15, "padding": 30}'
+        self.text_overlay_settings = '{ "thickness":0, "font":0, "font_size":0.2, "font_color": [255, 255, 0], "right_col":0.9, "left_col":0.1, "font_thickness": 1,"row_height": 10, "column":15, "padding": 30}'
         # parse x:
         self.text_settings = json.loads(self.text_overlay_settings)
         if self.source == "jetson":
@@ -77,8 +77,10 @@ class Camera(metaclass=Singleton):
         #
 
     def print_text(self, frame, pos_x, pos_y, text):
-        w = self.text_settings["w"]
-        h = self.text_settings["h"]
+        w = self.width
+        h = self.height
+        right_col = self.text_settings["right_col"]
+        left_col = self.text_settings["left_col"]
         thickness = self.text_settings["thickness"]
         font = self.text_settings["font"]
         font_size = self.text_settings["font_size"] * w / 320
@@ -99,9 +101,77 @@ class Camera(metaclass=Singleton):
             cv2.LINE_AA,
         )
 
+    def draw_IMU(self, frame, imu, temp, alt):
+        w = self.width
+        h = self.height
+        right_col = self.text_settings["right_col"]
+        left_col = self.text_settings["left_col"]
+        thickness = self.text_settings["thickness"]
+        font = self.text_settings["font"]
+        font_size = self.text_settings["font_size"] * w / 320
+        font_color = self.text_settings["font_color"]
+        font_thickness = int(self.text_settings["font_thickness"])
+        padding = self.text_settings["padding"]
+        row_height = self.text_settings["row_height"] * w / 320
+        column = self.text_settings["column"] * w / 320
+
+        font_space = 35
+        cv2.putText(
+            frame,
+            str(imu[0]),
+            (int(left_col), int(padding)),
+            font,
+            font_size,
+            font_color,
+            font_thickness,
+            cv2.LINE_AA,
+        )
+        cv2.putText(
+            frame,
+            str(imu[1]),
+            (int(left_col + font_space), int(padding)),
+            font,
+            font_size,
+            font_color,
+            font_thickness,
+            cv2.LINE_AA,
+        )
+        cv2.putText(
+            frame,
+            str(imu[2]),
+            (int(left_col + 2 * font_space), int(padding)),
+            font,
+            font_size,
+            font_color,
+            font_thickness,
+            cv2.LINE_AA,
+        )
+        temp = str(temp) + " C"
+        cv2.putText(
+            frame,
+            str(temp),
+            (int(left_col), int(padding + row_height)),
+            font,
+            font_size,
+            font_color,
+            font_thickness,
+            cv2.LINE_AA,
+        )
+        alt = str(alt) + " m"
+        cv2.putText(
+            frame,
+            str(alt),
+            (int(left_col), int(padding + 2 * row_height)),
+            font,
+            font_size,
+            font_color,
+            font_thickness,
+            cv2.LINE_AA,
+        )
+
     def drawCrosshair(self, frame):
-        w = self.text_settings["w"]
-        h = self.text_settings["h"]
+        w = self.width
+        h = self.height
         size = 10
         v_shift = -20
 
@@ -143,8 +213,10 @@ class Camera(metaclass=Singleton):
         )
 
     def draw_joy(self, frame, x, y):
-        w = self.text_settings["w"]
-        h = self.text_settings["h"]
+        w = self.width
+        h = self.height
+        right_col = self.text_settings["right_col"]
+        left_col = self.text_settings["left_col"]
         thickness = self.text_settings["thickness"]
         font = self.text_settings["font"]
         font_size = self.text_settings["font_size"] * w / 320
@@ -157,7 +229,7 @@ class Camera(metaclass=Singleton):
         cv2.putText(
             frame,
             str(x),
-            (int(padding), int(h - padding)),
+            (int(left_col), int(h - padding)),
             font,
             font_size,
             font_color,
@@ -167,7 +239,7 @@ class Camera(metaclass=Singleton):
         cv2.putText(
             frame,
             str(y),
-            (int(padding + 2 * column), int(h - padding)),
+            (int(left_col + 1 * column), int(h - padding)),
             font,
             font_size,
             font_color,
@@ -176,16 +248,18 @@ class Camera(metaclass=Singleton):
         )
 
     def drawOverlay(ret, frame, f):
+        w = self.width
+        h = self.height
+        right_col = self.text_settings["right_col"]
+        left_col = self.text_settings["left_col"]
         thickness = self.text_settings["thickness"]
         font = self.text_settings["font"]
-        font_size = self.text_settings["font_size"] * 2
+        font_size = self.text_settings["font_size"] * w / 320
         font_color = self.text_settings["font_color"]
         font_thickness = int(self.text_settings["font_thickness"])
-        w = self.text_settings["w"]
-        h = self.text_settings["h"]
         padding = self.text_settings["padding"]
-        row_height = self.text_settings["row_height"]
-        column = self.text_settings["column"]
+        row_height = self.text_settings["row_height"] * w / 320
+        column = self.text_settings["column"] * w / 320
         cv2.putText(
             frame,
             str(int(f)),
@@ -198,8 +272,10 @@ class Camera(metaclass=Singleton):
         )
 
     def draw_power(self, frame, pow):
-        w = self.text_settings["w"]
-        h = self.text_settings["h"]
+        w = self.width
+        h = self.height
+        right_col = self.text_settings["right_col"]
+        left_col = self.text_settings["left_col"]
         thickness = self.text_settings["thickness"]
         font = self.text_settings["font"]
         font_size = self.text_settings["font_size"] * w / 320
@@ -212,7 +288,7 @@ class Camera(metaclass=Singleton):
         cv2.putText(
             frame,
             str(pow),
-            (int(w - padding - 4 * column), int(h - padding)),
+            (int(right_col * w), int(h - padding)),
             font,
             font_size,
             font_color,
@@ -221,8 +297,10 @@ class Camera(metaclass=Singleton):
         )
 
     def draw_CPU(self, frame, CPU):
-        w = self.text_settings["w"]
-        h = self.text_settings["h"]
+        w = self.width
+        h = self.height
+        right_col = self.text_settings["right_col"]
+        left_col = self.text_settings["left_col"]
         thickness = self.text_settings["thickness"]
         font = self.text_settings["font"]
         font_size = self.text_settings["font_size"] * w / 320
@@ -235,7 +313,7 @@ class Camera(metaclass=Singleton):
         cv2.putText(
             frame,
             str(CPU),
-            (int(w - 0.2 * w), int(h - padding - row_height)),
+            (int(right_col * w), int(h - padding - row_height)),
             font,
             font_size,
             font_color,
@@ -244,8 +322,10 @@ class Camera(metaclass=Singleton):
         )
 
     def draw_FPS(self, frame, FPS):
-        w = self.text_settings["w"]
-        h = self.text_settings["h"]
+        w = self.width
+        h = self.height
+        right_col = self.text_settings["right_col"]
+        left_col = self.text_settings["left_col"]
         thickness = self.text_settings["thickness"]
         font = self.text_settings["font"]
         font_size = self.text_settings["font_size"] * w / 320
@@ -258,7 +338,7 @@ class Camera(metaclass=Singleton):
         cv2.putText(
             frame,
             str(FPS),
-            (int(w - padding - 4 * column), int(h - padding - 2 * row_height)),
+            (int(right_col * w), int(h - padding - 2 * row_height)),
             font,
             font_size,
             font_color,

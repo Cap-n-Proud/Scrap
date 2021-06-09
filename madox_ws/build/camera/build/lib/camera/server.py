@@ -111,6 +111,11 @@ class CameraHandler(BaseHTTPRequestHandler):
                     self.camera.draw_power(frame, power_info)
                     self.camera.draw_CPU(frame, CPU_info)
                     self.camera.draw_FPS(frame, "FPS: " + str(int(1 / float(diff_fps))))
+                    imu = [12.2, 3.2, 168]
+                    temp = 26.3
+                    alt = 453
+                    self.camera.draw_IMU(frame, imu, temp, alt)
+
                     # self.camera.draw_power2(frame, "AAA")
 
                 elif display_config == 1:
@@ -243,11 +248,23 @@ class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
         return self.document_root
 
 
+# Probably better to define either a message or a common library
+import subprocess
+
+
+def get_ip_address(interface):
+    cmd = (
+        "ifconfig %s | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+        % interface
+    )
+    return subprocess.check_output(cmd, shell=True).decode("ascii")[:-1]
+
+
 def main(args=None):
     rclpy.init()
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--bind", type=str, default="192.168.1.164")
+    parser.add_argument("--bind", type=str, default=get_ip_address("wlan0"))
     parser.add_argument("--port", type=int, default=8080)
     parser.add_argument("--width", type=int, default=640)
     parser.add_argument("--height", type=int, default=480)
@@ -256,7 +273,7 @@ def main(args=None):
     args = parser.parse_args()
 
     # The parameter "--device" can be integer 0, 1, 2 etc or a string if tis is "jetson" we wil use the jetson caemra as capture device
-    camera = Camera(args.device_index, args.width, args.height)
+    camera = Camera(args.device, args.width, args.height)
     try:
         server = ThreadedHTTPServer((args.bind, args.port), CameraHandler)
         server.set_camera(camera)

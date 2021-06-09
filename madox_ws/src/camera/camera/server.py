@@ -8,7 +8,7 @@ import uuid
 
 from std_msgs.msg import String
 from std_msgs.msg import Int32MultiArray, Int16
-from sensor_msgs.msg import Joy
+from sensor_msgs.msg import Joy, Imu, FluidPressure, Temperature
 
 
 import argparse
@@ -32,6 +32,9 @@ y = 0
 display_config = 0
 power_info = "N/A"
 CPU_info = "N/A"
+euler = [0.0, 0.0, 0.0]
+temp = "N/A"
+alt = "N/A"
 diff_fps = 1
 flash_message = ""
 take_snapshot = False
@@ -111,10 +114,9 @@ class CameraHandler(BaseHTTPRequestHandler):
                     self.camera.draw_power(frame, power_info)
                     self.camera.draw_CPU(frame, CPU_info)
                     self.camera.draw_FPS(frame, "FPS: " + str(int(1 / float(diff_fps))))
-                    imu = [12.2, 3.2, 168]
                     temp = 26.3
                     alt = 453
-                    self.camera.draw_IMU(frame, imu, temp, alt)
+                    self.camera.draw_IMU(frame, euler, temp, alt)
 
                     # self.camera.draw_power2(frame, "AAA")
 
@@ -162,7 +164,6 @@ class dbounce:
 
         self.lastpinval = self.pin
         self.lock = threading.Lock()
-        print(self.func)
 
     def check(self, button, *args):
         pinval = button
@@ -195,7 +196,30 @@ class Robot_Info(Node):
         self.power_topic = self.create_subscription(
             String, "info_sys_power", self.power_topic, 10
         )
+        self.imu_topic = self.create_subscription(Imu, "/imu", self.imu_topic, 10)
+        self.temp_topic = self.create_subscription(
+            Temperature, "/temp", self.temp_topic, 10
+        )
         self.init_buttons = True
+
+    def imu_topic(self, msg):
+        global euler
+        euler = euler_from_quaternion(
+            msg.orientation.x,
+            msg.orientation.y,
+            msg.orientation.z,
+            msg.orientation.w,
+            False,
+            1,
+        )
+
+    def temp_topic(self, msg):
+        global temp
+        temp = round(msg.temperature, 1)
+
+    def press_topic(self, msg):
+        global alt
+        alt = get_altitude(msg.fluid_pressure)
 
     def power_topic(self, msg):
         global power_info
@@ -248,11 +272,98 @@ class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
         return self.document_root
 
 
+# Probably better to define either a message or a common library
+import subprocess
+
+
+def get_ip_address(interface):
+    cmd = (
+        "ifconfig %s | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+        % interface
+    )
+    return subprocess.check_output(cmd, shell=True).decode("ascii")[:-1]
+
+
+import math
+
+G_TO_MPSS = 9.80665
+
+
+def get_altitude(pressure: float, sea_level_hPa: float = 1013.25) -> float:
+    """
+    the conversion uses the formula:
+
+    h = (T0 / L0) * ((p / P0)**(-(R* * L0) / (g0 * M)) - 1)
+    where:
+    h  = height above sea level
+    T0 = standard temperature at sea level = 288.15
+    L0 = standard temperatur elapse rate = -0.0065
+    p  = measured pressure
+    P0 = static pressure = 1013.25
+    g0 = gravitational acceleration = 9.80665
+    M  = mloecular mass of earth's air = 0.0289644
+    R* = universal gas constant = 8.31432
+    Given the constants, this works out to:
+    h = 44330.8 * (1 - (p / P0)**0.190263)
+
+    Arguments:
+        pressure {float} -- current pressure
+        sea_level_hPa {float} -- The current hPa at sea level.
+
+    Returns:
+        [type] -- [description]
+    """
+    return 44330.8 * (1 - pow(pressure / sea_level_hPa, 0.190263))
+
+
+def compute_sea_level(altitude: float, atmospheric: float) -> float:
+    """
+    Calculates the pressure at sea level (in hPa) from the specified altitude
+    (in meters), and atmospheric pressure (in hPa).
+    # Equation taken from BMP180 datasheet (page 17):
+    # http://www.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf
+
+    Args:
+        altitude    :  Altitude in meters
+        atmospheric :  Atmospheric pressure in hPa
+
+    Return:
+        float The approximate pressure
+    """
+    return atmospheric / pow(1.0 - (altitude / 44330.0), 5.255)
+
+
+def euler_from_quaternion(x, y, z, w, rad=False, approx=1):
+    """
+        Convert a quaternion into euler angles (roll, pitch, yaw)
+        roll is rotation around x in radians (counterclockwise)
+        pitch is rotation around y in radians (counterclockwise)
+        yaw is rotation around z in radians (counterclockwise)
+        """
+    t0 = +2.0 * (w * x + y * z)
+    t1 = +1.0 - 2.0 * (x * x + y * y)
+    roll_x = math.atan2(t0, t1)
+
+    t2 = +2.0 * (w * y - z * x)
+    t2 = +1.0 if t2 > +1.0 else t2
+    t2 = -1.0 if t2 < -1.0 else t2
+    pitch_y = math.asin(t2)
+
+    t3 = +2.0 * (w * z + x * y)
+    t4 = +1.0 - 2.0 * (y * y + z * z)
+    yaw_z = math.atan2(t3, t4)
+    if not rad:
+        roll_x = round(math.degrees(roll_x), approx)
+        pitch_y = round(math.degrees(pitch_y), approx)
+        yaw_z = round(math.degrees(yaw_z), approx)
+    return roll_x, pitch_y, yaw_z  # in radians
+
+
 def main(args=None):
     rclpy.init()
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--bind", type=str, default="192.168.1.164")
+    parser.add_argument("--bind", type=str, default=get_ip_address("wlan0"))
     parser.add_argument("--port", type=int, default=8080)
     parser.add_argument("--width", type=int, default=640)
     parser.add_argument("--height", type=int, default=480)
