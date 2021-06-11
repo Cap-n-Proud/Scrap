@@ -1,0 +1,36 @@
+[1.624s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive --uninstall --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build
+[2.623s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.624s]   warnings.warn(
+[2.624s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[2.624s]   warnings.warn(
+[2.827s] running develop
+[3.688s] Removing /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot-drive.egg-link (link to .)
+[3.798s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive --uninstall --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build
+[3.815s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_drive': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_drive build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive --record /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/install.log --single-version-externally-managed
+[4.839s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.839s]   warnings.warn(
+[4.839s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[4.840s]   warnings.warn(
+[4.969s] running egg_info
+[4.974s] writing ../../build/jetbot_drive/jetbot_drive.egg-info/PKG-INFO
+[4.986s] writing dependency_links to ../../build/jetbot_drive/jetbot_drive.egg-info/dependency_links.txt
+[4.996s] writing entry points to ../../build/jetbot_drive/jetbot_drive.egg-info/entry_points.txt
+[5.005s] writing requirements to ../../build/jetbot_drive/jetbot_drive.egg-info/requires.txt
+[5.013s] writing top-level names to ../../build/jetbot_drive/jetbot_drive.egg-info/top_level.txt
+[5.235s] reading manifest file '../../build/jetbot_drive/jetbot_drive.egg-info/SOURCES.txt'
+[5.247s] writing manifest file '../../build/jetbot_drive/jetbot_drive.egg-info/SOURCES.txt'
+[5.258s] running build
+[5.259s] running build_py
+[5.282s] copying jetbot_drive/jetbot_drive.py -> /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive
+[5.309s] running install
+[5.313s] running install_lib
+[5.331s] copying /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive/jetbot_drive.py -> /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive
+[5.372s] byte-compiling /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive/jetbot_drive.py to jetbot_drive.cpython-38.pyc
+[5.404s] running install_data
+[5.419s] running install_egg_info
+[5.431s] removing '/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive-1.0.0-py3.8.egg-info' (and everything under it)
+[5.462s] Copying ../../build/jetbot_drive/jetbot_drive.egg-info to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive-1.0.0-py3.8.egg-info
+[5.596s] running install_scripts
+[5.677s] Installing ros2_jetbot_drive script to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/jetbot_drive
+[5.693s] writing list of installed files to '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/install.log'
+[5.797s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/src/jetbot_drive' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_drive build --build-base /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build install --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive --record /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/install.log --single-version-externally-managed

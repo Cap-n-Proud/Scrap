@@ -19,13 +19,16 @@ from rclpy.node import Node
 
 from std_msgs.msg import String
 from std_msgs.msg import Int32MultiArray, Int16
-from sensor_msgs.msg import Joy
+from sensor_msgs.msg import Joy, Imu
 
 import time
 import argparse
 
 import traitlets
 from traitlets.config.configurable import SingletonConfigurable
+import math
+
+euler = [0.0, 0.0, 0.0]
 
 
 class Robot(Node, SingletonConfigurable):
@@ -50,6 +53,13 @@ class Robot(Node, SingletonConfigurable):
         self.debug = debug
         self.joy_topic = self.create_subscription(Joy, "joy", self.joy_topic, 10)
         self.joy_web = self.create_subscription(String, "joy_web", self.joy_web, 10)
+        self.imu_topic = self.create_subscription(Imu, "/imu", self.imu_topic, 10)
+
+        from simple_pid import PID
+
+        self.pid = PID(
+            20, 0, 0.5, output_limits=(-255, 255), setpoint=-1.5, sample_time=0.05
+        )
         if not self.simulation:
             from .motors import M
 
@@ -79,6 +89,18 @@ class Robot(Node, SingletonConfigurable):
         else:
             print(speed, steer, speed_l, speed_r)
 
+    def imu_topic(self, msg):
+        global euler
+        euler = euler_from_quaternion(
+            msg.orientation.x,
+            msg.orientation.y,
+            msg.orientation.z,
+            msg.orientation.w,
+            False,
+            1,
+        )
+        # print(self.pid(euler[0]))
+
     def joy_topic(self, msg):
         if self.debug:
             self.get_logger().info(
@@ -100,6 +122,32 @@ class Robot(Node, SingletonConfigurable):
         speed = msg.data.split(",")
         self.move(speed[1], speed[0])
         # print(msg.data)
+
+
+def euler_from_quaternion(x, y, z, w, rad=False, approx=1):
+    """
+        Convert a quaternion into euler angles (roll, pitch, yaw)
+        roll is rotation around x in radians (counterclockwise)
+        pitch is rotation around y in radians (counterclockwise)
+        yaw is rotation around z in radians (counterclockwise)
+        """
+    t0 = +2.0 * (w * x + y * z)
+    t1 = +1.0 - 2.0 * (x * x + y * y)
+    roll_x = math.atan2(t0, t1)
+
+    t2 = +2.0 * (w * y - z * x)
+    t2 = +1.0 if t2 > +1.0 else t2
+    t2 = -1.0 if t2 < -1.0 else t2
+    pitch_y = math.asin(t2)
+
+    t3 = +2.0 * (w * z + x * y)
+    t4 = +1.0 - 2.0 * (y * y + z * z)
+    yaw_z = math.atan2(t3, t4)
+    if not rad:
+        roll_x = round(math.degrees(roll_x), approx)
+        pitch_y = round(math.degrees(pitch_y), approx)
+        yaw_z = round(math.degrees(yaw_z), approx)
+    return roll_x, pitch_y, yaw_z  # in radians
 
 
 def main(args=None):

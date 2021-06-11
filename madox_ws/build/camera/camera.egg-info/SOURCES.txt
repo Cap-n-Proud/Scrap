@@ -11,7 +11,9 @@ setup.py
 camera/__init__.py
 camera/camera.py
 camera/debounce.py
+camera/imu_utils.py
 camera/log.py
+camera/overlay_lib.py
 camera/server.py
 camera.egg-info/PKG-INFO
 camera.egg-info/SOURCES.txt

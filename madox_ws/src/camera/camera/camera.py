@@ -81,7 +81,8 @@ class Camera(metaclass=Singleton):
 
     def get_frame(self, sleep_in_sec):
         ret, frame = self.read(sleep_in_sec)
-
+        # TODO: add parameters to stream in grayscale
+        # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         if not ret:
             return None
         return frame

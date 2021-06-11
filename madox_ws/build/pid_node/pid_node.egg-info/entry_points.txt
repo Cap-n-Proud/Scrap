@@ -1,0 +1,3 @@
+[console_scripts]
+pid_node = pid_node.pid_node:main
+
