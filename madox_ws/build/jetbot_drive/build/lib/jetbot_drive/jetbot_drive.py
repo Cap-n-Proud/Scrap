@@ -58,7 +58,7 @@ class Robot(Node, SingletonConfigurable):
         from simple_pid import PID
 
         self.pid = PID(
-            20, 0, 0.5, output_limits=(-255, 255), setpoint=-1.5, sample_time=0.05
+            0.05, 40, 40, output_limits=(-255, 255), setpoint=-1.5, sample_time=0.05
         )
         if not self.simulation:
             from .motors import M

@@ -57,8 +57,9 @@ class Robot(Node, SingletonConfigurable):
 
         from simple_pid import PID
 
+        # Kp=0.05,Kd=40,Ki=40;
         self.pid = PID(
-            20, 0, 0.5, output_limits=(-255, 255), setpoint=-1.5, sample_time=0.05
+            30, 40, 10, output_limits=(-255, 255), setpoint=-1.5, sample_time=0.05
         )
         if not self.simulation:
             from .motors import M
@@ -99,7 +100,7 @@ class Robot(Node, SingletonConfigurable):
             False,
             1,
         )
-        # print(self.pid(euler[0]))
+        print(self.pid(euler[0]))
 
     def joy_topic(self, msg):
         if self.debug:
