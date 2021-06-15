@@ -1,0 +1,9 @@
+[3.210s] Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_launch': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_launch build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/install.log --single-version-externally-managed
+[3.717s] running egg_info
+[3.719s] writing ../../build/jetbot_launch/jetbot_launch.egg-info/PKG-INFO
+[3.739s] writing dependency_links to ../../build/jetbot_launch/jetbot_launch.egg-info/dependency_links.txt
+[3.756s] writing entry points to ../../build/jetbot_launch/jetbot_launch.egg-info/entry_points.txt
+[3.775s] writing requirements to ../../build/jetbot_launch/jetbot_launch.egg-info/requires.txt
+[3.789s] writing top-level names to ../../build/jetbot_launch/jetbot_launch.egg-info/top_level.txt
+[3.959s] error: package directory 'jetbot_launch' does not exist
+[3.980s] Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_launch' returned '1': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_launch build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/install.log --single-version-externally-managed

@@ -1,0 +1,19 @@
+/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+/home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+  warnings.warn(
+running develop
+running egg_info
+writing ros2_rtimulib.egg-info/PKG-INFO
+writing dependency_links to ros2_rtimulib.egg-info/dependency_links.txt
+writing entry points to ros2_rtimulib.egg-info/entry_points.txt
+writing requirements to ros2_rtimulib.egg-info/requires.txt
+writing top-level names to ros2_rtimulib.egg-info/top_level.txt
+reading manifest file 'ros2_rtimulib.egg-info/SOURCES.txt'
+writing manifest file 'ros2_rtimulib.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2-rtimulib.egg-link (link to .)
+Installing ros2_imu_node script to /home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/ros2_rtimulib
+
+Installed /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib
+running install_data

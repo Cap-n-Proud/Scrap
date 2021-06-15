@@ -1,0 +1,21 @@
+[3.184s] Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera/install.log --single-version-externally-managed
+[3.654s] running egg_info
+[3.657s] writing ../../build/camera/camera.egg-info/PKG-INFO
+[3.682s] writing dependency_links to ../../build/camera/camera.egg-info/dependency_links.txt
+[3.700s] writing entry points to ../../build/camera/camera.egg-info/entry_points.txt
+[3.716s] writing requirements to ../../build/camera/camera.egg-info/requires.txt
+[3.729s] writing top-level names to ../../build/camera/camera.egg-info/top_level.txt
+[3.908s] reading manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[3.928s] writing manifest file '../../build/camera/camera.egg-info/SOURCES.txt'
+[3.942s] running build
+[3.942s] running build_py
+[3.953s] running install
+[3.956s] running install_lib
+[4.000s] running install_data
+[4.003s] running install_egg_info
+[4.011s] removing '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info' (and everything under it)
+[4.063s] Copying ../../build/camera/camera.egg-info to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages/camera-1.0.0-py3.8.egg-info
+[4.336s] running install_scripts
+[4.397s] Installing ros2_camera script to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/lib/camera
+[4.415s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera/install.log'
+[5.211s] Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera/install.log --single-version-externally-managed

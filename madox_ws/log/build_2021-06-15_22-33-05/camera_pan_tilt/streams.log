@@ -1,0 +1,20 @@
+[3.061s] Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera_pan_tilt': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera_pan_tilt build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/install.log --single-version-externally-managed
+[3.532s] running egg_info
+[3.535s] writing ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/PKG-INFO
+[3.556s] writing dependency_links to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/dependency_links.txt
+[3.574s] writing entry points to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/entry_points.txt
+[3.594s] writing requirements to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/requires.txt
+[3.607s] writing top-level names to ../../build/camera_pan_tilt/camera_pan_tilt.egg-info/top_level.txt
+[3.741s] reading manifest file '../../build/camera_pan_tilt/camera_pan_tilt.egg-info/SOURCES.txt'
+[3.762s] writing manifest file '../../build/camera_pan_tilt/camera_pan_tilt.egg-info/SOURCES.txt'
+[3.774s] running build
+[3.775s] running build_py
+[3.779s] running install
+[3.785s] running install_lib
+[3.796s] running install_data
+[3.800s] running install_egg_info
+[3.807s] removing '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt-0.0.0-py3.8.egg-info' (and everything under it)
+[3.854s] Copying ../../build/camera_pan_tilt/camera_pan_tilt.egg-info to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages/camera_pan_tilt-0.0.0-py3.8.egg-info
+[4.122s] running install_scripts
+[4.220s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/install.log'
+[4.260s] Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera_pan_tilt' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera_pan_tilt build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/install.log --single-version-externally-managed

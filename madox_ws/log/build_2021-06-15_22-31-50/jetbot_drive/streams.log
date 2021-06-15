@@ -1,0 +1,20 @@
+[2.860s] Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_drive': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_drive build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/install.log --single-version-externally-managed
+[3.299s] running egg_info
+[3.301s] writing ../../build/jetbot_drive/jetbot_drive.egg-info/PKG-INFO
+[3.323s] writing dependency_links to ../../build/jetbot_drive/jetbot_drive.egg-info/dependency_links.txt
+[3.342s] writing entry points to ../../build/jetbot_drive/jetbot_drive.egg-info/entry_points.txt
+[3.358s] writing requirements to ../../build/jetbot_drive/jetbot_drive.egg-info/requires.txt
+[3.372s] writing top-level names to ../../build/jetbot_drive/jetbot_drive.egg-info/top_level.txt
+[3.494s] reading manifest file '../../build/jetbot_drive/jetbot_drive.egg-info/SOURCES.txt'
+[3.561s] writing manifest file '../../build/jetbot_drive/jetbot_drive.egg-info/SOURCES.txt'
+[3.563s] running build
+[3.563s] running build_py
+[3.566s] running install
+[3.567s] running install_lib
+[3.569s] running install_data
+[3.569s] running install_egg_info
+[3.571s] removing '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive-1.0.0-py3.8.egg-info' (and everything under it)
+[3.608s] Copying ../../build/jetbot_drive/jetbot_drive.egg-info to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive-1.0.0-py3.8.egg-info
+[3.843s] running install_scripts
+[3.932s] Installing ros2_jetbot_drive script to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/jetbot_drive
+[3.952s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/install.log'

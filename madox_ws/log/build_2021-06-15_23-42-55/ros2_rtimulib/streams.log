@@ -1,0 +1,21 @@
+[1.748s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build --no-deps install_data --install-dir /home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib
+[2.723s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.724s]   warnings.warn(
+[2.724s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[2.724s]   warnings.warn(
+[2.969s] running develop
+[3.810s] running egg_info
+[3.821s] writing ros2_rtimulib.egg-info/PKG-INFO
+[3.837s] writing dependency_links to ros2_rtimulib.egg-info/dependency_links.txt
+[3.858s] writing entry points to ros2_rtimulib.egg-info/entry_points.txt
+[3.873s] writing requirements to ros2_rtimulib.egg-info/requires.txt
+[3.886s] writing top-level names to ros2_rtimulib.egg-info/top_level.txt
+[4.130s] reading manifest file 'ros2_rtimulib.egg-info/SOURCES.txt'
+[4.148s] writing manifest file 'ros2_rtimulib.egg-info/SOURCES.txt'
+[4.359s] running build_ext
+[4.359s] Creating /home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages/ros2-rtimulib.egg-link (link to .)
+[4.391s] Installing ros2_imu_node script to /home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/ros2_rtimulib
+[4.411s] 
+[4.411s] Installed /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib
+[4.413s] running install_data
+[4.580s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build --no-deps install_data --install-dir /home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib

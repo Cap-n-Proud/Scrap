@@ -1,4 +1,3 @@
-README.md
 package.xml
 setup.cfg
 setup.py
@@ -17,6 +16,10 @@ ros2_rtimulib/__init__.py
 ros2_rtimulib/imu_Lib.py
 ros2_rtimulib/imu_node.py
 ros2_rtimulib/imu_utils.py
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
+ros2_rtimulib.egg-info/PKG-INFO
+ros2_rtimulib.egg-info/SOURCES.txt
+ros2_rtimulib.egg-info/dependency_links.txt
+ros2_rtimulib.egg-info/entry_points.txt
+ros2_rtimulib.egg-info/requires.txt
+ros2_rtimulib.egg-info/top_level.txt
+ros2_rtimulib.egg-info/zip-safe

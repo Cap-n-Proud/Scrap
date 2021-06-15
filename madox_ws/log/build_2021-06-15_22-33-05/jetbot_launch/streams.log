@@ -1,0 +1,24 @@
+[3.311s] Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_launch': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_launch build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/install.log --single-version-externally-managed
+[3.872s] running egg_info
+[3.875s] writing ../../build/jetbot_launch/jetbot_launch.egg-info/PKG-INFO
+[3.899s] writing dependency_links to ../../build/jetbot_launch/jetbot_launch.egg-info/dependency_links.txt
+[3.920s] writing entry points to ../../build/jetbot_launch/jetbot_launch.egg-info/entry_points.txt
+[3.936s] writing requirements to ../../build/jetbot_launch/jetbot_launch.egg-info/requires.txt
+[3.954s] writing top-level names to ../../build/jetbot_launch/jetbot_launch.egg-info/top_level.txt
+[4.082s] reading manifest file '../../build/jetbot_launch/jetbot_launch.egg-info/SOURCES.txt'
+[4.105s] writing manifest file '../../build/jetbot_launch/jetbot_launch.egg-info/SOURCES.txt'
+[4.117s] running build
+[4.118s] running build_py
+[4.122s] copying jetbot_launch/jetbot.launch.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/build/lib/jetbot_launch
+[4.156s] running install
+[4.160s] running install_lib
+[4.175s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/build/lib/jetbot_launch/jetbot.launch.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages/jetbot_launch
+[4.217s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages/jetbot_launch/jetbot.launch.py to jetbot.launch.cpython-38.pyc
+[4.259s] running install_data
+[4.267s] copying launch/jetbot.launch.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/share/jetbot_launch
+[4.287s] running install_egg_info
+[4.304s] removing '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages/jetbot_launch-0.0.0-py3.8.egg-info' (and everything under it)
+[4.350s] Copying ../../build/jetbot_launch/jetbot_launch.egg-info to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages/jetbot_launch-0.0.0-py3.8.egg-info
+[4.611s] running install_scripts
+[4.646s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/install.log'
+[5.600s] Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_launch' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_launch build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/install.log --single-version-externally-managed

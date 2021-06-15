@@ -25,5 +25,5 @@ setup(
     description='A package to publish IMU messages from an rtimulib-compatible sensor. The package publish teh following messages: "/imu", "/temp" and "/press"',
     license="MIT",
     tests_require=["pytest"],
-    entry_points={"console_scripts": ["imu_node = ros2_rtimulib.imu_node:main"]},
+    entry_points={"console_scripts": ["ros2_imu_node = ros2_rtimulib.imu_node:main"]},
 )

@@ -1,0 +1,21 @@
+[1.655s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build --no-deps install_data --install-dir /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive
+[2.592s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.592s]   warnings.warn(
+[2.593s] /home/robot/.local/lib/python3.8/site-packages/setuptools/dist.py:642: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[2.593s]   warnings.warn(
+[2.794s] running develop
+[3.660s] running egg_info
+[3.662s] writing jetbot_drive.egg-info/PKG-INFO
+[3.683s] writing dependency_links to jetbot_drive.egg-info/dependency_links.txt
+[3.697s] writing entry points to jetbot_drive.egg-info/entry_points.txt
+[3.710s] writing requirements to jetbot_drive.egg-info/requires.txt
+[3.725s] writing top-level names to jetbot_drive.egg-info/top_level.txt
+[3.920s] reading manifest file 'jetbot_drive.egg-info/SOURCES.txt'
+[3.935s] writing manifest file 'jetbot_drive.egg-info/SOURCES.txt'
+[4.109s] running build_ext
+[4.110s] Creating /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot-drive.egg-link (link to .)
+[4.136s] Installing ros2_jetbot_drive script to /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/jetbot_drive
+[4.565s] 
+[4.570s] Installed /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive
+[4.572s] running install_data
+[4.707s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive' returned '0': PYTHONPATH=/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive --editable --build-directory /home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build --no-deps install_data --install-dir /home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive

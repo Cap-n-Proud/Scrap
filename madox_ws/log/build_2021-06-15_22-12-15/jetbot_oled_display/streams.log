@@ -1,0 +1,21 @@
+[4.250s] Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_oled_display': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_oled_display build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/install.log --single-version-externally-managed
+[4.858s] running egg_info
+[4.864s] writing ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/PKG-INFO
+[4.882s] writing dependency_links to ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/dependency_links.txt
+[4.901s] writing entry points to ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/entry_points.txt
+[4.919s] writing requirements to ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/requires.txt
+[4.933s] writing top-level names to ../../build/jetbot_oled_display/jetbot_oled_display.egg-info/top_level.txt
+[5.081s] reading manifest file '../../build/jetbot_oled_display/jetbot_oled_display.egg-info/SOURCES.txt'
+[5.101s] writing manifest file '../../build/jetbot_oled_display/jetbot_oled_display.egg-info/SOURCES.txt'
+[5.116s] running build
+[5.116s] running build_py
+[5.137s] running install
+[5.138s] running install_lib
+[5.175s] running install_data
+[5.190s] running install_egg_info
+[5.193s] removing '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display-1.0.0-py3.8.egg-info' (and everything under it)
+[5.237s] Copying ../../build/jetbot_oled_display/jetbot_oled_display.egg-info to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages/jetbot_oled_display-1.0.0-py3.8.egg-info
+[5.480s] running install_scripts
+[5.590s] Installing ros2_jetbot_oled_display script to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/jetbot_oled_display
+[5.610s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/install.log'
+[5.914s] Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_oled_display' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_oled_display build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/install.log --single-version-externally-managed

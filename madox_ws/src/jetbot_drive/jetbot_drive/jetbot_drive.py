@@ -100,7 +100,7 @@ class Robot(Node, SingletonConfigurable):
             False,
             1,
         )
-        print(self.pid(euler[0]))
+        # print(self.pid(euler[0]))
 
     def joy_topic(self, msg):
         if self.debug:

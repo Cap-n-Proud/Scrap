@@ -1,0 +1,37 @@
+[2.475s] Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/pid_node': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pid_node build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/install.log --single-version-externally-managed
+[2.962s] running egg_info
+[2.965s] creating ../../build/pid_node/pid_node.egg-info
+[2.970s] writing ../../build/pid_node/pid_node.egg-info/PKG-INFO
+[2.997s] writing dependency_links to ../../build/pid_node/pid_node.egg-info/dependency_links.txt
+[3.013s] writing entry points to ../../build/pid_node/pid_node.egg-info/entry_points.txt
+[3.025s] writing requirements to ../../build/pid_node/pid_node.egg-info/requires.txt
+[3.034s] writing top-level names to ../../build/pid_node/pid_node.egg-info/top_level.txt
+[3.051s] writing manifest file '../../build/pid_node/pid_node.egg-info/SOURCES.txt'
+[3.220s] reading manifest file '../../build/pid_node/pid_node.egg-info/SOURCES.txt'
+[3.233s] writing manifest file '../../build/pid_node/pid_node.egg-info/SOURCES.txt'
+[3.243s] running build
+[3.243s] running build_py
+[3.252s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/build
+[3.254s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/build/lib
+[3.258s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/build/lib/pid_node
+[3.268s] copying pid_node/pid_node.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/build/lib/pid_node
+[3.300s] copying pid_node/__init__.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/build/lib/pid_node
+[3.316s] running install
+[3.317s] running install_lib
+[3.332s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages/pid_node
+[3.338s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/build/lib/pid_node/__init__.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages/pid_node
+[3.357s] copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/build/lib/pid_node/pid_node.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages/pid_node
+[3.404s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages/pid_node/__init__.py to __init__.cpython-38.pyc
+[3.448s] byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages/pid_node/pid_node.py to pid_node.cpython-38.pyc
+[3.480s] running install_data
+[3.487s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/ament_index
+[3.489s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/ament_index/resource_index
+[3.493s] creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/ament_index/resource_index/packages
+[3.505s] copying resource/pid_node -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/ament_index/resource_index/packages
+[3.530s] copying package.xml -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/pid_node
+[3.552s] running install_egg_info
+[3.562s] Copying ../../build/pid_node/pid_node.egg-info to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages/pid_node-0.0.0-py3.8.egg-info
+[3.790s] running install_scripts
+[3.856s] Installing pid_node script to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/pid_node
+[3.877s] writing list of installed files to '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/install.log'
+[3.932s] Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/pid_node' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pid_node build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/install.log --single-version-externally-managed

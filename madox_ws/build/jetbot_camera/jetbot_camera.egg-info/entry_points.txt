@@ -1,3 +1,0 @@
-[console_scripts]
-ros2_jetbot_camera = jetbot_camera.server:main
-

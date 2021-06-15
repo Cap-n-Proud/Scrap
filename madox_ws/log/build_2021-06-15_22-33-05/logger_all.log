@@ -1,0 +1,496 @@
+[0.598s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.598s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ff774dab8b0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ff774dab8b0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ff774dabe20>)
+[0.621s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.621s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.621s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.621s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.621s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.621s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.621s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extensions ['ignore', 'ignore_ament_install']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extension 'ignore'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extension 'ignore_ament_install'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extensions ['colcon_pkg']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extension 'colcon_pkg'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extensions ['colcon_meta']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extension 'colcon_meta'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extensions ['ros']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extension 'ros'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extensions ['cmake', 'python']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extension 'cmake'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extension 'python'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extensions ['python_setup_py']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(snapshots) by extension 'python_setup_py'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ignore', 'ignore_ament_install']
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore_ament_install'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_pkg']
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_pkg'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_meta']
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_meta'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ros']
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ros'
+[0.699s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera' with type 'ros.ament_python' and name 'camera'
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pan_tilt) by extensions ['ignore', 'ignore_ament_install']
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pan_tilt) by extension 'ignore'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pan_tilt) by extension 'ignore_ament_install'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pan_tilt) by extensions ['colcon_pkg']
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pan_tilt) by extension 'colcon_pkg'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pan_tilt) by extensions ['colcon_meta']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pan_tilt) by extension 'colcon_meta'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pan_tilt) by extensions ['ros']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pan_tilt) by extension 'ros'
+[0.722s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera_pan_tilt' with type 'ros.ament_python' and name 'camera_pan_tilt'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_drive) by extensions ['ignore', 'ignore_ament_install']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_drive) by extension 'ignore'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_drive) by extension 'ignore_ament_install'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_drive) by extensions ['colcon_pkg']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_drive) by extension 'colcon_pkg'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_drive) by extensions ['colcon_meta']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_drive) by extension 'colcon_meta'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_drive) by extensions ['ros']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_drive) by extension 'ros'
+[0.745s] DEBUG:colcon.colcon_core.package_identification:Package 'src/jetbot_drive' with type 'ros.ament_python' and name 'jetbot_drive'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_launch) by extension 'ignore'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_launch) by extension 'ignore_ament_install'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_launch) by extensions ['colcon_pkg']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_launch) by extension 'colcon_pkg'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_launch) by extensions ['colcon_meta']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_launch) by extension 'colcon_meta'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_launch) by extensions ['ros']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_launch) by extension 'ros'
+[0.774s] DEBUG:colcon.colcon_core.package_identification:Package 'src/jetbot_launch' with type 'ros.ament_python' and name 'jetbot_launch'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_oled_display) by extensions ['ignore', 'ignore_ament_install']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_oled_display) by extension 'ignore'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_oled_display) by extension 'ignore_ament_install'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_oled_display) by extensions ['colcon_pkg']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_oled_display) by extension 'colcon_pkg'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_oled_display) by extensions ['colcon_meta']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_oled_display) by extension 'colcon_meta'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_oled_display) by extensions ['ros']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_oled_display) by extension 'ros'
+[0.797s] DEBUG:colcon.colcon_core.package_identification:Package 'src/jetbot_oled_display' with type 'ros.ament_python' and name 'jetbot_oled_display'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_sys_info) by extensions ['ignore', 'ignore_ament_install']
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_sys_info) by extension 'ignore'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_sys_info) by extension 'ignore_ament_install'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_sys_info) by extensions ['colcon_pkg']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_sys_info) by extension 'colcon_pkg'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_sys_info) by extensions ['colcon_meta']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_sys_info) by extension 'colcon_meta'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_sys_info) by extensions ['ros']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src/jetbot_sys_info) by extension 'ros'
+[0.820s] DEBUG:colcon.colcon_core.package_identification:Package 'src/jetbot_sys_info' with type 'ros.ament_python' and name 'jetbot_sys_info'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_node) by extensions ['ignore', 'ignore_ament_install']
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_node) by extension 'ignore'
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_node) by extension 'ignore_ament_install'
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_node) by extensions ['colcon_pkg']
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_node) by extension 'colcon_pkg'
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_node) by extensions ['colcon_meta']
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_node) by extension 'colcon_meta'
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_node) by extensions ['ros']
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_node) by extension 'ros'
+[0.842s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pid_node' with type 'ros.ament_python' and name 'pid_node'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_rtimulib) by extensions ['ignore', 'ignore_ament_install']
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_rtimulib) by extension 'ignore'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_rtimulib) by extension 'ignore_ament_install'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_rtimulib) by extensions ['colcon_pkg']
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_rtimulib) by extension 'colcon_pkg'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_rtimulib) by extensions ['colcon_meta']
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_rtimulib) by extension 'colcon_meta'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_rtimulib) by extensions ['ros']
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_rtimulib) by extension 'ros'
+[0.866s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_rtimulib' with type 'ros.ament_python' and name 'ros2_rtimulib'
+[0.867s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.867s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.867s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.867s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.868s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_args' from command line to 'None'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_target' from command line to 'None'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.912s] Level 5:colcon.colcon_core.verb:set package 'camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.912s] DEBUG:colcon.colcon_core.verb:Building package 'camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera', 'merge_install': False, 'path': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera', 'symlink_install': False, 'test_result_base': None}
+[0.915s] Level 5:colcon.colcon_core.verb:set package 'camera_pan_tilt' build argument 'cmake_args' from command line to 'None'
+[0.915s] Level 5:colcon.colcon_core.verb:set package 'camera_pan_tilt' build argument 'cmake_target' from command line to 'None'
+[0.915s] Level 5:colcon.colcon_core.verb:set package 'camera_pan_tilt' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.915s] Level 5:colcon.colcon_core.verb:set package 'camera_pan_tilt' build argument 'cmake_clean_cache' from command line to 'False'
+[0.915s] Level 5:colcon.colcon_core.verb:set package 'camera_pan_tilt' build argument 'cmake_clean_first' from command line to 'False'
+[0.915s] Level 5:colcon.colcon_core.verb:set package 'camera_pan_tilt' build argument 'cmake_force_configure' from command line to 'False'
+[0.915s] Level 5:colcon.colcon_core.verb:set package 'camera_pan_tilt' build argument 'ament_cmake_args' from command line to 'None'
+[0.915s] Level 5:colcon.colcon_core.verb:set package 'camera_pan_tilt' build argument 'catkin_cmake_args' from command line to 'None'
+[0.915s] Level 5:colcon.colcon_core.verb:set package 'camera_pan_tilt' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.915s] DEBUG:colcon.colcon_core.verb:Building package 'camera_pan_tilt' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt', 'merge_install': False, 'path': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera_pan_tilt', 'symlink_install': False, 'test_result_base': None}
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'jetbot_drive' build argument 'cmake_args' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'jetbot_drive' build argument 'cmake_target' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'jetbot_drive' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'jetbot_drive' build argument 'cmake_clean_cache' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'jetbot_drive' build argument 'cmake_clean_first' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'jetbot_drive' build argument 'cmake_force_configure' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'jetbot_drive' build argument 'ament_cmake_args' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'jetbot_drive' build argument 'catkin_cmake_args' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'jetbot_drive' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.918s] DEBUG:colcon.colcon_core.verb:Building package 'jetbot_drive' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive', 'merge_install': False, 'path': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_drive', 'symlink_install': False, 'test_result_base': None}
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'jetbot_launch' build argument 'cmake_args' from command line to 'None'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'jetbot_launch' build argument 'cmake_target' from command line to 'None'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'jetbot_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'jetbot_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'jetbot_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'jetbot_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'jetbot_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'jetbot_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'jetbot_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.920s] DEBUG:colcon.colcon_core.verb:Building package 'jetbot_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch', 'merge_install': False, 'path': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_launch', 'symlink_install': False, 'test_result_base': None}
+[0.922s] Level 5:colcon.colcon_core.verb:set package 'jetbot_sys_info' build argument 'cmake_args' from command line to 'None'
+[0.922s] Level 5:colcon.colcon_core.verb:set package 'jetbot_sys_info' build argument 'cmake_target' from command line to 'None'
+[0.922s] Level 5:colcon.colcon_core.verb:set package 'jetbot_sys_info' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.922s] Level 5:colcon.colcon_core.verb:set package 'jetbot_sys_info' build argument 'cmake_clean_cache' from command line to 'False'
+[0.922s] Level 5:colcon.colcon_core.verb:set package 'jetbot_sys_info' build argument 'cmake_clean_first' from command line to 'False'
+[0.922s] Level 5:colcon.colcon_core.verb:set package 'jetbot_sys_info' build argument 'cmake_force_configure' from command line to 'False'
+[0.922s] Level 5:colcon.colcon_core.verb:set package 'jetbot_sys_info' build argument 'ament_cmake_args' from command line to 'None'
+[0.922s] Level 5:colcon.colcon_core.verb:set package 'jetbot_sys_info' build argument 'catkin_cmake_args' from command line to 'None'
+[0.922s] Level 5:colcon.colcon_core.verb:set package 'jetbot_sys_info' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.922s] DEBUG:colcon.colcon_core.verb:Building package 'jetbot_sys_info' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info', 'merge_install': False, 'path': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_sys_info', 'symlink_install': False, 'test_result_base': None}
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'pid_node' build argument 'cmake_args' from command line to 'None'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'pid_node' build argument 'cmake_target' from command line to 'None'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'pid_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'pid_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'pid_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'pid_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.924s] Level 5:colcon.colcon_core.verb:set package 'pid_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'pid_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'pid_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.925s] DEBUG:colcon.colcon_core.verb:Building package 'pid_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node', 'merge_install': False, 'path': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/pid_node', 'symlink_install': False, 'test_result_base': None}
+[0.926s] Level 5:colcon.colcon_core.verb:set package 'ros2_rtimulib' build argument 'cmake_args' from command line to 'None'
+[0.926s] Level 5:colcon.colcon_core.verb:set package 'ros2_rtimulib' build argument 'cmake_target' from command line to 'None'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'ros2_rtimulib' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'ros2_rtimulib' build argument 'cmake_clean_cache' from command line to 'False'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'ros2_rtimulib' build argument 'cmake_clean_first' from command line to 'False'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'ros2_rtimulib' build argument 'cmake_force_configure' from command line to 'False'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'ros2_rtimulib' build argument 'ament_cmake_args' from command line to 'None'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'ros2_rtimulib' build argument 'catkin_cmake_args' from command line to 'None'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'ros2_rtimulib' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.927s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_rtimulib' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib', 'merge_install': False, 'path': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_rtimulib', 'symlink_install': False, 'test_result_base': None}
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'jetbot_oled_display' build argument 'cmake_args' from command line to 'None'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'jetbot_oled_display' build argument 'cmake_target' from command line to 'None'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'jetbot_oled_display' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'jetbot_oled_display' build argument 'cmake_clean_cache' from command line to 'False'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'jetbot_oled_display' build argument 'cmake_clean_first' from command line to 'False'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'jetbot_oled_display' build argument 'cmake_force_configure' from command line to 'False'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'jetbot_oled_display' build argument 'ament_cmake_args' from command line to 'None'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'jetbot_oled_display' build argument 'catkin_cmake_args' from command line to 'None'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'jetbot_oled_display' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.929s] DEBUG:colcon.colcon_core.verb:Building package 'jetbot_oled_display' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display', 'merge_install': False, 'path': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_oled_display', 'symlink_install': False, 'test_result_base': None}
+[0.929s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.931s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.931s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_launch' with build type 'ament_python'
+[0.931s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetbot_launch', 'ament_prefix_path')
+[0.934s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/share/jetbot_launch/hook/ament_prefix_path.ps1'
+[0.951s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/share/jetbot_launch/hook/ament_prefix_path.dsv'
+[0.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/share/jetbot_launch/hook/ament_prefix_path.sh'
+[0.986s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.986s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.996s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/py_test_node' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.021s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_camera' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.062s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.101s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera' with build type 'ament_python'
+[1.103s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera', 'ament_prefix_path')
+[1.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/share/camera/hook/ament_prefix_path.ps1'
+[1.126s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/share/camera/hook/ament_prefix_path.dsv'
+[1.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/share/camera/hook/ament_prefix_path.sh'
+[1.165s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.165s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.235s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.270s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera_pan_tilt' with build type 'ament_python'
+[1.271s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_pan_tilt', 'ament_prefix_path')
+[1.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt/hook/ament_prefix_path.ps1'
+[1.296s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt/hook/ament_prefix_path.dsv'
+[1.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt/hook/ament_prefix_path.sh'
+[1.336s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.337s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.401s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.436s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_drive' with build type 'ament_python'
+[1.438s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetbot_drive', 'ament_prefix_path')
+[1.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/jetbot_drive/hook/ament_prefix_path.ps1'
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/jetbot_drive/hook/ament_prefix_path.dsv'
+[1.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/jetbot_drive/hook/ament_prefix_path.sh'
+[1.499s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.499s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.564s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[2.167s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_launch'
+[2.168s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.168s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.223s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[2.801s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera'
+[2.802s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.802s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.856s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[3.482s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera_pan_tilt'
+[3.483s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.483s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.538s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[4.102s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_drive'
+[4.103s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.103s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.157s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[4.245s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_launch': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_launch build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/install.log --single-version-externally-managed
+[4.287s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera/install.log --single-version-externally-managed
+[4.333s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera_pan_tilt': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera_pan_tilt build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/install.log --single-version-externally-managed
+[4.378s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_drive': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_drive build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/install.log --single-version-externally-managed
+[5.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera_pan_tilt' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera_pan_tilt build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera_pan_tilt/install.log --single-version-externally-managed
+[5.546s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt' for CMake module files
+[5.558s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt' for CMake config files
+[5.596s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib'
+[5.600s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/bin'
+[5.600s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/pkgconfig/camera_pan_tilt.pc'
+[5.600s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages'
+[5.600s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_pan_tilt', 'pythonpath')
+[5.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt/hook/pythonpath.ps1'
+[5.618s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt/hook/pythonpath.dsv'
+[5.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt/hook/pythonpath.sh'
+[5.650s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_pan_tilt)
+[5.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt/package.ps1'
+[5.665s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt/package.dsv'
+[5.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt/package.sh'
+[5.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt/package.bash'
+[5.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/camera_pan_tilt/package.zsh'
+[5.730s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/share/colcon-core/packages/camera_pan_tilt)
+[5.741s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_sys_info' with build type 'ament_python'
+[5.742s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetbot_sys_info', 'ament_prefix_path')
+[5.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/jetbot_sys_info/hook/ament_prefix_path.ps1'
+[5.763s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/jetbot_sys_info/hook/ament_prefix_path.dsv'
+[5.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/jetbot_sys_info/hook/ament_prefix_path.sh'
+[5.803s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.804s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.863s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[6.042s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive' for CMake module files
+[6.044s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_drive' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_drive build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/install.log --single-version-externally-managed
+[6.060s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive' for CMake config files
+[6.109s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib'
+[6.112s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/bin'
+[6.112s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/pkgconfig/jetbot_drive.pc'
+[6.113s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages'
+[6.113s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetbot_drive', 'pythonpath')
+[6.116s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/jetbot_drive/hook/pythonpath.ps1'
+[6.134s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/jetbot_drive/hook/pythonpath.dsv'
+[6.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/jetbot_drive/hook/pythonpath.sh'
+[6.173s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(jetbot_drive)
+[6.177s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/jetbot_drive/package.ps1'
+[6.194s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/jetbot_drive/package.dsv'
+[6.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/jetbot_drive/package.sh'
+[6.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/jetbot_drive/package.bash'
+[6.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/jetbot_drive/package.zsh'
+[6.259s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/colcon-core/packages/jetbot_drive)
+[6.270s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera' for CMake module files
+[6.289s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera' for CMake config files
+[6.315s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/camera' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camera build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/camera/install.log --single-version-externally-managed
+[6.339s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/lib'
+[6.342s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/bin'
+[6.342s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/lib/pkgconfig/camera.pc'
+[6.343s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages'
+[6.343s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera', 'pythonpath')
+[6.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/share/camera/hook/pythonpath.ps1'
+[6.363s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/share/camera/hook/pythonpath.dsv'
+[6.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/share/camera/hook/pythonpath.sh'
+[6.399s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera)
+[6.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/share/camera/package.ps1'
+[6.419s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/share/camera/package.dsv'
+[6.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/share/camera/package.sh'
+[6.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/share/camera/package.bash'
+[6.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/share/camera/package.zsh'
+[6.483s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/share/colcon-core/packages/camera)
+[6.493s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch' for CMake module files
+[6.506s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch' for CMake config files
+[6.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_launch' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_launch build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_launch/install.log --single-version-externally-managed
+[6.552s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib'
+[6.555s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/bin'
+[6.556s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/pkgconfig/jetbot_launch.pc'
+[6.556s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages'
+[6.557s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetbot_launch', 'pythonpath')
+[6.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/share/jetbot_launch/hook/pythonpath.ps1'
+[6.577s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/share/jetbot_launch/hook/pythonpath.dsv'
+[6.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/share/jetbot_launch/hook/pythonpath.sh'
+[6.616s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(jetbot_launch)
+[6.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/share/jetbot_launch/package.ps1'
+[6.635s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/share/jetbot_launch/package.dsv'
+[6.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/share/jetbot_launch/package.sh'
+[6.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/share/jetbot_launch/package.bash'
+[6.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/share/jetbot_launch/package.zsh'
+[6.702s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/share/colcon-core/packages/jetbot_launch)
+[6.713s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/pid_node' with build type 'ament_python'
+[6.714s] Level 1:colcon.colcon_core.shell:create_environment_hook('pid_node', 'ament_prefix_path')
+[6.716s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/pid_node/hook/ament_prefix_path.ps1'
+[6.735s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/pid_node/hook/ament_prefix_path.dsv'
+[6.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/pid_node/hook/ament_prefix_path.sh'
+[6.775s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.775s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.839s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[6.876s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_rtimulib' with build type 'ament_python'
+[6.877s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_rtimulib', 'ament_prefix_path')
+[6.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/hook/ament_prefix_path.ps1'
+[6.903s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/hook/ament_prefix_path.dsv'
+[6.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/hook/ament_prefix_path.sh'
+[6.943s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.943s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.010s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[7.048s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_oled_display' with build type 'ament_python'
+[7.049s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetbot_oled_display', 'ament_prefix_path')
+[7.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/jetbot_oled_display/hook/ament_prefix_path.ps1'
+[7.074s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/jetbot_oled_display/hook/ament_prefix_path.dsv'
+[7.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/jetbot_oled_display/hook/ament_prefix_path.sh'
+[7.113s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.113s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.172s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[7.798s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_sys_info'
+[7.799s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.799s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.853s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[8.390s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/pid_node'
+[8.392s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.392s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.445s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[9.035s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_rtimulib'
+[9.037s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.037s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.091s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[9.693s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_oled_display'
+[9.694s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.694s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.749s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[9.846s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_sys_info': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_sys_info build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/install.log --single-version-externally-managed
+[9.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/pid_node': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pid_node build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/install.log --single-version-externally-managed
+[9.914s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_rtimulib': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ros2_rtimulib build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/install.log --single-version-externally-managed
+[9.955s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_oled_display': AMENT_PREFIX_PATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch:${AMENT_PREFIX_PATH} PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_oled_display build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/install.log --single-version-externally-managed
+[11.159s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib' for CMake module files
+[11.161s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_rtimulib' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ros2_rtimulib build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib/install.log --single-version-externally-managed
+[11.176s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib' for CMake config files
+[11.221s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib'
+[11.222s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/bin'
+[11.222s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/pkgconfig/ros2_rtimulib.pc'
+[11.222s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages'
+[11.223s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_rtimulib', 'pythonpath')
+[11.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/hook/pythonpath.ps1'
+[11.240s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/hook/pythonpath.dsv'
+[11.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/hook/pythonpath.sh'
+[11.273s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_rtimulib)
+[11.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/package.ps1'
+[11.292s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/package.dsv'
+[11.307s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/package.sh'
+[11.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/package.bash'
+[11.340s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/ros2_rtimulib/package.zsh'
+[11.356s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/share/colcon-core/packages/ros2_rtimulib)
+[11.380s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info' for CMake module files
+[11.395s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info' for CMake config files
+[11.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_sys_info' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_sys_info build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info/install.log --single-version-externally-managed
+[11.441s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib'
+[11.444s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/bin'
+[11.445s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/pkgconfig/jetbot_sys_info.pc'
+[11.445s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages'
+[11.445s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetbot_sys_info', 'pythonpath')
+[11.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/jetbot_sys_info/hook/pythonpath.ps1'
+[11.466s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/jetbot_sys_info/hook/pythonpath.dsv'
+[11.485s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/jetbot_sys_info/hook/pythonpath.sh'
+[11.501s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(jetbot_sys_info)
+[11.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/jetbot_sys_info/package.ps1'
+[11.518s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/jetbot_sys_info/package.dsv'
+[11.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/jetbot_sys_info/package.sh'
+[11.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/jetbot_sys_info/package.bash'
+[11.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/jetbot_sys_info/package.zsh'
+[11.582s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/share/colcon-core/packages/jetbot_sys_info)
+[11.594s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node' for CMake module files
+[11.614s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node' for CMake config files
+[11.647s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/pid_node' returned '0': PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pid_node build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/pid_node/install.log --single-version-externally-managed
+[11.662s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib'
+[11.665s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/bin'
+[11.666s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/pkgconfig/pid_node.pc'
+[11.666s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages'
+[11.667s] Level 1:colcon.colcon_core.shell:create_environment_hook('pid_node', 'pythonpath')
+[11.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/pid_node/hook/pythonpath.ps1'
+[11.689s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/pid_node/hook/pythonpath.dsv'
+[11.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/pid_node/hook/pythonpath.sh'
+[11.723s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pid_node)
+[11.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/pid_node/package.ps1'
+[11.742s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/pid_node/package.dsv'
+[11.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/pid_node/package.sh'
+[11.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/pid_node/package.bash'
+[11.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/pid_node/package.zsh'
+[11.805s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/share/colcon-core/packages/pid_node)
+[11.818s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display' for CMake module files
+[11.838s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display' for CMake config files
+[11.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/jetbot_oled_display' returned '0': AMENT_PREFIX_PATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch:${AMENT_PREFIX_PATH} PYTHONPATH=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot_oled_display build --build-base /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/build install --prefix /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display --record /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_oled_display/install.log --single-version-externally-managed
+[11.883s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib'
+[11.886s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/bin'
+[11.887s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/pkgconfig/jetbot_oled_display.pc'
+[11.887s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages'
+[11.887s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetbot_oled_display', 'pythonpath')
+[11.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/jetbot_oled_display/hook/pythonpath.ps1'
+[11.907s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/jetbot_oled_display/hook/pythonpath.dsv'
+[11.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/jetbot_oled_display/hook/pythonpath.sh'
+[11.942s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(jetbot_oled_display)
+[11.945s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/jetbot_oled_display/package.ps1'
+[11.962s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/jetbot_oled_display/package.dsv'
+[11.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/jetbot_oled_display/package.sh'
+[11.996s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/jetbot_oled_display/package.bash'
+[12.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/jetbot_oled_display/package.zsh'
+[12.030s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/share/colcon-core/packages/jetbot_oled_display)
+[12.046s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.047s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.047s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.048s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.140s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.140s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.140s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.160s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.161s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/local_setup.ps1'
+[12.177s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/_local_setup_util_ps1.py'
+[12.194s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/setup.ps1'
+[12.255s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/local_setup.sh'
+[12.269s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/_local_setup_util_sh.py'
+[12.287s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/setup.sh'
+[12.356s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/local_setup.bash'
+[12.371s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/setup.bash'
+[12.445s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/local_setup.zsh'
+[12.464s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/setup.zsh'

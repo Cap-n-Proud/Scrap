@@ -1,0 +1,47 @@
+running egg_info
+creating ../../build/jetbot_drive/jetbot_drive.egg-info
+writing ../../build/jetbot_drive/jetbot_drive.egg-info/PKG-INFO
+writing dependency_links to ../../build/jetbot_drive/jetbot_drive.egg-info/dependency_links.txt
+writing entry points to ../../build/jetbot_drive/jetbot_drive.egg-info/entry_points.txt
+writing requirements to ../../build/jetbot_drive/jetbot_drive.egg-info/requires.txt
+writing top-level names to ../../build/jetbot_drive/jetbot_drive.egg-info/top_level.txt
+writing manifest file '../../build/jetbot_drive/jetbot_drive.egg-info/SOURCES.txt'
+reading manifest file '../../build/jetbot_drive/jetbot_drive.egg-info/SOURCES.txt'
+writing manifest file '../../build/jetbot_drive/jetbot_drive.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build
+creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib
+creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive
+copying jetbot_drive/motor_class.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive
+copying jetbot_drive/debounce.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive
+copying jetbot_drive/publisher_member_function.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive
+copying jetbot_drive/motors.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive
+copying jetbot_drive/__init__.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive
+copying jetbot_drive/jetbot_drive.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive
+running install
+running install_lib
+creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive
+copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive/__init__.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive
+copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive/motors.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive
+copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive/motor_class.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive
+copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive/jetbot_drive.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive
+copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive/debounce.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive
+copying /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/build/lib/jetbot_drive/publisher_member_function.py -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive
+byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive/motors.py to motors.cpython-38.pyc
+byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive/motor_class.py to motor_class.cpython-38.pyc
+byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive/jetbot_drive.py to jetbot_drive.cpython-38.pyc
+byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive/debounce.py to debounce.cpython-38.pyc
+byte-compiling /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive/publisher_member_function.py to publisher_member_function.cpython-38.pyc
+running install_data
+creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/ament_index
+creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/ament_index/resource_index
+creating /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/ament_index/resource_index/packages
+copying resource/jetbot_drive -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/ament_index/resource_index/packages
+copying package.xml -> /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/share/jetbot_drive
+running install_egg_info
+Copying ../../build/jetbot_drive/jetbot_drive.egg-info to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages/jetbot_drive-1.0.0-py3.8.egg-info
+running install_scripts
+Installing ros2_jetbot_drive script to /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/jetbot_drive
+writing list of installed files to '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/jetbot_drive/install.log'

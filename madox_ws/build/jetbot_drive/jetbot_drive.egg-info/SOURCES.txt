@@ -14,7 +14,11 @@ jetbot_drive/jetbot_drive.py
 jetbot_drive/motor_class.py
 jetbot_drive/motors.py
 jetbot_drive/publisher_member_function.py
+jetbot_drive.egg-info/PKG-INFO
+jetbot_drive.egg-info/SOURCES.txt
+jetbot_drive.egg-info/dependency_links.txt
+jetbot_drive.egg-info/entry_points.txt
+jetbot_drive.egg-info/requires.txt
+jetbot_drive.egg-info/top_level.txt
+jetbot_drive.egg-info/zip-safe
 resource/jetbot_drive
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
