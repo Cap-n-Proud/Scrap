@@ -229,6 +229,7 @@ class Robot_Info(Node):
             FluidPressure, "/press", self.press_topic, 10
         )
         self.init_buttons = True
+        self.display_config = 0
 
     def imu_topic(self, msg):
         global euler

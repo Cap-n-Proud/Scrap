@@ -4,3 +4,6 @@ source;share/jetbot_sys_info/hook/pythonpath.sh
 source;share/jetbot_sys_info/hook/ament_prefix_path.ps1
 source;share/jetbot_sys_info/hook/ament_prefix_path.dsv
 source;share/jetbot_sys_info/hook/ament_prefix_path.sh
+source;../../build/jetbot_sys_info/share/jetbot_sys_info/hook/pythonpath_develop.ps1
+source;../../build/jetbot_sys_info/share/jetbot_sys_info/hook/pythonpath_develop.dsv
+source;../../build/jetbot_sys_info/share/jetbot_sys_info/hook/pythonpath_develop.sh

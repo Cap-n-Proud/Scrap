@@ -12,7 +12,11 @@ jetbot_sys_info/__init__.py
 jetbot_sys_info/ads1115.py
 jetbot_sys_info/ina219.py
 jetbot_sys_info/jetbot_sys_info.py
+jetbot_sys_info.egg-info/PKG-INFO
+jetbot_sys_info.egg-info/SOURCES.txt
+jetbot_sys_info.egg-info/dependency_links.txt
+jetbot_sys_info.egg-info/entry_points.txt
+jetbot_sys_info.egg-info/requires.txt
+jetbot_sys_info.egg-info/top_level.txt
+jetbot_sys_info.egg-info/zip-safe
 resource/jetbot_sys_info
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
