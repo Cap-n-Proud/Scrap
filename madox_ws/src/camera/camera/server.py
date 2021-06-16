@@ -112,7 +112,16 @@ class CameraHandler(BaseHTTPRequestHandler):
                 frame = self.camera.get_frame(SLEEP_IN_SEC)
                 # Does not work
 
-                if display_config == 0:
+                if self.display_config == 0:
+                    # Debug drawing to see which display config is active
+                    overlay_lib.draw_text(
+                        frame,
+                        100,
+                        100,
+                        "d: " + str(self.display_config),
+                        self.frame_shape[1],
+                        self.frame_shape[0],
+                    )
 
                     overlay_lib.drawCrosshair(
                         frame, self.frame_shape[1], self.frame_shape[0]
