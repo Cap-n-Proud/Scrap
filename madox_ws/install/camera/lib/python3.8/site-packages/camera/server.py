@@ -85,12 +85,6 @@ class CameraHandler(BaseHTTPRequestHandler):
             replace_existing=True,
         )
 
-    def change_view(self):
-        if self.display_config >= 3:
-            self.display_config = 0
-        else:
-            self.display_config += 1
-
     def save_snapshot(self, im):
         # save snapshot when button is pressed down
         file_path = "snapshots/" + str(uuid.uuid1()) + ".jpg"
@@ -113,6 +107,15 @@ class CameraHandler(BaseHTTPRequestHandler):
                 # Does not work
 
                 if display_config == 0:
+                    # Debug drawing to see which display config is active
+                    overlay_lib.draw_text(
+                        frame,
+                        100,
+                        100,
+                        "d: " + str(display_config),
+                        self.frame_shape[1],
+                        self.frame_shape[0],
+                    )
 
                     overlay_lib.drawCrosshair(
                         frame, self.frame_shape[1], self.frame_shape[0]
@@ -180,8 +183,49 @@ class CameraHandler(BaseHTTPRequestHandler):
         logger.info("thread is stopping ... [{path}]".format(path=self.path))
 
 
-class dbounce:
-    def __init__(self, pin, func, edge="both", bouncetime=200):
+import threading
+
+
+class ButtonH(threading.Thread):
+    def __init__(self, pin, func):
+        super().__init__(daemon=True)
+
+        self.func = func
+        self.pin = pin
+
+        self.lastpinval = self.pin
+        self.lock = threading.Lock()
+
+    def __call__(self, *args):
+        if not self.lock.acquire(blocking=False):
+            return
+
+        t = threading.Timer(self.bouncetime, self.read, args=args)
+        t.start()
+        print("self.pin")
+
+    def read(self, *args):
+        print(self.pin)
+        # pinval = self.pin
+        # print(self.pin)
+        # if (
+        #     (pinval == 0 and self.lastpinval == 1)
+        #     and (self.edge in ["falling", "both"])
+        # ) or (
+        #     (pinval == 1 and self.lastpinval == 0) and (self.edge in ["rising", "both"])
+        # ):
+        #     print(self.pin)
+        #
+        #     # self.func(*args)
+        #
+        # self.lastpinval = pinval
+        # self.lock.release()
+
+
+class ButtonHandler(threading.Thread):
+    def __init__(self, pin, func, edge="both", bouncetime=500):
+        super().__init__(daemon=True)
+
         self.edge = edge
         self.func = func
         self.pin = pin
@@ -190,24 +234,28 @@ class dbounce:
         self.lastpinval = self.pin
         self.lock = threading.Lock()
 
-    def check(self, button, *args):
-        pinval = button
+    def __call__(self, *args):
+        if not self.lock.acquire(blocking=False):
+            return
+        print("Call")
+        t = threading.Timer(self.bouncetime, self.read, args=args)
+        t.start()
 
+    def read(self, *args):
+        pinval = self.pin
+        print(self.pin)
         if (
-            pinval == 0 and self.lastpinval == 1
-        ):  # and (self.edge in ["falling", "both"]):
-            self.func(*args)
-            # print("release")
+            (pinval == 0 and self.lastpinval == 1)
+            and (self.edge in ["falling", "both"])
+        ) or (
+            (pinval == 1 and self.lastpinval == 0) and (self.edge in ["rising", "both"])
+        ):
+            print(self.pin)
 
-        if (
-            pinval == 1 and self.lastpinval == 0
-        ):  # and (self.edge in ["rising", "both"]):
             # self.func(*args)
-            a = 1
-            # print("pressed")
 
-        # print(pinval, self.lastpinval)
         self.lastpinval = pinval
+        self.lock.release()
 
 
 class Robot_Info(Node):
@@ -266,24 +314,35 @@ class Robot_Info(Node):
         take_snapshot = True
         # print("SNAP!!!!" + str(argum))
 
+    def change_view(self):
+        global display_config
+        print(display_config)
+        if display_config >= 3:
+            display_config = 0
+        else:
+            display_config += 1
+
     def joy_topic(self, msg):
         global x, y, display_config
         x = round(msg.axes[0], 1)
         y = round(msg.axes[1], 1)
-        if msg.buttons[9] == 1:
-            # self.camera.change_view()
-            if self.display_config >= 3:
-                self.display_config = 0
-            else:
-                self.display_config += 1
-        if self.init_buttons == True:
-            self.cb = dbounce(msg.buttons[5], self.take_snapshot, ["kmkmkm"])
-            self.init_buttons = False
-        if self.init_buttons == False:
-            try:
-                self.cb.check(msg.buttons[5])
-            except Exception:
-                print("ERROR: " + str(Exception))
+        display_change_button = msg.buttons[9]
+
+        if display_change_button == 1:
+            self.change_view()
+
+            # if self.display_config >= 3:
+            #     self.display_config = 0
+            # else:
+            #     self.display_config += 1
+        # if self.init_buttons == True:
+        #     # self.cb = ButtonHandler(msg.buttons[5], self.take_snapshot, ["kmkmkm"])
+        #     self.init_buttons = False
+        # if self.init_buttons == False:
+        #     try:
+        #         self.cb.read(msg.buttons[5])
+        #     except Exception:
+        #         print("ERROR: " + str(Exception))
 
 
 class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):

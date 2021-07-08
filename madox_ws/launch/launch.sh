@@ -1,6 +1,7 @@
 #!/bin/bash
 sudo mount 192.168.1.121:/mnt/VDev/Software Software
 sudo chmod 777 /dev/i2c-1
+sudo usermod -aG i2c $USER
 
 cd /home/robot/Software/ROS2/Madox/madox_ws
 source /opt/ros/foxy/setup.bash
