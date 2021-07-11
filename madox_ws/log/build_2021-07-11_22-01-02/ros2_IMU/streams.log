@@ -1,0 +1,31 @@
+[0.284s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU': CMAKE_PREFIX_PATH=/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4
+[0.460s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.554s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.607s] -- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.852s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.865s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.407s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.602s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.611s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.572s] CMake Error at CMakeLists.txt:15 (find_package):
+[4.573s]   By not providing "FindRTIMULib.cmake" in CMAKE_MODULE_PATH this project has
+[4.573s]   asked CMake to find a package configuration file provided by "RTIMULib",
+[4.573s]   but CMake did not find one.
+[4.574s] 
+[4.574s]   Could not find a package configuration file provided by "RTIMULib" with any
+[4.575s]   of the following names:
+[4.576s] 
+[4.576s]     RTIMULibConfig.cmake
+[4.576s]     rtimulib-config.cmake
+[4.577s] 
+[4.577s]   Add the installation prefix of "RTIMULib" to CMAKE_PREFIX_PATH or set
+[4.577s]   "RTIMULib_DIR" to a directory containing one of the above files.  If
+[4.578s]   "RTIMULib" provides a separate development package or SDK, be sure it has
+[4.578s]   been installed.
+[4.578s] 
+[4.579s] 
+[4.594s] -- Configuring incomplete, errors occurred!
+[4.595s] See also "/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU/CMakeFiles/CMakeOutput.log".
+[4.595s] See also "/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU/CMakeFiles/CMakeError.log".
+[4.641s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[4.653s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU' returned '2': CMAKE_PREFIX_PATH=/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4

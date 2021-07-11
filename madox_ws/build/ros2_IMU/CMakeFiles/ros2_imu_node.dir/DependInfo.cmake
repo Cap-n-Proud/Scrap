@@ -17,6 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include"
+  "/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU"
   "/opt/ros/foxy/include"
   )
 

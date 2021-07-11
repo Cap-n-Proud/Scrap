@@ -265,6 +265,15 @@ PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3
 //Specify specific Python version to use ('major.minor' or 'major')
 PYTHON_VERSION:STRING=
 
+//Path to a library.
+RTIMULib:FILEPATH=RTIMULib-NOTFOUND
+
+//The directory containing a CMake configuration file for RTIMULib.h.
+RTIMULib.h_DIR:PATH=RTIMULib.h_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for RTIMULib.
+RTIMULib_DIR:PATH=RTIMULib_DIR-NOTFOUND
+
 //Name of the computer/site where compile is being run
 SITE:STRING=robot
 

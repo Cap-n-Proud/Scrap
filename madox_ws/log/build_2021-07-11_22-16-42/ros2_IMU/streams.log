@@ -1,0 +1,24 @@
+[0.283s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU': CMAKE_PREFIX_PATH=/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4
+[0.477s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.571s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.613s] -- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.848s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.862s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.248s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.445s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.452s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.330s] WARNING: Package name "ros2_IMU" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[4.631s] -- Configuring done
+[5.104s] -- Generating done
+[5.260s] -- Build files have been written to: /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU
+[5.555s] [ 50%] [32m[1mLinking CXX executable ros2_imu_node[0m
+[6.033s] /usr/bin/ld: CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o: in function `ImuNode::InitParam()':
+[6.034s] imu.cpp:(.text._ZN7ImuNode9InitParamEv[_ZN7ImuNode9InitParamEv]+0xe0): undefined reference to `RTIMUSettings::RTIMUSettings(char const*)'
+[6.035s] /usr/bin/ld: imu.cpp:(.text._ZN7ImuNode9InitParamEv[_ZN7ImuNode9InitParamEv]+0xec): undefined reference to `RTIMU::createIMU(RTIMUSettings*)'
+[6.036s] /usr/bin/ld: imu.cpp:(.text._ZN7ImuNode9InitParamEv[_ZN7ImuNode9InitParamEv]+0xf8): undefined reference to `RTPressure::createPressure(RTIMUSettings*)'
+[6.036s] /usr/bin/ld: imu.cpp:(.text._ZN7ImuNode9InitParamEv[_ZN7ImuNode9InitParamEv]+0x1c8): undefined reference to `RTMath::currentUSecsSinceEpoch()'
+[6.037s] collect2: error: ld returned 1 exit status
+[6.040s] make[2]: *** [CMakeFiles/ros2_imu_node.dir/build.make:131: ros2_imu_node] Error 1
+[6.044s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ros2_imu_node.dir/all] Error 2
+[6.045s] make: *** [Makefile:141: all] Error 2
+[6.059s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU' returned '2': CMAKE_PREFIX_PATH=/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4

@@ -1,0 +1,18 @@
+CMake Error at CMakeLists.txt:15 (find_package):
+  By not providing "FindRTIMULib.h.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "RTIMULib.h", but CMake did not find one.
+
+  Could not find a package configuration file provided by "RTIMULib.h" with
+  any of the following names:
+
+    RTIMULib.hConfig.cmake
+    rtimulib.h-config.cmake
+
+  Add the installation prefix of "RTIMULib.h" to CMAKE_PREFIX_PATH or set
+  "RTIMULib.h_DIR" to a directory containing one of the above files.  If
+  "RTIMULib.h" provides a separate development package or SDK, be sure it has
+  been installed.
+
+
+make: *** [Makefile:266: cmake_check_build_system] Error 1

@@ -1,0 +1,5 @@
+WARNING: Package name "ros2_IMU" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+CMake Error: Cannot determine link language for target "RTIMULib".
+CMake Error: CMake can not determine linker language for target: RTIMULib
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+make: *** [Makefile:266: cmake_check_build_system] Error 1
