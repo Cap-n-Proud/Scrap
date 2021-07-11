@@ -1,0 +1,316 @@
+[0.000000] (-) TimerEvent: {}
+[0.000630] (-) JobUnselected: {'identifier': 'camera'}
+[0.000770] (-) JobUnselected: {'identifier': 'camera_pan_tilt'}
+[0.000857] (-) JobUnselected: {'identifier': 'jetbot_drive'}
+[0.000938] (-) JobUnselected: {'identifier': 'jetbot_launch'}
+[0.001026] (-) JobUnselected: {'identifier': 'jetbot_oled_display'}
+[0.001113] (-) JobUnselected: {'identifier': 'jetbot_sys_info'}
+[0.001198] (-) JobUnselected: {'identifier': 'pid_node'}
+[0.001284] (-) JobUnselected: {'identifier': 'ros2_rtimulib'}
+[0.001556] (ros2_IMU) JobQueued: {'identifier': 'ros2_IMU', 'dependencies': OrderedDict()}
+[0.001886] (ros2_IMU) JobStarted: {'identifier': 'ros2_IMU'}
+[0.093449] (-) TimerEvent: {}
+[0.194720] (-) TimerEvent: {}
+[0.243185] (ros2_IMU) JobProgress: {'identifier': 'ros2_IMU', 'progress': 'cmake'}
+[0.269119] (ros2_IMU) JobProgress: {'identifier': 'ros2_IMU', 'progress': 'build'}
+[0.279473] (ros2_IMU) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU', '--', '-j4', '-l4'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robot'), ('SSH_CLIENT', '192.168.1.140 49586 22'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robot'), ('OLDPWD', '/home/robot/Software/ROS2/Madox/madox_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_CH.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robot/Software/ROS2/Madox/madox_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'robot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('PWD', '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.140 49586 192.168.1.111 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/usr/local/lib'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy')]), 'shell': False}
+[0.312676] (-) TimerEvent: {}
+[0.414052] (-) TimerEvent: {}
+[0.472463] (ros2_IMU) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.514052] (-) TimerEvent: {}
+[0.572197] (ros2_IMU) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.614208] (-) TimerEvent: {}
+[0.714939] (-) TimerEvent: {}
+[0.815568] (-) TimerEvent: {}
+[0.916194] (-) TimerEvent: {}
+[1.016783] (-) TimerEvent: {}
+[1.117364] (-) TimerEvent: {}
+[1.217994] (-) TimerEvent: {}
+[1.318557] (-) TimerEvent: {}
+[1.419145] (-) TimerEvent: {}
+[1.520461] (-) TimerEvent: {}
+[1.601761] (ros2_IMU) StdoutLine: {'line': b'-- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.620414] (-) TimerEvent: {}
+[1.720970] (-) TimerEvent: {}
+[1.821615] (-) TimerEvent: {}
+[1.822357] (ros2_IMU) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.836116] (ros2_IMU) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.921792] (-) TimerEvent: {}
+[2.024417] (-) TimerEvent: {}
+[2.126851] (-) TimerEvent: {}
+[2.227446] (-) TimerEvent: {}
+[2.328447] (-) TimerEvent: {}
+[2.430375] (-) TimerEvent: {}
+[2.530957] (-) TimerEvent: {}
+[2.631977] (-) TimerEvent: {}
+[2.734593] (-) TimerEvent: {}
+[2.836534] (-) TimerEvent: {}
+[2.939234] (-) TimerEvent: {}
+[3.041083] (-) TimerEvent: {}
+[3.142887] (-) TimerEvent: {}
+[3.243494] (-) TimerEvent: {}
+[3.310442] (ros2_IMU) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.343671] (-) TimerEvent: {}
+[3.444273] (-) TimerEvent: {}
+[3.506361] (ros2_IMU) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[3.513050] (ros2_IMU) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.544473] (-) TimerEvent: {}
+[3.645091] (-) TimerEvent: {}
+[3.745728] (-) TimerEvent: {}
+[3.846332] (-) TimerEvent: {}
+[3.946895] (-) TimerEvent: {}
+[4.047485] (-) TimerEvent: {}
+[4.148031] (-) TimerEvent: {}
+[4.248625] (-) TimerEvent: {}
+[4.349200] (-) TimerEvent: {}
+[4.381014] (ros2_IMU) StderrLine: {'line': b'WARNING: Package name "ros2_IMU" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[4.450371] (-) TimerEvent: {}
+[4.553108] (-) TimerEvent: {}
+[4.656136] (-) TimerEvent: {}
+[4.758731] (ros2_IMU) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.759219] (-) TimerEvent: {}
+[4.861026] (-) TimerEvent: {}
+[4.964283] (-) TimerEvent: {}
+[5.066466] (-) TimerEvent: {}
+[5.169467] (-) TimerEvent: {}
+[5.272955] (-) TimerEvent: {}
+[5.378018] (-) TimerEvent: {}
+[5.480899] (-) TimerEvent: {}
+[5.583648] (-) TimerEvent: {}
+[5.686763] (-) TimerEvent: {}
+[5.791114] (-) TimerEvent: {}
+[5.847212] (ros2_IMU) StdoutLine: {'line': b'-- Generating done\n'}
+[5.892448] (-) TimerEvent: {}
+[5.996259] (-) TimerEvent: {}
+[6.040704] (ros2_IMU) StdoutLine: {'line': b'-- Build files have been written to: /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU\n'}
+[6.098090] (-) TimerEvent: {}
+[6.199334] (-) TimerEvent: {}
+[6.254314] (ros2_IMU) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target RTIMULib\x1b[0m\n'}
+[6.299494] (-) TimerEvent: {}
+[6.365876] (ros2_IMU) StdoutLine: {'line': b'[  8%] \x1b[32m\x1b[1mLinking CXX executable ros2_imu_node\x1b[0m\n'}
+[6.399737] (-) TimerEvent: {}
+[6.500403] (-) TimerEvent: {}
+[6.601138] (-) TimerEvent: {}
+[6.701835] (-) TimerEvent: {}
+[6.763312] (ros2_IMU) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/RTIMULib.dir/include/RTIMULib/RTFusion.cpp.o\x1b[0m\n'}
+[6.765149] (ros2_IMU) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/RTIMULib.dir/include/RTIMULib/RTFusionRTQF.cpp.o\x1b[0m\n'}
+[6.768826] (ros2_IMU) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/RTIMULib.dir/include/RTIMULib/RTMath.cpp.o\x1b[0m\n'}
+[6.802054] (-) TimerEvent: {}
+[6.840350] (ros2_IMU) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o: in function `ImuNode::InitParam()':\n"}
+[6.840919] (ros2_IMU) StderrLine: {'line': b"imu.cpp:(.text._ZN7ImuNode9InitParamEv[_ZN7ImuNode9InitParamEv]+0xe0): undefined reference to `RTIMUSettings::RTIMUSettings(char const*)'\n"}
+[6.841292] (ros2_IMU) StderrLine: {'line': b"/usr/bin/ld: imu.cpp:(.text._ZN7ImuNode9InitParamEv[_ZN7ImuNode9InitParamEv]+0xec): undefined reference to `RTIMU::createIMU(RTIMUSettings*)'\n"}
+[6.841642] (ros2_IMU) StderrLine: {'line': b"/usr/bin/ld: imu.cpp:(.text._ZN7ImuNode9InitParamEv[_ZN7ImuNode9InitParamEv]+0xf8): undefined reference to `RTPressure::createPressure(RTIMUSettings*)'\n"}
+[6.842076] (ros2_IMU) StderrLine: {'line': b"/usr/bin/ld: imu.cpp:(.text._ZN7ImuNode9InitParamEv[_ZN7ImuNode9InitParamEv]+0x1c8): undefined reference to `RTMath::currentUSecsSinceEpoch()'\n"}
+[6.845125] (ros2_IMU) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[6.849298] (ros2_IMU) StderrLine: {'line': b'make[2]: *** [CMakeFiles/ros2_imu_node.dir/build.make:131: ros2_imu_node] Error 1\n'}
+[6.852185] (ros2_IMU) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/ros2_imu_node.dir/all] Error 2\n'}
+[6.852690] (ros2_IMU) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[6.897705] (ros2_IMU) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/RTIMULib.dir/include/RTIMULib/RTFusionKalman4.cpp.o\x1b[0m\n'}
+[6.902239] (-) TimerEvent: {}
+[7.002865] (-) TimerEvent: {}
+[7.062010] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic RTVector3 RTMath::poseFromAccelMag(const RTVector3&, const RTVector3&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.062597] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:128:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTVector3::RTVector3(const RTVector3&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.062981] (ros2_IMU) StderrLine: {'line': b'  128 |     return \x1b[01;35m\x1b[Kresult\x1b[m\x1b[K;\n'}
+[7.063326] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.064060] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTFusion.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KRTVector3 RTFusion::getAccelResiduals()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.064844] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTFusion.cpp:136:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTVector3::RTVector3(const RTVector3&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.065248] (ros2_IMU) StderrLine: {'line': b'  136 |     return \x1b[01;35m\x1b[Kresiduals\x1b[m\x1b[K;\n'}
+[7.065580] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.066517] (ros2_IMU) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:24\x1b[m\x1b[K:\n'}
+[7.067014] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.h:88:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTVector3\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTVector3& RTVector3::operator=(const RTVector3&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.067447] (ros2_IMU) StderrLine: {'line': b'   88 |     RTVector3& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K =(const RTVector3& vec);\n'}
+[7.067851] (ros2_IMU) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.068239] (ros2_IMU) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTIMULibDefs.h:30\x1b[m\x1b[K,\n'}
+[7.068634] (ros2_IMU) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTFusion.h:27\x1b[m\x1b[K,\n'}
+[7.069055] (ros2_IMU) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTFusion.cpp:25\x1b[m\x1b[K:\n'}
+[7.069744] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.h:88:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTVector3\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTVector3& RTVector3::operator=(const RTVector3&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.072349] (ros2_IMU) StderrLine: {'line': b'   88 |     RTVector3& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K =(const RTVector3& vec);\n'}
+[7.072854] (ros2_IMU) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.073305] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RTVector3::accelToEuler(RTVector3&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.073826] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:211:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTVector3::RTVector3(const RTVector3&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.074312] (ros2_IMU) StderrLine: {'line': b'  211 |     RTVector3 normAccel = *\x1b[01;35m\x1b[Kthis\x1b[m\x1b[K;\n'}
+[7.074742] (ros2_IMU) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.075149] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:162:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTVector3\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTVector3& RTVector3::operator=(const RTVector3&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.075573] (ros2_IMU) StderrLine: {'line': b'  162 | RTVector3& \x1b[01;36m\x1b[KRTVector3\x1b[m\x1b[K::operator =(const RTVector3& vec)\n'}
+[7.075945] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.076326] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RTVector3::accelToQuaternion(RTQuaternion&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.076716] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:223:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTVector3::RTVector3(const RTVector3&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.077079] (ros2_IMU) StderrLine: {'line': b'  223 |     RTVector3 normAccel = *\x1b[01;35m\x1b[Kthis\x1b[m\x1b[K;\n'}
+[7.077442] (ros2_IMU) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.082362] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:162:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTVector3\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTVector3& RTVector3::operator=(const RTVector3&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.082839] (ros2_IMU) StderrLine: {'line': b'  162 | RTVector3& \x1b[01;36m\x1b[KRTVector3\x1b[m\x1b[K::operator =(const RTVector3& vec)\n'}
+[7.083194] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.083528] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kconst RTQuaternion RTQuaternion::operator*(const RTQuaternion&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.083878] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:337:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTQuaternion::RTQuaternion(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.084272] (ros2_IMU) StderrLine: {'line': b'  337 |     RTQuaternion result = *\x1b[01;35m\x1b[Kthis\x1b[m\x1b[K;\n'}
+[7.094677] (ros2_IMU) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.095187] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:273:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion& RTQuaternion::operator=(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.096288] (ros2_IMU) StderrLine: {'line': b'  273 | RTQuaternion& \x1b[01;36m\x1b[KRTQuaternion\x1b[m\x1b[K::operator =(const RTQuaternion& quat)\n'}
+[7.097067] (ros2_IMU) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.097566] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:339:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTQuaternion::RTQuaternion(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.098138] (ros2_IMU) StderrLine: {'line': b'  339 |     return \x1b[01;35m\x1b[Kresult\x1b[m\x1b[K;\n'}
+[7.098567] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.098955] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:273:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion& RTQuaternion::operator=(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.099381] (ros2_IMU) StderrLine: {'line': b'  273 | RTQuaternion& \x1b[01;36m\x1b[KRTQuaternion\x1b[m\x1b[K::operator =(const RTQuaternion& quat)\n'}
+[7.099803] (ros2_IMU) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.100213] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kconst RTQuaternion RTQuaternion::operator*(RTFLOAT) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.100612] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:344:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTQuaternion::RTQuaternion(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.101044] (ros2_IMU) StderrLine: {'line': b'  344 |     RTQuaternion result = *\x1b[01;35m\x1b[Kthis\x1b[m\x1b[K;\n'}
+[7.101482] (ros2_IMU) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.101973] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:273:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion& RTQuaternion::operator=(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.102431] (ros2_IMU) StderrLine: {'line': b'  273 | RTQuaternion& \x1b[01;36m\x1b[KRTQuaternion\x1b[m\x1b[K::operator =(const RTQuaternion& quat)\n'}
+[7.102860] (ros2_IMU) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.103242] (-) TimerEvent: {}
+[7.103772] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:346:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTQuaternion::RTQuaternion(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.104328] (ros2_IMU) StderrLine: {'line': b'  346 |     return \x1b[01;35m\x1b[Kresult\x1b[m\x1b[K;\n'}
+[7.104792] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.105197] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:273:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion& RTQuaternion::operator=(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.105607] (ros2_IMU) StderrLine: {'line': b'  273 | RTQuaternion& \x1b[01;36m\x1b[KRTQuaternion\x1b[m\x1b[K::operator =(const RTQuaternion& quat)\n'}
+[7.106035] (ros2_IMU) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.106452] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kconst RTQuaternion RTQuaternion::operator-(const RTQuaternion&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.106834] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:352:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTQuaternion::RTQuaternion(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.107231] (ros2_IMU) StderrLine: {'line': b'  352 |     RTQuaternion result = *\x1b[01;35m\x1b[Kthis\x1b[m\x1b[K;\n'}
+[7.107618] (ros2_IMU) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.107985] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:273:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion& RTQuaternion::operator=(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.108427] (ros2_IMU) StderrLine: {'line': b'  273 | RTQuaternion& \x1b[01;36m\x1b[KRTQuaternion\x1b[m\x1b[K::operator =(const RTQuaternion& quat)\n'}
+[7.108848] (ros2_IMU) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.109277] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:354:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTQuaternion::RTQuaternion(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.121842] (ros2_IMU) StderrLine: {'line': b'  354 |     return \x1b[01;35m\x1b[Kresult\x1b[m\x1b[K;\n'}
+[7.122441] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.122871] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:273:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion& RTQuaternion::operator=(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.123297] (ros2_IMU) StderrLine: {'line': b'  273 | RTQuaternion& \x1b[01;36m\x1b[KRTQuaternion\x1b[m\x1b[K::operator =(const RTQuaternion& quat)\n'}
+[7.123700] (ros2_IMU) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.124081] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kconst RTQuaternion RTQuaternion::operator-(RTFLOAT) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.124468] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:359:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTQuaternion::RTQuaternion(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.124921] (ros2_IMU) StderrLine: {'line': b'  359 |     RTQuaternion result = *\x1b[01;35m\x1b[Kthis\x1b[m\x1b[K;\n'}
+[7.125288] (ros2_IMU) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.125649] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:273:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion& RTQuaternion::operator=(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.126149] (ros2_IMU) StderrLine: {'line': b'  273 | RTQuaternion& \x1b[01;36m\x1b[KRTQuaternion\x1b[m\x1b[K::operator =(const RTQuaternion& quat)\n'}
+[7.126616] (ros2_IMU) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.127016] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:361:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTQuaternion::RTQuaternion(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.127417] (ros2_IMU) StderrLine: {'line': b'  361 |     return \x1b[01;35m\x1b[Kresult\x1b[m\x1b[K;\n'}
+[7.127831] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.128206] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:273:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion& RTQuaternion::operator=(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.128622] (ros2_IMU) StderrLine: {'line': b'  273 | RTQuaternion& \x1b[01;36m\x1b[KRTQuaternion\x1b[m\x1b[K::operator =(const RTQuaternion& quat)\n'}
+[7.129010] (ros2_IMU) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.129364] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion RTQuaternion::conjugate() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.129794] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:419:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTQuaternion::RTQuaternion(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.130223] (ros2_IMU) StderrLine: {'line': b'  419 |     return \x1b[01;35m\x1b[Kq\x1b[m\x1b[K;\n'}
+[7.130582] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.130930] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:273:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion& RTQuaternion::operator=(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.131324] (ros2_IMU) StderrLine: {'line': b'  273 | RTQuaternion& \x1b[01;36m\x1b[KRTQuaternion\x1b[m\x1b[K::operator =(const RTQuaternion& quat)\n'}
+[7.131673] (ros2_IMU) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.132039] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kconst RTMatrix4x4 RTMatrix4x4::operator+(const RTMatrix4x4&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.132460] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:512:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTMatrix4x4::RTMatrix4x4(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.132868] (ros2_IMU) StderrLine: {'line': b'  512 |     RTMatrix4x4 result = *\x1b[01;35m\x1b[Kthis\x1b[m\x1b[K;\n'}
+[7.133299] (ros2_IMU) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.143673] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:462:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4& RTMatrix4x4::operator=(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.144414] (ros2_IMU) StderrLine: {'line': b'  462 | RTMatrix4x4& \x1b[01;36m\x1b[KRTMatrix4x4\x1b[m\x1b[K::operator =(const RTMatrix4x4& mat)\n'}
+[7.144971] (ros2_IMU) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.145489] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:514:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTMatrix4x4::RTMatrix4x4(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.149908] (ros2_IMU) StderrLine: {'line': b'  514 |     return \x1b[01;35m\x1b[Kresult\x1b[m\x1b[K;\n'}
+[7.150482] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.150979] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:462:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4& RTMatrix4x4::operator=(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.151461] (ros2_IMU) StderrLine: {'line': b'  462 | RTMatrix4x4& \x1b[01;36m\x1b[KRTMatrix4x4\x1b[m\x1b[K::operator =(const RTMatrix4x4& mat)\n'}
+[7.151934] (ros2_IMU) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.152400] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kconst RTMatrix4x4 RTMatrix4x4::operator*(RTFLOAT) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.152884] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:519:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTMatrix4x4::RTMatrix4x4(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.153358] (ros2_IMU) StderrLine: {'line': b'  519 |     RTMatrix4x4 result = *\x1b[01;35m\x1b[Kthis\x1b[m\x1b[K;\n'}
+[7.153882] (ros2_IMU) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.154380] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:462:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4& RTMatrix4x4::operator=(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.154900] (ros2_IMU) StderrLine: {'line': b'  462 | RTMatrix4x4& \x1b[01;36m\x1b[KRTMatrix4x4\x1b[m\x1b[K::operator =(const RTMatrix4x4& mat)\n'}
+[7.155428] (ros2_IMU) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.155946] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:521:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTMatrix4x4::RTMatrix4x4(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.156508] (ros2_IMU) StderrLine: {'line': b'  521 |     return \x1b[01;35m\x1b[Kresult\x1b[m\x1b[K;\n'}
+[7.157017] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.157521] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:462:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4& RTMatrix4x4::operator=(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.158121] (ros2_IMU) StderrLine: {'line': b'  462 | RTMatrix4x4& \x1b[01;36m\x1b[KRTMatrix4x4\x1b[m\x1b[K::operator =(const RTMatrix4x4& mat)\n'}
+[7.158667] (ros2_IMU) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.159169] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kconst RTMatrix4x4 RTMatrix4x4::operator*(const RTMatrix4x4&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.171482] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:537:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTMatrix4x4::RTMatrix4x4(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.172320] (ros2_IMU) StderrLine: {'line': b'  537 |     return \x1b[01;35m\x1b[Kres\x1b[m\x1b[K;\n'}
+[7.172851] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.173328] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:462:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4& RTMatrix4x4::operator=(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.173856] (ros2_IMU) StderrLine: {'line': b'  462 | RTMatrix4x4& \x1b[01;36m\x1b[KRTMatrix4x4\x1b[m\x1b[K::operator =(const RTMatrix4x4& mat)\n'}
+[7.174332] (ros2_IMU) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.174792] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kconst RTQuaternion RTMatrix4x4::operator*(const RTQuaternion&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.175262] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:550:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTQuaternion::RTQuaternion(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.175680] (ros2_IMU) StderrLine: {'line': b'  550 |     return \x1b[01;35m\x1b[Kres\x1b[m\x1b[K;\n'}
+[7.176081] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.176488] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:273:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTQuaternion& RTQuaternion::operator=(const RTQuaternion&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.176941] (ros2_IMU) StderrLine: {'line': b'  273 | RTQuaternion& \x1b[01;36m\x1b[KRTQuaternion\x1b[m\x1b[K::operator =(const RTQuaternion& quat)\n'}
+[7.177402] (ros2_IMU) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.177887] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4 RTMatrix4x4::transposed()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.178349] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:569:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTMatrix4x4::RTMatrix4x4(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.178887] (ros2_IMU) StderrLine: {'line': b'  569 |     return \x1b[01;35m\x1b[Kres\x1b[m\x1b[K;\n'}
+[7.179414] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.179920] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:462:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4& RTMatrix4x4::operator=(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.180510] (ros2_IMU) StderrLine: {'line': b'  462 | RTMatrix4x4& \x1b[01;36m\x1b[KRTMatrix4x4\x1b[m\x1b[K::operator =(const RTMatrix4x4& mat)\n'}
+[7.181085] (ros2_IMU) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.181607] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4 RTMatrix4x4::inverted()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.190969] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:585:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTMatrix4x4::RTMatrix4x4(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.191632] (ros2_IMU) StderrLine: {'line': b'  585 |         return \x1b[01;35m\x1b[Kres\x1b[m\x1b[K;\n'}
+[7.192182] (ros2_IMU) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.192748] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:462:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4& RTMatrix4x4::operator=(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.193327] (ros2_IMU) StderrLine: {'line': b'  462 | RTMatrix4x4& \x1b[01;36m\x1b[KRTMatrix4x4\x1b[m\x1b[K::operator =(const RTMatrix4x4& mat)\n'}
+[7.194220] (ros2_IMU) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.195171] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:597:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTMatrix4x4::RTMatrix4x4(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.195882] (ros2_IMU) StderrLine: {'line': b'  597 |     return \x1b[01;35m\x1b[Kres\x1b[m\x1b[K;\n'}
+[7.199890] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.200645] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.cpp:462:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTMatrix4x4& RTMatrix4x4::operator=(const RTMatrix4x4&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.201376] (ros2_IMU) StderrLine: {'line': b'  462 | RTMatrix4x4& \x1b[01;36m\x1b[KRTMatrix4x4\x1b[m\x1b[K::operator =(const RTMatrix4x4& mat)\n'}
+[7.202170] (ros2_IMU) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.203579] (-) TimerEvent: {}
+[7.261664] (ros2_IMU) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/RTIMULib.dir/include/RTIMULib/RTIMUAccelCal.cpp.o\x1b[0m\n'}
+[7.288391] (ros2_IMU) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/RTIMULib.dir/include/RTIMULib/RTIMUHal.cpp.o\x1b[0m\n'}
+[7.303714] (-) TimerEvent: {}
+[7.404358] (-) TimerEvent: {}
+[7.421698] (ros2_IMU) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/RTIMULib.dir/include/RTIMULib/RTIMUMagCal.cpp.o\x1b[0m\n'}
+[7.460709] (ros2_IMU) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/RTIMULib.dir/include/RTIMULib/RTIMUSettings.cpp.o\x1b[0m\n'}
+[7.504578] (-) TimerEvent: {}
+[7.605216] (-) TimerEvent: {}
+[7.705894] (-) TimerEvent: {}
+[7.749739] (ros2_IMU) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/RTIMULib.dir/include/RTIMULib/IMUDrivers/RTIMU.cpp.o\x1b[0m\n'}
+[7.783482] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTIMUMagCal.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KRTVector3 RTIMUMagCal::removeMagCalData()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.784054] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTIMUMagCal.cpp:156:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTVector3::RTVector3(const RTVector3&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.784450] (ros2_IMU) StderrLine: {'line': b'  156 |         return \x1b[01;35m\x1b[Kret\x1b[m\x1b[K;\n'}
+[7.784837] (ros2_IMU) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.785736] (ros2_IMU) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTIMULibDefs.h:30\x1b[m\x1b[K,\n'}
+[7.786273] (ros2_IMU) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTIMULib.h:28\x1b[m\x1b[K,\n'}
+[7.786704] (ros2_IMU) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTIMUMagCal.h:29\x1b[m\x1b[K,\n'}
+[7.787111] (ros2_IMU) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTIMUMagCal.cpp:25\x1b[m\x1b[K:\n'}
+[7.787522] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.h:88:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTVector3\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTVector3& RTVector3::operator=(const RTVector3&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.787910] (ros2_IMU) StderrLine: {'line': b'   88 |     RTVector3& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K =(const RTVector3& vec);\n'}
+[7.788267] (ros2_IMU) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.789246] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTIMUMagCal.cpp:163:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kconstexpr RTVector3::RTVector3(const RTVector3&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-copy\x1b[m\x1b[K]\n'}
+[7.789904] (ros2_IMU) StderrLine: {'line': b'  163 |     return \x1b[01;35m\x1b[Kret\x1b[m\x1b[K;\n'}
+[7.790471] (ros2_IMU) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.790990] (ros2_IMU) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTIMULibDefs.h:30\x1b[m\x1b[K,\n'}
+[7.791506] (ros2_IMU) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTIMULib.h:28\x1b[m\x1b[K,\n'}
+[7.792011] (ros2_IMU) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTIMUMagCal.h:29\x1b[m\x1b[K,\n'}
+[7.792535] (ros2_IMU) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTIMUMagCal.cpp:25\x1b[m\x1b[K:\n'}
+[7.793068] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTMath.h:88:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kbecause \xe2\x80\x98\x1b[01m\x1b[KRTVector3\x1b[m\x1b[K\xe2\x80\x99 has user-provided \xe2\x80\x98\x1b[01m\x1b[KRTVector3& RTVector3::operator=(const RTVector3&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.793554] (ros2_IMU) StderrLine: {'line': b'   88 |     RTVector3& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K =(const RTVector3& vec);\n'}
+[7.794197] (ros2_IMU) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.806098] (-) TimerEvent: {}
+[7.907098] (-) TimerEvent: {}
+[8.007891] (-) TimerEvent: {}
+[8.108720] (-) TimerEvent: {}
+[8.209539] (-) TimerEvent: {}
+[8.310302] (-) TimerEvent: {}
+[8.411051] (-) TimerEvent: {}
+[8.460878] (ros2_IMU) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared library libRTIMULib.so\x1b[0m\n'}
+[8.511262] (-) TimerEvent: {}
+[8.612048] (-) TimerEvent: {}
+[8.712845] (-) TimerEvent: {}
+[8.813850] (-) TimerEvent: {}
+[8.914981] (-) TimerEvent: {}
+[8.966968] (ros2_IMU) StdoutLine: {'line': b'[ 91%] Built target RTIMULib\n'}
+[8.975048] (ros2_IMU) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.995143] (ros2_IMU) CommandEnded: {'returncode': 2}
+[9.015506] (-) TimerEvent: {}
+[9.123276] (-) TimerEvent: {}
+[9.225495] (-) TimerEvent: {}
+[9.327120] (-) TimerEvent: {}
+[9.380935] (ros2_IMU) JobEnded: {'identifier': 'ros2_IMU', 'rc': 2}
+[9.403886] (-) EventReactorShutdown: {}

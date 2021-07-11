@@ -1,0 +1,2 @@
+source;share/ros2_IMU/environment/ament_prefix_path.sh
+source;share/ros2_IMU/environment/path.sh

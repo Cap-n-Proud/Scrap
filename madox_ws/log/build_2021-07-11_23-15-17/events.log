@@ -1,0 +1,79 @@
+[0.000000] (-) TimerEvent: {}
+[0.000415] (-) JobUnselected: {'identifier': 'camera'}
+[0.000556] (-) JobUnselected: {'identifier': 'camera_pan_tilt'}
+[0.000648] (-) JobUnselected: {'identifier': 'jetbot_drive'}
+[0.001006] (-) JobUnselected: {'identifier': 'jetbot_launch'}
+[0.001201] (-) JobUnselected: {'identifier': 'jetbot_oled_display'}
+[0.001405] (-) JobUnselected: {'identifier': 'jetbot_sys_info'}
+[0.001553] (-) JobUnselected: {'identifier': 'pid_node'}
+[0.001697] (-) JobUnselected: {'identifier': 'ros2_rtimulib'}
+[0.001854] (ros2_IMU) JobQueued: {'identifier': 'ros2_IMU', 'dependencies': OrderedDict()}
+[0.002004] (ros2_IMU) JobStarted: {'identifier': 'ros2_IMU'}
+[0.094309] (-) TimerEvent: {}
+[0.197898] (-) TimerEvent: {}
+[0.259788] (ros2_IMU) JobProgress: {'identifier': 'ros2_IMU', 'progress': 'cmake'}
+[0.288579] (ros2_IMU) JobProgress: {'identifier': 'ros2_IMU', 'progress': 'build'}
+[0.297653] (ros2_IMU) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU', '--', '-j4', '-l4'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robot'), ('SSH_CLIENT', '192.168.1.140 49586 22'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robot'), ('OLDPWD', '/home/robot/Software/ROS2/Madox/madox_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_CH.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robot/Software/ROS2/Madox/madox_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'robot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('PWD', '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.140 49586 192.168.1.111 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/usr/local/lib'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy')]), 'shell': False}
+[0.330496] (-) TimerEvent: {}
+[0.431198] (-) TimerEvent: {}
+[0.531826] (-) TimerEvent: {}
+[0.545366] (ros2_IMU) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.632049] (-) TimerEvent: {}
+[0.640614] (ros2_IMU) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.732217] (-) TimerEvent: {}
+[0.832860] (-) TimerEvent: {}
+[0.933479] (-) TimerEvent: {}
+[1.034579] (-) TimerEvent: {}
+[1.136267] (-) TimerEvent: {}
+[1.237505] (-) TimerEvent: {}
+[1.339266] (-) TimerEvent: {}
+[1.440901] (-) TimerEvent: {}
+[1.541592] (-) TimerEvent: {}
+[1.642264] (-) TimerEvent: {}
+[1.742946] (-) TimerEvent: {}
+[1.755725] (ros2_IMU) StdoutLine: {'line': b'-- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.843155] (-) TimerEvent: {}
+[1.943770] (-) TimerEvent: {}
+[1.965035] (ros2_IMU) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.978679] (ros2_IMU) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.043978] (-) TimerEvent: {}
+[2.144862] (-) TimerEvent: {}
+[2.246932] (-) TimerEvent: {}
+[2.347495] (-) TimerEvent: {}
+[2.449176] (-) TimerEvent: {}
+[2.551638] (-) TimerEvent: {}
+[2.652498] (-) TimerEvent: {}
+[2.753831] (-) TimerEvent: {}
+[2.855257] (-) TimerEvent: {}
+[2.957465] (-) TimerEvent: {}
+[3.059655] (-) TimerEvent: {}
+[3.162442] (-) TimerEvent: {}
+[3.264582] (-) TimerEvent: {}
+[3.365183] (-) TimerEvent: {}
+[3.403412] (ros2_IMU) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.465383] (-) TimerEvent: {}
+[3.566015] (-) TimerEvent: {}
+[3.599510] (ros2_IMU) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[3.606133] (ros2_IMU) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.666221] (-) TimerEvent: {}
+[3.766891] (-) TimerEvent: {}
+[3.867507] (-) TimerEvent: {}
+[3.968106] (-) TimerEvent: {}
+[4.068689] (-) TimerEvent: {}
+[4.169278] (-) TimerEvent: {}
+[4.202750] (ros2_IMU) StderrLine: {'line': b'CMake Error at CMakeLists.txt:19 (target_link_libraries):\n'}
+[4.203321] (ros2_IMU) StderrLine: {'line': b'  Cannot specify link libraries for target "RTIMULib" which is not built by\n'}
+[4.203659] (ros2_IMU) StderrLine: {'line': b'  this project.\n'}
+[4.207703] (ros2_IMU) StderrLine: {'line': b'\n'}
+[4.208312] (ros2_IMU) StderrLine: {'line': b'\n'}
+[4.226892] (ros2_IMU) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.227611] (ros2_IMU) StdoutLine: {'line': b'See also "/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU/CMakeFiles/CMakeOutput.log".\n'}
+[4.227931] (ros2_IMU) StdoutLine: {'line': b'See also "/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU/CMakeFiles/CMakeError.log".\n'}
+[4.269518] (-) TimerEvent: {}
+[4.283172] (ros2_IMU) StderrLine: {'line': b'make: *** [Makefile:550: cmake_check_build_system] Error 1\n'}
+[4.295332] (ros2_IMU) CommandEnded: {'returncode': 2}
+[4.369852] (-) TimerEvent: {}
+[4.470793] (-) TimerEvent: {}
+[4.571417] (-) TimerEvent: {}
+[4.610703] (ros2_IMU) JobEnded: {'identifier': 'ros2_IMU', 'rc': 2}
+[4.623905] (-) EventReactorShutdown: {}

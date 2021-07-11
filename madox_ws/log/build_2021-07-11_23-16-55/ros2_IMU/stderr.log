@@ -1,0 +1,13 @@
+CMake Error at CMakeLists.txt:32 (INSTALL):
+  Syntax error in cmake code at
+
+    /home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/CMakeLists.txt:32
+
+  when parsing string
+
+    lib/${PROJECT_NAME
+
+  There is an unterminated variable reference.
+
+
+make: *** [Makefile:550: cmake_check_build_system] Error 1

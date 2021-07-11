@@ -1,0 +1,61 @@
+cmake_minimum_required(VERSION 3.5)
+project(ros2_IMU)
+
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+
+
+SET(LIBRTIMU_SRCS
+    /home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include/RTIMULib/RTFusion.cpp
+    include/RTIMULib/RTFusionRTQF.cpp
+    include/RTIMULib/RTMath.cpp
+    include/RTIMULib/RTFusionKalman4.cpp
+    include/RTIMULib/RTIMUAccelCal.cpp
+    include/RTIMULib/RTIMUHal.cpp
+    include/RTIMULib/RTIMUMagCal.cpp
+    include/RTIMULib/RTIMUSettings.cpp
+    include/RTIMULib/IMUDrivers/RTIMU.cpp
+    )
+ADD_LIBRARY(RTIMULib SHARED ${LIBRTIMU_SRCS})
+SET_PROPERTY(TARGET RTIMULib PROPERTY VERSION ${RTIMULIB_VERSION})
+SET_PROPERTY(TARGET RTIMULib PROPERTY SOVERSION ${RTIMULIB_VERSION_MAJOR})
+INSTALL(TARGETS RTIMULib DESTINATION lib)
+INSTALL(DIRECTORY . DESTINATION include FILES_MATCHING PATTERN "*.h")
+
+
+
+
+
+
+
+
+
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_library(RTIMULib REQUIRED)
+##find_package(RTIMULib REQUIRED)
+target_link_libraries(RTIMULib)
+
+add_executable(ros2_imu_node src/imu.cpp)
+
+
+ament_target_dependencies(ros2_imu_node rclcpp std_msgs )
+
+
+## Specify additional locations of header files
+include_directories( include ${CMAKE_CURRENT_SOURCE_DIR} include ${catkin_INCLUDE_DIRS} /usr/local/include
+)
+install(TARGETS
+  ros2_imu_node
+  DESTINATION lib/${PROJECT_NAME}
+
+  )
+
+ament_package()

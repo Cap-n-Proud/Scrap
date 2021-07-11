@@ -1,0 +1,26 @@
+[0.230s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU': CMAKE_PREFIX_PATH=/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4
+[0.355s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.461s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.557s] -- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.740s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.754s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.079s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.275s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.282s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.876s] CMake Error at CMakeLists.txt:32 (INSTALL):
+[3.877s]   Syntax error in cmake code at
+[3.877s] 
+[3.877s]     /home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/CMakeLists.txt:32
+[3.878s] 
+[3.878s]   when parsing string
+[3.878s] 
+[3.879s]     lib/${PROJECT_NAME
+[3.879s] 
+[3.879s]   There is an unterminated variable reference.
+[3.880s] 
+[3.880s] 
+[3.893s] -- Configuring incomplete, errors occurred!
+[3.895s] See also "/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU/CMakeFiles/CMakeOutput.log".
+[3.896s] See also "/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU/CMakeFiles/CMakeError.log".
+[3.956s] make: *** [Makefile:550: cmake_check_build_system] Error 1
+[3.976s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU' returned '2': CMAKE_PREFIX_PATH=/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4
