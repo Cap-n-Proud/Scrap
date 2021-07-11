@@ -1,0 +1,10 @@
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:68:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ does not name a type
+   68 |   [01;31m[Kimu[m[K->IMUInit();
+      |   [01;31m[K^~~[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kvoid ImuNode::PrintErrorCode(const int&)[m[K’:
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:236:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcode[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  236 |   void PrintErrorCode([01;35m[Kconst int& code[m[K) {
+      |                       [01;35m[K~~~~~~~~~~~^~~~[m[K
+make[2]: *** [CMakeFiles/ros2_imu_node.dir/build.make:63: CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ros2_imu_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

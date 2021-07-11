@@ -1,0 +1,81 @@
+[0.214s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4
+[0.460s] [35m[1mScanning dependencies of target ros2_imu_node[0m
+[0.771s] [ 50%] [32mBuilding CXX object CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o[0m
+[6.493s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:81:4:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kimu[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+[6.494s]    81 |   *[01;31m[Kimu[m[K->IMUInit();
+[6.494s]       |    [01;31m[K^~~[m[K
+[6.495s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:81:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[6.495s]    81 |   *[01;31m[Kimu[m[K->IMUInit();
+[6.495s]       |    [01;31m[K^~~[m[K
+[6.496s]       |       [32m[K;[m[K
+[6.496s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:81:4:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint* ImuNode::imu[m[K’
+[6.496s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:66:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[KRTIMU* ImuNode::imu[m[K’
+[6.497s]    66 |   RTIMU *[01;36m[Kimu[m[K              = RTIMU::createIMU(settings);
+[6.497s]       |          [01;36m[K^~~[m[K
+[6.498s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:81:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K->[m[K’ token
+[6.498s]    81 |   *imu[01;31m[K->[m[KIMUInit();
+[6.498s]       |       [01;31m[K^~[m[K
+[6.498s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:85:4:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kimu[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+[6.499s]    85 |   *[01;31m[Kimu[m[K->setSlerpPower(0.02);
+[6.499s]       |    [01;31m[K^~~[m[K
+[6.499s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:85:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[6.500s]    85 |   *[01;31m[Kimu[m[K->setSlerpPower(0.02);
+[6.500s]       |    [01;31m[K^~~[m[K
+[6.500s]       |       [32m[K;[m[K
+[6.501s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:85:4:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint* ImuNode::imu[m[K’
+[6.501s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:66:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[KRTIMU* ImuNode::imu[m[K’
+[6.501s]    66 |   RTIMU *[01;36m[Kimu[m[K              = RTIMU::createIMU(settings);
+[6.502s]       |          [01;36m[K^~~[m[K
+[6.502s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:85:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K->[m[K’ token
+[6.502s]    85 |   *imu[01;31m[K->[m[KsetSlerpPower(0.02);
+[6.503s]       |       [01;31m[K^~[m[K
+[6.503s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:86:4:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kimu[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+[6.503s]    86 |   *[01;31m[Kimu[m[K->setGyroEnable(true);
+[6.504s]       |    [01;31m[K^~~[m[K
+[6.504s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:86:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[6.504s]    86 |   *[01;31m[Kimu[m[K->setGyroEnable(true);
+[6.505s]       |    [01;31m[K^~~[m[K
+[6.505s]       |       [32m[K;[m[K
+[6.505s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:86:4:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint* ImuNode::imu[m[K’
+[6.505s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:66:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[KRTIMU* ImuNode::imu[m[K’
+[6.506s]    66 |   RTIMU *[01;36m[Kimu[m[K              = RTIMU::createIMU(settings);
+[6.506s]       |          [01;36m[K^~~[m[K
+[6.506s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:86:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K->[m[K’ token
+[6.507s]    86 |   *imu[01;31m[K->[m[KsetGyroEnable(true);
+[6.507s]       |       [01;31m[K^~[m[K
+[6.507s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:87:4:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kimu[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+[6.508s]    87 |   *[01;31m[Kimu[m[K->setCompassEnable(true);
+[6.508s]       |    [01;31m[K^~~[m[K
+[6.508s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:87:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[6.509s]    87 |   *[01;31m[Kimu[m[K->setCompassEnable(true);
+[6.509s]       |    [01;31m[K^~~[m[K
+[6.509s]       |       [32m[K;[m[K
+[6.510s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:87:4:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint* ImuNode::imu[m[K’
+[6.510s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:66:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[KRTIMU* ImuNode::imu[m[K’
+[6.510s]    66 |   RTIMU *[01;36m[Kimu[m[K              = RTIMU::createIMU(settings);
+[6.511s]       |          [01;36m[K^~~[m[K
+[6.511s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:87:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K->[m[K’ token
+[6.511s]    87 |   *imu[01;31m[K->[m[KsetCompassEnable(true);
+[6.511s]       |       [01;31m[K^~[m[K
+[6.512s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:88:4:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kimu[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+[6.512s]    88 |   *[01;31m[Kimu[m[K->setAccelEnable(true);
+[6.512s]       |    [01;31m[K^~~[m[K
+[6.513s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:88:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[6.513s]    88 |   *[01;31m[Kimu[m[K->setAccelEnable(true);
+[6.513s]       |    [01;31m[K^~~[m[K
+[6.514s]       |       [32m[K;[m[K
+[6.514s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:88:4:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint* ImuNode::imu[m[K’
+[6.514s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:66:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[KRTIMU* ImuNode::imu[m[K’
+[6.515s]    66 |   RTIMU *[01;36m[Kimu[m[K              = RTIMU::createIMU(settings);
+[6.515s]       |          [01;36m[K^~~[m[K
+[6.515s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:88:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K->[m[K’ token
+[6.516s]    88 |   *imu[01;31m[K->[m[KsetAccelEnable(true);
+[6.516s]       |       [01;31m[K^~[m[K
+[6.564s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kvoid ImuNode::PrintErrorCode(const int&)[m[K’:
+[6.564s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:243:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcode[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[6.564s]   243 |   void PrintErrorCode([01;35m[Kconst int& code[m[K) {
+[6.565s]       |                       [01;35m[K~~~~~~~~~~~^~~~[m[K
+[8.999s] make[2]: *** [CMakeFiles/ros2_imu_node.dir/build.make:63: CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o] Error 1
+[9.004s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ros2_imu_node.dir/all] Error 2
+[9.007s] make: *** [Makefile:141: all] Error 2
+[9.028s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4

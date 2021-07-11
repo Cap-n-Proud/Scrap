@@ -1,6 +1,0 @@
-CMake Error at CMakeLists.txt:27 (install):
-  install TARGETS given unknown argument "RTIMULib".
-
-
-WARNING: Package name "ros2_IMU" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-make: *** [Makefile:266: cmake_check_build_system] Error 1

@@ -1,0 +1,8 @@
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kvoid ImuNode::InitParam()[m[K’:
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:102:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KrateTimer[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  102 |     uint64_t [01;35m[KrateTimer[m[K;
+      |              [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kvoid ImuNode::PrintErrorCode(const int&)[m[K’:
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:234:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcode[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  234 |   void PrintErrorCode([01;35m[Kconst int& code[m[K) {
+      |                       [01;35m[K~~~~~~~~~~~^~~~[m[K

@@ -1,6 +1,0 @@
-CMake Error at CMakeLists.txt:32 (INSTALL):
-  INSTALL TARGETS given target "RTIMULib" which does not exist.
-
-
-WARNING: Package name "ros2_IMU" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-make: *** [Makefile:550: cmake_check_build_system] Error 1
