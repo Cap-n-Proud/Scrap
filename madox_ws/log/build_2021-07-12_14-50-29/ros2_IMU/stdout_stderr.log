@@ -1,0 +1,55 @@
+[35m[1mScanning dependencies of target ros2_imu_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o[0m
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:74:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+   74 |   [01;31m[Kif[m[K ((imu == NULL) || (imu->IMUType() == RTIMU_TYPE_NULL)) {
+      |   [01;31m[K^~[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:84:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ does not name a type
+   84 |   [01;31m[Kimu[m[K->IMUInit();
+      |   [01;31m[K^~~[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:88:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ does not name a type
+   88 |   [01;31m[Kimu[m[K->setSlerpPower(0.02);
+      |   [01;31m[K^~~[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:89:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ does not name a type
+   89 |   [01;31m[Kimu[m[K->setGyroEnable(true);
+      |   [01;31m[K^~~[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:90:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ does not name a type
+   90 |   [01;31m[Kimu[m[K->setAccelEnable(true);
+      |   [01;31m[K^~~[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:91:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ does not name a type
+   91 |   [01;31m[Kimu[m[K->setCompassEnable(true);
+      |   [01;31m[K^~~[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:95:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+   95 |   [01;31m[Kif[m[K (pressure != NULL) pressure->pressureInit();
+      |   [01;31m[K^~[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:99:3:[m[K [01;31m[Kerror: [m[K‘[01m[KrateTimer[m[K’ does not name a type
+   99 |   [01;31m[KrateTimer[m[K = displayTimer = RTMath::currentUSecsSinceEpoch();
+      |   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:101:10:[m[K [01;31m[Kerror: [m[Kexpected identifier before string constant
+  101 |   printf([01;31m[K"Sample rate %d (cycle %d): %s\n"[m[K,
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:101:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before string constant
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:104:56:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kprintf[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+  104 |          RTMath::displayDegrees("", imuData.fusionPose)[01;31m[K)[m[K;
+      |                                                        [01;31m[K^[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kint ImuNode::InitParam()[m[K’:
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:122:14:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Kint[m[K’ [[01;31m[K-fpermissive[m[K]
+  122 |       printf([01;31m[K"No IMU found\n"[m[K);
+      |              [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |              [01;31m[K|[m[K
+      |              [01;31m[Kconst char*[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:101:10:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kint ImuNode::printf(int)[m[K’
+  101 |   printf([01;36m[K"Sample rate %d (cycle %d): %s\n"[m[K,
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:151:58:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KImuNode::printf(const char [31], int&, uint64_t, const char*)[m[K’
+  151 |            RTMath::displayDegrees("", imuData.fusionPose)[01;31m[K)[m[K;
+      |                                                          [01;31m[K^[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:101:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint ImuNode::printf(int)[m[K’
+  101 |   [01;36m[Kprintf[m[K("Sample rate %d (cycle %d): %s\n",
+      |   [01;36m[K^~~~~~[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:101:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:107:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsampleCount[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  107 |     int [01;35m[KsampleCount[m[K = 0;
+      |         [01;35m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/ros2_imu_node.dir/build.make:63: CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ros2_imu_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

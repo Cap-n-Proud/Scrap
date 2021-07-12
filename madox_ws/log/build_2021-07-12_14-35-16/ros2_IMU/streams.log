@@ -1,0 +1,64 @@
+[0.254s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4
+[0.490s] [35m[1mScanning dependencies of target ros2_imu_node[0m
+[0.722s] [ 50%] [32mBuilding CXX object CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o[0m
+[6.424s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:81:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kdevice_[m[K’ does not name a type
+[6.425s]    81 |   [01;31m[Kdevice_[m[K    = "/dev/ttyACM0";
+[6.425s]       |   [01;31m[K^~~~~~~[m[K
+[6.435s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:82:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe_id_[m[K’ does not name a type
+[6.435s]    82 |   [01;31m[Kframe_id_[m[K  = "imu";
+[6.436s]       |   [01;31m[K^~~~~~~~~[m[K
+[6.446s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:83:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kparent_id_[m[K’ does not name a type
+[6.446s]    83 |   [01;31m[Kparent_id_[m[K = "odom";
+[6.447s]       |   [01;31m[K^~~~~~~~~~[m[K
+[6.453s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:84:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krate_[m[K’ does not name a type
+[6.453s]    84 |   [01;31m[Krate_[m[K      = 100.0;
+[6.453s]       |   [01;31m[K^~~~~[m[K
+[6.454s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:98:28:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+[6.454s]    98 |   std::chrono::seconds sec([01;31m[K1[m[K);
+[6.455s]       |                            [01;31m[K^[m[K
+[6.455s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:98:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[6.455s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:99:18:[m[K [01;31m[Kerror: [m[K‘[01m[Ksec[m[K’ is not a type
+[6.456s]    99 |   rclcpp::Rate r([01;31m[Ksec[m[K);
+[6.456s]       |                  [01;31m[K^~~[m[K
+[6.456s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:109:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[6.457s]   109 |   [01;31m[Kif[m[K ((imu == NULL) || (imu->IMUType() == RTIMU_TYPE_NULL)) {
+[6.457s]       |   [01;31m[K^~[m[K
+[6.458s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:119:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ does not name a type
+[6.459s]   119 |   [01;31m[Kimu[m[K->IMUInit();
+[6.459s]       |   [01;31m[K^~~[m[K
+[6.464s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:123:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ does not name a type
+[6.464s]   123 |   [01;31m[Kimu[m[K->setSlerpPower(0.02);
+[6.464s]       |   [01;31m[K^~~[m[K
+[6.469s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:124:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ does not name a type
+[6.469s]   124 |   [01;31m[Kimu[m[K->setGyroEnable(true);
+[6.470s]       |   [01;31m[K^~~[m[K
+[6.474s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:125:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ does not name a type
+[6.475s]   125 |   [01;31m[Kimu[m[K->setAccelEnable(true);
+[6.475s]       |   [01;31m[K^~~[m[K
+[6.479s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:126:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ does not name a type
+[6.480s]   126 |   [01;31m[Kimu[m[K->setCompassEnable(true);
+[6.480s]       |   [01;31m[K^~~[m[K
+[6.481s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:130:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[6.481s]   130 |   [01;31m[Kif[m[K (pressure != NULL) pressure->pressureInit();
+[6.481s]       |   [01;31m[K^~[m[K
+[6.489s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:134:3:[m[K [01;31m[Kerror: [m[K‘[01m[KrateTimer[m[K’ does not name a type
+[6.490s]   134 |   [01;31m[KrateTimer[m[K = displayTimer = RTMath::currentUSecsSinceEpoch();
+[6.490s]       |   [01;31m[K^~~~~~~~~[m[K
+[6.556s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kint ImuNode::InitParam()[m[K’:
+[6.556s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:146:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsampleCount[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.557s]   146 |     int [01;35m[KsampleCount[m[K = 0;
+[6.557s]       |         [01;35m[K^~~~~~~~~~~[m[K
+[6.558s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:147:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsampleRate[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.558s]   147 |     int [01;35m[KsampleRate[m[K  = 0;
+[6.558s]       |         [01;35m[K^~~~~~~~~~[m[K
+[6.558s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:150:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Know[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.559s]   150 |     uint64_t [01;35m[Know[m[K;
+[6.559s]       |              [01;35m[K^~~[m[K
+[6.560s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kvoid ImuNode::PrintErrorCode(const int&)[m[K’:
+[6.560s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:293:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcode[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[6.560s]   293 |   void PrintErrorCode([01;35m[Kconst int& code[m[K) {
+[6.561s]       |                       [01;35m[K~~~~~~~~~~~^~~~[m[K
+[9.023s] make[2]: *** [CMakeFiles/ros2_imu_node.dir/build.make:63: CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o] Error 1
+[9.025s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ros2_imu_node.dir/all] Error 2
+[9.026s] make: *** [Makefile:141: all] Error 2
+[9.040s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4

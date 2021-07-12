@@ -1,0 +1,166 @@
+[0.000000] (-) TimerEvent: {}
+[0.000407] (-) JobUnselected: {'identifier': 'camera'}
+[0.000530] (-) JobUnselected: {'identifier': 'camera_pan_tilt'}
+[0.000625] (-) JobUnselected: {'identifier': 'jetbot_drive'}
+[0.000714] (-) JobUnselected: {'identifier': 'jetbot_launch'}
+[0.000831] (-) JobUnselected: {'identifier': 'jetbot_oled_display'}
+[0.000918] (-) JobUnselected: {'identifier': 'jetbot_sys_info'}
+[0.001006] (-) JobUnselected: {'identifier': 'pid_node'}
+[0.001096] (-) JobUnselected: {'identifier': 'ros2_rtimulib'}
+[0.001195] (ros2_IMU) JobQueued: {'identifier': 'ros2_IMU', 'dependencies': OrderedDict()}
+[0.001295] (ros2_IMU) JobStarted: {'identifier': 'ros2_IMU'}
+[0.095752] (-) TimerEvent: {}
+[0.197057] (-) TimerEvent: {}
+[0.257940] (ros2_IMU) JobProgress: {'identifier': 'ros2_IMU', 'progress': 'cmake'}
+[0.294286] (ros2_IMU) JobProgress: {'identifier': 'ros2_IMU', 'progress': 'build'}
+[0.302861] (ros2_IMU) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU', '--', '-j4', '-l4'], 'cwd': '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robot'), ('SSH_CLIENT', '192.168.1.140 45778 22'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robot'), ('OLDPWD', '/home/robot'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_CH.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robot/Software/ROS2/Madox/madox_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'robot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/robot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_IMU:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('PWD', '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.140 45778 192.168.1.111 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/usr/local/lib'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_IMU:/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy')]), 'shell': False}
+[0.332949] (-) TimerEvent: {}
+[0.433630] (-) TimerEvent: {}
+[0.534263] (-) TimerEvent: {}
+[0.635104] (-) TimerEvent: {}
+[0.736997] (-) TimerEvent: {}
+[0.837591] (-) TimerEvent: {}
+[0.938140] (-) TimerEvent: {}
+[0.963957] (ros2_IMU) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros2_imu_node\x1b[0m\n'}
+[1.038345] (-) TimerEvent: {}
+[1.139715] (-) TimerEvent: {}
+[1.242039] (-) TimerEvent: {}
+[1.344106] (-) TimerEvent: {}
+[1.446720] (-) TimerEvent: {}
+[1.551353] (-) TimerEvent: {}
+[1.653266] (-) TimerEvent: {}
+[1.720633] (ros2_IMU) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o\x1b[0m\n'}
+[1.753479] (-) TimerEvent: {}
+[1.854188] (-) TimerEvent: {}
+[1.955309] (-) TimerEvent: {}
+[2.056684] (-) TimerEvent: {}
+[2.157312] (-) TimerEvent: {}
+[2.258060] (-) TimerEvent: {}
+[2.358883] (-) TimerEvent: {}
+[2.459525] (-) TimerEvent: {}
+[2.560448] (-) TimerEvent: {}
+[2.661077] (-) TimerEvent: {}
+[2.761749] (-) TimerEvent: {}
+[2.862359] (-) TimerEvent: {}
+[2.963046] (-) TimerEvent: {}
+[3.063827] (-) TimerEvent: {}
+[3.164421] (-) TimerEvent: {}
+[3.265179] (-) TimerEvent: {}
+[3.365820] (-) TimerEvent: {}
+[3.466714] (-) TimerEvent: {}
+[3.567379] (-) TimerEvent: {}
+[3.668030] (-) TimerEvent: {}
+[3.768701] (-) TimerEvent: {}
+[3.869397] (-) TimerEvent: {}
+[3.970061] (-) TimerEvent: {}
+[4.070668] (-) TimerEvent: {}
+[4.171329] (-) TimerEvent: {}
+[4.271978] (-) TimerEvent: {}
+[4.372586] (-) TimerEvent: {}
+[4.473313] (-) TimerEvent: {}
+[4.573969] (-) TimerEvent: {}
+[4.674641] (-) TimerEvent: {}
+[4.775307] (-) TimerEvent: {}
+[4.875969] (-) TimerEvent: {}
+[4.976621] (-) TimerEvent: {}
+[5.077302] (-) TimerEvent: {}
+[5.177971] (-) TimerEvent: {}
+[5.278649] (-) TimerEvent: {}
+[5.379326] (-) TimerEvent: {}
+[5.479995] (-) TimerEvent: {}
+[5.580689] (-) TimerEvent: {}
+[5.681399] (-) TimerEvent: {}
+[5.782063] (-) TimerEvent: {}
+[5.882730] (-) TimerEvent: {}
+[5.983395] (-) TimerEvent: {}
+[6.084092] (-) TimerEvent: {}
+[6.184789] (-) TimerEvent: {}
+[6.285463] (-) TimerEvent: {}
+[6.386135] (-) TimerEvent: {}
+[6.486807] (-) TimerEvent: {}
+[6.587480] (-) TimerEvent: {}
+[6.688159] (-) TimerEvent: {}
+[6.788848] (-) TimerEvent: {}
+[6.889509] (-) TimerEvent: {}
+[6.990194] (-) TimerEvent: {}
+[7.090879] (-) TimerEvent: {}
+[7.191555] (-) TimerEvent: {}
+[7.292227] (-) TimerEvent: {}
+[7.392905] (-) TimerEvent: {}
+[7.493565] (-) TimerEvent: {}
+[7.594243] (-) TimerEvent: {}
+[7.694953] (-) TimerEvent: {}
+[7.795625] (-) TimerEvent: {}
+[7.896299] (-) TimerEvent: {}
+[7.996970] (-) TimerEvent: {}
+[8.097639] (-) TimerEvent: {}
+[8.198294] (-) TimerEvent: {}
+[8.298968] (-) TimerEvent: {}
+[8.399636] (-) TimerEvent: {}
+[8.500298] (-) TimerEvent: {}
+[8.600962] (-) TimerEvent: {}
+[8.701627] (-) TimerEvent: {}
+[8.722106] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ImuNode::InitParam()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.722716] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:109:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kuint64_t rateTimer\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.723438] (ros2_IMU) StderrLine: {'line': b'  109 |     uint64_t \x1b[01;31m\x1b[KrateTimer\x1b[m\x1b[K;\n'}
+[8.723797] (ros2_IMU) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.724108] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:93:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kuint64_t rateTimer\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[8.724433] (ros2_IMU) StderrLine: {'line': b'   93 |     uint64_t \x1b[01;36m\x1b[KrateTimer\x1b[m\x1b[K;\n'}
+[8.724746] (ros2_IMU) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.725181] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:110:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kuint64_t displayTimer\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.725611] (ros2_IMU) StderrLine: {'line': b'  110 |     uint64_t \x1b[01;31m\x1b[KdisplayTimer\x1b[m\x1b[K;\n'}
+[8.725970] (ros2_IMU) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.726325] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:94:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kuint64_t displayTimer\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[8.726706] (ros2_IMU) StderrLine: {'line': b'   94 |     uint64_t \x1b[01;36m\x1b[KdisplayTimer\x1b[m\x1b[K;\n'}
+[8.727077] (ros2_IMU) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.727439] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:91:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KsampleCount\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[8.727813] (ros2_IMU) StderrLine: {'line': b'   91 |     int \x1b[01;35m\x1b[KsampleCount\x1b[m\x1b[K = 0;\n'}
+[8.728171] (ros2_IMU) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.728536] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:92:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KsampleRate\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[8.728969] (ros2_IMU) StderrLine: {'line': b'   92 |     int \x1b[01;35m\x1b[KsampleRate\x1b[m\x1b[K  = 0;\n'}
+[8.729381] (ros2_IMU) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.729746] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:95:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Know\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[8.730116] (ros2_IMU) StderrLine: {'line': b'   95 |     uint64_t \x1b[01;35m\x1b[Know\x1b[m\x1b[K;\n'}
+[8.730497] (ros2_IMU) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.732102] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ImuNode::PubImuData()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.732599] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:155:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimu\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.733026] (ros2_IMU) StderrLine: {'line': b'  155 |     RTIMU_DATA imu_data = \x1b[01;31m\x1b[Kimu\x1b[m\x1b[K->getIMUData();\n'}
+[8.733412] (ros2_IMU) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.733967] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ImuNode::PrintErrorCode(const int&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.734327] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:241:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[8.734656] (ros2_IMU) StderrLine: {'line': b'  241 |   void PrintErrorCode(\x1b[01;35m\x1b[Kconst int& code\x1b[m\x1b[K) {\n'}
+[8.734993] (ros2_IMU) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[8.801847] (-) TimerEvent: {}
+[8.902489] (-) TimerEvent: {}
+[9.003175] (-) TimerEvent: {}
+[9.103851] (-) TimerEvent: {}
+[9.204532] (-) TimerEvent: {}
+[9.305223] (-) TimerEvent: {}
+[9.405888] (-) TimerEvent: {}
+[9.506543] (-) TimerEvent: {}
+[9.607200] (-) TimerEvent: {}
+[9.707876] (-) TimerEvent: {}
+[9.808541] (-) TimerEvent: {}
+[9.909252] (-) TimerEvent: {}
+[10.009920] (-) TimerEvent: {}
+[10.110573] (-) TimerEvent: {}
+[10.211231] (-) TimerEvent: {}
+[10.311887] (-) TimerEvent: {}
+[10.412539] (-) TimerEvent: {}
+[10.513249] (-) TimerEvent: {}
+[10.613928] (-) TimerEvent: {}
+[10.714592] (-) TimerEvent: {}
+[10.815250] (-) TimerEvent: {}
+[10.915903] (-) TimerEvent: {}
+[11.016579] (-) TimerEvent: {}
+[11.117230] (-) TimerEvent: {}
+[11.171979] (ros2_IMU) StderrLine: {'line': b'make[2]: *** [CMakeFiles/ros2_imu_node.dir/build.make:63: CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o] Error 1\n'}
+[11.174828] (ros2_IMU) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ros2_imu_node.dir/all] Error 2\n'}
+[11.177259] (ros2_IMU) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[11.191591] (ros2_IMU) CommandEnded: {'returncode': 2}
+[11.220238] (-) TimerEvent: {}
+[11.321724] (-) TimerEvent: {}
+[11.422338] (-) TimerEvent: {}
+[11.523432] (-) TimerEvent: {}
+[11.590006] (ros2_IMU) JobEnded: {'identifier': 'ros2_IMU', 'rc': 2}
+[11.612844] (-) EventReactorShutdown: {}

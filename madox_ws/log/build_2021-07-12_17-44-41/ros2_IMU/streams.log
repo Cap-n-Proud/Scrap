@@ -1,0 +1,46 @@
+[0.294s] Invoking command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4
+[1.005s] [35m[1mScanning dependencies of target ros2_imu_node[0m
+[1.276s] [ 50%] [32mBuilding CXX object CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o[0m
+[7.027s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In constructor ‘[01m[KImuNode::ImuNode(const rclcpp::NodeOptions&)[m[K’:
+[7.027s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:43:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[7.028s]    43 |     int [01;35m[Kx[m[K = init3();
+[7.028s]       |         [01;35m[K^[m[K
+[7.033s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kint ImuNode::init3()[m[K’:
+[7.034s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:123:42:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 3 has type ‘[01m[Kuint64_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+[7.034s]   123 |           printf("Sample rate %d (cycle [01;35m[K%d[m[K): %s\n", sampleRate,
+[7.035s]       |                                         [01;35m[K~^[m[K
+[7.035s]       |                                          [01;35m[K|[m[K
+[7.035s]       |                                          [01;35m[Kint[m[K
+[7.036s]       |                                         [32m[K%ld[m[K
+[7.036s]   124 |                  [32m[K(now - displayTimer) / 1000[m[K,
+[7.036s]       |                  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.037s]       |                                       [32m[K|[m[K
+[7.037s]       |                                       [32m[Kuint64_t {aka long unsigned int}[m[K
+[7.037s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kint ImuNode::InitParam()[m[K’:
+[7.038s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:146:21:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[7.038s]   146 |   int  InitParam() {[01;35m[K}[m[K
+[7.038s]       |                     [01;35m[K^[m[K
+[7.048s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kvoid ImuNode::PubImuData()[m[K’:
+[7.049s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:157:7:[m[K [01;31m[Kerror: [m[K‘[01m[KsampleCount[m[K’ was not declared in this scope
+[7.049s]   157 |       [01;31m[KsampleCount[m[K++;
+[7.049s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[7.050s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:159:7:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Krclcpp::Time rclcpp::Node::now() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[7.050s]   159 |       [01;31m[Know[m[K = RTMath::currentUSecsSinceEpoch();
+[7.050s]       |       [01;31m[K^~~[m[K
+[7.051s]       |          [32m[K()[m[K
+[7.062s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:163:18:[m[K [01;31m[Kerror: [m[K‘[01m[KdisplayTimer[m[K’ was not declared in this scope
+[7.063s]   163 |       if ((now - [01;31m[KdisplayTimer[m[K) > 10) {
+[7.063s]       |                  [01;31m[K^~~~~~~~~~~~[m[K
+[7.074s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:164:51:[m[K [01;31m[Kerror: [m[K‘[01m[KsampleRate[m[K’ was not declared in this scope
+[7.075s]   164 |         printf("Sample rate %d (cycle %d): %s\n", [01;31m[KsampleRate[m[K,
+[7.075s]       |                                                   [01;31m[K^~~~~~~~~~[m[K
+[7.086s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:175:18:[m[K [01;31m[Kerror: [m[K‘[01m[KrateTimer[m[K’ was not declared in this scope
+[7.086s]   175 |       if ((now - [01;31m[KrateTimer[m[K) > 1000000) {
+[7.086s]       |                  [01;31m[K^~~~~~~~~[m[K
+[7.098s] [01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:176:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsampleRate[m[K’ was not declared in this scope
+[7.098s]   176 |         [01;31m[KsampleRate[m[K  = sampleCount;
+[7.098s]       |         [01;31m[K^~~~~~~~~~[m[K
+[9.531s] make[2]: *** [CMakeFiles/ros2_imu_node.dir/build.make:63: CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o] Error 1
+[9.534s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ros2_imu_node.dir/all] Error 2
+[9.535s] make: *** [Makefile:141: all] Error 2
+[9.551s] Invoked command in '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/robot/Software/ROS2/Madox/madox_ws/install/pid_node:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/robot/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/robot/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/robot/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4

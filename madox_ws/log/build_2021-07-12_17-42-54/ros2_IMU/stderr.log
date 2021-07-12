@@ -1,0 +1,19 @@
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In constructor ‘[01m[KImuNode::ImuNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:43:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   43 |     int [01;35m[Kx[m[K = init3();
+      |         [01;35m[K^[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kint ImuNode::init3()[m[K’:
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:123:42:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 3 has type ‘[01m[Kuint64_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  123 |           printf("Sample rate %d (cycle [01;35m[K%d[m[K): %s\n", sampleRate,
+      |                                         [01;35m[K~^[m[K
+      |                                          [01;35m[K|[m[K
+      |                                          [01;35m[Kint[m[K
+      |                                         [32m[K%ld[m[K
+  124 |                  [32m[K(now - displayTimer) / 1000[m[K,
+      |                  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                       [32m[K|[m[K
+      |                                       [32m[Kuint64_t {aka long unsigned int}[m[K
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kint ImuNode::InitParam()[m[K’:
+[01m[K/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:146:21:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  146 |   int  InitParam() {[01;35m[K}[m[K
+      |                     [01;35m[K^[m[K
