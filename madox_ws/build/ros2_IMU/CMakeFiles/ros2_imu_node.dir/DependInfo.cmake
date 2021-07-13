@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp" "/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_IMU/CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o"
+  "/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp" "/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU/CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include"
-  "/home/robot/Software/ROS2/Madox/madox_ws/src/ros2_IMU"
+  "/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/include"
+  "/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU"
   "/opt/ros/foxy/include"
   )
 

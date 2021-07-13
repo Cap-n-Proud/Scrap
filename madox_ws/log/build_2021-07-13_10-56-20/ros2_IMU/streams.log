@@ -1,0 +1,28 @@
+[0.215s] Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4
+[0.797s] [35m[1mScanning dependencies of target ros2_imu_node[0m
+[1.097s] [ 50%] [32mBuilding CXX object CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o[0m
+[3.989s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In constructor ‘[01m[KImuNode::ImuNode(const rclcpp::NodeOptions&)[m[K’:
+[3.989s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:43:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.989s]    43 |     int [01;35m[Kx[m[K = init_imu();
+[3.989s]       |         [01;35m[K^[m[K
+[3.991s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kint ImuNode::init_imu()[m[K’:
+[3.991s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:78:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsampleCount[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.991s]    78 |     int [01;35m[KsampleCount[m[K = 0;
+[3.991s]       |         [01;35m[K^~~~~~~~~~~[m[K
+[3.991s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:79:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsampleRate[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.991s]    79 |     int [01;35m[KsampleRate[m[K  = 0;
+[3.991s]       |         [01;35m[K^~~~~~~~~~[m[K
+[3.991s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:80:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KrateTimer[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[3.991s]    80 |     uint64_t [01;35m[KrateTimer[m[K;
+[3.991s]       |              [01;35m[K^~~~~~~~~[m[K
+[3.992s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:82:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Know[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.992s]    82 |     uint64_t [01;35m[Know[m[K;
+[3.992s]       |              [01;35m[K^~~[m[K
+[3.992s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kvoid ImuNode::PubImuData()[m[K’:
+[3.992s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:140:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Imu_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Imu_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+[3.992s]   140 |         imu_data_pub.[01;31m[Kpublish[m[K(imu_msg);
+[3.992s]       |                      [01;31m[K^~~~~~~[m[K
+[4.894s] make[2]: *** [CMakeFiles/ros2_imu_node.dir/build.make:63: CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o] Error 1
+[4.895s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ros2_imu_node.dir/all] Error 2
+[4.895s] make: *** [Makefile:141: all] Error 2
+[4.897s] Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4

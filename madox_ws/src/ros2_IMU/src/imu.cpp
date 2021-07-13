@@ -26,7 +26,8 @@
 #include <tf2_msgs/msg/tf_message.hpp>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h> // for use tf2::Quaternion
 // #include <diagnostic_updater/diagnostic_updater.hpp>
-
+#include <sensor_msgs/msg/imu.hpp>
+#include "std_msgs/msg/string.hpp"
 #include "RTIMULib.h"
 
 
@@ -37,11 +38,11 @@ public:
 
   explicit ImuNode(const rclcpp::NodeOptions& op)
     : Node("imu", op) {
-    // std::cout << "Inizializing" << "\n";
     RCLCPP_INFO(this->get_logger(), "Inizializing");
 
-    int x = init3();
+    int x = init_imu();
 
+    publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
 
     timer_ = this->create_wall_timer(
       500ms, std::bind(&ImuNode::Spin, this));
@@ -56,13 +57,14 @@ public:
 private:
 
   RTIMUSettings *settings = new RTIMUSettings("RTIMULib");
-
-  RTIMU *imu = RTIMU::createIMU(settings);
+  RTIMU *imu              = RTIMU::createIMU(settings);
+  int period_ms           = 50;
 
   rclcpp::TimerBase::SharedPtr timer_;
-  rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr imu_data_pub_;
-  rclcpp::Publisher<tf2_msgs::msg::TFMessage>::SharedPtr tf_br_;
-  int init3() {
+  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+  size_t count_;
+
+  int init_imu() {
     int sampleCount = 0;
     int sampleRate  = 0;
     uint64_t rateTimer;
@@ -77,91 +79,63 @@ private:
     //  where <directory path> is the path to where the .ini file is to be
     // loaded/saved
 
-
     if ((imu == NULL) || (imu->IMUType() == RTIMU_TYPE_NULL)) {
       printf("No IMU found\n");
       exit(1);
     }
 
-    //  This is an opportunity to manually override any settings before the call
-    // IMUInit
-
     //  set up IMU
-
     imu->IMUInit();
 
     //  this is a convenient place to change fusion parameters
-
     imu->setSlerpPower(0.02);
     imu->setGyroEnable(true);
     imu->setAccelEnable(true);
     imu->setCompassEnable(true);
 
     //  set up for rate timer
-
     rateTimer = displayTimer = RTMath::currentUSecsSinceEpoch();
 
-    // This is for testing ==0 means it iwll never execute
-    while (1 == 0) {
-      //  poll at the rate recommended by the IMU
-
-      usleep(imu->IMUGetPollInterval() * 1000);
-
-      while (imu->IMURead()) {
-        RTIMU_DATA imuData = imu->getIMUData();
-
-        //  add the pressure data to the structure
-
-
-        sampleCount++;
-
-        now = RTMath::currentUSecsSinceEpoch();
-
-        //  display 10 times per second
-
-        if ((now - displayTimer) > 10) {
-          printf("Sample rate %d (cycle %d): %s\n", sampleRate,
-                 (now - displayTimer) / 1000,
-                 RTMath::displayDegrees("", imuData.fusionPose));
-
-
-          fflush(stdout);
-          displayTimer = now;
-        }
-
-        //  update rate every second
-
-        if ((now - rateTimer) > 1000000) {
-          sampleRate  = sampleCount;
-          sampleCount = 0;
-          rateTimer   = now;
-        }
-      }
-    }
-
-    // printf("Var %d \n", p);
     return 0;
   }
 
-  int  InitParam() {}
-
   void PubImuData() {
     usleep(imu->IMUGetPollInterval() * 1000);
+    size_t frame_id = 0;
+
+    auto message = std_msgs::msg::String();
+    message.data = "Hello, world! " + std::to_string(count_++);
+    RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+    publisher_->publish(message);
 
     while (imu->IMURead()) {
-      RTIMU_DATA imuData = imu->getIMUData();
-
-      //  add the pressure data to the structure
-
-
-      //  display 10 times per second
-
-
+      RTIMU_DATA imu_data = imu->getIMUData();
       printf("%s\n",
-             RTMath::displayDegrees("", imuData.fusionPose));
-
-
+             RTMath::displayDegrees("", imu_data.fusionPose));
       fflush(stdout);
+
+      rclcpp::Time timestamp = this->get_clock()->now();
+
+
+      // if (imu->IMURead())
+      // {
+      // imu_msg.header.stamp          = timestamp;
+      // imu_msg.header.frame_id       = std::to_string(frame_id);
+      // imu_msg.orientation.x         = imu_data.fusionQPose.x();
+      // imu_msg.orientation.y         = imu_data.fusionQPose.y();
+      // imu_msg.orientation.z         = imu_data.fusionQPose.z();
+      // imu_msg.orientation.w         = imu_data.fusionQPose.scalar();
+      // imu_msg.angular_velocity.x    = imu_data.gyro.x();
+      // imu_msg.angular_velocity.y    = imu_data.gyro.y();
+      // imu_msg.angular_velocity.z    = imu_data.gyro.z();
+      // imu_msg.linear_acceleration.x = imu_data.accel.x();
+      // imu_msg.linear_acceleration.y = imu_data.accel.y();
+      // imu_msg.linear_acceleration.z = imu_data.accel.z();
+
+      //   imu_data_pub->publish(imu_msg);
+      //
+      //   // publisher_.publish(imu_msg);
+      // }
     }
   }
 

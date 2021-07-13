@@ -1,0 +1,90 @@
+[35m[1mScanning dependencies of target ros2_imu_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o[0m
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In constructor ‘[01m[KImuNode::ImuNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:49:58:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+   49 |     imu_data_pub = this->create_publisher<std_msgs::msg::[01;31m[KString[m[K>("topic", 10);
+      |                                                          [01;31m[K^~~~~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:49:58:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:49:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KImuNode::create_publisher<<expression error> >(const char [6], int)[m[K’
+   49 |     imu_data_pub = this->create_publisher<std_msgs::msg::String>("topic", 10[01;31m[K)[m[K;
+      |                                                                             [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:23[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  184 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:49:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   49 |     imu_data_pub = this->create_publisher<std_msgs::msg::String>("topic", 10[01;31m[K)[m[K;
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:43:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   43 |     int [01;35m[Kx[m[K = init_imu();
+      |         [01;35m[K^[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kint ImuNode::init_imu()[m[K’:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:71:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsampleCount[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   71 |     int [01;35m[KsampleCount[m[K = 0;
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:72:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsampleRate[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   72 |     int [01;35m[KsampleRate[m[K  = 0;
+      |         [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:75:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Know[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   75 |     uint64_t [01;35m[Know[m[K;
+      |              [01;35m[K^~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kvoid ImuNode::PubImuData()[m[K’:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:134:31:[m[K [01;31m[Kerror: [m[Kinvalid user-defined conversion from ‘[01m[Kconst char [8][m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’ [[01;31m[K-fpermissive[m[K]
+  134 |         imu_data_pub->publish([01;31m[K"imu_msg"[m[K);
+      |                               [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/subscription_base.hpp:36[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:23[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/serialized_message.hpp:50:3:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Krclcpp::SerializedMessage::SerializedMessage(size_t, const rcl_allocator_t&)[m[K’ <near match>
+   50 |   [01;36m[KSerializedMessage[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/serialized_message.hpp:50:3:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:134:31:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;31m[K-fpermissive[m[K]
+  134 |         imu_data_pub->publish([01;31m[K"imu_msg"[m[K);
+      |                               [01;31m[K^~~~~~~~~[m[K
+      |                               [01;31m[K|[m[K
+      |                               [01;31m[Kconst char*[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:134:31:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;31m[K-fpermissive[m[K]
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/subscription_base.hpp:36[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:23[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/serialized_message.hpp:51:12:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Krclcpp::SerializedMessage::SerializedMessage(size_t, const rcl_allocator_t&)[m[K’
+   51 |     [01;36m[Ksize_t initial_capacity[m[K,
+      |     [01;36m[K~~~~~~~^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:23[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/publisher.hpp:232:37:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rclcpp::SerializedMessage&) [with MessageT = sensor_msgs::msg::Imu_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+  232 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/ros2_imu_node.dir/build.make:63: CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ros2_imu_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

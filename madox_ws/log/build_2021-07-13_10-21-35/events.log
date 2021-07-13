@@ -1,0 +1,446 @@
+[0.000000] (-) TimerEvent: {}
+[0.000353] (-) JobUnselected: {'identifier': 'camera'}
+[0.000404] (-) JobUnselected: {'identifier': 'camera_pan_tilt'}
+[0.000458] (-) JobUnselected: {'identifier': 'jetbot_drive'}
+[0.000484] (-) JobUnselected: {'identifier': 'jetbot_launch'}
+[0.000508] (-) JobUnselected: {'identifier': 'jetbot_oled_display'}
+[0.000530] (-) JobUnselected: {'identifier': 'jetbot_sys_info'}
+[0.000562] (-) JobUnselected: {'identifier': 'pid_node'}
+[0.000592] (-) JobUnselected: {'identifier': 'ros2_rtimulib'}
+[0.000646] (ros2_IMU) JobQueued: {'identifier': 'ros2_IMU', 'dependencies': OrderedDict()}
+[0.000692] (ros2_IMU) JobStarted: {'identifier': 'ros2_IMU'}
+[0.098088] (-) TimerEvent: {}
+[0.199011] (-) TimerEvent: {}
+[0.221054] (ros2_IMU) JobProgress: {'identifier': 'ros2_IMU', 'progress': 'cmake'}
+[0.241102] (ros2_IMU) Command: {'cmd': ['/usr/bin/cmake', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU', '-DCMAKE_INSTALL_PREFIX=/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU'], 'cwd': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'paolo'), ('LC_TIME', 'de_CH.UTF-8'), ('SSH_AGENT_PID', '16941'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/paolo'), ('OLDPWD', '/home/paolo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_CH.UTF-8'), ('MANAGERPID', '16760'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'paolo'), ('JOURNAL_STREAM', '8:168288'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'paolo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/paolo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kenobi:@/tmp/.ICE-unix/16985,unix/kenobi:/tmp/.ICE-unix/16985'), ('INVOCATION_ID', '39d46bb034674f63a6daffc55a4fa160'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c86edaa3_16fd_4c7f_b3bc_c4a56fc41213'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.185'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy')]), 'shell': False}
+[0.299244] (-) TimerEvent: {}
+[0.399715] (-) TimerEvent: {}
+[0.500474] (-) TimerEvent: {}
+[0.601437] (-) TimerEvent: {}
+[0.702212] (-) TimerEvent: {}
+[0.802907] (-) TimerEvent: {}
+[0.903738] (-) TimerEvent: {}
+[1.004464] (-) TimerEvent: {}
+[1.105292] (-) TimerEvent: {}
+[1.205952] (-) TimerEvent: {}
+[1.306606] (-) TimerEvent: {}
+[1.407073] (-) TimerEvent: {}
+[1.507607] (-) TimerEvent: {}
+[1.587247] (ros2_IMU) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[1.607849] (-) TimerEvent: {}
+[1.708562] (-) TimerEvent: {}
+[1.809569] (-) TimerEvent: {}
+[1.910395] (-) TimerEvent: {}
+[2.011356] (-) TimerEvent: {}
+[2.112075] (-) TimerEvent: {}
+[2.212738] (-) TimerEvent: {}
+[2.313209] (-) TimerEvent: {}
+[2.364479] (ros2_IMU) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[2.413493] (-) TimerEvent: {}
+[2.469589] (ros2_IMU) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.513712] (-) TimerEvent: {}
+[2.614435] (-) TimerEvent: {}
+[2.715188] (-) TimerEvent: {}
+[2.815860] (-) TimerEvent: {}
+[2.916276] (-) TimerEvent: {}
+[3.017010] (-) TimerEvent: {}
+[3.117708] (-) TimerEvent: {}
+[3.218621] (-) TimerEvent: {}
+[3.318977] (-) TimerEvent: {}
+[3.419713] (-) TimerEvent: {}
+[3.431848] (ros2_IMU) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[3.453117] (ros2_IMU) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.519971] (-) TimerEvent: {}
+[3.620816] (-) TimerEvent: {}
+[3.721550] (-) TimerEvent: {}
+[3.822325] (-) TimerEvent: {}
+[3.923096] (-) TimerEvent: {}
+[4.023828] (-) TimerEvent: {}
+[4.124572] (-) TimerEvent: {}
+[4.224977] (-) TimerEvent: {}
+[4.325317] (-) TimerEvent: {}
+[4.426150] (-) TimerEvent: {}
+[4.477026] (ros2_IMU) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.526399] (-) TimerEvent: {}
+[4.567939] (ros2_IMU) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.568662] (ros2_IMU) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.626685] (-) TimerEvent: {}
+[4.660131] (ros2_IMU) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[4.727004] (-) TimerEvent: {}
+[4.827759] (-) TimerEvent: {}
+[4.928082] (-) TimerEvent: {}
+[5.028450] (-) TimerEvent: {}
+[5.128753] (-) TimerEvent: {}
+[5.229152] (-) TimerEvent: {}
+[5.329898] (-) TimerEvent: {}
+[5.430270] (-) TimerEvent: {}
+[5.530768] (-) TimerEvent: {}
+[5.572352] (ros2_IMU) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[5.593238] (ros2_IMU) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.630998] (-) TimerEvent: {}
+[5.732077] (-) TimerEvent: {}
+[5.833139] (-) TimerEvent: {}
+[5.934194] (-) TimerEvent: {}
+[6.035027] (-) TimerEvent: {}
+[6.135867] (-) TimerEvent: {}
+[6.236597] (-) TimerEvent: {}
+[6.337260] (-) TimerEvent: {}
+[6.437597] (-) TimerEvent: {}
+[6.538053] (-) TimerEvent: {}
+[6.638881] (-) TimerEvent: {}
+[6.640316] (ros2_IMU) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.739131] (-) TimerEvent: {}
+[6.748840] (ros2_IMU) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.749818] (ros2_IMU) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.839359] (-) TimerEvent: {}
+[6.940040] (-) TimerEvent: {}
+[7.040975] (-) TimerEvent: {}
+[7.139656] (ros2_IMU) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[7.141030] (-) TimerEvent: {}
+[7.241693] (-) TimerEvent: {}
+[7.342520] (-) TimerEvent: {}
+[7.443428] (-) TimerEvent: {}
+[7.544205] (-) TimerEvent: {}
+[7.645081] (-) TimerEvent: {}
+[7.723598] (ros2_IMU) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[7.723852] (ros2_IMU) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[7.745179] (-) TimerEvent: {}
+[7.845560] (-) TimerEvent: {}
+[7.946158] (-) TimerEvent: {}
+[8.046592] (-) TimerEvent: {}
+[8.147252] (-) TimerEvent: {}
+[8.247616] (-) TimerEvent: {}
+[8.348094] (-) TimerEvent: {}
+[8.449015] (-) TimerEvent: {}
+[8.549889] (-) TimerEvent: {}
+[8.650752] (-) TimerEvent: {}
+[8.751710] (-) TimerEvent: {}
+[8.852701] (-) TimerEvent: {}
+[8.953636] (-) TimerEvent: {}
+[9.054633] (-) TimerEvent: {}
+[9.155701] (-) TimerEvent: {}
+[9.256636] (-) TimerEvent: {}
+[9.357699] (-) TimerEvent: {}
+[9.458589] (-) TimerEvent: {}
+[9.559317] (-) TimerEvent: {}
+[9.660037] (-) TimerEvent: {}
+[9.760906] (-) TimerEvent: {}
+[9.861834] (-) TimerEvent: {}
+[9.962629] (-) TimerEvent: {}
+[10.063447] (-) TimerEvent: {}
+[10.164299] (-) TimerEvent: {}
+[10.265307] (-) TimerEvent: {}
+[10.366372] (-) TimerEvent: {}
+[10.467386] (-) TimerEvent: {}
+[10.568284] (-) TimerEvent: {}
+[10.669162] (-) TimerEvent: {}
+[10.769985] (-) TimerEvent: {}
+[10.870929] (-) TimerEvent: {}
+[10.971897] (-) TimerEvent: {}
+[11.072744] (-) TimerEvent: {}
+[11.173786] (-) TimerEvent: {}
+[11.274783] (-) TimerEvent: {}
+[11.375594] (-) TimerEvent: {}
+[11.476449] (-) TimerEvent: {}
+[11.498477] (ros2_IMU) StdoutLine: {'line': b'-- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[11.576727] (-) TimerEvent: {}
+[11.677781] (-) TimerEvent: {}
+[11.778840] (-) TimerEvent: {}
+[11.879472] (-) TimerEvent: {}
+[11.980316] (-) TimerEvent: {}
+[12.081239] (-) TimerEvent: {}
+[12.182051] (-) TimerEvent: {}
+[12.282986] (-) TimerEvent: {}
+[12.383909] (-) TimerEvent: {}
+[12.484862] (-) TimerEvent: {}
+[12.585760] (-) TimerEvent: {}
+[12.686624] (-) TimerEvent: {}
+[12.787346] (-) TimerEvent: {}
+[12.887861] (-) TimerEvent: {}
+[12.988838] (-) TimerEvent: {}
+[13.089647] (-) TimerEvent: {}
+[13.190359] (-) TimerEvent: {}
+[13.291331] (-) TimerEvent: {}
+[13.392108] (-) TimerEvent: {}
+[13.492842] (-) TimerEvent: {}
+[13.593777] (-) TimerEvent: {}
+[13.694583] (-) TimerEvent: {}
+[13.795594] (-) TimerEvent: {}
+[13.896470] (-) TimerEvent: {}
+[13.970053] (ros2_IMU) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[13.996716] (-) TimerEvent: {}
+[14.097497] (-) TimerEvent: {}
+[14.198217] (-) TimerEvent: {}
+[14.299102] (-) TimerEvent: {}
+[14.399971] (-) TimerEvent: {}
+[14.500566] (-) TimerEvent: {}
+[14.601075] (-) TimerEvent: {}
+[14.660013] (ros2_IMU) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[14.701348] (-) TimerEvent: {}
+[14.802776] (-) TimerEvent: {}
+[14.903484] (-) TimerEvent: {}
+[15.004117] (-) TimerEvent: {}
+[15.104831] (-) TimerEvent: {}
+[15.205585] (-) TimerEvent: {}
+[15.306312] (-) TimerEvent: {}
+[15.406974] (-) TimerEvent: {}
+[15.507752] (-) TimerEvent: {}
+[15.608577] (-) TimerEvent: {}
+[15.709269] (-) TimerEvent: {}
+[15.809664] (-) TimerEvent: {}
+[15.910390] (-) TimerEvent: {}
+[16.011060] (-) TimerEvent: {}
+[16.111690] (-) TimerEvent: {}
+[16.212325] (-) TimerEvent: {}
+[16.293410] (ros2_IMU) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[16.312504] (-) TimerEvent: {}
+[16.412943] (-) TimerEvent: {}
+[16.513262] (-) TimerEvent: {}
+[16.562320] (ros2_IMU) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[16.613368] (-) TimerEvent: {}
+[16.713887] (-) TimerEvent: {}
+[16.814708] (-) TimerEvent: {}
+[16.915468] (-) TimerEvent: {}
+[17.016551] (-) TimerEvent: {}
+[17.117449] (-) TimerEvent: {}
+[17.218350] (-) TimerEvent: {}
+[17.319442] (-) TimerEvent: {}
+[17.419925] (-) TimerEvent: {}
+[17.520831] (-) TimerEvent: {}
+[17.621315] (-) TimerEvent: {}
+[17.722256] (-) TimerEvent: {}
+[17.822961] (-) TimerEvent: {}
+[17.923573] (-) TimerEvent: {}
+[18.024362] (-) TimerEvent: {}
+[18.124890] (-) TimerEvent: {}
+[18.225709] (-) TimerEvent: {}
+[18.271477] (ros2_IMU) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[18.325893] (-) TimerEvent: {}
+[18.426675] (-) TimerEvent: {}
+[18.527476] (-) TimerEvent: {}
+[18.628383] (-) TimerEvent: {}
+[18.729236] (-) TimerEvent: {}
+[18.829855] (-) TimerEvent: {}
+[18.930344] (-) TimerEvent: {}
+[19.031113] (-) TimerEvent: {}
+[19.131947] (-) TimerEvent: {}
+[19.232754] (-) TimerEvent: {}
+[19.333674] (-) TimerEvent: {}
+[19.434478] (-) TimerEvent: {}
+[19.535322] (-) TimerEvent: {}
+[19.636199] (-) TimerEvent: {}
+[19.737208] (-) TimerEvent: {}
+[19.838229] (-) TimerEvent: {}
+[19.939086] (-) TimerEvent: {}
+[20.012726] (ros2_IMU) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[20.039396] (-) TimerEvent: {}
+[20.041542] (ros2_IMU) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[20.108793] (ros2_IMU) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[20.139668] (-) TimerEvent: {}
+[20.240535] (-) TimerEvent: {}
+[20.341338] (-) TimerEvent: {}
+[20.442249] (-) TimerEvent: {}
+[20.543120] (-) TimerEvent: {}
+[20.643902] (-) TimerEvent: {}
+[20.744786] (-) TimerEvent: {}
+[20.845740] (-) TimerEvent: {}
+[20.946636] (-) TimerEvent: {}
+[21.047430] (-) TimerEvent: {}
+[21.147883] (-) TimerEvent: {}
+[21.248758] (-) TimerEvent: {}
+[21.336336] (ros2_IMU) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[21.349005] (-) TimerEvent: {}
+[21.364204] (ros2_IMU) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[21.449197] (-) TimerEvent: {}
+[21.550012] (-) TimerEvent: {}
+[21.650727] (-) TimerEvent: {}
+[21.751466] (-) TimerEvent: {}
+[21.852278] (-) TimerEvent: {}
+[21.953053] (-) TimerEvent: {}
+[22.053728] (-) TimerEvent: {}
+[22.154364] (-) TimerEvent: {}
+[22.255081] (-) TimerEvent: {}
+[22.355940] (-) TimerEvent: {}
+[22.456366] (-) TimerEvent: {}
+[22.556826] (-) TimerEvent: {}
+[22.629726] (ros2_IMU) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[22.644582] (ros2_IMU) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[22.657077] (-) TimerEvent: {}
+[22.757827] (-) TimerEvent: {}
+[22.858747] (-) TimerEvent: {}
+[22.959649] (-) TimerEvent: {}
+[23.060690] (-) TimerEvent: {}
+[23.161744] (-) TimerEvent: {}
+[23.262725] (-) TimerEvent: {}
+[23.363454] (-) TimerEvent: {}
+[23.463993] (-) TimerEvent: {}
+[23.560132] (ros2_IMU) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[23.564269] (-) TimerEvent: {}
+[23.574348] (ros2_IMU) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[23.664496] (-) TimerEvent: {}
+[23.765409] (-) TimerEvent: {}
+[23.866492] (-) TimerEvent: {}
+[23.967387] (-) TimerEvent: {}
+[24.068283] (-) TimerEvent: {}
+[24.169185] (-) TimerEvent: {}
+[24.269910] (-) TimerEvent: {}
+[24.370394] (-) TimerEvent: {}
+[24.471120] (-) TimerEvent: {}
+[24.566983] (ros2_IMU) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[24.571225] (-) TimerEvent: {}
+[24.585871] (ros2_IMU) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[24.671494] (-) TimerEvent: {}
+[24.772080] (-) TimerEvent: {}
+[24.872642] (-) TimerEvent: {}
+[24.973702] (-) TimerEvent: {}
+[25.074815] (-) TimerEvent: {}
+[25.175905] (-) TimerEvent: {}
+[25.276829] (-) TimerEvent: {}
+[25.377861] (-) TimerEvent: {}
+[25.478533] (-) TimerEvent: {}
+[25.579242] (-) TimerEvent: {}
+[25.679668] (-) TimerEvent: {}
+[25.780485] (-) TimerEvent: {}
+[25.881499] (-) TimerEvent: {}
+[25.982471] (-) TimerEvent: {}
+[26.083413] (-) TimerEvent: {}
+[26.184283] (-) TimerEvent: {}
+[26.284883] (-) TimerEvent: {}
+[26.385944] (-) TimerEvent: {}
+[26.487103] (-) TimerEvent: {}
+[26.587606] (-) TimerEvent: {}
+[26.675324] (ros2_IMU) StderrLine: {'line': b'WARNING: Package name "ros2_IMU" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[26.687775] (-) TimerEvent: {}
+[26.788462] (-) TimerEvent: {}
+[26.889233] (-) TimerEvent: {}
+[26.990110] (-) TimerEvent: {}
+[27.091105] (-) TimerEvent: {}
+[27.191791] (-) TimerEvent: {}
+[27.292441] (-) TimerEvent: {}
+[27.357506] (ros2_IMU) StdoutLine: {'line': b'-- Configuring done\n'}
+[27.392639] (-) TimerEvent: {}
+[27.493310] (-) TimerEvent: {}
+[27.593986] (-) TimerEvent: {}
+[27.694384] (-) TimerEvent: {}
+[27.794884] (-) TimerEvent: {}
+[27.895690] (-) TimerEvent: {}
+[27.996378] (-) TimerEvent: {}
+[28.066564] (ros2_IMU) StdoutLine: {'line': b'-- Generating done\n'}
+[28.096512] (-) TimerEvent: {}
+[28.197137] (-) TimerEvent: {}
+[28.288125] (ros2_IMU) StdoutLine: {'line': b'-- Build files have been written to: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU\n'}
+[28.297318] (-) TimerEvent: {}
+[28.305189] (ros2_IMU) CommandEnded: {'returncode': 0}
+[28.313354] (ros2_IMU) JobProgress: {'identifier': 'ros2_IMU', 'progress': 'build'}
+[28.318650] (ros2_IMU) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU', '--', '-j4', '-l4'], 'cwd': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'paolo'), ('LC_TIME', 'de_CH.UTF-8'), ('SSH_AGENT_PID', '16941'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/paolo'), ('OLDPWD', '/home/paolo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_CH.UTF-8'), ('MANAGERPID', '16760'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'paolo'), ('JOURNAL_STREAM', '8:168288'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'paolo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/paolo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kenobi:@/tmp/.ICE-unix/16985,unix/kenobi:/tmp/.ICE-unix/16985'), ('INVOCATION_ID', '39d46bb034674f63a6daffc55a4fa160'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c86edaa3_16fd_4c7f_b3bc_c4a56fc41213'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.185'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy')]), 'shell': False}
+[28.397479] (-) TimerEvent: {}
+[28.498214] (-) TimerEvent: {}
+[28.599372] (-) TimerEvent: {}
+[28.686050] (ros2_IMU) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros2_imu_node\x1b[0m\n'}
+[28.699563] (-) TimerEvent: {}
+[28.800056] (-) TimerEvent: {}
+[28.900877] (-) TimerEvent: {}
+[29.002058] (-) TimerEvent: {}
+[29.102628] (-) TimerEvent: {}
+[29.202971] (-) TimerEvent: {}
+[29.303566] (-) TimerEvent: {}
+[29.404168] (-) TimerEvent: {}
+[29.464461] (ros2_IMU) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o\x1b[0m\n'}
+[29.504399] (-) TimerEvent: {}
+[29.604753] (-) TimerEvent: {}
+[29.705180] (-) TimerEvent: {}
+[29.805789] (-) TimerEvent: {}
+[29.906472] (-) TimerEvent: {}
+[30.007175] (-) TimerEvent: {}
+[30.107651] (-) TimerEvent: {}
+[30.208491] (-) TimerEvent: {}
+[30.308782] (-) TimerEvent: {}
+[30.409100] (-) TimerEvent: {}
+[30.509427] (-) TimerEvent: {}
+[30.609709] (-) TimerEvent: {}
+[30.710003] (-) TimerEvent: {}
+[30.810317] (-) TimerEvent: {}
+[30.910619] (-) TimerEvent: {}
+[31.010884] (-) TimerEvent: {}
+[31.111160] (-) TimerEvent: {}
+[31.211488] (-) TimerEvent: {}
+[31.311820] (-) TimerEvent: {}
+[31.412158] (-) TimerEvent: {}
+[31.512497] (-) TimerEvent: {}
+[31.612853] (-) TimerEvent: {}
+[31.713208] (-) TimerEvent: {}
+[31.719250] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KImuNode::ImuNode(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[31.719443] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:43:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[31.719542] (ros2_IMU) StderrLine: {'line': b'   43 |     int \x1b[01;35m\x1b[Kx\x1b[m\x1b[K = init3();\n'}
+[31.719624] (ros2_IMU) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[31.721379] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint ImuNode::init3()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[31.721547] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:123:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 3 has type \xe2\x80\x98\x1b[01m\x1b[Kuint64_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[31.721751] (ros2_IMU) StderrLine: {'line': b'  123 |           printf("Sample rate %d (cycle \x1b[01;35m\x1b[K%d\x1b[m\x1b[K): %s\\n", sampleRate,\n'}
+[31.721866] (ros2_IMU) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K~^\x1b[m\x1b[K\n'}
+[31.721974] (ros2_IMU) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K|\x1b[m\x1b[K\n'}
+[31.722084] (ros2_IMU) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[Kint\x1b[m\x1b[K\n'}
+[31.722190] (ros2_IMU) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[31.722290] (ros2_IMU) StderrLine: {'line': b'  124 |                  \x1b[32m\x1b[K(now - displayTimer) / 1000\x1b[m\x1b[K,\n'}
+[31.722396] (ros2_IMU) StderrLine: {'line': b'      |                  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[31.722497] (ros2_IMU) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[31.722599] (ros2_IMU) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[Kuint64_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[31.722708] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint ImuNode::InitParam()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[31.722819] (ros2_IMU) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:146:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[31.722940] (ros2_IMU) StderrLine: {'line': b'  146 |   int  InitParam() {\x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[31.723020] (ros2_IMU) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[31.813317] (-) TimerEvent: {}
+[31.913622] (-) TimerEvent: {}
+[32.013993] (-) TimerEvent: {}
+[32.114344] (-) TimerEvent: {}
+[32.214643] (-) TimerEvent: {}
+[32.315101] (-) TimerEvent: {}
+[32.415604] (-) TimerEvent: {}
+[32.516167] (-) TimerEvent: {}
+[32.590869] (ros2_IMU) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ros2_imu_node\x1b[0m\n'}
+[32.616291] (-) TimerEvent: {}
+[32.716659] (-) TimerEvent: {}
+[32.817065] (-) TimerEvent: {}
+[32.917628] (-) TimerEvent: {}
+[32.957572] (ros2_IMU) StdoutLine: {'line': b'[100%] Built target ros2_imu_node\n'}
+[33.009173] (ros2_IMU) CommandEnded: {'returncode': 0}
+[33.018040] (-) TimerEvent: {}
+[33.118818] (-) TimerEvent: {}
+[33.135959] (ros2_IMU) JobProgress: {'identifier': 'ros2_IMU', 'progress': 'install'}
+[33.160458] (ros2_IMU) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU'], 'cwd': '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'paolo'), ('LC_TIME', 'de_CH.UTF-8'), ('SSH_AGENT_PID', '16941'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/paolo'), ('OLDPWD', '/home/paolo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_CH.UTF-8'), ('MANAGERPID', '16760'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'paolo'), ('JOURNAL_STREAM', '8:168288'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'paolo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/paolo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/kenobi:@/tmp/.ICE-unix/16985,unix/kenobi:/tmp/.ICE-unix/16985'), ('INVOCATION_ID', '39d46bb034674f63a6daffc55a4fa160'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c86edaa3_16fd_4c7f_b3bc_c4a56fc41213'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.185'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robot/Software/ROS2/Madox/madox_ws/build/ros2_rtimulib:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_sys_info:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch/lib/python3.8/site-packages:/home/robot/Software/ROS2/Madox/madox_ws/build/jetbot_drive:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt/lib/python3.8/site-packages:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy')]), 'shell': False}
+[33.216184] (ros2_IMU) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[33.218864] (-) TimerEvent: {}
+[33.251624] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/lib/ros2_IMU/ros2_imu_node\n'}
+[33.319043] (-) TimerEvent: {}
+[33.372593] (ros2_IMU) StdoutLine: {'line': b'-- Set runtime path of "/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/lib/ros2_IMU/ros2_imu_node" to ""\n'}
+[33.413764] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ament_index/resource_index/package_run_dependencies/ros2_IMU\n'}
+[33.419124] (-) TimerEvent: {}
+[33.481071] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ament_index/resource_index/parent_prefix_path/ros2_IMU\n'}
+[33.519327] (-) TimerEvent: {}
+[33.549347] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/environment/ament_prefix_path.sh\n'}
+[33.584545] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/environment/ament_prefix_path.dsv\n'}
+[33.619517] (-) TimerEvent: {}
+[33.623441] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/environment/path.sh\n'}
+[33.661282] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/environment/path.dsv\n'}
+[33.705022] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/local_setup.bash\n'}
+[33.719714] (-) TimerEvent: {}
+[33.748769] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/local_setup.sh\n'}
+[33.796855] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/local_setup.zsh\n'}
+[33.819847] (-) TimerEvent: {}
+[33.837243] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/local_setup.dsv\n'}
+[33.883449] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/package.dsv\n'}
+[33.920108] (-) TimerEvent: {}
+[33.957439] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ament_index/resource_index/packages/ros2_IMU\n'}
+[34.015686] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/cmake/ros2_IMUConfig.cmake\n'}
+[34.020333] (-) TimerEvent: {}
+[34.061609] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/cmake/ros2_IMUConfig-version.cmake\n'}
+[34.105566] (ros2_IMU) StdoutLine: {'line': b'-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/package.xml\n'}
+[34.120529] (-) TimerEvent: {}
+[34.174777] (ros2_IMU) CommandEnded: {'returncode': 0}
+[34.220672] (-) TimerEvent: {}
+[34.321328] (-) TimerEvent: {}
+[34.422429] (-) TimerEvent: {}
+[34.523424] (-) TimerEvent: {}
+[34.624439] (-) TimerEvent: {}
+[34.725128] (-) TimerEvent: {}
+[34.751755] (ros2_IMU) JobEnded: {'identifier': 'ros2_IMU', 'rc': 0}
+[34.778584] (-) EventReactorShutdown: {}

@@ -1,0 +1,28 @@
+[0.206s] Invoking command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4
+[0.440s] [35m[1mScanning dependencies of target ros2_imu_node[0m
+[0.693s] [ 50%] [32mBuilding CXX object CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o[0m
+[2.140s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In constructor ‘[01m[KImuNode::ImuNode(const rclcpp::NodeOptions&)[m[K’:
+[2.140s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:43:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.141s]    43 |     int [01;35m[Kx[m[K = init_imu();
+[2.141s]       |         [01;35m[K^[m[K
+[2.142s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kint ImuNode::init_imu()[m[K’:
+[2.143s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:71:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsampleCount[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.143s]    71 |     int [01;35m[KsampleCount[m[K = 0;
+[2.143s]       |         [01;35m[K^~~~~~~~~~~[m[K
+[2.143s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:72:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsampleRate[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.144s]    72 |     int [01;35m[KsampleRate[m[K  = 0;
+[2.144s]       |         [01;35m[K^~~~~~~~~~[m[K
+[2.144s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:73:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KrateTimer[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[2.144s]    73 |     uint64_t [01;35m[KrateTimer[m[K;
+[2.144s]       |              [01;35m[K^~~~~~~~~[m[K
+[2.145s] [01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:75:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Know[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.145s]    75 |     uint64_t [01;35m[Know[m[K;
+[2.145s]       |              [01;35m[K^~~[m[K
+[4.089s] [100%] [32m[1mLinking CXX executable ros2_imu_node[0m
+[4.412s] /usr/bin/ld: CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o: in function `rclcpp::Publisher<sensor_msgs::msg::Imu_<std::allocator<void> >, std::allocator<void> >::Publisher(rclcpp::node_interfaces::NodeBaseInterface*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rclcpp::QoS const&, rclcpp::PublisherOptionsWithAllocator<std::allocator<void> > const&)':
+[4.413s] imu.cpp:(.text._ZN6rclcpp9PublisherIN11sensor_msgs3msg4Imu_ISaIvEEES4_EC2EPNS_15node_interfaces17NodeBaseInterfaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_3QoSERKNS_29PublisherOptionsWithAllocatorIS4_EE[_ZN6rclcpp9PublisherIN11sensor_msgs3msg4Imu_ISaIvEEES4_EC5EPNS_15node_interfaces17NodeBaseInterfaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_3QoSERKNS_29PublisherOptionsWithAllocatorIS4_EE]+0x6e): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<sensor_msgs::msg::Imu_<std::allocator<void> > >()'
+[4.413s] collect2: error: ld returned 1 exit status
+[4.419s] make[2]: *** [CMakeFiles/ros2_imu_node.dir/build.make:131: ros2_imu_node] Error 1
+[4.422s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ros2_imu_node.dir/all] Error 2
+[4.423s] make: *** [Makefile:141: all] Error 2
+[4.429s] Invoked command in '/home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_rtimulib:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/pid_node:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_sys_info:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_oled_display:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_launch:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/jetbot_drive:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera_pan_tilt:/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/camera:/opt/ros/foxy /usr/bin/cmake --build /home/paolo/NAS/Software/ROS2/Madox/madox_ws/build/ros2_IMU -- -j4 -l4

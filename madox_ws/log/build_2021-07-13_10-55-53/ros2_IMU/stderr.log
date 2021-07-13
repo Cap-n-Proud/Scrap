@@ -1,0 +1,25 @@
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In constructor ‘[01m[KImuNode::ImuNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:49:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+   49 |     [01;31m[Kpublisher_[m[K = this->create_publisher<sensor_msgs::msg::Imu>("imu", 10);
+      |     [01;31m[K^~~~~~~~~~[m[K
+      |     [32m[Krcl_publisher_t[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:43:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   43 |     int [01;35m[Kx[m[K = init_imu();
+      |         [01;35m[K^[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kint ImuNode::init_imu()[m[K’:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:78:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsampleCount[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   78 |     int [01;35m[KsampleCount[m[K = 0;
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:79:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsampleRate[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   79 |     int [01;35m[KsampleRate[m[K  = 0;
+      |         [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:82:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Know[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   82 |     uint64_t [01;35m[Know[m[K;
+      |              [01;35m[K^~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kvoid ImuNode::PubImuData()[m[K’:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:140:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Imu_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Imu_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  140 |         imu_data_pub.[01;31m[Kpublish[m[K(imu_msg);
+      |                      [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/ros2_imu_node.dir/build.make:63: CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ros2_imu_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

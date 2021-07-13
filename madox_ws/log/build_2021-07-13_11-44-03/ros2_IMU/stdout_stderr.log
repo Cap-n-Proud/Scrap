@@ -1,0 +1,43 @@
+[35m[1mScanning dependencies of target ros2_imu_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o[0m
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In constructor ‘[01m[KImuNode::ImuNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:43:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   43 |     int [01;35m[Kx[m[K = init_imu();
+      |         [01;35m[K^[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kint ImuNode::init_imu()[m[K’:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:68:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsampleCount[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   68 |     int [01;35m[KsampleCount[m[K = 0;
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:69:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsampleRate[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   69 |     int [01;35m[KsampleRate[m[K  = 0;
+      |         [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:70:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KrateTimer[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+   70 |     uint64_t [01;35m[KrateTimer[m[K;
+      |              [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:72:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Know[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   72 |     uint64_t [01;35m[Know[m[K;
+      |              [01;35m[K^~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kvoid ImuNode::PubImuData()[m[K’:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:104:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kframe_id[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  104 |     size_t [01;35m[Kframe_id[m[K = 0;
+      |            [01;35m[K^~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable ros2_imu_node[0m
+[100%] Built target ros2_imu_node
+-- Install configuration: ""
+-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/lib/ros2_IMU/ros2_imu_node
+-- Set runtime path of "/home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/lib/ros2_IMU/ros2_imu_node" to ""
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ament_index/resource_index/package_run_dependencies/ros2_IMU
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ament_index/resource_index/parent_prefix_path/ros2_IMU
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/environment/ament_prefix_path.sh
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/environment/path.sh
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/environment/path.dsv
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/local_setup.bash
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/local_setup.sh
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/local_setup.zsh
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/local_setup.dsv
+-- Installing: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/package.dsv
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ament_index/resource_index/packages/ros2_IMU
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/cmake/ros2_IMUConfig.cmake
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/cmake/ros2_IMUConfig-version.cmake
+-- Up-to-date: /home/paolo/NAS/Software/ROS2/Madox/madox_ws/install/ros2_IMU/share/ros2_IMU/package.xml

@@ -1,0 +1,41 @@
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In constructor ‘[01m[KImuNode::ImuNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:43:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   43 |     int [01;35m[Kx[m[K = init_imu();
+      |         [01;35m[K^[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kint ImuNode::init_imu()[m[K’:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:123:42:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 3 has type ‘[01m[Kuint64_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+  123 |           printf("Sample rate %d (cycle [01;35m[K%d[m[K): %s\n", sampleRate,
+      |                                         [01;35m[K~^[m[K
+      |                                          [01;35m[K|[m[K
+      |                                          [01;35m[Kint[m[K
+      |                                         [32m[K%ld[m[K
+  124 |                  [32m[K(now - displayTimer) / 1000[m[K,
+      |                  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                       [32m[K|[m[K
+      |                                       [32m[Kuint64_t {aka long unsigned int}[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:[m[K In member function ‘[01m[Kvoid ImuNode::PubImuData()[m[K’:
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:155:18:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KRTIMU_DATA imu_data[m[K’
+  155 |       RTIMU_DATA [01;31m[Kimu_data[m[K = imu->getIMUData();
+      |                  [01;31m[K^~~~~~~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:150:18:[m[K [01;36m[Knote: [m[K‘[01m[KRTIMU_DATA imu_data[m[K’ previously declared here
+  150 |       RTIMU_DATA [01;36m[Kimu_data[m[K = imu->getIMUData();
+      |                  [01;36m[K^~~~~~~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:159:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Ki2c_msg[m[K’?
+  159 |         [01;31m[Kimu_msg[m[K.header.stamp          = ros::Time::now();
+      |         [01;31m[K^~~~~~~[m[K
+      |         [32m[Ki2c_msg[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:159:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+  159 |         imu_msg.header.stamp          = [01;31m[Kros[m[K::Time::now();
+      |                                         [01;31m[K^~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:160:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe_id[m[K’ was not declared in this scope
+  160 |         imu_msg.header.frame_id       = [01;31m[Kframe_id[m[K;
+      |                                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:171:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Imu_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Imu_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+  171 |         imu_data_pub_.[01;31m[Kpublish[m[K(imu_msg);
+      |                       [01;31m[K^~~~~~~[m[K
+[01m[K/home/paolo/NAS/Software/ROS2/Madox/madox_ws/src/ros2_IMU/src/imu.cpp:173:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+  173 |       [01;31m[Kros[m[K::spinOnce();
+      |       [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/ros2_imu_node.dir/build.make:63: CMakeFiles/ros2_imu_node.dir/src/imu.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ros2_imu_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
