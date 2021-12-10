@@ -30,7 +30,7 @@
 #include "std_msgs/msg/string.hpp"
 #include "RTIMULib.h"
 
-
+// https://roboticsbackend.com/write-minimal-ros2-cpp-node/
 using namespace std::chrono_literals;
 
 class ImuNode : public rclcpp::Node {
@@ -43,9 +43,6 @@ public:
     int x = init_imu();
 
     imu_pub = this->create_publisher < sensor_msgs::Imu("imu_topic", 10);
-
-    timer_ = this->create_wall_timer(
-      500ms, std::bind(&ImuNode::Spin, this));
   }
 
   ImuNode() {
@@ -60,10 +57,9 @@ private:
   RTIMU *imu              = RTIMU::createIMU(settings);
   int period_ms           = 50;
 
-  rclcpp::TimerBase::SharedPtr timer_;
-
   // rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
   size_t count_;
+  PubImuData();
 
   int init_imu() {
     int sampleCount = 0;
@@ -102,6 +98,9 @@ private:
 
   void PubImuData() {
     usleep(imu->IMUGetPollInterval() * 1000);
+
+    // can also be thins?  ros::Rate loop_rate(1000 /
+    // imu->IMUGetPollInterval());
     std::string frame_id;
     frame_id = "imu_link";
 
@@ -143,12 +142,6 @@ private:
         imu_pub.publish(imu_msg);
       }
     }
-  }
-
-  void Spin() {
-    RCLCPP_INFO(this->get_logger(), "Publishing data");
-
-    PubImuData();
   }
 }; // end of class
 
