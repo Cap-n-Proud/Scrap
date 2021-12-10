@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// https://github.com/kekiefer/ros2_rtimulib/blob/master/ros2_rtimulib/imu_node.py
 
 class Room {
   // Access - Specifier
@@ -83,6 +84,10 @@ private:
     imu->setCompassEnable(true);
 
     //  set up for rate timer
+    if (not self.pressure.pressureInit()):
+              self.get_logger().info("Pressure sensor Init Failed")
+          else:
+              self.get_logger().info("Pressure sensor Init Succeeded")
 
     rateTimer = displayTimer = RTMath::currentUSecsSinceEpoch();
 
