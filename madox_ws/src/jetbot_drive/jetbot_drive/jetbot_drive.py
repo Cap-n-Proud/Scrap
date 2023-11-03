@@ -90,7 +90,7 @@ class Robot(Node, SingletonConfigurable):
         else:
             print(speed, steer, speed_l, speed_r)
 
-    def imu_topic(self, msg):
+    def imu_topic(self, msg):   
         global euler
         euler = euler_from_quaternion(
             msg.orientation.x,

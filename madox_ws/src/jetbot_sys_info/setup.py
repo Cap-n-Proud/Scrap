@@ -14,7 +14,7 @@ setup(
     zip_safe=True,
     maintainer="robot",
     maintainer_email="robot@todo.todo",
-    description="Extracts and publishes several information from teh jetbot hardware. Publishes teh following topics: info_sys_disk, info_sys_mem, info_sys_CPU, info_sys_power.",
+    description="Extracts and publishes several information from the jetbot hardware. Publishes teh following topics: info_sys_disk, info_sys_mem, info_sys_CPU, info_sys_power.",
     license="Apache 2.0",
     tests_require=["pytest"],
     entry_points={

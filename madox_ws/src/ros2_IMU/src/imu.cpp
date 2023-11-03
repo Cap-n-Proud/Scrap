@@ -45,7 +45,7 @@ public:
     imu_pub = this->create_publisher < sensor_msgs::Imu("imu_topic", 10);
   }
 
-  ImuNode() {
+  -ImuNode() {
     RCLCPP_INFO(this->get_logger(), "called destructor!");
 
     // imu_.Close();
